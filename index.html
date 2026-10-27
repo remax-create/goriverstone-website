@@ -1,0 +1,831 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Riverstone Homes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Riverstone Homes builds custom homes in North Metro Atlanta on your land or ours. Frank Betz plans, custom plans, permits to closing. Locally owned since 1997.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<style>
+/* Layout: cinematic full-bleed hero, then an editorial rhythm of light stone sections and deep forest bands, finished in brass */
+:root {
+  --page: #f4f3ef;          /* honed limestone */
+  --page-2: #eae8e2;
+  --card: #ffffff;
+  --ink: #18211e;
+  --ink-2: #505a55;
+  --line: #d9d7cf;
+  --forest: #1b2823;        /* deep woods band */
+  --forest-2: #24342d;
+  --brass: #9c7a45;
+  --brass-hi: #c5a46f;
+  --sage: #6c8676;
+  --on-dark: #f2f0ea;
+  --on-dark-2: rgba(242, 240, 234, 0.72);
+  --on-dark-line: rgba(242, 240, 234, 0.16);
+  --logo-solid: none;
+
+  --f-display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --f-body: "Hanken Grotesk", "Helvetica Neue", system-ui, sans-serif;
+
+  --t-xs: 0.75rem;
+  --t-sm: 0.9rem;
+  --t-md: 1.0625rem;
+  --t-lg: 1.25rem;
+  --t-xl: clamp(1.6rem, 2.6vw, 2.1rem);
+  --t-2xl: clamp(2.2rem, 4.4vw, 3.6rem);
+  --t-3xl: clamp(3rem, 8vw, 6.75rem);
+
+  --wrap: 1240px;
+  --gl: max(20px, env(safe-area-inset-left, 0px));
+  --gr: max(20px, env(safe-area-inset-right, 0px));
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: #111714; --page-2: #18201c; --card: #1c2420; --ink: #ecebe6; --ink-2: #a9b2ac;
+    --line: #2c3631; --forest: #0b100e; --forest-2: #141c18; --brass: #c9a66c; --brass-hi: #dcbd88;
+    --sage: #93ad9d; --logo-solid: invert(1);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page: #111714; --page-2: #18201c; --card: #1c2420; --ink: #ecebe6; --ink-2: #a9b2ac;
+  --line: #2c3631; --forest: #0b100e; --forest-2: #141c18; --brass: #c9a66c; --brass-hi: #dcbd88;
+  --sage: #93ad9d; --logo-solid: invert(1);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--page); color: var(--ink); font: 400 var(--t-md)/1.65 var(--f-body); -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--forest); }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+p { margin: 0; }
+h1, h2, h3 { margin: 0; font-family: var(--f-display); font-weight: 400; line-height: 1.05; letter-spacing: -0.015em; text-wrap: balance; }
+em { font-style: italic; }
+:focus-visible { outline: 2px solid var(--brass); outline-offset: 4px; }
+section { scroll-margin-top: 76px; }
+
+.wrap { max-width: var(--wrap); margin-inline: auto; padding-left: var(--gl); padding-right: var(--gr); }
+.label { display: inline-flex; align-items: center; gap: 0.75rem; font: 600 var(--t-xs)/1 var(--f-body); letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass); }
+.label::before { content: ""; width: 28px; height: 1px; background: currentColor; }
+.dark .label { color: var(--brass-hi); }
+.lede { font-size: var(--t-lg); line-height: 1.6; color: var(--ink-2); max-width: 58ch; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 0.85rem; padding: 1rem 1.6rem; font: 600 var(--t-sm)/1 var(--f-body); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--ink); background: var(--ink); color: var(--page); cursor: pointer; transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease); }
+.btn svg { width: 16px; height: 16px; transition: transform .3s var(--ease); }
+.btn:hover svg { transform: translateX(4px); }
+.btn:hover { background: var(--brass); border-color: var(--brass); color: #fff; }
+.btn.line { background: transparent; color: var(--ink); }
+.btn.line:hover { background: var(--ink); color: var(--page); border-color: var(--ink); }
+.dark .btn, .hero .btn { background: var(--on-dark); color: #18211e; border-color: var(--on-dark); }
+.dark .btn:hover, .hero .btn:hover { background: var(--brass-hi); border-color: var(--brass-hi); color: #18211e; }
+.dark .btn.line, .hero .btn.line { background: transparent; color: var(--on-dark); border-color: var(--on-dark-2); }
+.dark .btn.line:hover, .hero .btn.line:hover { background: var(--on-dark); color: #18211e; }
+.text-link { display: inline-flex; align-items: center; gap: 0.6rem; font: 600 var(--t-sm)/1 var(--f-body); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; padding-bottom: 0.4rem; border-bottom: 1px solid currentColor; }
+.text-link:hover { color: var(--brass); }
+
+/* Header */
+.site-header { position: fixed; top: env(safe-area-inset-top, 0px); left: 0; right: 0; z-index: 50; color: var(--on-dark); transition: background .35s var(--ease), color .35s var(--ease), box-shadow .35s var(--ease); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; height: 76px; }
+.brand img { height: 38px; width: auto; filter: invert(1); transition: filter .35s var(--ease); }
+.site-header.solid { background: var(--page); color: var(--ink); box-shadow: 0 1px 0 var(--line); }
+.site-header.solid .brand img { filter: var(--logo-solid); }
+.nav { display: flex; align-items: center; gap: 2rem; }
+.nav a { text-decoration: none; font: 500 var(--t-sm)/1 var(--f-body); letter-spacing: 0.04em; position: relative; padding-block: 0.4rem; }
+.nav a:not(.nav-cta)::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .3s var(--ease); }
+.nav a:not(.nav-cta):hover::after { transform: scaleX(1); }
+.nav-cta { border: 1px solid currentColor; padding: 0.75rem 1.1rem !important; letter-spacing: 0.1em !important; text-transform: uppercase; font-size: var(--t-xs) !important; font-weight: 600 !important; }
+.nav-cta:hover { background: var(--brass); border-color: var(--brass); color: #fff; }
+.menu-btn { display: none; background: none; border: 0; color: inherit; cursor: pointer; padding: 0.5rem; }
+.menu-btn span { display: block; width: 26px; height: 1.5px; background: currentColor; margin: 6px 0; transition: transform .3s var(--ease), opacity .3s; }
+.menu-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+.menu-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.menu-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+@media (max-width: 960px) {
+  .menu-btn { display: block; }
+  .nav { position: fixed; inset: calc(76px + env(safe-area-inset-top, 0px)) 0 auto; flex-direction: column; align-items: stretch; gap: 0; background: var(--page); color: var(--ink); padding: 0.5rem var(--gr) 1.5rem var(--gl); box-shadow: 0 20px 40px rgba(0,0,0,.12); display: none; }
+  .nav.open { display: flex; }
+  .nav a { padding: 1rem 0; border-bottom: 1px solid var(--line); font-size: var(--t-md); }
+  .nav a::after { display: none; }
+  .nav-cta { margin-top: 1rem; text-align: center; border-color: var(--ink) !important; justify-content: center; }
+  .site-header:has(.nav.open) { background: var(--page); color: var(--ink); }
+  .site-header:has(.nav.open) .brand img { filter: var(--logo-solid); }
+}
+
+/* Hero */
+.hero { position: relative; min-height: clamp(600px, 92vh, 940px); display: grid; align-items: end; color: var(--on-dark); background: var(--forest); overflow: hidden; isolation: isolate; }
+.hero-media { position: absolute; inset: 0; z-index: -1; }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; animation: settle 2.4s var(--ease) both; }
+.hero-media::after { content: ""; position: absolute; inset: 0; background:
+  linear-gradient(90deg, rgba(12,18,15,.72) 0%, rgba(12,18,15,.4) 42%, rgba(12,18,15,0) 72%),
+  linear-gradient(180deg, rgba(12,18,15,.5) 0%, rgba(12,18,15,0) 25%, rgba(12,18,15,.15) 55%, rgba(12,18,15,.88) 100%); }
+@media (max-width: 760px) { .hero-media::after { background: linear-gradient(180deg, rgba(12,18,15,.5) 0%, rgba(12,18,15,.55) 30%, rgba(12,18,15,.7) 60%, rgba(12,18,15,.94) 100%); } }
+@keyframes settle { from { transform: scale(1.08); } to { transform: scale(1); } }
+@keyframes rise { from { transform: translateY(14px); } to { transform: none; } }
+.hero-inner { padding-block: 9rem 0; width: 100%; }
+.hero-copy { display: grid; gap: 1.75rem; max-width: 860px; padding-bottom: clamp(2.5rem, 6vw, 4.5rem); }
+.hero h1, .hero p.sub, .hero .label { text-shadow: 0 2px 24px rgba(0,0,0,.35); }
+.hero-copy > * { animation: rise 1s var(--ease) both; }
+.hero-copy > :nth-child(2) { animation-delay: .12s; }
+.hero-copy > :nth-child(3) { animation-delay: .24s; }
+.hero-copy > :nth-child(4) { animation-delay: .36s; }
+.hero .label { color: var(--brass-hi); }
+.hero h1 { font-size: var(--t-3xl); line-height: 0.98; }
+.hero h1 em { color: var(--brass-hi); }
+.hero p.sub { font-size: var(--t-lg); color: var(--on-dark-2); max-width: 46ch; }
+.hero .btns { display: flex; flex-wrap: wrap; gap: 0.85rem; }
+.hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--on-dark-line); }
+@media (max-width: 760px) {
+  .hero-stats { grid-template-columns: 1fr 1fr; }
+  .hero-stats div:nth-child(3) { border-left: 0; padding-left: 0; }
+  .hero-stats div:nth-child(n+3) { border-top: 1px solid var(--on-dark-line); }
+}
+.hero-stats div { padding: 1.4rem 1.25rem 1.6rem; border-left: 1px solid var(--on-dark-line); min-width: 0; }
+.hero-stats div:first-child { border-left: 0; padding-left: 0; }
+.hero-stats b { display: block; font: 400 clamp(1.35rem, 2.1vw, 1.75rem)/1.15 var(--f-display); }
+.hero-stats span { display: block; margin-top: 0.35rem; font-size: var(--t-sm); color: var(--on-dark-2); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+/* Sections */
+.sec { padding-block: clamp(5rem, 11vw, 9rem); }
+.sec.tint { background: var(--page-2); }
+.dark { background: var(--forest); color: var(--on-dark); position: relative; overflow: hidden; isolation: isolate; }
+.dark .lede, .dark p { color: var(--on-dark-2); }
+.contours { position: absolute; inset: auto -10% -20% auto; width: min(900px, 90vw); height: auto; z-index: -1; color: var(--on-dark); opacity: .07; pointer-events: none; }
+.head { display: grid; gap: 1.25rem; margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+.head h2 { font-size: var(--t-2xl); }
+.head.split { grid-template-columns: 1fr 1fr; align-items: end; gap: 2rem 4rem; }
+.head.split > * { min-width: 0; }
+@media (max-width: 860px) { .head.split { grid-template-columns: 1fr; } }
+
+/* Intro */
+.intro { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(2.5rem, 6vw, 6rem); align-items: center; }
+.intro > * { min-width: 0; }
+.intro-copy { display: grid; gap: 1.75rem; }
+.intro-copy h2 { font-size: var(--t-2xl); }
+.intro-copy h2 em { color: var(--brass); }
+.intro-media { position: relative; display: grid; grid-template-columns: 1fr 0.62fr; gap: 14px; align-items: end; }
+.intro-media img { width: 100%; object-fit: cover; }
+.intro-media .tall { aspect-ratio: 4 / 5; }
+.intro-media .short { aspect-ratio: 3 / 4; margin-bottom: 15%; }
+.intro-media .badge { position: absolute; left: -1.5rem; bottom: -1.5rem; background: var(--forest); color: var(--on-dark); padding: 1.3rem 1.5rem; display: grid; gap: 0.2rem; box-shadow: 0 24px 48px rgba(0,0,0,.18); }
+.intro-media .badge b { font: 400 2.4rem/1 var(--f-display); color: var(--brass-hi); }
+.intro-media .badge span { font-size: var(--t-xs); letter-spacing: 0.18em; text-transform: uppercase; }
+@media (max-width: 900px) { .intro { grid-template-columns: 1fr; } .intro-media .badge { left: 0.75rem; bottom: -1.25rem; } }
+
+/* Paths */
+.paths { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.path { position: relative; display: block; min-height: 520px; color: var(--on-dark); text-decoration: none; overflow: hidden; isolation: isolate; background: var(--forest); }
+.path img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: transform 1.2s var(--ease); }
+.path::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(12,18,15,0) 30%, rgba(12,18,15,.88) 100%); transition: background .5s var(--ease); }
+.path:hover img { transform: scale(1.06); }
+.path-body { position: absolute; left: 0; right: 0; bottom: 0; padding: 2rem; display: grid; gap: 0.8rem; }
+.path .kicker { font-size: var(--t-xs); letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass-hi); font-weight: 600; }
+.path h3 { font-size: clamp(1.8rem, 2.6vw, 2.25rem); }
+.path p { color: var(--on-dark-2); font-size: var(--t-md); max-width: 34ch; }
+.path .go { display: inline-flex; align-items: center; gap: 0.6rem; font: 600 var(--t-xs)/1 var(--f-body); letter-spacing: 0.18em; text-transform: uppercase; margin-top: 0.4rem; }
+.path .go svg { width: 16px; height: 16px; transition: transform .3s var(--ease); }
+.path:hover .go svg { transform: translateX(5px); }
+@media (max-width: 960px) { .paths { grid-template-columns: 1fr; } .path { min-height: 420px; } }
+
+/* Listings */
+.listings { display: grid; grid-template-columns: 1.15fr 1fr; gap: 24px; align-items: start; }
+.listings > * { min-width: 0; }
+.listing { background: var(--forest-2); border: 1px solid var(--on-dark-line); display: grid; }
+.listing-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; }
+.listing-photos img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16 / 10; }
+.listing-photos .main { grid-column: 1 / -1; aspect-ratio: 16 / 9.5; }
+.listing-body { padding: clamp(1.5rem, 3vw, 2.25rem); display: grid; gap: 1.1rem; }
+.chip { justify-self: start; font: 600 0.7rem/1 var(--f-body); letter-spacing: 0.2em; text-transform: uppercase; padding: 0.5rem 0.75rem; border: 1px solid currentColor; }
+.chip.now { color: #9fd0b2; }
+.chip.soon { color: var(--brass-hi); }
+.listing h3 { font-size: clamp(1.9rem, 3vw, 2.5rem); }
+.listing .where { font-size: var(--t-sm); letter-spacing: 0.06em; color: var(--on-dark-2); margin-top: -0.5rem; }
+.price { font: 400 clamp(1.6rem, 2.6vw, 2rem)/1 var(--f-display); color: var(--brass-hi); }
+.specs { display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--on-dark-line); margin: 0; }
+.specs div { padding: 0.9rem 0.75rem; border-left: 1px solid var(--on-dark-line); min-width: 0; }
+.specs div:first-child { border-left: 0; padding-left: 0; }
+.specs dt { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--on-dark-2); }
+.specs dd { margin: 0.25rem 0 0; font: 400 1.35rem/1.15 var(--f-display); color: var(--on-dark); font-variant-numeric: lining-nums; }
+.specs dd.tbd { font: italic 400 1.1rem/1.3 var(--f-display); color: var(--brass-hi); }
+.listing .desc { font-size: var(--t-md); }
+.offer { border-left: 2px solid var(--brass-hi); padding: 0.2rem 0 0.2rem 1rem; color: var(--on-dark) !important; }
+.offer b { color: var(--brass-hi); font-weight: 600; }
+.agent { font-size: var(--t-sm); }
+.listing .btns { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.4rem; }
+.soon-visual { position: relative; aspect-ratio: 16 / 11; display: grid; place-content: center; text-align: center; gap: 0.75rem; overflow: hidden; background: radial-gradient(120% 90% at 30% 20%, #2f4239 0%, var(--forest-2) 60%); border-bottom: 1px solid var(--on-dark-line); }
+.soon-visual svg { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--brass-hi); opacity: .5; }
+.soon-visual b { position: relative; font: italic 400 clamp(2.4rem, 4vw, 3.4rem)/1 var(--f-display); color: var(--on-dark); }
+.soon-visual span { position: relative; font-size: var(--t-xs); letter-spacing: 0.24em; text-transform: uppercase; color: var(--brass-hi); font-weight: 600; }
+@media (max-width: 960px) { .listings { grid-template-columns: 1fr; } }
+@media (max-width: 420px) { .specs { grid-template-columns: 1fr 1fr; } .specs div:nth-child(3) { border-left: 0; padding-left: 0; border-top: 1px solid var(--on-dark-line); } }
+
+/* Gallery */
+.gallery { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: clamp(110px, 11vw, 150px); gap: 14px; }
+.gallery figure { margin: 0; position: relative; overflow: hidden; background: var(--page-2); }
+.gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+.gallery figure:hover img { transform: scale(1.05); }
+.gallery figcaption { position: absolute; left: 1rem; bottom: 1rem; background: var(--page); color: var(--ink); padding: 0.5rem 0.8rem; font-size: var(--t-xs); letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; transform: translateY(8px); opacity: 0; transition: opacity .4s var(--ease), transform .4s var(--ease); }
+.gallery figure:hover figcaption, .gallery figure:focus-within figcaption { opacity: 1; transform: none; }
+@media (hover: none) { .gallery figcaption { opacity: 1; transform: none; } }
+.ga { grid-column: 1 / 8; grid-row: span 4; }
+.gb { grid-column: 8 / 13; grid-row: span 2; }
+.gc { grid-column: 8 / 13; grid-row: span 2; }
+.gd { grid-column: 1 / 5; grid-row: span 3; }
+.ge { grid-column: 5 / 9; grid-row: span 3; }
+.gf { grid-column: 9 / 13; grid-row: span 3; }
+@media (max-width: 760px) {
+  .gallery { grid-template-columns: 1fr 1fr; grid-auto-rows: 150px; gap: 8px; }
+  .ga { grid-column: 1 / -1; grid-row: span 2; }
+  .gb, .gc { grid-column: span 1; grid-row: span 1; }
+  .gd { grid-column: 1 / -1; grid-row: span 2; }
+  .ge, .gf { grid-column: span 1; grid-row: span 1; }
+  .gallery figcaption { left: 0.5rem; bottom: 0.5rem; padding: 0.35rem 0.55rem; font-size: 0.62rem; letter-spacing: 0.1em; }
+}
+.home-video { margin-top: clamp(2.5rem, 6vw, 4rem); display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; text-decoration: none; color: inherit; }
+.hv-media { position: relative; display: block; overflow: hidden; background: var(--page-2); aspect-ratio: 16 / 9; }
+.hv-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); }
+.home-video:hover .hv-media img { transform: scale(1.03); }
+.hv-play { position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: 72px; height: 72px; border-radius: 50%; background: rgba(27,40,35,.82); display: grid; place-items: center; transition: background .3s var(--ease); }
+.hv-play svg { width: 30px; height: 30px; fill: #f2f0ea; margin-left: 3px; }
+.home-video:hover .hv-play { background: var(--brass); }
+.hv-txt { display: grid; gap: 1rem; justify-items: start; }
+.hv-title { font-family: var(--f-display); font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1.1; letter-spacing: -0.015em; }
+.hv-sub { color: var(--ink-2); max-width: 46ch; }
+@media (max-width: 760px) { .home-video { grid-template-columns: 1fr; } }
+.gallery-foot { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between; color: var(--ink-2); }
+.socials { display: flex; gap: 1.5rem; }
+
+/* Plans */
+.plans-wrap { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(2.5rem, 6vw, 6rem); align-items: start; }
+.plans-wrap > * { min-width: 0; }
+.plans-intro { display: grid; gap: 1.5rem; position: sticky; top: 110px; }
+.plans-intro h2 { font-size: var(--t-2xl); }
+.plan-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+.plan-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); transition: padding .4s var(--ease); }
+.plan-list li:hover { padding-left: 0.75rem; }
+.plan-list h3 { font-size: clamp(1.8rem, 3.4vw, 2.9rem); }
+.plan-list li:hover h3 { font-style: italic; color: var(--brass); }
+.plan-list .by { flex: none; font-size: var(--t-xs); letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-2); font-weight: 600; }
+.plan-list .by.own { color: var(--brass); }
+@media (max-width: 900px) { .plans-wrap { grid-template-columns: 1fr; } .plans-intro { position: static; } }
+
+/* Process */
+.process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; counter-reset: s; border-top: 1px solid var(--on-dark-line); }
+.step { padding: 2rem 1.5rem 0 0; display: grid; gap: 0.9rem; align-content: start; counter-increment: s; position: relative; }
+.step::before { content: counter(s, decimal-leading-zero); font: italic 400 3.25rem/1 var(--f-display); color: var(--brass-hi); }
+.step::after { content: ""; position: absolute; top: -4px; left: 0; width: 7px; height: 7px; border-radius: 50%; background: var(--brass-hi); }
+.step h3 { font-size: 1.55rem; }
+.step p { font-size: var(--t-md); }
+@media (max-width: 900px) { .process { grid-template-columns: 1fr 1fr; row-gap: 2.5rem; } }
+@media (max-width: 520px) { .process { grid-template-columns: 1fr; } }
+.process-foot { margin-top: 3.5rem; display: flex; flex-wrap: wrap; gap: 1rem; }
+
+/* Land */
+.land { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem, 6vw, 6rem); align-items: center; }
+.land > * { min-width: 0; }
+.land-media { position: relative; }
+.land-media img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.land-media .frame { position: absolute; inset: 1.25rem -1.25rem -1.25rem 1.25rem; border: 1px solid var(--brass); z-index: -1; }
+.land-copy { display: grid; gap: 1.5rem; }
+.land-copy h2 { font-size: var(--t-2xl); }
+.land-copy .partner { display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: center; padding: 1.25rem 0; border-block: 1px solid var(--line); }
+.partner .mono { width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: var(--forest); color: var(--brass-hi); font: italic 400 1.4rem/1 var(--f-display); }
+.partner b { display: block; font-weight: 600; }
+.partner span { color: var(--ink-2); font-size: var(--t-sm); }
+.wishes { display: flex; flex-wrap: wrap; gap: 0.6rem; list-style: none; padding: 0; margin: 0; }
+.wishes li { border: 1px solid var(--line); padding: 0.55rem 0.9rem; font-size: var(--t-sm); color: var(--ink-2); }
+@media (max-width: 900px) { .land { grid-template-columns: 1fr; } .land-media { margin-right: 1.25rem; } }
+
+/* Team */
+.team { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--ink); }
+.person { padding: 2rem 2rem 0 0; display: grid; gap: 0.6rem; align-content: start; }
+.person + .person { padding-left: 2rem; border-left: 1px solid var(--line); }
+.person .photo { width: 100%; max-width: 320px; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%; background: var(--page-2); margin-bottom: 0.6rem; }
+.person .role { font-size: var(--t-xs); letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); font-weight: 600; }
+.person h3 { font-size: 2rem; }
+.person .yrs { font: italic 400 1.1rem/1.3 var(--f-display); color: var(--ink); }
+.person p { color: var(--ink-2); }
+@media (max-width: 860px) { .team { grid-template-columns: 1fr; } .person, .person + .person { padding: 1.75rem 0; border-left: 0; border-bottom: 1px solid var(--line); } }
+
+/* Guide + FAQ */
+.guide-faq { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem, 6vw, 6rem); align-items: start; }
+.guide-faq > * { min-width: 0; }
+.guide-faq h2 { font-size: var(--t-xl); margin-bottom: 1.75rem; }
+.acc { border-top: 1px solid var(--ink); }
+.acc details { border-bottom: 1px solid var(--line); }
+.acc summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.2rem 0; font-weight: 600; font-size: 1.05rem; }
+.acc summary::-webkit-details-marker { display: none; }
+.acc summary::after { content: ""; flex: none; width: 12px; height: 12px; border-right: 1.5px solid var(--brass); border-bottom: 1.5px solid var(--brass); transform: rotate(45deg) translate(-3px, -3px); transition: transform .3s var(--ease); }
+.acc details[open] summary::after { transform: rotate(225deg) translate(-3px, -3px); }
+.acc .inner { padding: 0 0 1.4rem; color: var(--ink-2); }
+.acc ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.5rem; }
+.acc li { display: flex; gap: 0.7rem; }
+.acc li::before { content: ""; flex: none; width: 6px; height: 6px; margin-top: 0.6rem; background: var(--brass); transform: rotate(45deg); }
+
+/* Contact */
+.contact { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: clamp(3rem, 6vw, 6rem); align-items: start; }
+.contact > * { min-width: 0; }
+.contact-copy { display: grid; gap: 1.75rem; }
+.contact-copy h2 { font-size: var(--t-2xl); }
+.contact-copy h2 em { color: var(--brass-hi); }
+.reach { display: grid; gap: 1.25rem; margin: 0.5rem 0 0; }
+.reach dt { font-size: var(--t-xs); letter-spacing: 0.2em; text-transform: uppercase; color: var(--on-dark-2); }
+.reach dd { margin: 0.3rem 0 0; font: 400 clamp(1.5rem, 2.6vw, 2rem)/1.2 var(--f-display); }
+.reach a { text-decoration: none; border-bottom: 1px solid var(--on-dark-line); color: var(--on-dark); }
+.reach a:hover { border-color: var(--brass-hi); }
+form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25rem; background: var(--forest-2); border: 1px solid var(--on-dark-line); padding: clamp(1.5rem, 3.5vw, 2.75rem); }
+.field { display: grid; gap: 0.45rem; min-width: 0; }
+.field.full { grid-column: 1 / -1; }
+.field label { font-size: var(--t-xs); letter-spacing: 0.18em; text-transform: uppercase; color: var(--on-dark-2); font-weight: 600; }
+.field input, .field select, .field textarea { font: inherit; font-size: 1.05rem; color: var(--on-dark); background: transparent; border: 0; border-bottom: 1px solid rgba(242,240,234,.35); padding: 0.6rem 0; width: 100%; border-radius: 0; transition: border-color .3s; }
+.field select option { color: #18211e; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-bottom-color: var(--brass-hi); }
+.field textarea { min-height: 110px; resize: vertical; }
+.field ::placeholder { color: rgba(242,240,234,.4); }
+.form-status { grid-column: 1 / -1; color: var(--brass-hi) !important; }
+.form-status:empty { display: none; }
+.hp { position: absolute; left: -9999px; }
+@media (max-width: 900px) { .contact { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { form.inquiry { grid-template-columns: 1fr; } }
+
+/* From the blog */
+.blog-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.blog-row:has(> :only-child) { grid-template-columns: 1fr; max-width: 980px; }
+.blog-card { display: grid; gap: 1rem; text-decoration: none; align-content: start; min-width: 0; }
+.blog-row:has(> :only-child) .blog-card { grid-template-columns: 1.1fr 1fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
+.blog-card .ph { overflow: hidden; background: var(--page-2); }
+.blog-card img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform 1s var(--ease); }
+.blog-card:hover img { transform: scale(1.04); }
+.blog-card .txt { display: grid; gap: .7rem; min-width: 0; }
+.blog-card .meta { font-size: var(--t-xs); letter-spacing: .16em; text-transform: uppercase; color: var(--brass); font-weight: 600; }
+.blog-card h3 { font-size: clamp(1.4rem, 2.2vw, 1.85rem); line-height: 1.15; }
+.blog-card:hover h3 { color: var(--brass); }
+.blog-card p { color: var(--ink-2); }
+.blog-foot { margin-top: clamp(2rem, 4vw, 3rem); }
+@media (max-width: 900px) { .blog-row, .blog-row:has(> :only-child) .blog-card { grid-template-columns: 1fr; } }
+
+.listing-links { padding: 1rem clamp(1.5rem, 3vw, 2.25rem) 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+.listing-links .btn { padding: .85rem 1.1rem; }
+
+/* Footer */
+.site-footer { background: var(--forest); color: var(--on-dark-2); padding-block: 0 2.5rem; border-top: 1px solid var(--on-dark-line); }
+.foot { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; padding-block: 4rem 3rem; }
+.foot > * { min-width: 0; }
+.foot img { height: 42px; width: auto; filter: invert(1); margin-bottom: 1.25rem; }
+.foot h4 { margin: 0 0 1rem; font: 600 var(--t-xs)/1 var(--f-body); letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass-hi); }
+.foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+.foot a { text-decoration: none; color: var(--on-dark); }
+.foot a:hover { color: var(--brass-hi); }
+.legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding-top: 2rem; border-top: 1px solid var(--on-dark-line); font-size: var(--t-sm); }
+@media (max-width: 860px) { .foot { grid-template-columns: 1fr 1fr; } .foot > :first-child { grid-column: 1 / -1; } }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="arrow" viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="contour" viewBox="0 0 900 600">
+      <g fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M40 420c90-60 160-70 250-40s170 40 260-20 190-90 320-50"/>
+        <path d="M20 470c110-70 190-80 290-45s180 45 280-15 200-95 330-55"/>
+        <path d="M60 370c80-50 140-60 220-35s150 35 240-15 180-85 300-50"/>
+        <path d="M100 320c70-40 120-50 190-30s130 30 210-10 170-80 280-50"/>
+        <path d="M150 270c60-35 100-42 160-26s110 26 180-8 150-70 250-46"/>
+        <path d="M210 225c50-28 85-34 135-21s90 21 150-6 130-60 210-40"/>
+        <path d="M0 525c120-75 210-90 320-50s200 50 300-10 210-100 340-60"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header" id="header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Riverstone Homes, back to top">
+      <img src="images/logo.png" alt="Riverstone Homes" width="799" height="238">
+    </a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#homes">Homes for Sale</a>
+      <a href="#process">Build on Your Land</a>
+      <a href="#plans">Floor Plans</a>
+      <a href="#work">Our Work</a>
+      <a href="#about">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="videos.html">Videos</a>
+      <a class="nav-cta" href="#contact">Start Your Build</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-media">
+      <img src="images/hero-house.jpg" alt="Sage green board-and-batten craftsman home with cedar front porch and stone skirt, framed by tall Georgia pines" width="1400" height="880" fetchpriority="high">
+    </div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="label">Custom homes · North Metro Atlanta</span>
+        <h1>Build your <em>future</em>.</h1>
+        <p class="sub">Craftsman-quality homes on your land or ours, from Frank Betz designs to plans of our own. Locally owned since 1997.</p>
+        <div class="btns">
+          <a class="btn" href="#contact">Start your build <svg><use href="#arrow"/></svg></a>
+          <a class="btn line" href="#homes">Homes for sale</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div><b>1997</b><span>Locally owned &amp; building</span></div>
+        <div><b>35+ yrs</b><span>Building in North Georgia</span></div>
+        <div><b>Frank Betz</b><span>Featured builds</span></div>
+        <div><b>Permits to closing</b><span>One team, start to finish</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap intro">
+      <div class="intro-copy">
+        <span class="label">Riverstone Homes</span>
+        <h2>Homes built with <em>care</em>, for the way you live.</h2>
+        <p class="lede">Riverstone is a locally owned builder. From the first blueprint to the final walk-through, our team handles every detail with precision and care, so you get a showcase-quality home that pairs timeless design with modern living.</p>
+        <div><a class="text-link" href="team.html">Meet the team <svg width="16" height="16"><use href="#arrow"/></svg></a></div>
+      </div>
+      <div class="intro-media">
+        <img class="tall" src="images/front-porch.jpg" alt="Covered front porch with pine tongue-and-groove ceiling, cedar posts and lantern pendants" loading="lazy" width="1600" height="1067">
+        <img class="short" src="images/kitchen-island.jpg" alt="White shaker kitchen with natural maple island and French doors" loading="lazy" width="1599" height="1067">
+        <div class="badge"><b>Since 1997</b><span>North Metro Atlanta</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tint" id="paths">
+    <div class="wrap">
+      <div class="head split">
+        <div style="display:grid;gap:1.25rem"><span class="label">Three ways to begin</span><h2>Wherever you're starting, we'll get you home.</h2></div>
+        <p class="lede">Already own a lot, still looking for land, or ready to move soon? Each path ends in a Riverstone home.</p>
+      </div>
+      <div class="paths">
+        <a class="path" href="#process">
+          <img src="images/site-plan.jpg" alt="" loading="lazy" width="2400" height="1350">
+          <div class="path-body"><span class="kicker">I own land</span><h3>Build on your lot</h3><p>We handle the plans, permits and construction. You pick the design.</p><span class="go">How it works <svg><use href="#arrow"/></svg></span></div>
+        </a>
+        <a class="path" href="#find-land">
+          <img src="images/lot-prep.jpg" alt="" loading="lazy" width="406" height="720">
+          <div class="path-body"><span class="kicker">I need land</span><h3>Find the right place</h3><p>Our real estate partner helps you find the lot or community first.</p><span class="go">Find land <svg><use href="#arrow"/></svg></span></div>
+        </a>
+        <a class="path" href="#homes">
+          <img src="images/cypress-121-front.jpg" alt="" loading="lazy" width="1024" height="681">
+          <div class="path-body"><span class="kicker">I'm ready to move</span><h3>Homes for sale</h3><p>See what's available now in Canton and Calhoun, and what's coming soon.</p><span class="go">View homes <svg><use href="#arrow"/></svg></span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark" id="homes">
+    <svg class="contours" viewBox="0 0 900 600" aria-hidden="true"><use href="#contour"/></svg>
+    <div class="wrap">
+      <div class="head split">
+        <div style="display:grid;gap:1.25rem"><span class="label">Homes for sale</span><h2>Available now &amp; coming soon</h2></div>
+        <p class="lede">Homes in Canton and Calhoun, Georgia. Call 706-514-6637 for pricing, floor plans and private showings.</p>
+      </div>
+      <div class="listings">
+        <article class="listing">
+          <div class="listing-photos">
+            <img class="main" src="images/cypress-121-front.jpg" alt="121 Cypress Court at dusk: two-story end-unit townhome with stone front, shutters and one-car garage" loading="lazy" width="1024" height="681">
+            <img src="images/cypress-121-living.jpg" alt="Living room with stacked stone wood-burning fireplace and new flooring" loading="lazy" width="1024" height="682">
+            <img src="images/cypress-121-dining.jpg" alt="Open dining area and kitchen with new flooring and fresh paint" loading="lazy" width="1024" height="681">
+          </div>
+          <div class="btns listing-links">
+              <a class="btn" href="https://sandra-watkins.remax.com/property/168-7838520-121-cypress-court-canton-GA-30115" target="_blank" rel="noopener">Full listing &amp; photos <svg><use href="#arrow"/></svg></a>
+              <a class="btn line" href="https://www.zillow.com/view-imx/0773669d-fc33-43a4-a982-ef08b79be1ee?initialViewType=pano" target="_blank" rel="noopener">3D walkthrough</a>
+              <a class="btn line" href="#contact" data-topic="121 Cypress Court">Schedule a showing</a>
+            </div>
+          <div class="listing-body">
+            <span class="chip now">For sale</span>
+            <h3>121 Cypress Court</h3>
+            <p class="where">Canton, GA 30115 · Townhome · FMLS #7838520</p>
+            <p class="price">$299,900</p>
+            <dl class="specs">
+              <div><dt>Beds</dt><dd>2 + loft</dd></div>
+              <div><dt>Baths</dt><dd>2</dd></div>
+              <div><dt>Sq ft</dt><dd>1,155</dd></div>
+            </dl>
+            <p class="desc">Freshly updated with new paint inside and out, new carpet upstairs, new main-level flooring and a new range. A large upstairs loft works as an office, media room or third bedroom. Wood-burning fireplace, one-car garage and a level lot near I-575 and the planned Holly Springs Town Center.</p>
+            <p class="offer"><b>Seller offers up to $5,000</b> toward closing costs, prepaids or a rate buy-down with an acceptable offer.</p>
+            <p class="agent">Listed by Sandra Watkins, RE/MAX Town &amp; Country · Call or text Sandra: <a href="tel:+17703243680">770-324-3680</a></p>
+          </div>
+        </article>
+        <article class="listing">
+          <div class="listing-photos">
+            <img class="main" src="images/bobwhite-104-front.jpg" alt="104 Bob White Drive: white board-and-batten craftsman with a covered front porch, stone skirt and two-car garage" loading="lazy" width="1600" height="844">
+            <img src="images/bobwhite-104-aerial.jpg" alt="Aerial view of 104 Bob White Drive on a cul-de-sac lot in the Quail Run neighborhood" loading="lazy" width="1600" height="1067">
+            <img src="images/bobwhite-104-living.jpg" alt="Vaulted family room open to the dining room and white kitchen" loading="lazy" width="1600" height="1067">
+          </div>
+          <div class="btns listing-links">
+              <a class="btn" href="https://sandra-watkins.remax.com/property/168-7530605-104-bob-white-drive-calhoun-GA-30701" target="_blank" rel="noopener">Full listing &amp; photos <svg><use href="#arrow"/></svg></a>
+              <a class="btn line" href="#contact" data-topic="104 Bob White Drive">Schedule a showing</a>
+            </div>
+          <div class="listing-body">
+            <span class="chip now">For sale · New construction</span>
+            <h3>104 Bob White Drive</h3>
+            <p class="where">Calhoun, GA 30701 · Quail Run · FMLS #7530605</p>
+            <p class="price">$519,900</p>
+            <dl class="specs">
+              <div><dt>Beds</dt><dd>4</dd></div>
+              <div><dt>Baths</dt><dd>3.5</dd></div>
+              <div><dt>Sq ft</dt><dd>2,376</dd></div>
+            </dl>
+            <p class="desc">The last new Riverstone home in Quail Run, on a 0.35-acre cul-de-sac lot. Open main level with a vaulted family room, stone fireplace and LVP floors. The owner's suite is on the main with a soaking tub and tiled shower, plus two more bedrooms on the main and a fourth bedroom with its own bath upstairs. Unfinished daylight basement walks out to the backyard. Front porch, covered back deck, two-car garage, and a neighborhood pool and tennis close to downtown Calhoun and I-75.</p>
+            <p class="offer"><b>Lease-purchase and owner financing options</b> are available. Ask us how they work.</p>
+            <p class="agent">Listed by Sandra Watkins, RE/MAX Town &amp; Country · Call or text Sandra: <a href="tel:+17703243680">770-324-3680</a></p>
+          </div>
+        </article>
+        <article class="listing">
+          <div class="soon-visual" role="img" aria-label="Riverstone Commons, renderings coming soon">
+            <svg viewBox="0 0 900 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#contour"/></svg>
+            <span>Coming soon</span>
+            <b>Riverstone Commons</b>
+            <span>Six new townhomes · Canton, GA</span>
+          </div>
+          <div class="listing-body">
+            <span class="chip soon">Coming soon</span>
+            <h3>Riverstone Commons</h3>
+            <p class="where">Canton, GA · New construction townhomes</p>
+            <p class="desc">Six new townhomes from Riverstone Homes. Get on the early list for floor plans, pricing and first choice of homes.</p>
+            <p class="offer"><b>Look out for our 2% rate buydown option</b> to help lower your mortgage payment.</p>
+            <dl class="specs">
+              <div><dt>Townhomes</dt><dd>6</dd></div>
+              <div><dt>Price</dt><dd class="tbd">To come</dd></div>
+              <div><dt>Available</dt><dd class="tbd">To come</dd></div>
+            </dl>
+            <div class="btns">
+              <a class="btn" href="#contact" data-topic="Riverstone Commons townhomes">Join the early list <svg><use href="#arrow"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="work">
+    <div class="wrap">
+      <div class="head split">
+        <div style="display:grid;gap:1.25rem"><span class="label">Our work</span><h2>The details make the home.</h2></div>
+        <p class="lede">Deep cedar porches, stacked stone, board-and-batten siding and bright, practical kitchens. A few recent Riverstone builds.</p>
+      </div>
+      <div class="gallery">
+        <figure class="ga" tabindex="0"><img src="images/exterior-sage-craftsman.jpg" alt="Sage craftsman home with cedar porch and two-car garage" loading="lazy" width="1600" height="1200"><figcaption>Craftsman exterior</figcaption></figure>
+        <figure class="gb" tabindex="0"><img src="images/kitchen-galley.jpg" alt="Kitchen with double-oven range, stainless hood and farmhouse sink" loading="lazy" width="2048" height="1367"><figcaption>Chef's kitchen</figcaption></figure>
+        <figure class="gc" tabindex="0"><img src="images/screened-porch.jpg" alt="Screened back porch with pine ceiling overlooking woods" loading="lazy" width="1599" height="1066"><figcaption>Screened porch</figcaption></figure>
+        <figure class="gd" tabindex="0"><img src="images/aerial-cartersville.jpg" alt="Aerial view of a white craftsman ranch home in Cartersville, Georgia" loading="lazy" width="406" height="720" style="object-position:50% 40%"><figcaption>Cartersville, GA</figcaption></figure>
+        <figure class="ge" tabindex="0"><img src="images/hero-kitchen.jpg" alt="White kitchen with glass pendant lights over the island" loading="lazy" width="2048" height="1365"><figcaption>Open kitchen</figcaption></figure>
+        <figure class="gf" tabindex="0"><img src="images/porch-stairs.jpg" alt="White porch stairs with cedar posts and stacked stone piers" loading="lazy" width="406" height="720"><figcaption>Stone &amp; cedar</figcaption></figure>
+      </div>
+      <a class="home-video" href="videos.html#diff">
+        <span class="hv-media"><img src="images/vid-diff.jpg" alt="Jamey Cagle, president of Riverstone Homes" loading="lazy" width="1280" height="720"><span class="hv-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="hv-txt"><span class="label">Watch</span><span class="hv-title">What makes Riverstone different</span><span class="hv-sub">Jamey Cagle on building in North Georgia since 1997, plus building advice, a new home walkthrough and home tours.</span><span class="text-link">See all videos</span></span>
+      </a>
+      <div class="gallery-foot">
+        <p>Follow along with new builds and progress videos.</p>
+        <div class="socials">
+          <a class="text-link" href="https://www.facebook.com/goriverstone" target="_blank" rel="noopener">Facebook</a>
+          <a class="text-link" href="https://www.instagram.com/riverstone.homes/" target="_blank" rel="noopener">Instagram</a>
+          <a class="text-link" href="https://www.youtube.com/@GoRiverstone" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark" id="process">
+    <svg class="contours" viewBox="0 0 900 600" aria-hidden="true" style="inset:-25% auto auto -15%"><use href="#contour"/></svg>
+    <div class="wrap">
+      <div class="head split">
+        <div style="display:grid;gap:1.25rem"><span class="label">Your land, our expertise</span><h2>Already own a lot? Here's how we build on it.</h2></div>
+        <p class="lede">You choose the design and we take care of the details, so you never have to manage subcontractors or chase permits.</p>
+      </div>
+      <div class="process">
+        <div class="step"><h3>Choose your plan</h3><p>Pick a Frank Betz design or one of our custom plans, then make it yours.</p></div>
+        <div class="step"><h3>Permits &amp; site prep</h3><p>We handle permitting, HOA approval and getting your lot ready to build.</p></div>
+        <div class="step"><h3>Construction</h3><p>Our superintendent runs the job site from foundation to final finish.</p></div>
+        <div class="step"><h3>Walk-through &amp; closing</h3><p>We walk the home with you, finish the punch list and see you through closing.</p></div>
+      </div>
+      <div class="process-foot">
+        <a class="btn" href="#contact" data-topic="Building on my land">Talk about my land <svg><use href="#arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="plans">
+    <div class="wrap plans-wrap">
+      <div class="plans-intro">
+        <span class="label">Floor plans</span>
+        <h2>Bringing Frank Betz plans to life.</h2>
+        <p class="lede">Many of our homes have been featured by Frank Betz Associates as examples of their designs brought to life. We tailor each plan to your land, your lifestyle and your budget.</p>
+        <div><a class="btn line" href="https://frankbetzhouseplans.com/" target="_blank" rel="noopener">Browse Frank Betz plans <svg><use href="#arrow"/></svg></a></div>
+      </div>
+      <div>
+        <p style="color:var(--ink-2);margin-bottom:1.25rem">Fan favorites our families keep choosing</p>
+        <ul class="plan-list">
+          <li><h3>Nesbit Ferry</h3><span class="by">Frank Betz</span></li>
+          <li><h3>Azalea Park</h3><span class="by">Frank Betz</span></li>
+          <li><h3>Waterbury Cottage</h3><span class="by">Frank Betz</span></li>
+          <li><h3>Hemlock Falls</h3><span class="by">Frank Betz</span></li>
+          <li><h3>Walton</h3><span class="by own">Riverstone custom</span></li>
+        </ul>
+        <p style="color:var(--ink-2);margin-top:1.5rem">Found a plan you love? Send us the name and we'll price it on your lot.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tint" id="find-land">
+    <div class="wrap land">
+      <div class="land-media">
+        <div class="frame" aria-hidden="true"></div>
+        <img src="images/new-sod.jpg" alt="Fresh sod on a newly finished home site with tall pines behind" loading="lazy" width="406" height="720">
+      </div>
+      <div class="land-copy">
+        <span class="label">No land yet?</span>
+        <h2>We'll help you find the right place to build.</h2>
+        <p class="lede">You don't need to have it all figured out. We'll help you find the location, then walk you through choosing a plan, customizing the design and starting construction.</p>
+        <ul class="wishes" aria-label="Kinds of places we help buyers find">
+          <li>Private wooded retreat</li>
+          <li>Swim &amp; tennis community</li>
+          <li>Close to town</li>
+        </ul>
+        <div class="partner">
+          <div class="mono" aria-hidden="true">SW</div>
+          <div><b>Sandra Watkins, RE/MAX Town &amp; Country</b><span>Our real estate partner, specializing in lots, communities and new construction</span></div>
+        </div>
+        <div><a class="btn" href="#contact" data-topic="Finding land to build on">Help me find land <svg><use href="#arrow"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="wrap">
+      <div class="head split">
+        <div style="display:grid;gap:1.25rem"><span class="label">About Riverstone</span><h2>Locally owned. Proudly building since 1997.</h2></div>
+        <p class="lede">Our leadership team brings decades of experience to every home, with personal service and quality that lasts.</p>
+      </div>
+      <div class="team">
+        <div class="person"><img class="photo" src="images/team-jamey.jpg" alt="Jamey Cagle, President of Riverstone Homes" loading="lazy" width="800" height="1000"><span class="role">President</span><h3>Jamey Cagle</h3><p class="yrs">Building since 1989</p><p>Jamey has been building in North Georgia since he was a high school kid in Canton, and he founded Riverstone Homes in 1997. More than 30 years later, he's still on site, still picks up the phone, and still treats every home like it has his name on it.</p></div>
+        <div class="person"><img class="photo" src="images/team-john.jpg" alt="John O'Donnell, Project Manager at Riverstone Homes" loading="lazy" width="800" height="1000"><span class="role">Project Manager</span><h3>John O'Donnell</h3><p class="yrs">30+ years on site</p><p>Runs every job site with decades of hands-on construction experience.</p></div>
+        <div class="person"><img class="photo" src="images/team-sandra.jpg" alt="Sandra Watkins, New Home Sales, RE/MAX Town &amp; Country" loading="lazy" width="800" height="1000"><span class="role">New Home Sales</span><h3>Sandra Watkins</h3><p class="yrs">28 years in new construction</p><p>Guides buyers through choosing land, plans and finishes, all the way to closing.</p></div>
+      </div>
+      <div style="margin-top:2.5rem"><a class="btn line" href="team.html">Meet the whole team <svg><use href="#arrow"/></svg></a></div>
+    </div>
+  </section>
+
+  <section class="sec" id="blog" hidden>
+    <div class="wrap">
+      <div class="head split">
+        <div style="display:grid;gap:1.25rem"><span class="label">From the blog</span><h2>Notes from the job site.</h2></div>
+        <p class="lede">Building tips, North Georgia new construction news and market updates. New posts every Monday and Thursday.</p>
+      </div>
+      <div class="blog-row" id="blog-row"></div>
+      <div class="blog-foot"><a class="text-link" href="blog.html">All posts <svg width="16" height="16"><use href="#arrow"/></svg></a></div>
+    </div>
+  </section>
+
+  <section class="sec tint" id="faq">
+    <div class="wrap guide-faq">
+      <div>
+        <span class="label">Common questions</span>
+        <h2 style="margin-top:1.25rem">FAQ</h2>
+        <div class="acc">
+          <details><summary>Can you build on land I already own?</summary><div class="inner">Yes. We build custom homes on our clients' lots and handle permits, planning and construction from start to finish.</div></details>
+          <details><summary>I don't have land yet. Where do I start?</summary><div class="inner">Start with us. We partner with Sandra Watkins of RE/MAX Town &amp; Country, who specializes in lots, communities and new construction, to help you find the right place first.</div></details>
+          <details><summary>Do you build Frank Betz plans?</summary><div class="inner">Yes, it's a specialty. Several of our homes have been featured by Frank Betz Associates, and we can adjust a plan to fit your lot and the way you live.</div></details>
+          <details><summary>Can I make changes to a plan?</summary><div class="inner">Yes. We regularly customize layouts, finishes and outdoor spaces. We'll talk through what's possible at your first appointment.</div></details>
+          <details><summary>Where do you build?</summary><div class="inner">Throughout North Metro Atlanta and North Georgia. If you're unsure whether your lot is in our area, give us a call.</div></details>
+        </div>
+      </div>
+      <div>
+        <span class="label">Planning guide</span>
+        <h2 style="margin-top:1.25rem">Building checklist</h2>
+        <p style="color:var(--ink-2);margin:-0.75rem 0 1.25rem">Print it, check it off, and bring it to your first meeting. <a class="text-link" href="riverstone-building-checklist.pdf" target="_blank" rel="noopener">Download the checklist (PDF) <svg width="16" height="16"><use href="#arrow"/></svg></a></p>
+        <div class="acc">
+          <details><summary>Land</summary><div class="inner"><ul><li>Choose location, schools and commute</li><li>Check utilities: water, sewer, power, internet</li><li>Review lot slope, soil and drainage</li><li>Understand HOA or zoning rules</li></ul></div></details>
+          <details><summary>Builder</summary><div class="inner"><ul><li>Research reputation and past work</li><li>Verify license, insurance and warranties</li><li>Ask for references and reviews</li><li>Clarify pricing and communication</li></ul></div></details>
+          <details><summary>Plan</summary><div class="inner"><ul><li>Pick a floor plan for your lifestyle</li><li>Think about future needs and resale</li><li>Plan storage and outdoor spaces</li><li>Customize details where needed</li></ul></div></details>
+          <details><summary>Budget &amp; financing</summary><div class="inner"><ul><li>Get pre-approved for financing</li><li>Plan site costs: grading, septic, driveway</li><li>Include upgrades and contingencies</li></ul></div></details>
+          <details><summary>Permits &amp; prep</summary><div class="inner"><ul><li>Confirm zoning, permits and HOA approval</li><li>Soil or environmental tests if needed</li><li>Know your construction timeline</li></ul></div></details>
+          <details><summary>Build &amp; move-in</summary><div class="inner"><ul><li>Stay in touch with your builder</li><li>Track change orders and milestones</li><li>Final walk-through and punch list</li><li>Review warranties before move-in</li></ul></div></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark" id="contact">
+    <svg class="contours" viewBox="0 0 900 600" aria-hidden="true"><use href="#contour"/></svg>
+    <div class="wrap contact">
+      <div class="contact-copy">
+        <span class="label">Free build consultation</span>
+        <h2>Let's plan your <em>home</em>.</h2>
+        <p class="lede">Tell us about your land, the plan you like, and your timeline. We'll set up a time to talk it through.</p>
+        <dl class="reach">
+          <div><dt>Call</dt><dd><a href="tel:+17065146637">706-514-6637</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:info@goriverstone.com">info@goriverstone.com</a></dd></div>
+        </dl>
+      </div>
+      <form class="inquiry" id="inquiry" name="contact" method="POST" data-netlify="true" netlify-honeypot="company-website">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hp"><label for="company-website">Leave this empty</label><input id="company-website" name="company-website" tabindex="-1" autocomplete="off"></p>
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field full"><label for="f-topic">I'm interested in</label>
+          <select id="f-topic" name="topic">
+            <option>Building on my land</option>
+            <option>Finding land to build on</option>
+            <option>121 Cypress Court</option>
+            <option>104 Bob White Drive</option>
+            <option>Riverstone Commons townhomes</option>
+            <option>A Frank Betz or custom plan</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Where's your lot, which plan do you like, and when would you like to start?"></textarea></div>
+        <div class="field full"><button class="btn" type="submit">Send message <svg><use href="#arrow"/></svg></button></div>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="images/logo.png" alt="Riverstone Homes" width="799" height="238">
+        <p>Custom homes in North Metro Atlanta, locally owned and building since 1997.</p>
+      </div>
+      <div><h4>Homes</h4><ul><li><a href="#homes">Homes for sale</a></li><li><a href="#plans">Floor plans</a></li><li><a href="#work">Our work</a></li><li><a href="team.html">Meet the team</a></li></ul></div>
+      <div><h4>Build</h4><ul><li><a href="#process">Build on your land</a></li><li><a href="#find-land">Find land</a></li><li><a href="#faq">FAQ &amp; checklist</a></li><li><a href="riverstone-building-checklist.pdf" target="_blank" rel="noopener">Building checklist (PDF)</a></li><li><a href="blog.html">Blog</a></li><li><a href="videos.html">Videos</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+17065146637">706-514-6637</a></li><li><a href="mailto:info@goriverstone.com">info@goriverstone.com</a></li><li><a href="https://www.facebook.com/goriverstone" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/riverstone.homes/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.youtube.com/@GoRiverstone" target="_blank" rel="noopener">YouTube</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© <span id="year">2026</span> Riverstone Homes, Inc.</span><span>North Metro Atlanta, Georgia</span></div>
+  </div>
+</footer>
+
+<script>
+  const header = document.getElementById("header");
+  const menuBtn = document.getElementById("menu-btn");
+  const nav = document.getElementById("nav");
+  const setSolid = () => header.classList.toggle("solid", window.scrollY > 40);
+  setSolid();
+  window.addEventListener("scroll", setSolid, { passive: true });
+
+  menuBtn.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open);
+    menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  });
+  nav.addEventListener("click", e => { if (e.target.closest("a")) { nav.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); } });
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Buttons tied to a property or service preselect it in the contact form
+  document.querySelectorAll("a[data-topic]").forEach(a => a.addEventListener("click", () => {
+    document.getElementById("f-topic").value = a.dataset.topic;
+  }));
+
+  // Latest three published blog posts
+  (() => {
+    const esc = t => String(t ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    const fmt = iso => new Date(iso + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+    fetch("posts.json", { cache: "no-store" }).then(r => r.ok ? r.json() : { posts: [] }).then(d => {
+      const list = (d.posts || []).filter(p => p.status === "published").sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
+      if (!list.length) return;
+      document.getElementById("blog-row").innerHTML = list.map(p => `
+        <a class="blog-card" href="blog.html#${esc(p.slug)}">
+          <div class="ph"><img src="${esc(p.photo)}" alt="${esc(p.photoAlt)}" loading="lazy" width="1600" height="1067"></div>
+          <div class="txt"><span class="meta">${esc(p.category)} · ${fmt(p.date)}</span><h3>${esc(p.title)}</h3><p>${esc(p.excerpt)}</p></div>
+        </a>`).join("");
+      document.getElementById("blog").hidden = false;
+    }).catch(() => {});
+  })();
+
+  // Submits to Netlify Forms when live; in a preview there is nowhere to send it.
+  const form = document.getElementById("inquiry");
+  const status = document.getElementById("form-status");
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    status.textContent = "Sending…";
+    try {
+      const res = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(form)).toString()
+      });
+      if (!res.ok) throw new Error(res.status);
+      form.reset();
+      status.textContent = "Thank you. We received your message and will be in touch soon.";
+    } catch {
+      status.textContent = "This is a preview, so the form isn't connected yet. Please call 706-514-6637 or email info@goriverstone.com.";
+    }
+  });
+</script>
+
+</body></html>

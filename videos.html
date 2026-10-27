@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Riverstone Homes Videos</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Watch Riverstone Homes videos: custom home building advice from Jamey Cagle, a new home walkthrough with our project manager, and tours of new homes and homesites in North Georgia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<style>
+:root {
+  --page: #f4f3ef; --page-2: #eae8e2; --card: #ffffff; --ink: #18211e; --ink-2: #505a55; --line: #d9d7cf;
+  --forest: #1b2823; --forest-2: #24342d; --brass: #9c7a45; --brass-hi: #c5a46f;
+  --on-dark: #f2f0ea; --on-dark-2: rgba(242,240,234,.72); --on-dark-line: rgba(242,240,234,.16);
+  --notice: #fbf3e2; --notice-ink: #6b4e1e;
+  --f-display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --f-body: "Hanken Grotesk", "Helvetica Neue", system-ui, sans-serif;
+  --gl: max(20px, env(safe-area-inset-left, 0px)); --gr: max(20px, env(safe-area-inset-right, 0px));
+  --ease: cubic-bezier(.2,.7,.2,1);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: #111714; --page-2: #18201c; --card: #1c2420; --ink: #ecebe6; --ink-2: #a9b2ac; --line: #2c3631;
+    --forest: #0b100e; --forest-2: #141c18; --brass: #c9a66c; --brass-hi: #dcbd88; --notice: #2a2416; --notice-ink: #e6cf9f;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page: #111714; --page-2: #18201c; --card: #1c2420; --ink: #ecebe6; --ink-2: #a9b2ac; --line: #2c3631;
+  --forest: #0b100e; --forest-2: #141c18; --brass: #c9a66c; --brass-hi: #dcbd88; --notice: #2a2416; --notice-ink: #e6cf9f;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { background: var(--page); color: var(--ink); font: 400 1.0625rem/1.7 var(--f-body); -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--forest); }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 400; line-height: 1.1; letter-spacing: -0.015em; text-wrap: balance; margin: 0; }
+:focus-visible { outline: 2px solid var(--brass); outline-offset: 4px; }
+.wrap { max-width: 1240px; margin-inline: auto; padding-left: var(--gl); padding-right: var(--gr); }
+.narrow { max-width: calc(720px + 40px); }
+.label { display: inline-flex; align-items: center; gap: .75rem; font: 600 .75rem/1 var(--f-body); letter-spacing: .22em; text-transform: uppercase; color: var(--brass); }
+.label::before { content: ""; width: 28px; height: 1px; background: currentColor; }
+
+/* Header */
+.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--forest); color: var(--on-dark); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 72px; }
+.brand img { height: 34px; width: auto; filter: invert(1); }
+.head-links { display: flex; gap: 1.5rem; align-items: center; }
+.head-links a { text-decoration: none; font: 500 .9rem/1 var(--f-body); letter-spacing: .04em; }
+.head-links .cta { border: 1px solid currentColor; padding: .7rem 1rem; font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.head-links .cta:hover { background: var(--brass-hi); border-color: var(--brass-hi); color: #18211e; }
+@media (max-width: 520px) { .head-links .home { display: none; } }
+/* CTA band */
+.cta-band { background: var(--forest); color: var(--on-dark); }
+.cta-band .wrap { padding-block: clamp(3rem, 7vw, 4.5rem); display: flex; flex-wrap: wrap; gap: 1.5rem 3rem; align-items: center; justify-content: space-between; }
+.cta-band h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); max-width: 22ch; }
+.cta-band p { color: var(--on-dark-2); margin: .6rem 0 0; }
+.btn { display: inline-flex; align-items: center; gap: .8rem; padding: 1rem 1.5rem; font: 600 .85rem/1 var(--f-body); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; background: var(--on-dark); color: #18211e; border: 1px solid var(--on-dark); }
+.btn:hover { background: var(--brass-hi); border-color: var(--brass-hi); }
+.back { display: inline-flex; gap: .5rem; align-items: center; font: 600 .78rem/1 var(--f-body); letter-spacing: .14em; text-transform: uppercase; text-decoration: none; color: var(--brass); }
+.back:hover { color: var(--ink); }
+.site-footer { background: var(--forest); color: var(--on-dark-2); border-top: 1px solid var(--on-dark-line); }
+.site-footer .wrap { padding-block: 1.75rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem; font-size: .88rem; }
+.site-footer a { color: var(--on-dark); text-decoration: none; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
+
+
+/* Videos page */
+.site-header .head-links .on { color: var(--brass-hi); }
+.v-head { padding-block: clamp(3.5rem, 8vw, 6rem) clamp(2rem, 4vw, 3rem); }
+.v-head .wrap { display: grid; gap: 1.25rem; }
+.v-head h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
+.v-head p { color: var(--ink-2); max-width: 60ch; font-size: 1.15rem; margin: 0; }
+.jump { display: flex; flex-wrap: wrap; gap: .5rem; padding-top: .5rem; }
+.jump a { text-decoration: none; font: 600 .72rem/1 var(--f-body); letter-spacing: .14em; text-transform: uppercase; padding: .7rem .9rem; border: 1px solid var(--line); color: var(--ink-2); }
+.jump a:hover { border-color: var(--brass); color: var(--brass); }
+.feature { padding-bottom: clamp(2.5rem, 6vw, 4rem); border-bottom: 1px solid var(--line); }
+.vsec { padding-block: clamp(2.5rem, 6vw, 4rem); border-bottom: 1px solid var(--line); scroll-margin-top: 80px; }
+.vsec-head { display: grid; gap: .8rem; margin-bottom: clamp(1.5rem, 4vw, 2.25rem); }
+.vsec-head p { margin: 0; color: var(--ink-2); max-width: 60ch; }
+.vgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: clamp(1.75rem, 4vw, 2.5rem); }
+.vgrid.one { grid-template-columns: 1fr; }
+.vcard { display: grid; gap: 1rem; align-content: start; min-width: 0; scroll-margin-top: 90px; }
+.vcard.big { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+@media (max-width: 860px) { .vcard.big { grid-template-columns: 1fr; } }
+.vmedia { position: relative; display: block; width: 100%; padding: 0; border: 0; background: var(--page-2); cursor: pointer; overflow: hidden; aspect-ratio: 16 / 9; }
+.vmedia img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); }
+.vmedia:not([disabled]):hover img { transform: scale(1.03); }
+.vmedia[disabled] { cursor: default; }
+.vmedia iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.play { position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: 68px; height: 68px; border-radius: 50%; background: rgba(27,40,35,.82); display: grid; place-items: center; transition: background .3s var(--ease), scale .3s var(--ease); }
+.play svg { width: 28px; height: 28px; fill: #f2f0ea; margin-left: 3px; }
+.vmedia:not([disabled]):hover .play { background: var(--brass); scale: 1.06; }
+.vcard.is-soon .play { opacity: .55; }
+.badge-soon { position: absolute; left: 12px; top: 12px; background: var(--forest); color: var(--brass-hi); font: 600 .68rem/1 var(--f-body); letter-spacing: .16em; text-transform: uppercase; padding: .55rem .7rem; }
+.len { position: absolute; right: 10px; bottom: 10px; background: rgba(0,0,0,.72); color: #fff; font: 600 .78rem/1 var(--f-body); padding: .35rem .5rem; font-variant-numeric: tabular-nums; }
+.vtxt { display: grid; gap: .6rem; }
+.vtxt h3 { font-size: clamp(1.35rem, 2.2vw, 1.7rem); }
+.vcard.big .vtxt h3, .feature .vtxt h3 { font-size: clamp(1.7rem, 3vw, 2.3rem); }
+.vtxt p { margin: 0; color: var(--ink-2); max-width: 62ch; }
+.chapters { padding-top: .6rem; }
+.chapters h4 { margin: 0 0 .5rem; font: 600 .72rem/1 var(--f-body); letter-spacing: .2em; text-transform: uppercase; color: var(--ink-2); }
+.chapters ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.chap { width: 100%; display: flex; gap: 1rem; padding: .7rem 0; background: none; border: 0; border-bottom: 1px solid var(--line); color: var(--ink); font: 400 .98rem/1.3 var(--f-body); text-align: left; cursor: pointer; }
+.chap span { color: var(--brass); font-weight: 600; font-variant-numeric: tabular-nums; min-width: 3.2em; }
+.chap:not([disabled]):hover { color: var(--brass); }
+.chap[disabled] { cursor: default; }
+.shorts { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(46%, 200px), 1fr)); gap: 1.25rem; }
+.shorts li { display: grid; gap: .6rem; min-width: 0; }
+.shorts p { margin: 0; font-size: .95rem; }
+.vmedia.short { aspect-ratio: 9 / 16; }
+.empty-note { margin: 0; color: var(--ink-2); max-width: 60ch; }
+.empty-note a { color: var(--brass); }
+.yt-follow { display: inline-flex; gap: .6rem; align-items: center; color: var(--brass); font: 600 .78rem/1 var(--f-body); letter-spacing: .14em; text-transform: uppercase; text-decoration: none; }
+.yt-follow:hover { color: var(--ink); }
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "VideoObject", "name": "What Makes Riverstone Homes Different", "description": "Jamey Cagle, president of Riverstone Homes, explains what sets a locally owned builder apart: a builder who answers the phone, a team that has been building in North Georgia since 1997, and homes built like they have our name on them, because they do.", "thumbnailUrl": "https://i.ytimg.com/vi/VPyLwwQSI2U/hqdefault.jpg", "uploadDate": "2026-10-26", "duration": "PT2M22S", "embedUrl": "https://www.youtube.com/embed/VPyLwwQSI2U", "contentUrl": "https://www.youtube.com/watch?v=VPyLwwQSI2U", "publisher": {"@type": "Organization", "name": "Riverstone Homes"}}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Riverstone Homes home"><img src="images/logo.png" alt="Riverstone Homes" width="799" height="238"></a>
+    <nav class="head-links" aria-label="Videos">
+      <a class="home" href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a class="on" href="videos.html" aria-current="page">Videos</a>
+      <a class="cta" href="index.html#contact">Start Your Build</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="v-head"><div class="wrap">
+    <span class="label">Riverstone on video</span>
+    <h1>Watch how we build</h1>
+    <p>Straight talk from our president Jamey Cagle, a room-by-room walkthrough with project manager John O'Donnell, and a look at recent Riverstone homes and homesites across North Georgia.</p>
+    <nav class="jump" aria-label="Video sections"><a href="#team">Meet the team</a><a href="#advice">Building advice from Jamey</a><a href="#walkthrough">New home walkthrough</a><a href="#homes">Homes, land and builds</a><a href="#shorts">Quick tips</a></nav>
+  </div></section>
+
+  <section class="feature"><div class="wrap"><article class="vcard big is-live" id="diff"><button class="vmedia" data-yt="VPyLwwQSI2U" aria-label="Play: What Makes Riverstone Homes Different"><img src="images/vid-diff.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="len">2:22</span></button><div class="vtxt"><h3>What Makes Riverstone Homes Different</h3><p>Jamey Cagle, president of Riverstone Homes, explains what sets a locally owned builder apart: a builder who answers the phone, a team that has been building in North Georgia since 1997, and homes built like they have our name on them, because they do.</p></div></article></div></section>
+  <section class="vsec" id="team"><div class="wrap"><div class="vsec-head"><span class="label">Meet the team</span><p>The people who will know your name, your lot and your plan.</p></div><div class="vgrid "><article class="vcard  is-soon" id="story"><button class="vmedia" data-yt="" aria-label="Play: How Jamey Cagle Got Into Building" disabled><img src="images/vid-story.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="badge-soon">Coming soon</span><span class="len">1:36</span></button><div class="vtxt"><h3>How Jamey Cagle Got Into Building</h3><p>Jamey started building while he was still in high school in Canton. Hear how that first job turned into more than 30 years of building and developing homes across North Georgia.</p></div></article><article class="vcard  is-soon" id="john"><button class="vmedia" data-yt="" aria-label="Play: Meet John O&#x27;Donnell, Project Manager" disabled><img src="images/vid-john.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="badge-soon">Coming soon</span><span class="len">3:13</span></button><div class="vtxt"><h3>Meet John O&#x27;Donnell, Project Manager</h3><p>John runs every Riverstone job site. He brings more than 30 years of hands-on construction experience and is the person you will see on site from the foundation to the final walkthrough.</p></div></article></div></div></section><section class="vsec" id="advice"><div class="wrap"><div class="vsec-head"><span class="label">Building advice from Jamey</span><p>Straight answers to the questions we hear most from people planning a custom home.</p></div><div class="vgrid "><article class="vcard  is-soon" id="time"><button class="vmedia" data-yt="" aria-label="Play: How Long Does It Take to Build a Custom Home?" disabled><img src="images/vid-time.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="badge-soon">Coming soon</span><span class="len">1:36</span></button><div class="vtxt"><h3>How Long Does It Take to Build a Custom Home?</h3><p>Jamey walks through a realistic custom home timeline in North Georgia, from permits and site work to framing, finishes and move-in day, and what can slow a build down.</p></div></article><article class="vcard  is-soon" id="mistakes"><button class="vmedia" data-yt="" aria-label="Play: Custom Home Mistakes to Avoid" disabled><img src="images/vid-mistakes.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="badge-soon">Coming soon</span><span class="len">1:53</span></button><div class="vtxt"><h3>Custom Home Mistakes to Avoid</h3><p>A builder&#x27;s honest advice on the most common, and most expensive, mistakes people make when building a custom home, and how to get it right the first time.</p></div></article><article class="vcard  is-soon" id="garage"><button class="vmedia" data-yt="" aria-label="Play: Garages and Basements: What to Know Before You Build" disabled><img src="images/vid-garage.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="badge-soon">Coming soon</span><span class="len">0:57</span></button><div class="vtxt"><h3>Garages and Basements: What to Know Before You Build</h3><p>Garage, basement or both? Jamey covers what to think about before you decide, especially on sloped North Georgia lots.</p></div></article><article class="vcard  is-soon" id="clear"><button class="vmedia" data-yt="" aria-label="Play: Land Clearing and House Placement" disabled><img src="images/vid-clear.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="badge-soon">Coming soon</span><span class="len">1:29</span></button><div class="vtxt"><h3>Land Clearing and House Placement</h3><p>Before a single tree comes down, where your house sits on the lot matters. Learn how to plan land clearing and house placement the smart way.</p></div></article><article class="vcard  is-soon" id="crash"><button class="vmedia" data-yt="" aria-label="Play: What the 2007 Housing Crash Taught a North Georgia Builder" disabled><img src="images/vid-crash.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="badge-soon">Coming soon</span><span class="len">1:09</span></button><div class="vtxt"><h3>What the 2007 Housing Crash Taught a North Georgia Builder</h3><p>Riverstone has built through good markets and hard ones. Jamey shares what the 2007 crash taught him about building homes, and a business, that last.</p></div></article></div></div></section><section class="vsec" id="walkthrough"><div class="wrap"><div class="vsec-head"><span class="label">New home walkthrough</span><p>What really happens before a family gets the keys.</p></div><div class="vgrid one"><article class="vcard big is-soon" id="walkthrough"><button class="vmedia" data-yt="" aria-label="Play: New Home Walkthrough With Our Project Manager" disabled><img src="images/vid-walkthrough.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="badge-soon">Coming soon</span><span class="len">8:35</span></button><div class="vtxt"><h3>New Home Walkthrough With Our Project Manager</h3><p>Join John O&#x27;Donnell as he walks a new Riverstone home room by room and shows what he checks before a family moves in, from the kitchen and windows to the water heater, HVAC system and electrical panel.</p><div class="chapters"><h4>Chapters</h4><ol><li><button class="chap" data-t="0" disabled><span>0:00</span>Kitchen</button></li><li><button class="chap" data-t="85" disabled><span>1:25</span>Windows</button></li><li><button class="chap" data-t="136" disabled><span>2:16</span>Fireplace</button></li><li><button class="chap" data-t="198" disabled><span>3:18</span>Doors and front entry</button></li><li><button class="chap" data-t="260" disabled><span>4:20</span>Water heater</button></li><li><button class="chap" data-t="311" disabled><span>5:11</span>HVAC system</button></li><li><button class="chap" data-t="370" disabled><span>6:10</span>Basement</button></li><li><button class="chap" data-t="415" disabled><span>6:55</span>Electrical panel</button></li></ol></div></div></article></div></div></section><section class="vsec" id="homes"><div class="wrap"><div class="vsec-head"><span class="label">Homes, land and builds</span><p>Recent Riverstone homes, homesites and builds.</p></div><div class="vgrid "><article class="vcard  is-soon" id="model"><button class="vmedia" data-yt="" aria-label="Play: Tour a New Riverstone Home in Calhoun, GA" disabled><img src="images/vid-model.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="badge-soon">Coming soon</span><span class="len">0:59</span></button><div class="vtxt"><h3>Tour a New Riverstone Home in Calhoun, GA</h3><p>Take a walk through a new Riverstone home in Calhoun, inside and out: board and batten, a big front porch and a bright, open kitchen.</p></div></article><article class="vcard  is-soon" id="calhoun"><button class="vmedia" data-yt="" aria-label="Play: Build on a Lot in Calhoun, GA" disabled><img src="images/vid-calhoun.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="badge-soon">Coming soon</span><span class="len">0:39</span></button><div class="vtxt"><h3>Build on a Lot in Calhoun, GA</h3><p>Jamey walks a homesite in Calhoun with room to spread out, close to everything you need.</p></div></article><article class="vcard  is-soon" id="barn"><button class="vmedia" data-yt="" aria-label="Play: Barndominium Build in North Georgia" disabled><img src="images/vid-barn.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="badge-soon">Coming soon</span><span class="len">1:44</span></button><div class="vtxt"><h3>Barndominium Build in North Georgia</h3><p>Thinking about a barndominium? See what is possible in this Riverstone barndominium, from the open living space to the loft.</p></div></article></div></div></section>
+  <section class="vsec" id="shorts"><div class="wrap">
+    <div class="vsec-head"><span class="label">Quick tips</span><p>Short videos from the job site and the office, a minute or less.</p></div>
+    <p class="empty-note">Quick tips from the job site are on the way. <a href="https://www.youtube.com/@GoRiverstone?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a> to see them first.</p>
+    <p style="margin-top:1.75rem"><a class="yt-follow" href="https://www.youtube.com/@GoRiverstone" target="_blank" rel="noopener">See everything on our YouTube channel &rarr;</a></p>
+  </div></section>
+</main>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div><h2>Ready to start your build?</h2><p>Call 706-514-6637 or email info@goriverstone.com</p></div>
+    <a class="btn" href="index.html#contact">Start your build</a>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap"><span>© <span id="year">2026</span> Riverstone Homes, Inc. · North Metro Atlanta, Georgia</span><a href="index.html">goriverstone.com</a></div>
+</footer>
+
+<script>
+(function () {
+  function play(btn, start) {
+    var id = btn.getAttribute('data-yt'); if (!id) return;
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1' + (start ? '&start=' + start : '');
+    f.title = btn.getAttribute('aria-label') || 'Riverstone Homes video';
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    f.allowFullscreen = true;
+    var wrap = document.createElement('div'); wrap.className = btn.className; wrap.appendChild(f);
+    btn.replaceWith(wrap);
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('button.vmedia');
+    if (b) { play(b); return; }
+    var c = e.target.closest('button.chap');
+    if (c) {
+      var card = c.closest('.vcard'); var media = card.querySelector('.vmedia');
+      var id = media.getAttribute('data-yt') || (media.querySelector('iframe') && media.querySelector('iframe').src.split('/embed/')[1].split('?')[0]);
+      var t = c.getAttribute('data-t');
+      if (media.tagName === 'BUTTON') play(media, t);
+      else { var f = media.querySelector('iframe'); f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&start=' + t; }
+      media = card.querySelector('.vmedia'); media.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+  var y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
