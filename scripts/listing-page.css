@@ -92,3 +92,15 @@ main { padding-block: 1.75rem 4rem; }
 .site-footer { background: var(--forest); color: var(--on-dark-2); border-top: 1px solid var(--on-dark-line); }
 .site-footer .wrap { padding-block: 1.5rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem; font-size: .88rem; }
 .site-footer a { color: var(--on-dark); text-decoration: none; }
+
+/* Share */
+.share { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.share > span { font: 600 .72rem/1 var(--f-body); letter-spacing: .2em; text-transform: uppercase; color: var(--ink-2); margin-right: .3rem; }
+.share a, .share button { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; padding: 0; text-decoration: none; transition: background .25s, color .25s, border-color .25s, transform .25s; }
+.share svg { width: 19px; height: 19px; }
+.share a:hover, .share button:hover, .share a:focus-visible, .share button:focus-visible { background: var(--brass); border-color: var(--brass); color: #fff; transform: translateY(-2px); }
+.share .native { width: auto; border-radius: 999px; padding: 0 1rem; gap: .5rem; display: inline-flex; align-items: center; font: 600 .78rem/1 var(--f-body); letter-spacing: .1em; text-transform: uppercase; }
+.share .copied { font-size: .85rem; color: var(--brass); }
+.share-end { border-top: 1px solid var(--line); padding-block: 1.75rem; }
+.share-end > span { color: var(--ink); }
+.facts .share { padding-top: .5rem; }

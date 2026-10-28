@@ -1,7 +1,25 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.svc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.svc { background: var(--page); padding: clamp(1.5rem, 3vw, 2.25rem); display: grid; gap: .85rem; align-content: start; transition: background .3s var(--ease); }
+.svc:hover { background: var(--card); }
+.svc-ic { width: 56px; height: 56px; color: var(--brass); display: block; }
+.svc-ic svg { width: 100%; height: 100%; }
+.svc h3 { font-size: clamp(1.4rem, 2.2vw, 1.75rem); }
+.svc p { margin: 0; color: var(--ink-2); }
+.svc .text-link { justify-self: start; margin-top: .35rem; }
+.svc.wide { grid-column: 1 / -1; grid-template-columns: 56px minmax(0, 1fr) auto; align-items: center; gap: 1.25rem 2rem; background: var(--card); }
+.svc.wide .svc-txt { display: grid; gap: .5rem; }
+.svc.wide p { max-width: 70ch; }
+@media (max-width: 760px) { .svc.wide { grid-template-columns: 1fr; } .svc.wide .btn { justify-self: start; } }
+.svc-foot { margin-top: 1.75rem; color: var(--ink-2); }
+.svc-foot p { margin: 0; }
+@media (max-width: 900px) { .svc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .svc-grid { grid-template-columns: 1fr; } }
+.inline-link { color: var(--brass); text-decoration: underline; text-underline-offset: 3px; }
+.inline-link:hover { color: var(--ink); }
+</style></head><body>
 <title>Riverstone Homes</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Riverstone Homes builds custom homes in North Metro Atlanta on your land or ours. Frank Betz plans, custom plans, permits to closing. Locally owned since 1997.">
+<meta name="description" content="Riverstone Homes builds custom homes in North Metro Atlanta on your land or ours: new homes, custom homes, barndominiums, room additions and basement finishes. Locally owned since 1997.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap">
@@ -448,7 +466,7 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
     <nav class="nav" id="nav" aria-label="Main">
       <a href="#homes">Homes for Sale</a>
       <a href="#process">Build on Your Land</a>
-      <a href="#plans">Floor Plans</a>
+      <a href="#services">What We Build</a>
       <a href="#work">Our Work</a>
       <a href="#about">About</a>
       <a href="blog.html">Blog</a>
@@ -467,7 +485,7 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
       <div class="hero-copy">
         <span class="label">Custom homes · North Metro Atlanta</span>
         <h1>Build your <em>future</em>.</h1>
-        <p class="sub">Craftsman-quality homes on your land or ours, from Frank Betz designs to plans of our own. Locally owned since 1997.</p>
+        <p class="sub">Craftsman-quality new homes, custom builds, barndominiums and additions, on your land or ours. Locally owned since 1997.</p>
         <div class="btns">
           <a class="btn" href="#contact">Start your build <svg><use href="#arrow"/></svg></a>
           <a class="btn line" href="#homes">Homes for sale</a>
@@ -480,8 +498,8 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
       </div>
       <div class="hero-stats">
         <div><b>1997</b><span>Locally owned &amp; building</span></div>
-        <div><b>35+ yrs</b><span>Building in North Georgia</span></div>
-        <div><b>Frank Betz</b><span>Featured builds</span></div>
+        <div><b id="yrs-since">29 yrs</b><span>Building in North Georgia</span></div>
+        <div><b>New to remodel</b><span>Homes, barndos &amp; additions</span></div>
         <div><b>Permits to closing</b><span>One team, start to finish</span></div>
       </div>
     </div>
@@ -607,7 +625,7 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
         <p class="lede">You choose the design and we take care of the details, so you never have to manage subcontractors or chase permits.</p>
       </div>
       <div class="process">
-        <div class="step"><h3>Choose your plan</h3><p>Pick a Frank Betz design or one of our custom plans, then make it yours.</p></div>
+        <div class="step"><h3>Choose your plan</h3><p>Pick one of our proven floor plans or bring your own, then make it yours.</p></div>
         <div class="step"><h3>Permits &amp; site prep</h3><p>We handle permitting, HOA approval and getting your lot ready to build.</p></div>
         <div class="step"><h3>Construction</h3><p>Our superintendent runs the job site from foundation to final finish.</p></div>
         <div class="step"><h3>Walk-through &amp; closing</h3><p>We walk the home with you, finish the punch list and see you through closing.</p></div>
@@ -618,25 +636,59 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
     </div>
   </section>
 
-  <section class="sec" id="plans">
-    <div class="wrap plans-wrap">
-      <div class="plans-intro">
-        <span class="label">Floor plans</span>
-        <h2>Bringing Frank Betz plans to life.</h2>
-        <p class="lede">Many of our homes have been featured by Frank Betz Associates as examples of their designs brought to life. We tailor each plan to your land, your lifestyle and your budget.</p>
-        <div><a class="btn line" href="https://frankbetzhouseplans.com/" target="_blank" rel="noopener">Browse Frank Betz plans <svg><use href="#arrow"/></svg></a></div>
+  <section class="sec" id="services">
+    <div class="wrap">
+      <div class="head split">
+        <div style="display:grid;gap:1.25rem"><span class="label">What we build</span><h2>From the ground up, or room by room.</h2></div>
+        <p class="lede">New homes are where we started, but they're not all we do. Whatever you're dreaming up for your home or your land, one local team builds it with the same care.</p>
       </div>
-      <div>
-        <p style="color:var(--ink-2);margin-bottom:1.25rem">Fan favorites our families keep choosing</p>
-        <ul class="plan-list">
-          <li><h3>Nesbit Ferry</h3><span class="by">Frank Betz</span></li>
-          <li><h3>Azalea Park</h3><span class="by">Frank Betz</span></li>
-          <li><h3>Waterbury Cottage</h3><span class="by">Frank Betz</span></li>
-          <li><h3>Hemlock Falls</h3><span class="by">Frank Betz</span></li>
-          <li><h3>Walton</h3><span class="by own">Riverstone custom</span></li>
-        </ul>
-        <p style="color:var(--ink-2);margin-top:1.5rem">Found a plan you love? Send us the name and we'll price it on your lot.</p>
+      <div class="svc-grid">
+        <article class="svc">
+          <span class="svc-ic"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 22 L24 8 L41 22"/><path d="M11 19 V39 H37 V19"/><path d="M21 39 V29 H27 V39"/></svg></span>
+          <h3>New Homes</h3>
+          <p>Move-in ready Riverstone homes and new builds across North Metro Atlanta and North Georgia, from permits to closing.</p>
+          <a class="text-link" href="#contact" data-topic="Building on my land">Ask about new homes <svg width="16" height="16"><use href="#arrow"/></svg></a>
+        </article>
+        <article class="svc">
+          <span class="svc-ic"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 40 L8 18 L24 7 L40 18 L40 40 Z"/><path d="M16 40 V26 H32 V40"/><path d="M30 12 L36 6 L40 10 L34 16"/></svg></span>
+          <h3>Custom Homes</h3>
+          <p>Your plan, your finishes, your way. Start from one of our proven plans or bring your own, and we'll fit it to your lot.</p>
+          <a class="text-link" href="#contact" data-topic="A custom home or plan">Ask about custom homes <svg width="16" height="16"><use href="#arrow"/></svg></a>
+        </article>
+        <article class="svc">
+          <span class="svc-ic"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22 L14 10 H34 L42 22"/><path d="M8 20 V40 H40 V20"/><path d="M18 40 V28 H30 V40"/><path d="M18 28 L30 40 M30 28 L18 40"/></svg></span>
+          <h3>Barndominiums</h3>
+          <p>Open, barn-style living with room for a shop, horses or equipment. Built tough for North Georgia land.</p>
+          <a class="text-link" href="#contact" data-topic="A barndominium">Ask about barndominiums <svg width="16" height="16"><use href="#arrow"/></svg></a>
+        </article>
+        <article class="svc">
+          <span class="svc-ic"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 24 L17 14 L29 24"/><path d="M8 22 V40 H26 V22"/><path d="M29 40 H43 V27 H29"/><path d="M36 30 V37 M32.5 33.5 H39.5"/></svg></span>
+          <h3>Room Additions</h3>
+          <p>Grow without moving: bedrooms, bonus rooms, sunrooms and in-law suites that blend right in with your home.</p>
+          <a class="text-link" href="#contact" data-topic="A room addition">Ask about room additions <svg width="16" height="16"><use href="#arrow"/></svg></a>
+        </article>
+        <article class="svc">
+          <span class="svc-ic"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20 L24 8 L41 20"/><path d="M10 18 V28 H38 V18"/><path d="M6 28 H42 V41 H6 Z"/><path d="M14 41 V34 H22 V41 M28 34 H36"/></svg></span>
+          <h3>Basement Finishes</h3>
+          <p>Turn your unfinished basement into a media room, guest suite or home gym. It's square footage you already own.</p>
+          <a class="text-link" href="#contact" data-topic="A basement finish">Ask about basement finishes <svg width="16" height="16"><use href="#arrow"/></svg></a>
+        </article>
+        <article class="svc">
+          <span class="svc-ic"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20 L24 9 L42 20"/><path d="M9 18 V40 H39 V18"/><path d="M14 40 V25 H34 V40"/><path d="M14 30 H34 M14 35 H34"/></svg></span>
+          <h3>Garages &amp; Pole Barns</h3>
+          <p>Detached garages, workshops and pole barns for vehicles, tools, hay or storage, built to match your home.</p>
+          <a class="text-link" href="#contact" data-topic="A garage or pole barn">Ask about garages &amp; pole barns <svg width="16" height="16"><use href="#arrow"/></svg></a>
+        </article>
+        <article class="svc wide">
+          <span class="svc-ic"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="9" width="26" height="33" rx="2"/><path d="M19 9 V6 H29 V9"/><path d="M17 19 H31 M17 25 H31 M17 31 H25"/><path d="M28 34 L31 37 L37 30"/></svg></span>
+          <div class="svc-txt">
+            <h3>Building Consultations</h3>
+            <p>Not sure where to start? Sit down with our team to talk through your land, budget, plan ideas and timeline before you commit to anything. You'll get honest advice from a builder who's been doing this since 1997, whether you build with us or not.</p>
+          </div>
+          <a class="btn line" href="#contact" data-topic="A building consultation">Book a consultation <svg><use href="#arrow"/></svg></a>
+        </article>
       </div>
+      <div class="svc-foot"><p>Have a project that isn't listed? Decks, porches, kitchens and more. Call 706-514-6637 or <a class="inline-link" href="#contact" data-topic="Something else">tell us about it</a>.</p></div>
     </div>
   </section>
 
@@ -671,7 +723,7 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
         <p class="lede">Our leadership team brings decades of experience to every home, with personal service and quality that lasts.</p>
       </div>
       <div class="team">
-        <div class="person"><img class="photo" src="images/team-jamey.jpg" alt="Jamey Cagle, President of Riverstone Homes" loading="lazy" width="800" height="1000"><span class="role">President</span><h3>Jamey Cagle</h3><p class="yrs">Building since 1989</p><p>Jamey has been building in North Georgia since he was a high school kid in Canton, and he founded Riverstone Homes in 1997. More than 30 years later, he's still on site, still picks up the phone, and still treats every home like it has his name on it.</p></div>
+        <div class="person"><img class="photo" src="images/team-jamey.jpg" alt="Jamey Cagle, President of Riverstone Homes" loading="lazy" width="800" height="1000"><span class="role">President</span><h3>Jamey Cagle</h3><p class="yrs">Building since 1997</p><p>Jamey got his start building while he was a high school kid in Canton, and he founded Riverstone Homes in 1997. Nearly 30 years later, he's still on site, still picks up the phone, and still treats every home like it has his name on it. Jamey also owns <a class="inline-link" href="https://www.tacklebarnoutdoors.com/" target="_blank" rel="noopener">Tackle Barn Outdoors</a>, the bait and tackle shop in Adairsville, so when he's not on a job site, there's a good chance he's talking fishing.</p></div>
         <div class="person"><img class="photo" src="images/team-john.jpg" alt="John O'Donnell, Project Manager at Riverstone Homes" loading="lazy" width="800" height="1000"><span class="role">Project Manager</span><h3>John O'Donnell</h3><p class="yrs">30+ years on site</p><p>Runs every job site with decades of hands-on construction experience.</p></div>
         <div class="person"><img class="photo" src="images/team-sandra.jpg" alt="Sandra Watkins, New Home Sales, RE/MAX Town &amp; Country" loading="lazy" width="800" height="1000"><span class="role">New Home Sales</span><h3>Sandra Watkins</h3><p class="yrs">28 years in new construction</p><p>Guides buyers through choosing land, plans and finishes, all the way to closing.</p></div>
       </div>
@@ -698,7 +750,7 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
         <div class="acc">
           <details><summary>Can you build on land I already own?</summary><div class="inner">Yes. We build custom homes on our clients' lots and handle permits, planning and construction from start to finish.</div></details>
           <details><summary>I don't have land yet. Where do I start?</summary><div class="inner">Start with us. We partner with Sandra Watkins of RE/MAX Town &amp; Country, who specializes in lots, communities and new construction, to help you find the right place first.</div></details>
-          <details><summary>Do you build Frank Betz plans?</summary><div class="inner">Yes, it's a specialty. Several of our homes have been featured by Frank Betz Associates, and we can adjust a plan to fit your lot and the way you live.</div></details>
+          <details><summary>Do you only build new homes?</summary><div class="inner">No. Along with new and custom homes, we build barndominiums, room additions, basement finishes, garages and pole barns. Not sure where to start? Book a building consultation.</div></details>
           <details><summary>Can I make changes to a plan?</summary><div class="inner">Yes. We regularly customize layouts, finishes and outdoor spaces. We'll talk through what's possible at your first appointment.</div></details>
           <details><summary>Where do you build?</summary><div class="inner">Throughout North Metro Atlanta and North Georgia. If you're unsure whether your lot is in our area, give us a call.</div></details>
         </div>
@@ -744,7 +796,12 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
             <option>121 Cypress Court</option>
             <option>104 Bob White Drive</option>
             <option>Riverstone Commons townhomes</option>
-            <option>A Frank Betz or custom plan</option>
+            <option>A custom home or plan</option>
+            <option>A barndominium</option>
+            <option>A room addition</option>
+            <option>A basement finish</option>
+            <option>A garage or pole barn</option>
+            <option>A building consultation</option>
             <option>Something else</option>
           </select>
         </div>
@@ -763,7 +820,7 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
         <img src="images/logo.png" alt="Riverstone Homes" width="799" height="238">
         <p>Custom homes in North Metro Atlanta, locally owned and building since 1997.</p>
       </div>
-      <div><h4>Homes</h4><ul><li><a href="#homes">Homes for sale</a></li><li><a href="#plans">Floor plans</a></li><li><a href="#work">Our work</a></li><li><a href="team.html">Meet the team</a></li></ul></div>
+      <div><h4>Homes</h4><ul><li><a href="#homes">Homes for sale</a></li><li><a href="#services">What we build</a></li><li><a href="#work">Our work</a></li><li><a href="team.html">Meet the team</a></li></ul></div>
       <div><h4>Build</h4><ul><li><a href="#process">Build on your land</a></li><li><a href="#find-land">Find land</a></li><li><a href="#faq">FAQ &amp; checklist</a></li><li><a href="riverstone-building-checklist.pdf" target="_blank" rel="noopener">Building checklist (PDF)</a></li><li><a href="blog.html">Blog</a></li><li><a href="videos.html">Videos</a></li></ul></div>
       <div><h4>Contact</h4><ul><li><a href="tel:+17065146637">706-514-6637</a></li><li><a href="mailto:info@goriverstone.com">info@goriverstone.com</a></li></ul></div>
     </div>
@@ -840,6 +897,7 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
       status.textContent = "This is a preview, so the form isn't connected yet. Please call 706-514-6637 or email info@goriverstone.com.";
     }
   });
+  (function () { const el = document.getElementById("yrs-since"); if (el) el.textContent = (new Date().getFullYear() - 1997) + " yrs"; })();
 </script>
 
 </body></html>

@@ -57,6 +57,14 @@ open("index.html", "w", encoding="utf-8").write(idx2)
 
 # ---------- one page per home ----------
 HEAD_CSS = open("scripts/listing-page.css", encoding="utf-8").read()
+FB_IC = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21h3z"/></svg>'
+X_IC = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L1.9 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg>'
+LI_IC = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.9 8.8H3.7V20h3.2V8.8zM5.3 3.9a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.3 13.6c0-3-1.6-5-4.3-5-1.5 0-2.5.8-2.9 1.6V8.8H10V20h3.2v-5.9c0-1.5.6-2.6 2-2.6 1.3 0 1.9 1 1.9 2.6V20h3.2v-6.4z"/></svg>'
+PIN_IC = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.2 2C6.7 2 4 5.9 4 9.2c0 2 .8 3.8 2.4 4.4.3.1.5 0 .6-.3l.2-.9c.1-.3 0-.4-.2-.7-.5-.6-.8-1.3-.8-2.4 0-3.1 2.3-5.8 6-5.8 3.3 0 5.1 2 5.1 4.7 0 3.5-1.6 6.5-3.9 6.5-1.3 0-2.2-1-1.9-2.3.4-1.5 1.1-3.2 1.1-4.3 0-1-.5-1.8-1.6-1.8-1.3 0-2.3 1.3-2.3 3.1 0 1.1.4 1.9.4 1.9l-1.5 6.4c-.4 1.9-.1 4.2 0 4.4 0 .1.2.2.3.1.1-.1 1.4-1.7 1.8-3.3l.7-2.7c.4.7 1.4 1.3 2.5 1.3 3.3 0 5.6-3 5.6-7.1C20.3 5 17.1 2 12.2 2z"/></svg>'
+MAIL_IC = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M3.5 6.5h17v11h-17zM3.8 6.8l8.2 6.4 8.2-6.4"/></svg>'
+LINK_IC = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1"/></svg>'
+SHARE_IC = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12v8h14v-8"/></svg>'
+SMS_IC = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M20.5 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 20.5 12z"/></svg>'
 os.makedirs("homes", exist_ok=True)
 keep = set()
 for l in data:
@@ -83,6 +91,8 @@ for l in data:
     btns.append(f'<a class="btn line" href="../index.html?topic={topic}#contact">{e(l.get("cta") or "Schedule a showing")}</a>')
     maps = "https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(f'{l["address"]}, {l["city"]}')
     og_img = f'{SITE}/{photos[0]["src"]}' if photos else f'{SITE}/images/hero-house.jpg'
+    share_u = urllib.parse.quote(f'{SITE}/homes/{l["slug"]}.html', safe="")
+    share_t = urllib.parse.quote(f'{title} | {l["price"]}', safe="")
     page = f'''<!doctype html>
 <html lang="en">
 <head>
@@ -130,6 +140,17 @@ for l in data:
         <dl class="specs">{spec_html}</dl>
         {f'<p class="offer">{l["offer"]}</p>' if l.get("offer") else ""}
         <div class="btns">{"".join(btns)}</div>
+        <div class="share" data-url="{SITE}/homes/{e(l["slug"])}.html" data-title="{e(title)} | {e(l["price"])}" data-text="{e(l["summary"])}"><span>Share this home</span>
+          <button type="button" class="native" data-share hidden>{SHARE_IC}Share</button>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={share_u}" target="_blank" rel="noopener" aria-label="Share on Facebook">{FB_IC}</a>
+          <a href="https://x.com/intent/post?url={share_u}&amp;text={share_t}" target="_blank" rel="noopener" aria-label="Share on X">{X_IC}</a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url={share_u}" target="_blank" rel="noopener" aria-label="Share on LinkedIn">{LI_IC}</a>
+          <a href="https://pinterest.com/pin/create/button/?url={share_u}&amp;media={urllib.parse.quote(og_img, safe="")}&amp;description={share_t}" target="_blank" rel="noopener" aria-label="Save to Pinterest">{PIN_IC}</a>
+          <a href="sms:?&amp;body={share_t}%20{share_u}" aria-label="Share by text message">{SMS_IC}</a>
+          <a href="mailto:?subject={share_t}&amp;body={share_t}%0A%0A{share_u}" aria-label="Share by email">{MAIL_IC}</a>
+          <button type="button" data-copy aria-label="Copy link">{LINK_IC}</button>
+          <span class="copied" role="status"></span>
+        </div>
         <div class="agent">
           <b>Sandra Watkins</b><span>RE/MAX Town &amp; Country · New Home Sales, Riverstone Homes</span>
           <a href="tel:{SANDRA_TEL}">Call or text {SANDRA_PHONE}</a>
@@ -157,6 +178,16 @@ for l in data:
     img.src = p.src; img.alt = p.alt; document.getElementById("gal-cap").textContent = p.alt;
     document.querySelectorAll(".thumb").forEach(t => t.classList.toggle("on", t === b));
   }}));
+  const sh = document.querySelector(".share");
+  if (sh) {{
+    const nb = sh.querySelector("[data-share]"); if (navigator.share) nb.hidden = false;
+    nb.addEventListener("click", async () => {{ try {{ await navigator.share({{ title: sh.dataset.title, text: sh.dataset.text, url: sh.dataset.url }}); }} catch (_) {{}} }});
+    sh.querySelector("[data-copy]").addEventListener("click", async () => {{
+      const st = sh.querySelector(".copied");
+      try {{ await navigator.clipboard.writeText(sh.dataset.url); st.textContent = "Link copied"; }} catch (_) {{ st.textContent = sh.dataset.url; }}
+      setTimeout(() => {{ st.textContent = ""; }}, 3000);
+    }});
+  }}
 </script>
 </body>
 </html>
