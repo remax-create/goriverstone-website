@@ -39,7 +39,7 @@ for l in data:
              if ph else soon_visual(l, "hc-soon"))
     sp = " · ".join(f'{e(v)} {u}'.strip() for _, v, u in specs(l))
     cards.append(f'''        <a class="home-card" href="homes/{e(l["slug"])}.html">
-          <span class="hc-media">{media}<span class="chip {e(l["statusKind"])}">{e(l["status"])}</span></span>
+          <span class="hc-media">{media}<span class="chip {e(l["statusKind"])}">{e(l["status"])}</span>{f'<span class="hc-deal">{e(l["incentive"])}</span>' if l.get("incentive") else ""}</span>
           <span class="hc-body">
             <span class="hc-price">{e(l["price"])}</span>
             <span class="hc-addr">{e(l["address"])}</span>
@@ -134,6 +134,7 @@ for l in data:
       <div class="gallery">{gallery}</div>
       <aside class="facts">
         <span class="chip {e(l["statusKind"])}">{e(l["status"])}</span>
+        {f'<p class="deal">{e(l["incentive"])}</p>' if l.get("incentive") else ""}
         <h1>{e(l["address"])}</h1>
         <p class="where">{" · ".join(e(x) for x in [l["city"], l.get("type"), l.get("mls")] if x)}</p>
         <p class="price">{e(l["price"])}</p>

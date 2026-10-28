@@ -2,6 +2,7 @@
  "listings": [
   {
    "slug": "121-cypress-court",
+   "incentive": "$5,000 Builder Incentive",
    "status": "For sale",
    "statusKind": "now",
    "address": "121 Cypress Court",
@@ -28,6 +29,7 @@
   },
   {
    "slug": "104-bob-white-drive",
+   "incentive": "Owner Financing Available",
    "status": "For sale · New construction",
    "statusKind": "now",
    "address": "104 Bob White Drive",
@@ -54,6 +56,7 @@
   },
   {
    "slug": "riverstone-commons",
+   "incentive": "2% Rate Buydown Option",
    "status": "Coming soon",
    "statusKind": "soon",
    "address": "Riverstone Commons",

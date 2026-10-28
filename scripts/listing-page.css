@@ -104,3 +104,4 @@ main { padding-block: 1.75rem 4rem; }
 .share-end { border-top: 1px solid var(--line); padding-block: 1.75rem; }
 .share-end > span { color: var(--ink); }
 .facts .share { padding-top: .5rem; }
+.deal { display: inline-block; justify-self: start; margin: 0; background: var(--brass); color: #fff; font: 600 .78rem/1 var(--f-body); letter-spacing: .12em; text-transform: uppercase; padding: .6rem .8rem; }
