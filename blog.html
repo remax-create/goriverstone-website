@@ -125,6 +125,10 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
 .share .copied { font-size: .85rem; color: var(--brass); }
 .share-end { border-top: 1px solid var(--line); padding-block: 1.75rem; }
 .share-end > span { color: var(--ink); }
+.post-item { display: grid; gap: 1.1rem; }
+.post-item + .post-item { border-top: 1px solid var(--line); padding-top: clamp(2.5rem, 5vw, 3.5rem); }
+.share-card { justify-content: flex-end; }
+@media (max-width: 760px) { .share-card { justify-content: flex-start; } }
 
 /* CTA band */
 .cta-band { background: var(--forest); color: var(--on-dark); }
@@ -196,7 +200,7 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
   function shareBar(p, cls) {
     const u = encodeURIComponent(shareUrl(p)), t = encodeURIComponent(p.title), img = encodeURIComponent(SITE + "/" + p.photo);
     const mail = "mailto:?subject=" + t + "&body=" + encodeURIComponent(p.title + "\n\n" + shareUrl(p));
-    return `<div class="share ${cls || ""}"><span>Share this post</span>
+    return `<div class="share ${cls || ""}" data-slug="${esc(p.slug)}"><span>Share this post</span>
       ${navigator.share ? `<button type="button" class="native" data-share>${IC.share}Share</button>` : ""}
       <a href="https://www.facebook.com/sharer/sharer.php?u=${u}" target="_blank" rel="noopener" aria-label="Share on Facebook">${IC.fb}</a>
       <a href="https://www.linkedin.com/sharing/share-offsite/?url=${u}" target="_blank" rel="noopener" aria-label="Share on LinkedIn">${IC.li}</a>
@@ -207,7 +211,8 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
       <span class="copied" role="status"></span></div>`;
   }
   view.addEventListener("click", async e => {
-    const p = posts.find(x => x.slug === location.hash.replace(/^#/, ""));
+    const bar = e.target.closest(".share[data-slug]"); if (!bar) return;
+    const p = posts.find(x => x.slug === bar.dataset.slug);
     if (!p) return;
     const nb = e.target.closest("[data-share]"), cb = e.target.closest("[data-copy]");
     if (nb) { try { await navigator.share({ title: p.title, text: p.excerpt, url: shareUrl(p) }); } catch (_) {} }
@@ -232,14 +237,17 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
         <p>Building tips, North Georgia new construction news and what the market means for your next home. New posts every Monday and Thursday.</p>
       </div></section>
       <div class="wrap posts">${posts.map(p => `
-        <a class="post-card" href="#${esc(p.slug)}">
-          <div class="ph"><img src="${esc(p.photo)}" alt="${esc(p.photoAlt)}" loading="lazy" width="1600" height="1067"></div>
-          <div class="txt">
-            <div class="meta"><span class="cat">${esc(p.category)}</span><span>${fmtDate(p.date)}</span><span>${esc(p.readMins)} min read</span></div>
-            <h2>${esc(p.title)}</h2>
-            <p>${esc(p.excerpt)}</p>
-          </div>
-        </a>`).join("")}
+        <article class="post-item">
+          <a class="post-card" href="#${esc(p.slug)}">
+            <div class="ph"><img src="${esc(p.photo)}" alt="${esc(p.photoAlt)}" loading="lazy" width="1600" height="1067"></div>
+            <div class="txt">
+              <div class="meta"><span class="cat">${esc(p.category)}</span><span>${fmtDate(p.date)}</span><span>${esc(p.readMins)} min read</span></div>
+              <h2>${esc(p.title)}</h2>
+              <p>${esc(p.excerpt)}</p>
+            </div>
+          </a>
+          ${shareBar(p, "share-card")}
+        </article>`).join("")}
       </div>`;
   }
 
