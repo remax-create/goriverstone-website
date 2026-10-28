@@ -227,6 +227,28 @@ section { scroll-margin-top: 76px; }
 @media (max-width: 960px) { .listings { grid-template-columns: 1fr; } }
 @media (max-width: 420px) { .specs { grid-template-columns: 1fr 1fr; } .specs div:nth-child(3) { border-left: 0; padding-left: 0; border-top: 1px solid var(--on-dark-line); } }
 
+/* Home cards */
+.home-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 20px; }
+.home-card { display: grid; grid-template-rows: auto 1fr; background: var(--forest-2); border: 1px solid var(--on-dark-line); color: var(--on-dark); text-decoration: none; transition: border-color .3s var(--ease), transform .3s var(--ease); min-width: 0; }
+.home-card:hover { border-color: var(--brass-hi); transform: translateY(-3px); }
+.hc-media { position: relative; display: block; overflow: hidden; aspect-ratio: 3 / 2; background: var(--forest); }
+.hc-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); }
+.home-card:hover .hc-media img { transform: scale(1.05); }
+.hc-media .chip { position: absolute; left: .75rem; top: .75rem; background: rgba(12,18,15,.78); }
+.hc-soon { position: absolute; inset: 0; }
+.soon-art { overflow: hidden; display: grid; place-content: center; text-align: center; gap: .5rem; background: radial-gradient(120% 90% at 30% 20%, #2f4239 0%, var(--forest-2) 60%); }
+.soon-art svg { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--brass-hi); opacity: .45; }
+.soon-art span { position: relative; font: 600 .7rem/1 var(--f-body); letter-spacing: .22em; text-transform: uppercase; color: var(--brass-hi); }
+.soon-art b { position: relative; font: italic 400 1.9rem/1.05 var(--f-display); color: var(--on-dark); }
+.hc-body { display: grid; gap: .3rem; padding: 1.1rem 1.2rem 1.25rem; align-content: start; }
+.hc-price { font: 400 1.55rem/1.1 var(--f-display); color: var(--brass-hi); }
+.hc-addr { font-weight: 600; font-size: 1.05rem; }
+.hc-city { color: var(--on-dark-2); font-size: .92rem; }
+.hc-specs { color: var(--on-dark); font-size: .92rem; padding-top: .45rem; margin-top: .3rem; border-top: 1px solid var(--on-dark-line); }
+.hc-go { display: inline-flex; align-items: center; gap: .5rem; margin-top: .6rem; font: 600 .72rem/1 var(--f-body); letter-spacing: .16em; text-transform: uppercase; color: var(--brass-hi); }
+.hc-go svg { width: 14px; height: 14px; transition: transform .3s var(--ease); }
+.home-card:hover .hc-go svg { transform: translateX(4px); }
+
 /* Gallery */
 .gallery { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: clamp(110px, 11vw, 150px); gap: 14px; }
 .gallery figure { margin: 0; position: relative; overflow: hidden; background: var(--page-2); }
@@ -511,82 +533,40 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
         <div style="display:grid;gap:1.25rem"><span class="label">Homes for sale</span><h2>Available now &amp; coming soon</h2></div>
         <p class="lede">Homes in Canton and Calhoun, Georgia. Call Sandra Watkins at <a href="tel:+17703243680">770-324-3680</a> for pricing, floor plans and private showings.</p>
       </div>
-      <div class="listings">
-        <article class="listing">
-          <div class="listing-photos">
-            <img class="main" src="images/cypress-121-front.jpg" alt="121 Cypress Court at dusk: two-story end-unit townhome with stone front, shutters and one-car garage" loading="lazy" width="1024" height="681">
-            <img src="images/cypress-121-living.jpg" alt="Living room with stacked stone wood-burning fireplace and new flooring" loading="lazy" width="1024" height="682">
-            <img src="images/cypress-121-dining.jpg" alt="Open dining area and kitchen with new flooring and fresh paint" loading="lazy" width="1024" height="681">
-          </div>
-          <div class="btns listing-links">
-              <a class="btn" href="https://sandra-watkins.remax.com/property/168-7838520-121-cypress-court-canton-GA-30115" target="_blank" rel="noopener">Full listing &amp; photos <svg><use href="#arrow"/></svg></a>
-              <a class="btn line" href="https://www.zillow.com/view-imx/0773669d-fc33-43a4-a982-ef08b79be1ee?initialViewType=pano" target="_blank" rel="noopener">3D walkthrough</a>
-              <a class="btn line" href="#contact" data-topic="121 Cypress Court">Schedule a showing</a>
-            </div>
-          <div class="listing-body">
-            <span class="chip now">For sale</span>
-            <h3>121 Cypress Court</h3>
-            <p class="where">Canton, GA 30115 · Townhome · FMLS #7838520</p>
-            <p class="price">$299,900</p>
-            <dl class="specs">
-              <div><dt>Beds</dt><dd>2 + loft</dd></div>
-              <div><dt>Baths</dt><dd>2</dd></div>
-              <div><dt>Sq ft</dt><dd>1,155</dd></div>
-            </dl>
-            <p class="desc">Freshly updated with new paint inside and out, new carpet upstairs, new main-level flooring and a new range. A large upstairs loft works as an office, media room or third bedroom. Wood-burning fireplace, one-car garage and a level lot near I-575 and the planned Holly Springs Town Center.</p>
-            <p class="offer"><b>Seller offers up to $5,000</b> toward closing costs, prepaids or a rate buy-down with an acceptable offer.</p>
-            <p class="agent">Listed by Sandra Watkins, RE/MAX Town &amp; Country · Call or text Sandra: <a href="tel:+17703243680">770-324-3680</a></p>
-          </div>
-        </article>
-        <article class="listing">
-          <div class="listing-photos">
-            <img class="main" src="images/bobwhite-104-front.jpg" alt="104 Bob White Drive: white board-and-batten craftsman with a covered front porch, stone skirt and two-car garage" loading="lazy" width="1600" height="844">
-            <img src="images/bobwhite-104-aerial.jpg" alt="Aerial view of 104 Bob White Drive on a cul-de-sac lot in the Quail Run neighborhood" loading="lazy" width="1600" height="1067">
-            <img src="images/bobwhite-104-living.jpg" alt="Vaulted family room open to the dining room and white kitchen" loading="lazy" width="1600" height="1067">
-          </div>
-          <div class="btns listing-links">
-              <a class="btn" href="https://sandra-watkins.remax.com/property/168-7530605-104-bob-white-drive-calhoun-GA-30701" target="_blank" rel="noopener">Full listing &amp; photos <svg><use href="#arrow"/></svg></a>
-              <a class="btn line" href="#contact" data-topic="104 Bob White Drive">Schedule a showing</a>
-            </div>
-          <div class="listing-body">
-            <span class="chip now">For sale · New construction</span>
-            <h3>104 Bob White Drive</h3>
-            <p class="where">Calhoun, GA 30701 · Quail Run · FMLS #7530605</p>
-            <p class="price">$519,900</p>
-            <dl class="specs">
-              <div><dt>Beds</dt><dd>4</dd></div>
-              <div><dt>Baths</dt><dd>3.5</dd></div>
-              <div><dt>Sq ft</dt><dd>2,376</dd></div>
-            </dl>
-            <p class="desc">The last new Riverstone home in Quail Run, on a 0.35-acre cul-de-sac lot. Open main level with a vaulted family room, stone fireplace and LVP floors. The owner's suite is on the main with a soaking tub and tiled shower, plus two more bedrooms on the main and a fourth bedroom with its own bath upstairs. Unfinished daylight basement walks out to the backyard. Front porch, covered back deck, two-car garage, and a neighborhood pool and tennis close to downtown Calhoun and I-75.</p>
-            <p class="offer"><b>Lease-purchase and owner financing options</b> are available. Ask us how they work.</p>
-            <p class="agent">Listed by Sandra Watkins, RE/MAX Town &amp; Country · Call or text Sandra: <a href="tel:+17703243680">770-324-3680</a></p>
-          </div>
-        </article>
-        <article class="listing">
-          <div class="soon-visual" role="img" aria-label="Riverstone Commons, renderings coming soon">
-            <svg viewBox="0 0 900 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#contour"/></svg>
-            <span>Coming soon</span>
-            <b>Riverstone Commons</b>
-            <span>Six new townhomes · Canton, GA</span>
-          </div>
-          <div class="listing-body">
-            <span class="chip soon">Coming soon</span>
-            <h3>Riverstone Commons</h3>
-            <p class="where">Canton, GA · New construction townhomes</p>
-            <p class="desc">Six new townhomes from Riverstone Homes. Get on the early list for floor plans, pricing and first choice of homes.</p>
-            <p class="offer"><b>Look out for our 2% rate buydown option</b> to help lower your mortgage payment.</p>
-            <dl class="specs">
-              <div><dt>Townhomes</dt><dd>6</dd></div>
-              <div><dt>Price</dt><dd class="tbd">To come</dd></div>
-              <div><dt>Available</dt><dd class="tbd">To come</dd></div>
-            </dl>
-            <div class="btns">
-              <a class="btn" href="#contact" data-topic="Riverstone Commons townhomes">Join the early list <svg><use href="#arrow"/></svg></a>
-            </div>
-          </div>
-        </article>
+      <!-- LISTINGS:START -->
+      <div class="home-cards">
+        <a class="home-card" href="homes/121-cypress-court.html">
+          <span class="hc-media"><img src="images/cypress-121-front.jpg" alt="121 Cypress Court at dusk: two-story end-unit townhome with stone front, shutters and one-car garage" loading="lazy" width="1600" height="1067"><span class="chip now">For sale</span></span>
+          <span class="hc-body">
+            <span class="hc-price">$299,900</span>
+            <span class="hc-addr">121 Cypress Court</span>
+            <span class="hc-city">Canton, GA 30115</span>
+            <span class="hc-specs">2 + loft bd · 2 ba · 1,155 sq ft</span>
+            <span class="hc-go">See details <svg><use href="#arrow"/></svg></span>
+          </span>
+        </a>
+        <a class="home-card" href="homes/104-bob-white-drive.html">
+          <span class="hc-media"><img src="images/bobwhite-104-front.jpg" alt="104 Bob White Drive: white board-and-batten craftsman with a covered front porch, stone skirt and two-car garage" loading="lazy" width="1600" height="1067"><span class="chip now">For sale · New construction</span></span>
+          <span class="hc-body">
+            <span class="hc-price">$519,900</span>
+            <span class="hc-addr">104 Bob White Drive</span>
+            <span class="hc-city">Calhoun, GA 30701</span>
+            <span class="hc-specs">4 bd · 3.5 ba · 2,376 sq ft · 0.35 ac</span>
+            <span class="hc-go">See details <svg><use href="#arrow"/></svg></span>
+          </span>
+        </a>
+        <a class="home-card" href="homes/riverstone-commons.html">
+          <span class="hc-media"><div class="hc-soon soon-art" role="img" aria-label="Riverstone Commons, renderings coming soon"><svg viewBox="0 0 900 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#contour"/></svg><span>Renderings coming soon</span><b>New construction townhomes</b></div><span class="chip soon">Coming soon</span></span>
+          <span class="hc-body">
+            <span class="hc-price">Pricing to come</span>
+            <span class="hc-addr">Riverstone Commons</span>
+            <span class="hc-city">Canton, GA</span>
+            <span class="hc-specs">6 townhomes</span>
+            <span class="hc-go">See details <svg><use href="#arrow"/></svg></span>
+          </span>
+        </a>
       </div>
+      <!-- LISTINGS:END -->
     </div>
   </section>
 
@@ -816,6 +796,14 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
   document.querySelectorAll("a[data-topic]").forEach(a => a.addEventListener("click", () => {
     document.getElementById("f-topic").value = a.dataset.topic;
   }));
+
+
+  // Links from a home page (index.html?topic=...#contact) preselect the form topic
+  (() => {
+    const t = new URLSearchParams(location.search).get("topic");
+    const sel = document.getElementById("f-topic");
+    if (t && sel && [...sel.options].some(o => o.value === t)) sel.value = t;
+  })();
 
   // Latest three published blog posts
   (() => {

@@ -1,0 +1,80 @@
+{
+ "listings": [
+  {
+   "slug": "121-cypress-court",
+   "status": "For sale",
+   "statusKind": "now",
+   "address": "121 Cypress Court",
+   "city": "Canton, GA 30115",
+   "type": "Townhome",
+   "mls": "FMLS #7838520",
+   "price": "$299,900",
+   "beds": "2 + loft",
+   "baths": "2",
+   "sqft": "1,155",
+   "acres": "",
+   "photos": [
+    {"src": "images/cypress-121-front.jpg", "alt": "121 Cypress Court at dusk: two-story end-unit townhome with stone front, shutters and one-car garage"},
+    {"src": "images/cypress-121-living.jpg", "alt": "Living room with stacked stone wood-burning fireplace and new flooring"},
+    {"src": "images/cypress-121-dining.jpg", "alt": "Open dining area and kitchen with new flooring and fresh paint"}
+   ],
+   "summary": "Freshly updated end-unit townhome near I-575 with a big upstairs loft.",
+   "description": "Freshly updated with new paint inside and out, new carpet upstairs, new main-level flooring and a new range. A large upstairs loft works as an office, media room or third bedroom. Wood-burning fireplace, one-car garage and a level lot near I-575 and the planned Holly Springs Town Center.",
+   "features": ["New paint inside and out", "New carpet upstairs and new main-level flooring", "New range", "Large upstairs loft for an office, media room or third bedroom", "Stacked stone wood-burning fireplace", "One-car garage", "Level lot near I-575"],
+   "offer": "<b>Seller offers up to $5,000</b> toward closing costs, prepaids or a rate buy-down with an acceptable offer.",
+   "listingUrl": "https://sandra-watkins.remax.com/property/168-7838520-121-cypress-court-canton-GA-30115",
+   "tourUrl": "https://www.zillow.com/view-imx/0773669d-fc33-43a4-a982-ef08b79be1ee?initialViewType=pano",
+   "topic": "121 Cypress Court"
+  },
+  {
+   "slug": "104-bob-white-drive",
+   "status": "For sale · New construction",
+   "statusKind": "now",
+   "address": "104 Bob White Drive",
+   "city": "Calhoun, GA 30701",
+   "type": "Single-family · Quail Run",
+   "mls": "FMLS #7530605",
+   "price": "$519,900",
+   "beds": "4",
+   "baths": "3.5",
+   "sqft": "2,376",
+   "acres": "0.35",
+   "photos": [
+    {"src": "images/bobwhite-104-front.jpg", "alt": "104 Bob White Drive: white board-and-batten craftsman with a covered front porch, stone skirt and two-car garage"},
+    {"src": "images/bobwhite-104-aerial.jpg", "alt": "Aerial view of 104 Bob White Drive on a cul-de-sac lot in the Quail Run neighborhood"},
+    {"src": "images/bobwhite-104-living.jpg", "alt": "Vaulted family room open to the dining room and white kitchen"}
+   ],
+   "summary": "The last new Riverstone home in Quail Run, on a cul-de-sac lot.",
+   "description": "The last new Riverstone home in Quail Run, on a 0.35-acre cul-de-sac lot. Open main level with a vaulted family room, stone fireplace and LVP floors. The owner's suite is on the main with a soaking tub and tiled shower, plus two more bedrooms on the main and a fourth bedroom with its own bath upstairs. Unfinished daylight basement walks out to the backyard. Front porch, covered back deck, two-car garage, and a neighborhood pool and tennis close to downtown Calhoun and I-75.",
+   "features": ["Vaulted family room with stone fireplace", "LVP floors on the main level", "Owner's suite on the main with soaking tub and tiled shower", "Fourth bedroom with its own bath upstairs", "Unfinished daylight basement that walks out to the backyard", "Front porch and covered back deck", "Two-car garage", "Neighborhood pool and tennis near downtown Calhoun and I-75"],
+   "offer": "<b>Lease-purchase and owner financing options</b> are available. Ask us how they work.",
+   "listingUrl": "https://sandra-watkins.remax.com/property/168-7530605-104-bob-white-drive-calhoun-GA-30701",
+   "tourUrl": "",
+   "topic": "104 Bob White Drive"
+  },
+  {
+   "slug": "riverstone-commons",
+   "status": "Coming soon",
+   "statusKind": "soon",
+   "address": "Riverstone Commons",
+   "city": "Canton, GA",
+   "type": "New construction townhomes",
+   "mls": "",
+   "price": "Pricing to come",
+   "beds": "",
+   "baths": "",
+   "sqft": "",
+   "acres": "",
+   "units": "6 townhomes",
+   "photos": [],
+   "summary": "Six new Riverstone townhomes in Canton. Join the early list.",
+   "description": "Six new townhomes from Riverstone Homes in Canton. Get on the early list for floor plans, pricing and first choice of homes.",
+   "features": ["Six new construction townhomes", "Built by Riverstone Homes, locally owned since 1997", "Early list gets floor plans, pricing and first choice of homes"],
+   "offer": "<b>Look out for our 2% rate buydown option</b> to help lower your mortgage payment.",
+   "listingUrl": "",
+   "tourUrl": "",
+   "topic": "Riverstone Commons townhomes",
+   "cta": "Join the early list"
+  }
+ ]
+}
