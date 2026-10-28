@@ -132,6 +132,10 @@ section { scroll-margin-top: 76px; }
 .hero-copy > :nth-child(2) { animation-delay: .12s; }
 .hero-copy > :nth-child(3) { animation-delay: .24s; }
 .hero-copy > :nth-child(4) { animation-delay: .36s; }
+.hero-copy > :nth-child(5) { animation-delay: .48s; }
+.hero-follow { display: flex; align-items: center; gap: 1rem; }
+.hero-follow > span { font: 600 var(--t-xs)/1 var(--f-body); letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass-hi); text-shadow: 0 2px 24px rgba(0,0,0,.35); }
+.hero-follow .soc { background: rgba(12,18,15,.35); border-color: rgba(242,240,234,.45); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
 .hero .label { color: var(--brass-hi); }
 .hero h1 { font-size: var(--t-3xl); line-height: 0.98; }
 .hero h1 em { color: var(--brass-hi); }
@@ -446,6 +450,11 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
           <a class="btn" href="#contact">Start your build <svg><use href="#arrow"/></svg></a>
           <a class="btn line" href="#homes">Homes for sale</a>
         </div>
+        <div class="hero-follow"><span>Follow us</span><div class="socials on-dark">
+          <a class="soc" href="https://www.facebook.com/goriverstone" target="_blank" rel="noopener" aria-label="Riverstone Homes on Facebook"><svg aria-hidden="true"><use href="#ic-fb"/></svg></a>
+          <a class="soc" href="https://www.instagram.com/goriverstone/" target="_blank" rel="noopener" aria-label="Riverstone Homes on Instagram"><svg aria-hidden="true"><use href="#ic-ig"/></svg></a>
+          <a class="soc" href="https://www.youtube.com/@GoRiverstone" target="_blank" rel="noopener" aria-label="Riverstone Homes on YouTube"><svg aria-hidden="true"><use href="#ic-yt"/></svg></a>
+        </div></div>
       </div>
       <div class="hero-stats">
         <div><b>1997</b><span>Locally owned &amp; building</span></div>
