@@ -257,7 +257,16 @@ section { scroll-margin-top: 76px; }
 .hv-sub { color: var(--ink-2); max-width: 46ch; }
 @media (max-width: 760px) { .home-video { grid-template-columns: 1fr; } }
 .gallery-foot { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between; color: var(--ink-2); }
-.socials { display: flex; gap: 1.5rem; }
+.socials { display: flex; gap: 0.75rem; }
+.follow { display: grid; gap: 0.5rem; }
+.follow p { margin: 0; }
+.soc { width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--line); color: var(--ink); background: var(--card); transition: background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease), transform .25s var(--ease); }
+.soc svg { width: 22px; height: 22px; }
+.soc:hover, .soc:focus-visible { background: var(--brass); border-color: var(--brass); color: #fff; transform: translateY(-2px); }
+.socials.on-dark .soc { background: transparent; border-color: var(--on-dark-line); color: var(--on-dark); }
+.socials.on-dark .soc:hover, .socials.on-dark .soc:focus-visible { background: var(--brass-hi); border-color: var(--brass-hi); color: var(--forest); }
+.foot-follow { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; padding-bottom: 2.5rem; }
+.foot-follow h4 { margin: 0; font: 600 var(--t-xs)/1 var(--f-body); letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass-hi); }
 
 /* Plans */
 .plans-wrap { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(2.5rem, 6vw, 6rem); align-items: start; }
@@ -387,6 +396,9 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="arrow" viewBox="0 0 16 16"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="ic-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21h3z"/></symbol>
+    <symbol id="ic-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.8" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="ic-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3L10 15z"/></symbol>
     <symbol id="contour" viewBox="0 0 900 600">
       <g fill="none" stroke="currentColor" stroke-width="1.2">
         <path d="M40 420c90-60 160-70 250-40s170 40 260-20 190-90 320-50"/>
@@ -588,11 +600,11 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
         <span class="hv-txt"><span class="label">Watch</span><span class="hv-title">What makes Riverstone different</span><span class="hv-sub">Jamey Cagle on building in North Georgia since 1997, plus building advice, a new home walkthrough and home tours.</span><span class="text-link">See all videos</span></span>
       </a>
       <div class="gallery-foot">
-        <p>Follow along with new builds and progress videos.</p>
+        <div class="follow"><span class="label">Follow us</span><p>New builds, progress videos and home tours, every week.</p></div>
         <div class="socials">
-          <a class="text-link" href="https://www.facebook.com/goriverstone" target="_blank" rel="noopener">Facebook</a>
-          <a class="text-link" href="https://www.instagram.com/riverstone.homes/" target="_blank" rel="noopener">Instagram</a>
-          <a class="text-link" href="https://www.youtube.com/@GoRiverstone" target="_blank" rel="noopener">YouTube</a>
+          <a class="soc" href="https://www.facebook.com/goriverstone" target="_blank" rel="noopener" aria-label="Riverstone Homes on Facebook"><svg aria-hidden="true"><use href="#ic-fb"/></svg></a>
+          <a class="soc" href="https://www.instagram.com/goriverstone/" target="_blank" rel="noopener" aria-label="Riverstone Homes on Instagram"><svg aria-hidden="true"><use href="#ic-ig"/></svg></a>
+          <a class="soc" href="https://www.youtube.com/@GoRiverstone" target="_blank" rel="noopener" aria-label="Riverstone Homes on YouTube"><svg aria-hidden="true"><use href="#ic-yt"/></svg></a>
         </div>
       </div>
     </div>
@@ -764,8 +776,13 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
       </div>
       <div><h4>Homes</h4><ul><li><a href="#homes">Homes for sale</a></li><li><a href="#plans">Floor plans</a></li><li><a href="#work">Our work</a></li><li><a href="team.html">Meet the team</a></li></ul></div>
       <div><h4>Build</h4><ul><li><a href="#process">Build on your land</a></li><li><a href="#find-land">Find land</a></li><li><a href="#faq">FAQ &amp; checklist</a></li><li><a href="riverstone-building-checklist.pdf" target="_blank" rel="noopener">Building checklist (PDF)</a></li><li><a href="blog.html">Blog</a></li><li><a href="videos.html">Videos</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li><a href="tel:+17065146637">706-514-6637</a></li><li><a href="mailto:info@goriverstone.com">info@goriverstone.com</a></li><li><a href="https://www.facebook.com/goriverstone" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/riverstone.homes/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.youtube.com/@GoRiverstone" target="_blank" rel="noopener">YouTube</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+17065146637">706-514-6637</a></li><li><a href="mailto:info@goriverstone.com">info@goriverstone.com</a></li></ul></div>
     </div>
+    <div class="foot-follow"><h4>Follow us</h4><div class="socials on-dark">
+          <a class="soc" href="https://www.facebook.com/goriverstone" target="_blank" rel="noopener" aria-label="Riverstone Homes on Facebook"><svg aria-hidden="true"><use href="#ic-fb"/></svg></a>
+          <a class="soc" href="https://www.instagram.com/goriverstone/" target="_blank" rel="noopener" aria-label="Riverstone Homes on Instagram"><svg aria-hidden="true"><use href="#ic-ig"/></svg></a>
+          <a class="soc" href="https://www.youtube.com/@GoRiverstone" target="_blank" rel="noopener" aria-label="Riverstone Homes on YouTube"><svg aria-hidden="true"><use href="#ic-yt"/></svg></a>
+        </div></div>
     <div class="legal"><span>© <span id="year">2026</span> Riverstone Homes, Inc.</span><span>North Metro Atlanta, Georgia</span></div>
   </div>
 </footer>
