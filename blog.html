@@ -115,6 +115,17 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
 .sources a { color: var(--ink-2); }
 .sources a:hover { color: var(--brass); }
 
+/* Share */
+.share { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.share > span { font: 600 .72rem/1 var(--f-body); letter-spacing: .2em; text-transform: uppercase; color: var(--ink-2); margin-right: .3rem; }
+.share a, .share button { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; padding: 0; text-decoration: none; transition: background .25s, color .25s, border-color .25s, transform .25s; }
+.share svg { width: 19px; height: 19px; }
+.share a:hover, .share button:hover, .share a:focus-visible, .share button:focus-visible { background: var(--brass); border-color: var(--brass); color: #fff; transform: translateY(-2px); }
+.share .native { width: auto; border-radius: 999px; padding: 0 1rem; gap: .5rem; display: inline-flex; align-items: center; font: 600 .78rem/1 var(--f-body); letter-spacing: .1em; text-transform: uppercase; }
+.share .copied { font-size: .85rem; color: var(--brass); }
+.share-end { border-top: 1px solid var(--line); padding-block: 1.75rem; }
+.share-end > span { color: var(--ink); }
+
 /* CTA band */
 .cta-band { background: var(--forest); color: var(--on-dark); }
 .cta-band .wrap { padding-block: clamp(3rem, 7vw, 4.5rem); display: flex; flex-wrap: wrap; gap: 1.5rem 3rem; align-items: center; justify-content: space-between; }
@@ -170,6 +181,44 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
   const fmtDate = iso => new Date(iso + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
   const initials = name => String(name || "").split(/\s+/).map(w => w[0]).join("").slice(0, 2).toUpperCase();
 
+
+  const SITE = "https://goriverstone.com";
+  const IC = {
+    fb: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21h3z"/></svg>',
+    li: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.9 8.8H3.7V20h3.2V8.8zM5.3 3.9a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.3 13.6c0-3-1.6-5-4.3-5-1.5 0-2.5.8-2.9 1.6V8.8H10V20h3.2v-5.9c0-1.5.6-2.6 2-2.6 1.3 0 1.9 1 1.9 2.6V20h3.2v-6.4z"/></svg>',
+    x: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L1.9 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg>',
+    pin: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.2 2C6.7 2 4 5.9 4 9.2c0 2 .8 3.8 2.4 4.4.3.1.5 0 .6-.3l.2-.9c.1-.3 0-.4-.2-.7-.5-.6-.8-1.3-.8-2.4 0-3.1 2.3-5.8 6-5.8 3.3 0 5.1 2 5.1 4.7 0 3.5-1.6 6.5-3.9 6.5-1.3 0-2.2-1-1.9-2.3.4-1.5 1.1-3.2 1.1-4.3 0-1-.5-1.8-1.6-1.8-1.3 0-2.3 1.3-2.3 3.1 0 1.1.4 1.9.4 1.9l-1.5 6.4c-.4 1.9-.1 4.2 0 4.4 0 .1.2.2.3.1.1-.1 1.4-1.7 1.8-3.3l.7-2.7c.4.7 1.4 1.3 2.5 1.3 3.3 0 5.6-3 5.6-7.1C20.3 5 17.1 2 12.2 2z"/></svg>',
+    mail: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M3.5 6.5h17v11h-17zM3.8 6.8l8.2 6.4 8.2-6.4"/></svg>',
+    link: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1"/></svg>',
+    share: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12v8h14v-8"/></svg>'
+  };
+  const shareUrl = p => SITE + "/share/" + p.slug + ".html";
+  function shareBar(p, cls) {
+    const u = encodeURIComponent(shareUrl(p)), t = encodeURIComponent(p.title), img = encodeURIComponent(SITE + "/" + p.photo);
+    const mail = "mailto:?subject=" + t + "&body=" + encodeURIComponent(p.title + "\n\n" + shareUrl(p));
+    return `<div class="share ${cls || ""}"><span>Share this post</span>
+      ${navigator.share ? `<button type="button" class="native" data-share>${IC.share}Share</button>` : ""}
+      <a href="https://www.facebook.com/sharer/sharer.php?u=${u}" target="_blank" rel="noopener" aria-label="Share on Facebook">${IC.fb}</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=${u}" target="_blank" rel="noopener" aria-label="Share on LinkedIn">${IC.li}</a>
+      <a href="https://x.com/intent/post?url=${u}&text=${t}" target="_blank" rel="noopener" aria-label="Share on X">${IC.x}</a>
+      <a href="https://pinterest.com/pin/create/button/?url=${u}&media=${img}&description=${t}" target="_blank" rel="noopener" aria-label="Save to Pinterest">${IC.pin}</a>
+      <a href="${mail}" aria-label="Share by email">${IC.mail}</a>
+      <button type="button" data-copy aria-label="Copy link">${IC.link}</button>
+      <span class="copied" role="status"></span></div>`;
+  }
+  view.addEventListener("click", async e => {
+    const p = posts.find(x => x.slug === location.hash.replace(/^#/, ""));
+    if (!p) return;
+    const nb = e.target.closest("[data-share]"), cb = e.target.closest("[data-copy]");
+    if (nb) { try { await navigator.share({ title: p.title, text: p.excerpt, url: shareUrl(p) }); } catch (_) {} }
+    if (cb) {
+      const st = cb.parentElement.querySelector(".copied");
+      try { await navigator.clipboard.writeText(shareUrl(p)); st.textContent = "Link copied"; }
+      catch (_) { st.textContent = shareUrl(p); }
+      setTimeout(() => { st.textContent = ""; }, 3000);
+    }
+  });
+
   function renderIndex() {
     document.title = "Riverstone Homes Blog";
     if (!posts.length) {
@@ -205,10 +254,12 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
           <h1>${esc(p.title)}</h1>
           <p class="dek">${esc(p.excerpt)}</p>
           <div class="byline"><div class="mono" aria-hidden="true">${esc(initials(p.author))}</div><div><b>${esc(p.author)}</b><span>${esc(p.authorRole)}</span></div></div>
+          ${REVIEW ? "" : shareBar(p)}
         </div></header>
         <div class="wrap narrow">
           <figure class="hero-ph"><img src="${esc(p.photo)}" alt="${esc(p.photoAlt)}" width="1600" height="1067">${p.photoCaption ? `<figcaption>${esc(p.photoCaption)}</figcaption>` : ""}</figure>
           <div class="prose">${p.body}</div>
+          ${REVIEW ? "" : shareBar(p, "share-end")}
           ${p.sources && p.sources.length ? `<div class="sources"><h3>Sources</h3><ul>${p.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join("")}</ul></div>` : ""}
         </div>
       </article>`;
@@ -216,6 +267,8 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
   }
 
   function route() {
+    const qp = new URLSearchParams(location.search).get("post");
+    if (qp && !location.hash) { history.replaceState(null, "", location.pathname + "#" + qp); }
     const slug = location.hash.replace(/^#/, "");
     const p = posts.find(x => x.slug === slug);
     if (p) renderPost(p);
