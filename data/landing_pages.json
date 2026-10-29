@@ -1,0 +1,566 @@
+{
+  "footer_nav": [
+    [
+      "Home",
+      "/"
+    ],
+    [
+      "Build on your land",
+      "/build-on-your-land.html"
+    ],
+    [
+      "Hemlock Falls plan",
+      "/plans/hemlock-falls.html"
+    ],
+    [
+      "Barndominiums",
+      "/barndominiums.html"
+    ],
+    [
+      "Downloads",
+      "/downloads.html"
+    ],
+    [
+      "Videos",
+      "/videos.html"
+    ],
+    [
+      "Team",
+      "/team.html"
+    ]
+  ],
+  "pages": [
+    {
+      "path": "/build-on-your-land.html",
+      "title": "Build on Your Land in North Georgia | Riverstone Homes",
+      "description": "Already own a lot? Riverstone Homes builds custom homes on your land in Cherokee, Bartow, Gordon, Cobb and Pickens counties. Locally owned since 1997. Call 706-514-6637.",
+      "og_image": "/images/exterior-sage-craftsman.jpg",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Custom home building on your land",
+        "serviceType": "Custom home construction",
+        "provider": {
+          "@type": "HomeAndConstructionBusiness",
+          "name": "Riverstone Homes",
+          "url": "https://goriverstone.com/",
+          "telephone": "+1-706-514-6637"
+        },
+        "areaServed": [
+          "Cherokee County, GA",
+          "Bartow County, GA",
+          "Gordon County, GA",
+          "Cobb County, GA",
+          "Pickens County, GA"
+        ]
+      },
+      "blocks": [
+        {
+          "type": "hero",
+          "image": "/images/exterior-sage-craftsman.jpg",
+          "alt": "Sage green craftsman home with a covered front porch, built by Riverstone Homes",
+          "label": "Build on your land",
+          "title": "Build on the land you already own.",
+          "lede": "You pick the plan and we handle the rest: permits, site prep and construction, with one local team that has been building in North Georgia since 1997.",
+          "buttons": [
+            {
+              "text": "Talk about my land",
+              "href": "#contact"
+            },
+            {
+              "text": "Building checklist",
+              "href": "/riverstone-building-checklist.pdf",
+              "download": true
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "label": "How it works",
+          "title": "From your lot to your keys, in five steps",
+          "text": "You never have to manage subcontractors or chase permits. Here is what building on your land with Riverstone looks like.",
+          "items": [
+            [
+              "Building consultation",
+              "Sit down with our team to talk through your land, budget, plan ideas and timeline before you commit to anything."
+            ],
+            [
+              "Choose your plan",
+              "Pick one of our proven floor plans or bring your own, then make it yours with your layout changes and selections."
+            ],
+            [
+              "Permits and site prep",
+              "We handle permitting, HOA approval and getting your lot ready to build."
+            ],
+            [
+              "Construction",
+              "Our project manager runs the job site from the foundation to the final finish, and keeps you updated along the way."
+            ],
+            [
+              "Walk-through and closing",
+              "We walk the home with you, finish the punch list and see you through closing."
+            ]
+          ]
+        },
+        {
+          "type": "checks",
+          "alt": true,
+          "label": "Know your lot",
+          "title": "What shapes the cost of building on your land",
+          "text": "Every lot is different. These are the things we look at with you early, so the price you plan on is the price you pay.",
+          "items": [
+            [
+              "Water",
+              "Public water or a well"
+            ],
+            [
+              "Sewer",
+              "Public sewer or a septic system"
+            ],
+            [
+              "Power and internet",
+              "How far service has to run to the house"
+            ],
+            [
+              "Slope, soil and drainage",
+              "Grading and foundation needs, slab or basement"
+            ],
+            [
+              "Driveway",
+              "Length and grading from the road to the house"
+            ],
+            [
+              "HOA and zoning rules",
+              "What your neighborhood or county allows"
+            ],
+            [
+              "Clearing and house placement",
+              "Where the house sits and which trees stay"
+            ],
+            [
+              "Upgrades and contingency",
+              "Room in the budget for the options you want"
+            ]
+          ],
+          "button": {
+            "text": "Download the building checklist",
+            "href": "/riverstone-building-checklist.pdf",
+            "download": true
+          }
+        },
+        {
+          "type": "two",
+          "label": "No land yet?",
+          "title": "We'll help you find the right place to build.",
+          "paras": [
+            "You don't need to have it all figured out. Riverstone partners with Sandra Watkins of RE/MAX Town &amp; Country, who specializes in lots, communities and new construction.",
+            "Sandra will help you find land that fits your plan and budget, then walk you through choosing a plan, picking your finishes and getting construction started."
+          ],
+          "buttons": [
+            {
+              "text": "Call Sandra, 770-324-3680",
+              "href": "tel:+17703243680"
+            },
+            {
+              "text": "Meet Sandra",
+              "href": "/team.html#sandra"
+            }
+          ],
+          "image": "/images/site-plan.jpg",
+          "alt": "Site plan drawing with an engineer's scale"
+        },
+        {
+          "type": "cards",
+          "label": "Plan ahead",
+          "title": "See what's included before you build",
+          "items": [
+            {
+              "kicker": "Floor plan",
+              "title": "Hemlock Falls",
+              "text": "One-level living with a vaulted family room, flex room and an optional second floor.",
+              "href": "/plans/hemlock-falls.html",
+              "go": "See the plan"
+            },
+            {
+              "kicker": "PDF",
+              "title": "Standard Features",
+              "text": "Everything included in every Riverstone home before a single upgrade.",
+              "href": "/downloads/riverstone-standard-features.pdf",
+              "go": "Download"
+            },
+            {
+              "kicker": "PDF",
+              "title": "Options Price List",
+              "text": "Every upgrade we offer, with prices and when each one has to be chosen.",
+              "href": "/downloads/riverstone-options-price-list.pdf",
+              "go": "Download"
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "alt": true,
+          "label": "Questions",
+          "title": "Building on your land: common questions",
+          "items": [
+            [
+              "Can you build on land I already own?",
+              "Yes. We build custom homes on our clients' lots and handle permits, planning and construction from start to finish."
+            ],
+            [
+              "Can I bring my own plan?",
+              "Yes. You can start from one of our proven plans or bring your own, and we'll fit it to your lot. We regularly customize layouts, finishes and outdoor spaces."
+            ],
+            [
+              "Where do you build?",
+              "Throughout North Metro Atlanta and North Georgia, including Cherokee, Bartow, Gordon, Cobb and Pickens counties. If you're not sure your lot is in our area, call us at <a href=\"tel:+17065146637\">706-514-6637</a>."
+            ],
+            [
+              "What comes standard?",
+              "Every Riverstone home includes LVP flooring in the main living areas, granite or quartz countertops, custom cabinetry, tiled baths and more. See the full <a href=\"/downloads/riverstone-standard-features.pdf\" target=\"_blank\" rel=\"noopener\">Standard Features list</a>."
+            ],
+            [
+              "How do I pick my finishes?",
+              "After your plan is set, we walk you through your selections, from exterior colors and stone to cabinets, flooring and fixtures, with clear deadlines so construction stays on schedule."
+            ],
+            [
+              "I don't have land yet. Where do I start?",
+              "Start with us. Sandra Watkins of RE/MAX Town &amp; Country specializes in lots and new construction and can help you find the right place first. Call or text her at <a href=\"tel:+17703243680\">770-324-3680</a>."
+            ]
+          ]
+        },
+        {
+          "type": "contact",
+          "title": "Tell us about your land.",
+          "text": "Where's your lot, which plan do you like, and when would you like to start? We'll set up a time to talk it through.",
+          "topic": "Building on my land",
+          "placeholder": "Where's your lot (county or address), do you know about water and sewer, and when would you like to start?"
+        }
+      ]
+    },
+    {
+      "path": "/plans/hemlock-falls.html",
+      "title": "Hemlock Falls Floor Plan | 2,187 Sq Ft | Riverstone Homes",
+      "description": "The Hemlock Falls plan by Riverstone Homes: 2,187 sq ft on one level, 3 bedrooms, 2 baths, vaulted family room and flex room, with an optional 752 sq ft second floor. See photos and the floor plan.",
+      "og_image": "/images/plans/hemlock-falls/hemlock-falls-front.jpg",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Hemlock Falls floor plan",
+        "brand": {
+          "@type": "Organization",
+          "name": "Riverstone Homes"
+        },
+        "image": "https://goriverstone.com/images/plans/hemlock-falls/hemlock-falls-front.jpg",
+        "description": "2,187 sq ft main floor, 3 bedrooms, 2 baths, optional 752 sq ft second floor with bedroom 4, bath 3 and bonus room. Plan design by Frank Betz Associates."
+      },
+      "blocks": [
+        {
+          "type": "hero",
+          "image": "/images/plans/hemlock-falls/hemlock-falls-front.jpg",
+          "alt": "Hemlock Falls plan built by Riverstone Homes: gray board and batten craftsman with white trim and a covered front porch",
+          "label": "Floor plan",
+          "title": "Hemlock Falls",
+          "lede": "One-level living with a vaulted family room, a flex room off the foyer and room to grow upstairs.",
+          "buttons": [
+            {
+              "text": "Ask about this plan",
+              "href": "#contact"
+            },
+            {
+              "text": "Floor plan PDF",
+              "href": "/downloads/riverstone-hemlock-falls-floor-plan.pdf",
+              "download": true
+            }
+          ]
+        },
+        {
+          "type": "specs",
+          "items": [
+            [
+              "2,187",
+              "Main floor sq ft"
+            ],
+            [
+              "+752",
+              "Optional 2nd floor sq ft"
+            ],
+            [
+              "3 or 4",
+              "Bedrooms"
+            ],
+            [
+              "2 or 3",
+              "Baths"
+            ],
+            [
+              "2 car",
+              "Garage"
+            ]
+          ],
+          "note": "Fourth bedroom, third bath and bonus room are on the optional second floor."
+        },
+        {
+          "type": "gallery",
+          "label": "Photos",
+          "title": "Built by Riverstone",
+          "items": [
+            {
+              "src": "/images/plans/hemlock-falls/hemlock-falls-front.jpg",
+              "alt": "Front of a Hemlock Falls home built by Riverstone Homes",
+              "caption": "Hemlock Falls, built by Riverstone Homes"
+            },
+            {
+              "src": "/images/plans/hemlock-falls/hemlock-falls-rendering.jpg",
+              "alt": "Frank Betz rendering of the Hemlock Falls plan",
+              "caption": "Frank Betz plan rendering"
+            }
+          ],
+          "note": "More photos of this plan are coming soon."
+        },
+        {
+          "type": "plans",
+          "alt": true,
+          "id": "floor-plan",
+          "label": "Floor plan",
+          "title": "Inside the Hemlock Falls",
+          "floors": [
+            {
+              "img": "/images/plans/hemlock-falls/floor1.png",
+              "alt": "Hemlock Falls first floor plan in color: owner's suite, vaulted family room, kitchen, dining, flex, two bedrooms, garage",
+              "label": "First floor",
+              "note": "2,187 sq ft, 3 bedrooms, 2 baths"
+            },
+            {
+              "img": "/images/plans/hemlock-falls/floor2.png",
+              "alt": "Hemlock Falls optional second floor plan: bonus room, bedroom 4, bath and closet",
+              "label": "Optional second floor",
+              "note": "752 sq ft, bedroom 4, bath 3 and bonus room"
+            }
+          ],
+          "key": [
+            [
+              "LVP",
+              "#e6cca4"
+            ],
+            [
+              "Carpet",
+              "#d5dfc3"
+            ],
+            [
+              "Tile",
+              "#c8dadf"
+            ],
+            [
+              "Porch",
+              "#f1ebe0"
+            ],
+            [
+              "Garage",
+              "#e7e5df"
+            ],
+            [
+              "Optional space",
+              "#ffffff"
+            ]
+          ],
+          "highlights": [
+            "Owner's suite on the main with a large walk-in closet",
+            "Vaulted family room open to the kitchen and dining",
+            "Vaulted back porch, optional outdoor dining",
+            "Flex room off the foyer",
+            "Mud room and laundry off the garage"
+          ],
+          "button": {
+            "text": "Download the floor plan",
+            "href": "/downloads/riverstone-hemlock-falls-floor-plan.pdf",
+            "download": true
+          },
+          "credit": "Plan design by Frank Betz Associates, Inc. Copyright 2018. Subject to change. Subject to errors and omissions. Plans, dimensions and square footage are approximate and may vary in the final home."
+        },
+        {
+          "type": "cards",
+          "label": "Plan your build",
+          "title": "Build the Hemlock Falls on your land",
+          "items": [
+            {
+              "kicker": "Your lot",
+              "title": "Build on your land",
+              "text": "Already own a lot? See how we take you from consultation to closing.",
+              "href": "/build-on-your-land.html",
+              "go": "How it works"
+            },
+            {
+              "kicker": "PDF",
+              "title": "Standard Features",
+              "text": "Everything included in every Riverstone home.",
+              "href": "/downloads/riverstone-standard-features.pdf",
+              "go": "Download"
+            },
+            {
+              "kicker": "PDF",
+              "title": "Options Price List",
+              "text": "Upgrades with prices and when each one has to be chosen.",
+              "href": "/downloads/riverstone-options-price-list.pdf",
+              "go": "Download"
+            }
+          ]
+        },
+        {
+          "type": "contact",
+          "title": "Love the Hemlock Falls?",
+          "text": "Tell us where you'd like to build it and when. We'll talk through the plan, your lot and the options you want.",
+          "topic": "The Hemlock Falls plan",
+          "placeholder": "Where would you build it, and would you like the optional second floor?"
+        }
+      ]
+    },
+    {
+      "path": "/barndominiums.html",
+      "title": "Barndominium Builder in North Georgia | Riverstone Homes",
+      "description": "Riverstone Homes builds barndominiums across North Georgia: open, barn-style living with room for a shop, horses or equipment. Locally owned since 1997. Call 706-514-6637.",
+      "og_image": "/images/vid-barn.jpg",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Barndominium construction",
+        "serviceType": "Barndominium construction",
+        "provider": {
+          "@type": "HomeAndConstructionBusiness",
+          "name": "Riverstone Homes",
+          "url": "https://goriverstone.com/",
+          "telephone": "+1-706-514-6637"
+        },
+        "areaServed": [
+          "Cherokee County, GA",
+          "Bartow County, GA",
+          "Gordon County, GA",
+          "Cobb County, GA",
+          "Pickens County, GA"
+        ]
+      },
+      "blocks": [
+        {
+          "type": "hero",
+          "image": "/images/vid-barn.jpg",
+          "alt": "Loft inside a Riverstone barndominium with wood walls and big windows",
+          "label": "Barndominiums",
+          "title": "Barndominiums built for North Georgia land.",
+          "lede": "Open, barn-style living with room for a shop, horses or equipment, built by a local team that has been building since 1997.",
+          "buttons": [
+            {
+              "text": "Talk about a barndominium",
+              "href": "#contact"
+            },
+            {
+              "text": "Watch the video",
+              "href": "/videos.html#barn"
+            }
+          ]
+        },
+        {
+          "type": "two",
+          "label": "Why a barndominium",
+          "title": "Living space and work space under one roof.",
+          "paras": [
+            "A barndominium gives you a home and a working building in one: big open living areas, a loft if you want one, and space for a shop, vehicles, tools or animals.",
+            "They're a natural fit for North Georgia acreage, and we can build one on land you already own. If you'd rather keep the shop separate, we also build detached garages, workshops and pole barns to match."
+          ],
+          "buttons": [
+            {
+              "text": "Build on your land",
+              "href": "/build-on-your-land.html"
+            }
+          ]
+        },
+        {
+          "type": "checks",
+          "alt": true,
+          "label": "Plan it your way",
+          "title": "What to think about before you build",
+          "text": "Bring these to your building consultation and we'll talk through each one with you.",
+          "items": [
+            [
+              "How you'll use the shop",
+              "Vehicles, equipment, tools, hay or animals"
+            ],
+            [
+              "Living space",
+              "Bedrooms, baths and whether you want a loft"
+            ],
+            [
+              "Porches",
+              "Covered porches front, back or wrapped"
+            ],
+            [
+              "Your land",
+              "Slope, clearing, driveway, well or septic"
+            ],
+            [
+              "Finishes",
+              "From rustic wood to clean modern farmhouse"
+            ],
+            [
+              "Budget and financing",
+              "Get pre-approved and plan for site costs"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "label": "How it works",
+          "title": "One team from start to finish",
+          "items": [
+            [
+              "Building consultation",
+              "Talk through your land, budget, plan ideas and timeline before you commit."
+            ],
+            [
+              "Design your layout",
+              "Shape the living space and the shop around how you'll use them."
+            ],
+            [
+              "Permits and site prep",
+              "We handle permitting and getting your land ready to build."
+            ],
+            [
+              "Construction and walk-through",
+              "Our project manager runs the job site, then we walk it with you before closing."
+            ]
+          ]
+        },
+        {
+          "type": "faq",
+          "alt": true,
+          "label": "Questions",
+          "title": "Barndominium questions",
+          "items": [
+            [
+              "Can you build a barndominium on my land?",
+              "Yes. We build on our clients' land and handle permits, planning and construction from start to finish."
+            ],
+            [
+              "Can I add a separate shop or pole barn?",
+              "Yes. Along with barndominiums we build detached garages, workshops and pole barns for vehicles, tools, hay or storage."
+            ],
+            [
+              "Where do you build?",
+              "Throughout North Metro Atlanta and North Georgia, including Cherokee, Bartow, Gordon, Cobb and Pickens counties."
+            ],
+            [
+              "Where do I start?",
+              "Book a building consultation. You'll get honest advice from a builder who's been doing this since 1997, whether you build with us or not. Call <a href=\"tel:+17065146637\">706-514-6637</a>."
+            ]
+          ]
+        },
+        {
+          "type": "contact",
+          "title": "Let's plan your barndominium.",
+          "text": "Tell us about your land and how you want to use the space. We'll set up a time to talk it through.",
+          "topic": "A barndominium",
+          "placeholder": "Where's your land, how big a shop do you need, and how many bedrooms?"
+        }
+      ]
+    }
+  ]
+}
