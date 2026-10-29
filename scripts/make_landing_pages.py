@@ -174,7 +174,7 @@ def page_html(p):
 <main>
 {blocks}
 </main>
-<footer class="site-footer"><div class="wrap"><span>&copy; <span id="year">2026</span> Riverstone Homes, Inc. &middot; 102 Overlook Cir, Suite B, Canton, GA 30115 &middot; 706-514-6637</span><nav aria-label="Footer">{nav}</nav></div></footer>
+<footer class="site-footer"><div class="wrap"><span>&copy; <span id="year">2026</span> Riverstone Homes, Inc. &middot; 6446 Joe Frank Harris Pkwy, Adairsville, GA 30103 &middot; 706-514-6637</span><nav aria-label="Footer">{nav}</nav></div></footer>
 {lb}
 {SCRIPT}
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
