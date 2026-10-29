@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Riverstone Downloads</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Download the Riverstone Homes Options Price List and building checklist. Custom homes in North Georgia, locally owned since 1997.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<style>
+/* Layout: matches the main site. Forest header band, then a limestone reading column with a full-width photo per post */
+:root {
+  --page: #f4f3ef; --page-2: #eae8e2; --card: #ffffff; --ink: #18211e; --ink-2: #505a55; --line: #d9d7cf;
+  --forest: #1b2823; --forest-2: #24342d; --brass: #9c7a45; --brass-hi: #c5a46f;
+  --on-dark: #f2f0ea; --on-dark-2: rgba(242,240,234,.72); --on-dark-line: rgba(242,240,234,.16);
+  --notice: #fbf3e2; --notice-ink: #6b4e1e;
+  --f-display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --f-body: "Hanken Grotesk", "Helvetica Neue", system-ui, sans-serif;
+  --gl: max(20px, env(safe-area-inset-left, 0px)); --gr: max(20px, env(safe-area-inset-right, 0px));
+  --ease: cubic-bezier(.2,.7,.2,1);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: #111714; --page-2: #18201c; --card: #1c2420; --ink: #ecebe6; --ink-2: #a9b2ac; --line: #2c3631;
+    --forest: #0b100e; --forest-2: #141c18; --brass: #c9a66c; --brass-hi: #dcbd88; --notice: #2a2416; --notice-ink: #e6cf9f;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page: #111714; --page-2: #18201c; --card: #1c2420; --ink: #ecebe6; --ink-2: #a9b2ac; --line: #2c3631;
+  --forest: #0b100e; --forest-2: #141c18; --brass: #c9a66c; --brass-hi: #dcbd88; --notice: #2a2416; --notice-ink: #e6cf9f;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { background: var(--page); color: var(--ink); font: 400 1.0625rem/1.7 var(--f-body); -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--forest); }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 400; line-height: 1.1; letter-spacing: -0.015em; text-wrap: balance; margin: 0; }
+:focus-visible { outline: 2px solid var(--brass); outline-offset: 4px; }
+.wrap { max-width: 1240px; margin-inline: auto; padding-left: var(--gl); padding-right: var(--gr); }
+.narrow { max-width: calc(720px + 40px); }
+.label { display: inline-flex; align-items: center; gap: .75rem; font: 600 .75rem/1 var(--f-body); letter-spacing: .22em; text-transform: uppercase; color: var(--brass); }
+.label::before { content: ""; width: 28px; height: 1px; background: currentColor; }
+
+/* Header */
+.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--forest); color: var(--on-dark); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 72px; }
+.brand img { height: 34px; width: auto; filter: invert(1); }
+.head-links { display: flex; gap: 1.5rem; align-items: center; }
+.head-links a { text-decoration: none; font: 500 .9rem/1 var(--f-body); letter-spacing: .04em; }
+.head-links .cta { border: 1px solid currentColor; padding: .7rem 1rem; font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.head-links .cta:hover { background: var(--brass-hi); border-color: var(--brass-hi); color: #18211e; }
+@media (max-width: 520px) { .head-links .home { display: none; } }
+
+/* Review banner (review copy only) */
+.review-bar { background: var(--notice); color: var(--notice-ink); border-bottom: 1px solid var(--line); }
+.review-bar .wrap { padding-block: .9rem; display: flex; flex-wrap: wrap; gap: .4rem 1rem; align-items: baseline; font-size: .95rem; }
+.review-bar b { font-weight: 600; }
+
+/* CTA band */
+.cta-band { background: var(--forest); color: var(--on-dark); }
+.cta-band .wrap { padding-block: clamp(3rem, 7vw, 4.5rem); display: flex; flex-wrap: wrap; gap: 1.5rem 3rem; align-items: center; justify-content: space-between; }
+.cta-band h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); max-width: 22ch; }
+.cta-band p { color: var(--on-dark-2); margin: .6rem 0 0; }
+.btn { display: inline-flex; align-items: center; gap: .8rem; padding: 1rem 1.5rem; font: 600 .85rem/1 var(--f-body); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; background: var(--on-dark); color: #18211e; border: 1px solid var(--on-dark); }
+.btn:hover { background: var(--brass-hi); border-color: var(--brass-hi); }
+.back { display: inline-flex; gap: .5rem; align-items: center; font: 600 .78rem/1 var(--f-body); letter-spacing: .14em; text-transform: uppercase; text-decoration: none; color: var(--brass); }
+.back:hover { color: var(--ink); }
+.site-footer { background: var(--forest); color: var(--on-dark-2); border-top: 1px solid var(--on-dark-line); }
+.site-footer .wrap { padding-block: 1.75rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem; font-size: .88rem; }
+.site-footer a { color: var(--on-dark); text-decoration: none; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
+
+
+/* Downloads page */
+.d-head { padding-block: clamp(3.5rem, 8vw, 6rem) clamp(2rem, 4vw, 3rem); border-bottom: 1px solid var(--line); }
+.d-head .wrap { display: grid; gap: 1.25rem; }
+.d-head h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
+.d-head p { color: var(--ink-2); max-width: 60ch; font-size: 1.15rem; margin: 0; }
+.files { padding-block: clamp(2.5rem, 6vw, 4rem); display: grid; gap: 0; }
+.file { display: grid; grid-template-columns: 64px 1fr auto; gap: 1.25rem 1.75rem; align-items: center; padding-block: 1.75rem; border-bottom: 1px solid var(--line); }
+.file:first-child { border-top: 1px solid var(--ink); }
+.file > * { min-width: 0; }
+.doc { width: 64px; height: 80px; background: var(--card); border: 1px solid var(--line); display: grid; place-items: end center; padding-bottom: .6rem; position: relative; font: 600 .68rem/1 var(--f-body); letter-spacing: .16em; color: var(--brass); }
+.doc::before { content: ""; position: absolute; top: 12px; left: 12px; right: 12px; height: 1px; background: var(--line); box-shadow: 0 8px 0 var(--line), 0 16px 0 var(--line), 0 24px 0 var(--line); }
+.file h2 { font-size: clamp(1.45rem, 2.4vw, 1.8rem); }
+.file p { margin: .35rem 0 0; color: var(--ink-2); max-width: 60ch; }
+.file .meta { margin-top: .6rem; font-size: .8rem; letter-spacing: .06em; color: var(--ink-2); }
+.dl { display: inline-flex; align-items: center; gap: .6rem; padding: .95rem 1.3rem; font: 600 .78rem/1 var(--f-body); letter-spacing: .1em; text-transform: uppercase; text-decoration: none; background: var(--forest); color: var(--on-dark); border: 1px solid var(--forest); white-space: nowrap; }
+.dl:hover { background: var(--brass); border-color: var(--brass); }
+.dl svg { width: 14px; height: 14px; }
+.fine { color: var(--ink-2); font-size: .88rem; max-width: 70ch; padding-bottom: clamp(2.5rem, 6vw, 4rem); margin: 0; }
+.fine a { color: var(--brass); white-space: nowrap; }
+@media (max-width: 640px) { .file { grid-template-columns: 48px 1fr; } .doc { width: 48px; height: 60px; } .doc::before { top: 9px; left: 9px; right: 9px; box-shadow: 0 6px 0 var(--line), 0 12px 0 var(--line); } .file .act { grid-column: 1 / -1; } }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Riverstone Homes home"><img src="images/logo.png" alt="Riverstone Homes" width="799" height="238"></a>
+    <nav class="head-links" aria-label="Downloads">
+      <a class="home" href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="blog.html">Blog</a>
+      <a class="cta" href="index.html#contact">Start Your Build</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="d-head"><div class="wrap">
+    <span class="label">Buyer Resources</span>
+    <h1>Downloads</h1>
+    <p>Pricing and planning documents for building with Riverstone Homes. Download them, print them, and bring your questions to your first meeting.</p>
+  </div></section>
+
+  <div class="wrap">
+    <div class="files">
+      <article class="file">
+        <div class="doc" aria-hidden="true">PDF</div>
+        <div>
+          <h2>Options Price List</h2>
+          <p>Every upgrade we offer, from exterior and electrical to kitchen, baths, finished areas and basements, with prices and when each option has to be chosen.</p>
+          <div class="meta">PDF · 4 pages · Updated October 2026</div>
+        </div>
+        <div class="act"><a class="dl" href="downloads/riverstone-options-price-list.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v9M4 7.5 8 11.5l4-4M2.5 14h11"/></svg> Download</a></div>
+      </article>
+      <article class="file">
+        <div class="doc" aria-hidden="true">PDF</div>
+        <div>
+          <h2>Building Checklist</h2>
+          <p>Your step-by-step guide to building a new home, from choosing land and a builder to plans and selections. Check off each step as you go.</p>
+          <div class="meta">PDF · 2 pages</div>
+        </div>
+        <div class="act"><a class="dl" href="riverstone-building-checklist.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v9M4 7.5 8 11.5l4-4M2.5 14h11"/></svg> Download</a></div>
+      </article>
+    </div>
+    <p class="fine">Prices are subject to change at any time prior to a binding contract. Information deemed accurate but not warranted and subject to errors and omissions. Questions about pricing or options? Call or text Sandra Watkins, RE/MAX Town &amp; Country, at <a href="tel:+17703243680">770-324-3680</a> or email sandra.watkins@remax.net.</p>
+  </div>
+</main>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div><h2>Ready to start your build?</h2><p>Call 706-514-6637 or email info@goriverstone.com</p></div>
+    <a class="btn" href="index.html#contact">Start your build</a>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap"><span>© <span id="year">2026</span> Riverstone Homes, Inc. · North Metro Atlanta, Georgia</span><a href="index.html">goriverstone.com</a></div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
