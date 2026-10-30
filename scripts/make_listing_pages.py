@@ -113,6 +113,8 @@ for l in data:
 <style>
 {HEAD_CSS}
 </style>
+<!-- Metricool -->
+<script>function loadScript(a){{var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}}loadScript(function(){{beTracker.t({{hash:"c912cd182a3a69c45b610171e4c84dee"}})}});</script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
