@@ -1,0 +1,18 @@
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+
+# Share links for posts approved in the last hour (before the hourly task writes
+# their static share page) are served by the blog function. Static files win.
+[[redirects]]
+  from = "/share/*"
+  to = "/api/blog?share=:splat"
+  status = 200
+
+[[headers]]
+  for = "/review.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-store"

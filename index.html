@@ -874,8 +874,10 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
   (() => {
     const esc = t => String(t ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
     const fmt = iso => new Date(iso + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
-    fetch("posts.json", { cache: "no-store" }).then(r => r.ok ? r.json() : { posts: [] }).then(d => {
-      const list = (d.posts || []).filter(p => p.status === "published").sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
+    const fresh = fetch("/api/blog", { cache: "no-store" }).then(r => r.ok ? r.json() : { posts: [] }).catch(() => ({ posts: [] }));
+    fetch("posts.json", { cache: "no-store" }).then(r => r.ok ? r.json() : { posts: [] }).then(async d => {
+      const extra = (await fresh).posts || [], seen = new Set((d.posts || []).map(p => p.slug));
+      const list = (d.posts || []).concat(extra.filter(p => !seen.has(p.slug))).filter(p => p.status === "published").sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
       if (!list.length) return;
       document.getElementById("blog-row").innerHTML = list.map(p => `
         <a class="blog-card" href="blog.html#${esc(p.slug)}">

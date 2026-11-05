@@ -290,10 +290,14 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
   document.getElementById("all-posts-link").addEventListener("click", e => { e.preventDefault(); history.replaceState(null, "", location.pathname); if (!REVIEW) renderIndex(); else route(); window.scrollTo(0, 0); });
   window.addEventListener("hashchange", route);
 
+  // Posts approved in the last hour come from /api/blog until they're written into posts.json.
+  const fresh = fetch("/api/blog", { cache: "no-store" }).then(r => r.ok ? r.json() : { posts: [] }).catch(() => ({ posts: [] }));
   fetch("posts.json", { cache: "no-store" })
     .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(data => {
-      posts = (data.posts || [])
+    .then(async data => {
+      const extra = (await fresh).posts || [];
+      const seen = new Set((data.posts || []).map(p => p.slug));
+      posts = (data.posts || []).concat(extra.filter(p => !seen.has(p.slug)))
         .filter(p => REVIEW || p.status === "published")
         .sort((a, b) => b.date.localeCompare(a.date));
       if (REVIEW) document.getElementById("review-bar").hidden = false;
