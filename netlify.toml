@@ -4,8 +4,8 @@
 [functions]
   directory = "netlify/functions"
 
-# Share links for posts approved in the last hour (before the hourly task writes
-# their static share page) are served by the blog function. Static files win.
+# Share links for posts approved in the last few minutes (before the publisher
+# writes their static share page) are served by the blog function. Static files win.
 [[redirects]]
   from = "/share/*"
   to = "/api/blog?share=:splat"
@@ -16,3 +16,10 @@
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
     Cache-Control = "no-store"
+
+# Drafts are bundled into the blog function; never serve the raw files.
+[[redirects]]
+  from = "/drafts/*"
+  to = "/404"
+  status = 404
+  force = true

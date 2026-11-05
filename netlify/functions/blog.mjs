@@ -1,9 +1,12 @@
-// Riverstone blog drafts and approvals.
-// Drafts wait here (Netlify Blobs) until Sandra approves them on /review.html.
-// Approved posts show on the public blog right away; the hourly task later
-// writes them into posts.json in the repo and calls "finalize".
+// Riverstone blog approvals.
+// Drafts live in drafts/pending.json in the repo (bundled into this function at
+// build time). Sandra approves them on /review.html; decisions are kept in
+// Netlify Blobs, and approved posts show on the public blog right away.
+// A GitHub Action (.github/workflows/publish-approved.yml) then writes them into
+// posts.json, rebuilds share pages and rss.xml, and removes the draft.
 import { pbkdf2Sync, timingSafeEqual } from "node:crypto";
 import { getStore } from "@netlify/blobs";
+import bundled from "../../drafts/pending.json" with { type: "json" };
 
 const SALT = "859ea06217914363e4cbb84ad47087fb";
 const HASH = "7585eba9184ce3fb0ab3678e0afc7b50719bc1c16a7ecd13d7d9d68911dba592";
@@ -31,9 +34,15 @@ const todayET = () =>
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-async function load(store) {
-  const s = await store.get("state", { type: "json" });
-  return s && typeof s === "object" ? { drafts: s.drafts || {}, decisions: s.decisions || {} } : { drafts: {}, decisions: {} };
+export function draftsFrom(src) {
+  const out = {};
+  for (const p of (src && src.posts) || []) if (p && p.slug) out[p.slug] = { ...p, rev: p.rev || p.date || "1" };
+  return out;
+}
+
+async function load(store, drafts) {
+  const s = await store.get("decisions", { type: "json" });
+  return { drafts, decisions: (s && typeof s === "object") ? s : {} };
 }
 
 export function approvedPosts(state) {
@@ -70,24 +79,27 @@ function sharePage(p) {
 }
 
 const SLUG = /^[a-z0-9][a-z0-9-]{0,120}$/;
-const REQUIRED = ["slug", "title", "date", "photo", "excerpt", "body"];
 
-export async function handle(req, store) {
+export async function handle(req, store, drafts = draftsFrom(bundled)) {
   const url = new URL(req.url);
 
   if (req.method === "GET") {
     const share = url.searchParams.get("share") || (url.pathname.startsWith("/share/") ? url.pathname.slice(7) : "");
     if (share) {
       const slug = share.replace(/\.html$/, "").replace(/^.*\//, "");
-      const p = approvedPosts(await load(store)).find(x => x.slug === slug);
+      const p = approvedPosts(await load(store, drafts)).find(x => x.slug === slug);
       if (!p) return new Response("Not found", { status: 404, headers: { "content-type": "text/plain" } });
       return new Response(sharePage(p), { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=60" } });
     }
+    if (url.searchParams.get("view") === "decisions") {
+      // Public: approvals and change notes, read by the GitHub Action and the drafting task.
+      return json({ decisions: (await load(store, drafts)).decisions });
+    }
     if (url.searchParams.get("view") === "review") {
       if (!keyOk(req.headers.get("x-review-key"))) return json({ error: "wrong password" }, 401);
-      return json(await load(store));
+      return json(await load(store, drafts));
     }
-    return json({ posts: approvedPosts(await load(store)) }, 200, { "cache-control": "public, max-age=15" });
+    return json({ posts: approvedPosts(await load(store, drafts)) }, 200, { "cache-control": "public, max-age=15" });
   }
 
   if (req.method !== "POST") return json({ error: "method" }, 405);
@@ -95,20 +107,15 @@ export async function handle(req, store) {
   try { body = await req.json(); } catch { return json({ error: "bad json" }, 400); }
   if (!keyOk(req.headers.get("x-review-key") || body.key)) return json({ error: "wrong password" }, 401);
 
-  const state = await load(store);
+  const state = await load(store, drafts);
+  const save = () => store.setJSON("decisions", state.decisions);
   const { action } = body;
   const slug = body.slug || body.post?.slug;
   if (action !== "check" && !SLUG.test(slug || "")) return json({ error: "bad slug" }, 400);
 
   if (action === "check") return json({ ok: true });
 
-  if (action === "draft") {
-    const p = body.post || {};
-    const missing = REQUIRED.filter(k => !p[k]);
-    if (missing.length) return json({ error: "missing " + missing.join(", ") }, 400);
-    state.drafts[slug] = { ...p, status: "draft", rev: Date.now() };
-    delete state.decisions[slug];
-  } else if (action === "approve") {
+  if (action === "approve") {
     const p = state.drafts[slug];
     if (!p) return json({ error: "no such draft" }, 404);
     state.decisions[slug] = { decision: "approved", note: String(body.note || ""), rev: p.rev, date: todayET(), ts: Date.now() };
@@ -118,14 +125,10 @@ export async function handle(req, store) {
     const note = String(body.note || "").trim();
     if (!note) return json({ error: "note required" }, 400);
     state.decisions[slug] = { decision: "changes", note, rev: p.rev, ts: Date.now() };
-  } else if (action === "finalize" || action === "delete") {
-    delete state.drafts[slug];
-    delete state.decisions[slug];
   } else {
     return json({ error: "unknown action" }, 400);
   }
-
-  await store.setJSON("state", state);
+  await save();
   return json({ ok: true, state });
 }
 

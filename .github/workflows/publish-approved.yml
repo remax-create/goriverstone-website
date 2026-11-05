@@ -1,0 +1,33 @@
+name: Publish approved blog posts
+
+on:
+  schedule:
+    - cron: "*/5 11-23,0-3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-approved
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - run: python3 scripts/publish_approved.py
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "Riverstone Publisher"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A posts.json rss.xml share drafts
+          if git diff --cached --quiet; then echo "Nothing to publish"; exit 0; fi
+          git commit -m "Publish approved blog posts and sync review decisions"
+          git pull --rebase origin main
+          git push origin HEAD:main
