@@ -23,3 +23,9 @@
   to = "/404"
   status = 404
   force = true
+
+# Short link for the "Comment BUILD" replies
+[[redirects]]
+  from = "/build"
+  to = "/build.html"
+  status = 301

@@ -16,7 +16,7 @@ DATA = json.load(open(os.path.join(ROOT, 'data', 'landing_pages.json')))
 SITE = 'https://goriverstone.com'
 E = lambda s: html.escape(s or '', quote=True)
 
-TOPICS = ["Building on my land", "Finding land to build on", "The Hemlock Falls plan", "121 Cypress Court",
+TOPICS = ["Building on my land", "Finding land to build on", "Building a home I saw in a video", "The Hemlock Falls plan", "121 Cypress Court",
           "104 Bob White Drive", "Riverstone Commons townhomes", "A custom home or plan", "A barndominium",
           "A room addition", "A basement finish", "A garage or pole barn", "A building consultation", "Something else"]
 
