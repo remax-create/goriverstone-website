@@ -273,7 +273,7 @@
      "alt": "White board and batten Riverstone home with a covered front porch and stone accents",
      "label": "Build with Riverstone",
      "title": "Your lot or ours.",
-     "lede": "Saw one of our home tours and commented BUILD? You're in the right place. Pick the home you love, and we'll help you find the perfect spot to build it.",
+     "lede": "Saw one of our home tours and commented BUILD? You're in the right place. Pick a home you love or bring your own plan, and we'll help you find the perfect spot to build it.",
      "buttons": [
       {
        "text": "Start my build",
@@ -287,8 +287,8 @@
     },
     {
      "type": "cards",
-     "label": "Two ways to start",
-     "title": "Where are you in the process?",
+     "label": "Where to start",
+     "title": "Your lot or ours. Our plan or yours.",
      "text": "Wherever you're starting from, one local team takes it from here.",
      "items": [
       {
@@ -306,6 +306,13 @@
        "go": "Call Sandra"
       },
       {
+       "kicker": "Your plan",
+       "title": "I have my own plan",
+       "text": "Bring your own floor plan or sketch. We'll price it, fit it to your lot and build it.",
+       "href": "#contact",
+       "go": "Tell us about it"
+      },
+      {
        "kicker": "Just dreaming",
        "title": "I'm still looking around",
        "text": "See the standard features, the options price list and our floor plans before you commit to anything.",
@@ -318,8 +325,8 @@
      "type": "gallery",
      "alt": true,
      "label": "Homes we've built",
-     "title": "Pick a favorite",
-     "text": "Every one of these is a Riverstone home. Tap a photo to see it bigger, then tell us which one you'd love to build.",
+     "title": "Pick a favorite, or bring your own",
+     "text": "Every one of these is a Riverstone home. Tap a photo to see it bigger. Love one? We'll build it. Have your own plan? We'll build that too.",
      "items": [
       {
        "src": "/images/build/walton-plan.jpg",
@@ -382,7 +389,7 @@
        "caption": "Screened porch"
       }
      ],
-     "note": "Plans can be customized. Photos show homes Riverstone has built and may include options."
+     "note": "Every plan can be customized, and you're always welcome to bring your own. Photos show homes Riverstone has built and may include options."
     },
     {
      "type": "two",
@@ -413,8 +420,8 @@
      "title": "From the home you love to your keys",
      "items": [
       [
-       "Pick your home",
-       "Start with one of our proven plans, or bring your own idea."
+       "Pick your plan",
+       "Start with one of our proven plans, or bring your own and we'll fit it to your lot."
       ],
       [
        "Find your spot",
@@ -462,9 +469,9 @@
      "type": "contact",
      "label": "Let's talk",
      "title": "Tell us about your build.",
-     "text": "Which home did you love, and do you have land yet? Send us a note and we'll reach out to talk it through.",
+     "text": "Which home did you love, or do you have your own plan? Do you have land yet? Send us a note and we'll reach out to talk it through.",
      "topic": "Building a home I saw in a video",
-     "placeholder": "The home I loved, my area or county, and when I'd like to start"
+     "placeholder": "The home I loved or my own plan, my area or county, and when I'd like to start"
     }
    ]
   },
