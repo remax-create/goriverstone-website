@@ -53,7 +53,7 @@ def block(b, page):
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<ol class="steps">{items}</ol></div></section>'
     if t == 'checks':
         items = ''.join(f'<li><b>{E(s[0])}</b>' + (f'<span>{E(s[1])}</span>' if len(s) > 1 and s[1] else '') + '</li>' for s in b['items'])
-        foot = f'<p style="margin-top:2rem">{btn(b["button"], "btn dark")}</p>' if b.get('button') else ''
+        foot = (f'<p style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:.8rem">{btn(b["button"], "btn dark")}' + (btn(b["button2"], "btn line") if b.get('button2') else '') + '</p>') if b.get('button') else ''
         grid = f' style="grid-template-columns:repeat(auto-fit,minmax(min(100%,{int(b["min"])}px),1fr))"' if b.get('min') else ''
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<ul class="checks"{grid}>{items}</ul>{foot}</div></section>'
     if t == 'two':
@@ -73,6 +73,13 @@ def block(b, page):
         note = f'<p class="fine" style="margin-top:1.2rem">{E(b["note"])}</p>' if b.get('note') else ''
         grid = f' style="grid-template-columns:repeat(auto-fit,minmax(min(100%,{int(b["min"])}px),1fr))"' if b.get('min') else ''
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="cards"{grid}>{cards}</div>{note}</div></section>'
+    if t == 'team':
+        cards = ''.join(
+            f'<article class="tm"><img src="{E(m["img"])}" alt="{E(m["name"])}, {E(m["role"])}" loading="lazy" width="800" height="1000">'
+            f'<div class="tx"><span class="k">{E(m["role"])}</span><h3>{E(m["name"])}</h3>' + (f'<span class="sub">{E(m["sub"])}</span>' if m.get('sub') else '') +
+            f'<p>{E(m["text"])}</p><a class="go" href="{E(m["href"])}">{E(m.get("go","Read more"))} &rarr;</a></div></article>'
+            for m in b['items'])
+        return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="team">{cards}</div></div></section>'
     if t == 'specs':
         sp = ''.join(f'<div><b>{E(v)}</b><span>{E(l)}</span></div>' for v, l in b['items'])
         note = f'<p class="fine" style="margin-top:.8rem">{E(b["note"])}</p>' if b.get('note') else ''
@@ -102,7 +109,7 @@ def block(b, page):
         opts = ''.join(f'<option{" selected" if o == b["topic"] else ""}>{E(o)}</option>' for o in TOPICS)
         return f'''<section class="contact" id="contact"><div class="wrap">
   <div class="copy"><span class="label">{E(b.get("label","Free build consultation"))}</span><h2>{E(b["title"])}</h2><p>{E(b["text"])}</p>
-    <dl class="reach"><div><dt>Call Riverstone</dt><dd><a href="tel:+17065146637">706-514-6637</a></dd></div><div><dt>Email</dt><dd>info@goriverstone.com</dd></div><div><dt>New home sales, Sandra Watkins</dt><dd><a href="tel:+17703243680">770-324-3680</a></dd></div></dl></div>
+    <dl class="reach"><div><dt>Call Riverstone</dt><dd><a href="tel:+17065146637">706-514-6637</a></dd></div><div><dt>Email</dt><dd>info@goriverstone.com</dd></div><div><dt>New Home Guide, Sandra Watkins</dt><dd><a href="tel:+17703243680">770-324-3680</a></dd></div></dl></div>
   <form class="inquiry" id="inquiry" name="contact" method="POST" data-netlify="true" netlify-honeypot="company-website">
     <input type="hidden" name="form-name" value="contact">
     <p class="hp"><label for="company-website">Leave this empty</label><input id="company-website" name="company-website" tabindex="-1" autocomplete="off"></p>
@@ -174,7 +181,7 @@ def page_html(p):
 <body>
 <header class="site-header"><div class="wrap">
   <a class="brand" href="/" aria-label="Riverstone Homes home"><img src="/images/logo.png" alt="Riverstone Homes" width="799" height="238"></a>
-  <nav class="head-links" aria-label="Main"><a href="/">Home</a><a href="/build-on-your-land.html">Build on your land</a><a href="/downloads.html">Downloads</a><a class="cta" href="#contact">Start Your Build</a></nav>
+  <nav class="head-links" aria-label="Main"><a href="/">Home</a><a href="/build.html">Build on your land</a><a href="/downloads.html">Downloads</a><a class="cta" href="#contact">Start Your Build</a></nav>
 </div></header>
 <main>
 {blocks}

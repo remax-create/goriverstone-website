@@ -29,3 +29,16 @@
   from = "/build"
   to = "/build.html"
   status = 301
+
+# The old "Build on your land" page was merged into /build.html
+[[redirects]]
+  from = "/build-on-your-land.html"
+  to = "/build.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/build-on-your-land"
+  to = "/build.html"
+  status = 301
+  force = true

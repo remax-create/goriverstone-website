@@ -5,11 +5,7 @@
    "/"
   ],
   [
-   "Build on your land",
-   "/build-on-your-land.html"
-  ],
-  [
-   "Your land or ours",
+   "Build on your land or ours",
    "/build.html"
   ],
   [
@@ -35,218 +31,9 @@
  ],
  "pages": [
   {
-   "path": "/build-on-your-land.html",
-   "title": "Build on Your Land in North Georgia | Riverstone Homes",
-   "description": "Already own a lot? Riverstone Homes builds custom homes on your land in Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties. Locally owned since 1997. Call 706-514-6637.",
-   "og_image": "/images/exterior-sage-craftsman.jpg",
-   "schema": {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Custom home building on your land",
-    "serviceType": "Custom home construction",
-    "provider": {
-     "@type": "HomeAndConstructionBusiness",
-     "name": "Riverstone Homes",
-     "url": "https://goriverstone.com/",
-     "telephone": "+1-706-514-6637"
-    },
-    "areaServed": [
-     "Cherokee County, GA",
-     "Bartow County, GA",
-     "Gordon County, GA",
-     "Whitfield County, GA",
-     "Cobb County, GA",
-     "Pickens County, GA"
-    ]
-   },
-   "blocks": [
-    {
-     "type": "hero",
-     "image": "/images/exterior-sage-craftsman.jpg",
-     "alt": "Sage green craftsman home with a covered front porch, built by Riverstone Homes",
-     "label": "Build on your land",
-     "title": "Build on the land you already own.",
-     "lede": "You pick the plan and we handle the rest: permits, site prep and construction, with one local team that has been building in North Georgia since 1997.",
-     "buttons": [
-      {
-       "text": "Talk about my land",
-       "href": "#contact"
-      },
-      {
-       "text": "Building checklist",
-       "href": "/riverstone-building-checklist.pdf",
-       "download": true
-      }
-     ]
-    },
-    {
-     "type": "steps",
-     "label": "How it works",
-     "title": "From your lot to your keys, in five steps",
-     "text": "You never have to manage subcontractors or chase permits. Here is what building on your land with Riverstone looks like.",
-     "items": [
-      [
-       "Building consultation",
-       "Sit down with our team to talk through your land, budget, plan ideas and timeline before you commit to anything."
-      ],
-      [
-       "Choose your plan",
-       "Pick one of our proven floor plans or bring your own, then make it yours with your layout changes and selections."
-      ],
-      [
-       "Permits and site prep",
-       "We handle permitting, HOA approval and getting your lot ready to build."
-      ],
-      [
-       "Construction",
-       "Our project manager runs the job site from the foundation to the final finish, and keeps you updated along the way."
-      ],
-      [
-       "Walk-through and closing",
-       "We walk the home with you, finish the punch list and see you through closing."
-      ]
-     ]
-    },
-    {
-     "type": "checks",
-     "alt": true,
-     "label": "Know your lot",
-     "title": "What shapes the cost of building on your land",
-     "text": "Every lot is different. These are the things we look at with you early, so the price you plan on is the price you pay.",
-     "items": [
-      [
-       "Water",
-       "Public water or a well"
-      ],
-      [
-       "Sewer",
-       "Public sewer or a septic system"
-      ],
-      [
-       "Power and internet",
-       "How far service has to run to the house"
-      ],
-      [
-       "Slope, soil and drainage",
-       "Grading and foundation needs, slab or basement"
-      ],
-      [
-       "Driveway",
-       "Length and grading from the road to the house"
-      ],
-      [
-       "HOA and zoning rules",
-       "What your neighborhood or county allows"
-      ],
-      [
-       "Clearing and house placement",
-       "Where the house sits and which trees stay"
-      ],
-      [
-       "Upgrades and contingency",
-       "Room in the budget for the options you want"
-      ]
-     ],
-     "button": {
-      "text": "Download the building checklist",
-      "href": "/riverstone-building-checklist.pdf",
-      "download": true
-     }
-    },
-    {
-     "type": "two",
-     "label": "No land yet?",
-     "title": "We'll help you find the right place to build.",
-     "paras": [
-      "You don't need to have it all figured out. Riverstone partners with Sandra Watkins of RE/MAX Town &amp; Country, who specializes in lots, communities and new construction.",
-      "Sandra will help you find land that fits your plan and budget, then walk you through choosing a plan, picking your finishes and getting construction started."
-     ],
-     "buttons": [
-      {
-       "text": "Call Sandra, 770-324-3680",
-       "href": "tel:+17703243680"
-      },
-      {
-       "text": "Meet Sandra",
-       "href": "/team.html#sandra"
-      }
-     ],
-     "image": "/images/site-plan.jpg",
-     "alt": "Site plan drawing with an engineer's scale"
-    },
-    {
-     "type": "cards",
-     "label": "Plan ahead",
-     "title": "See what's included before you build",
-     "items": [
-      {
-       "kicker": "Floor plan",
-       "title": "Hemlock Falls",
-       "text": "One-level living with a vaulted family room, flex room and an optional second floor.",
-       "href": "/plans/hemlock-falls.html",
-       "go": "See the plan"
-      },
-      {
-       "kicker": "PDF",
-       "title": "Standard Features",
-       "text": "Everything included in every Riverstone home before a single upgrade.",
-       "href": "/downloads/riverstone-standard-features.pdf",
-       "go": "Download"
-      },
-      {
-       "kicker": "PDF",
-       "title": "Options Price List",
-       "text": "Every upgrade we offer, with prices and when each one has to be chosen.",
-       "href": "/downloads/riverstone-options-price-list.pdf",
-       "go": "Download"
-      }
-     ]
-    },
-    {
-     "type": "faq",
-     "alt": true,
-     "label": "Questions",
-     "title": "Building on your land: common questions",
-     "items": [
-      [
-       "Can you build on land I already own?",
-       "Yes. We build custom homes on our clients' lots and handle permits, planning and construction from start to finish."
-      ],
-      [
-       "Can I bring my own plan?",
-       "Yes. You can start from one of our proven plans or bring your own, and we'll fit it to your lot. We regularly customize layouts, finishes and outdoor spaces."
-      ],
-      [
-       "Where do you build?",
-       "Throughout North Metro Atlanta and North Georgia, including Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties. If you're not sure your lot is in our area, call us at <a href=\"tel:+17065146637\">706-514-6637</a>."
-      ],
-      [
-       "What comes standard?",
-       "Every Riverstone home includes LVP flooring in the main living areas, granite or quartz countertops, custom cabinetry, tiled baths and more. See the full <a href=\"/downloads/riverstone-standard-features.pdf\" target=\"_blank\" rel=\"noopener\">Standard Features list</a>."
-      ],
-      [
-       "How do I pick my finishes?",
-       "After your plan is set, we walk you through your selections, from exterior colors and stone to cabinets, flooring and fixtures, with clear deadlines so construction stays on schedule."
-      ],
-      [
-       "I don't have land yet. Where do I start?",
-       "Start with us. Sandra Watkins of RE/MAX Town &amp; Country specializes in lots and new construction and can help you find the right place first. Call or text her at <a href=\"tel:+17703243680\">770-324-3680</a>."
-      ]
-     ]
-    },
-    {
-     "type": "contact",
-     "title": "Tell us about your land.",
-     "text": "Where's your lot, which plan do you like, and when would you like to start? We'll set up a time to talk it through.",
-     "topic": "Building on my land",
-     "placeholder": "Where's your lot (county or address), do you know about water and sewer, and when would you like to start?"
-    }
-   ]
-  },
-  {
    "path": "/build.html",
-   "title": "Your Land or Ours | Build a New Home with Riverstone Homes",
-   "description": "Saw a Riverstone home you love? Build it on your land or ours. Riverstone Homes builds custom homes across North Georgia, and Sandra Watkins of RE/MAX Town & Country helps you find the perfect piece of land. Call 706-514-6637.",
+   "title": "Build on Your Land or Ours | Riverstone Homes, North Georgia",
+   "description": "Build a new Riverstone home on your land or ours in Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties. Pick one of our plans or bring your own. Locally owned since 1997. Call 706-514-6637.",
    "og_image": "/images/build/walton-plan.jpg",
    "schema": {
     "@context": "https://schema.org",
@@ -283,7 +70,7 @@
       },
       {
        "text": "I already have land",
-       "href": "/build-on-your-land.html"
+       "href": "#how"
       }
      ]
     },
@@ -297,8 +84,8 @@
        "kicker": "Your land",
        "title": "I already have land",
        "text": "We build on your land and handle the permits, site prep and construction.",
-       "href": "/build-on-your-land.html",
-       "go": "Build on your land"
+       "href": "#how",
+       "go": "See how it works"
       },
       {
        "kicker": "Find land",
@@ -399,7 +186,7 @@
      "label": "Need a place to build?",
      "title": "Let's find your perfect spot.",
      "paras": [
-      "Riverstone partners with Sandra Watkins of RE/MAX Town &amp; Country, who specializes in lots, land and new construction across Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties, the counties where Riverstone builds.",
+      "Sandra Watkins, Riverstone's New Home Guide with RE/MAX Town &amp; Country, specializes in lots, land and new construction across Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties, the counties where Riverstone builds.",
       "Start with the live land search below, then call or text Sandra when something catches your eye. She'll walk the land with you, check that it's ready to build on and match it to the home you want and your budget."
      ],
      "buttons": [
@@ -412,12 +199,11 @@
        "href": "tel:+17703243680"
       },
       {
-       "text": "Meet Sandra",
-       "href": "/team.html#sandra"
+       "text": "Meet the team",
+       "href": "#team"
       }
      ],
-     "image": "/images/site-plan.jpg",
-     "alt": "Site plan drawing with an engineer's scale"
+     "image": "/images/site-plan.jpg"
     },
     {
      "type": "cards",
@@ -476,9 +262,9 @@
     {
      "type": "checks",
      "id": "homework",
-     "label": "Found land you like?",
+     "label": "Know your land",
      "title": "We'll be your boots on the ground.",
-     "text": "Send us the listing before you make an offer. Sandra and the Riverstone team start digging into what it takes to build there, so you know what you're getting into before you spend a dime.",
+     "text": "Whether you already own land or found a piece you like, send it to us before you spend a dime. Sandra and the Riverstone team dig into what it takes to build there, so the price you plan on is the price you pay.",
      "items": [
       [
        "Plats and surveys",
@@ -493,47 +279,98 @@
        "Is sewer available, or will it need septic and a soil test?"
       ],
       [
+       "Power, internet and access",
+       "How far service has to run, road frontage and where the driveway goes."
+      ],
+      [
        "Zoning and restrictions",
        "Zoning, setbacks, HOA covenants and any minimum home size."
       ],
       [
-       "Power and access",
-       "How far power has to run, road frontage and where the driveway goes."
+       "Slope, soil and drainage",
+       "Grading and foundation needs, slab or basement, and any flood zone."
       ],
       [
-       "Anything that slows a build",
-       "Slope, rock, flood zones and what site prep could cost."
+       "Clearing and house placement",
+       "Where the house sits and what site prep could cost."
+      ],
+      [
+       "Room for upgrades",
+       "Budget space for the options and finishes you want."
       ]
      ],
      "button": {
+      "text": "Download the building checklist",
+      "href": "/riverstone-building-checklist.pdf",
+      "download": true
+     },
+     "min": 300,
+     "button2": {
       "text": "Call or text Sandra, 770-324-3680",
       "href": "tel:+17703243680"
-     },
-     "min": 300
+     }
     },
     {
      "type": "steps",
      "label": "How it works",
-     "title": "From the home you love to your keys",
+     "title": "From your land to your keys, in five steps",
+     "text": "You never have to manage subcontractors or chase permits. Here's what building with Riverstone looks like, on your land or ours.",
      "items": [
       [
-       "Pick your plan",
-       "Start with one of our proven plans, or bring your own and we'll fit it to your lot."
+       "Building consultation",
+       "Sit down with our team to talk through your land, budget, plan ideas and timeline before you commit to anything."
       ],
       [
-       "Find your spot",
-       "Build on your land, or let Sandra help you find a lot that fits."
+       "Choose your plan and finishes",
+       "Pick one of our proven plans or bring your own. Sandra, your New Home Guide, walks you through every selection and the little things you'll be glad you thought of."
       ],
       [
-       "Make it yours",
-       "Choose your finishes with clear deadlines, so construction stays on schedule."
+       "Permits and site prep",
+       "We handle permitting, HOA approval and getting your land ready to build."
       ],
       [
-       "Build and move in",
-       "Our project manager runs the job site and walks the finished home with you."
+       "Construction",
+       "Our project manager runs the job site from the foundation to the final finish, and keeps you updated along the way."
+      ],
+      [
+       "Walk-through and closing",
+       "We walk the home with you, finish the punch list and see you through closing."
       ]
      ],
+     "id": "how",
      "alt": true
+    },
+    {
+     "type": "team",
+     "id": "team",
+     "label": "Meet your team",
+     "title": "Three people who see you through, start to finish",
+     "text": "No call centers and no handoffs. You'll know exactly who to call.",
+     "items": [
+      {
+       "img": "/images/team-jamey.jpg",
+       "role": "President & Founder",
+       "name": "Jamey Cagle",
+       "text": "Founded Riverstone in 1997 and is still the guy walking lots and meeting families.",
+       "href": "/team.html#jamey"
+      },
+      {
+       "img": "/images/team-john.jpg",
+       "role": "Project Manager",
+       "name": "John O'Donnell",
+       "text": "Runs every job site, from the foundation to the final walk-through, with 30+ years of building experience.",
+       "href": "/team.html#john"
+      },
+      {
+       "img": "/images/team-sandra.jpg",
+       "role": "New Home Guide",
+       "name": "Sandra Watkins",
+       "sub": "RE/MAX Town & Country",
+       "text": "Your point of contact from land to keys: finding land, choosing a plan, selections and all the details in between.",
+       "href": "tel:+17703243680",
+       "go": "Call or text 770-324-3680"
+      }
+     ]
     },
     {
      "type": "cards",
@@ -561,7 +398,40 @@
        "href": "/videos.html",
        "go": "Watch"
       }
-     ]
+     ],
+     "alt": true
+    },
+    {
+     "type": "faq",
+     "label": "Questions",
+     "title": "Building on your land: common questions",
+     "items": [
+      [
+       "Can you build on land I already own?",
+       "Yes. We build custom homes on our clients' land and handle permits, planning and construction from start to finish. Send us your land's details and we'll look at water, sewer, slope and access with you up front."
+      ],
+      [
+       "Can I bring my own plan?",
+       "Yes. You can start from one of our proven plans or bring your own, and we'll fit it to your lot. We regularly customize layouts, finishes and outdoor spaces."
+      ],
+      [
+       "Where do you build?",
+       "Throughout North Metro Atlanta and North Georgia, including Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties. If you're not sure your lot is in our area, call us at <a href=\"tel:+17065146637\">706-514-6637</a>."
+      ],
+      [
+       "What comes standard?",
+       "Every Riverstone home includes LVP flooring in the main living areas, granite or quartz countertops, custom cabinetry, tiled baths and more. See the full <a href=\"/downloads/riverstone-standard-features.pdf\" target=\"_blank\" rel=\"noopener\">Standard Features list</a>."
+      ],
+      [
+       "How do I pick my finishes?",
+       "After your plan is set, we walk you through your selections, from exterior colors and stone to cabinets, flooring and fixtures, with clear deadlines so construction stays on schedule."
+      ],
+      [
+       "I don't have land yet. Where do I start?",
+       "Start with Sandra Watkins, our New Home Guide with RE/MAX Town &amp; Country. She specializes in lots and new construction, and you can <a href=\"#land\">search land for sale</a> right here by county. Call or text her at <a href=\"tel:+17703243680\">770-324-3680</a>."
+      ]
+     ],
+     "id": "faq"
     },
     {
      "type": "contact",
@@ -722,7 +592,7 @@
        "kicker": "Your lot",
        "title": "Build on your land",
        "text": "Already own a lot? See how we take you from consultation to closing.",
-       "href": "/build-on-your-land.html",
+       "href": "/build.html#how",
        "go": "How it works"
       },
       {
@@ -805,7 +675,7 @@
      "buttons": [
       {
        "text": "Build on your land",
-       "href": "/build-on-your-land.html"
+       "href": "/build.html#how"
       }
      ]
     },

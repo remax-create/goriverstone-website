@@ -155,7 +155,7 @@ for l in data:
           <span class="copied" role="status"></span>
         </div>
         <div class="agent">
-          <b>Sandra Watkins</b><span>RE/MAX Town &amp; Country · New Home Sales, Riverstone Homes</span>
+          <b>Sandra Watkins</b><span>RE/MAX Town &amp; Country · New Home Guide, Riverstone Homes</span>
           <a href="tel:{SANDRA_TEL}">Call or text {SANDRA_PHONE}</a>
         </div>
       </aside>
