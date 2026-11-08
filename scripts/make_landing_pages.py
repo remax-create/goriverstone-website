@@ -66,10 +66,12 @@ def block(b, page):
         return f'<section class="{cls}"{sid}><div class="wrap two{"" if img else " solo"}">{inner}</div></section>'
     if t == 'cards':
         cards = ''.join(
-            f'<a class="card" href="{E(c["href"])}"' + (' target="_blank" rel="noopener"' if c["href"].endswith('.pdf') else '') +
+            f'<a class="card" href="{E(c["href"])}"' + (' target="_blank" rel="noopener"' if c["href"].endswith('.pdf') or c["href"].startswith('http') else '') +
             f'><span class="k">{E(c["kicker"])}</span><h3>{E(c["title"])}</h3><p>{E(c["text"])}</p><span class="go">{E(c.get("go","Learn more"))} &rarr;</span></a>'
             for c in b['items'])
-        return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="cards">{cards}</div></div></section>'
+        note = f'<p class="fine" style="margin-top:1.2rem">{E(b["note"])}</p>' if b.get('note') else ''
+        grid = f' style="grid-template-columns:repeat(auto-fit,minmax(min(100%,{int(b["min"])}px),1fr))"' if b.get('min') else ''
+        return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="cards"{grid}>{cards}</div>{note}</div></section>'
     if t == 'specs':
         sp = ''.join(f'<div><b>{E(v)}</b><span>{E(l)}</span></div>' for v, l in b['items'])
         note = f'<p class="fine" style="margin-top:.8rem">{E(b["note"])}</p>' if b.get('note') else ''

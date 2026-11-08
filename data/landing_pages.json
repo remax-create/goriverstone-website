@@ -262,8 +262,8 @@
      "Cherokee County, GA",
      "Bartow County, GA",
      "Gordon County, GA",
-     "Cobb County, GA",
-     "Pickens County, GA"
+     "Whitfield County, GA",
+     "Cobb County, GA"
     ]
    },
    "blocks": [
@@ -301,9 +301,9 @@
       {
        "kicker": "Our lot",
        "title": "I need a lot or land",
-       "text": "Sandra Watkins of RE/MAX Town & Country will help you find the right place to build. Call or text 770-324-3680.",
-       "href": "tel:+17703243680",
-       "go": "Call Sandra"
+       "text": "Search lots and land for sale in the counties we build in, then call or text Sandra Watkins of RE/MAX Town & Country to go see them.",
+       "href": "#land",
+       "go": "Search land"
       },
       {
        "kicker": "Your plan",
@@ -397,10 +397,14 @@
      "label": "Need a place to build?",
      "title": "Let's find your perfect spot.",
      "paras": [
-      "Riverstone partners with Sandra Watkins of RE/MAX Town &amp; Country, who specializes in lots, land and new construction across Cherokee, Bartow, Gordon, Cobb and Pickens counties.",
-      "Our list of available lots changes often, so the fastest way to see what's open right now is to call or text Sandra. She'll match the land to the home you want and your budget."
+      "Riverstone partners with Sandra Watkins of RE/MAX Town &amp; Country, who specializes in lots, land and new construction across Cherokee, Bartow, Gordon, Whitfield and Cobb counties, the counties where Riverstone builds.",
+      "Start with the live land search below, then call or text Sandra when something catches your eye. She'll walk the land with you, check that it's ready to build on and match it to the home you want and your budget."
      ],
      "buttons": [
+      {
+       "text": "Search land for sale",
+       "href": "#land"
+      },
       {
        "text": "Call or text Sandra, 770-324-3680",
        "href": "tel:+17703243680"
@@ -414,8 +418,54 @@
      "alt": "Site plan drawing with an engineer's scale"
     },
     {
-     "type": "steps",
+     "type": "cards",
+     "id": "land",
      "alt": true,
+     "label": "Search land for sale",
+     "title": "Find your spot, county by county",
+     "text": "Every lot and land listing for sale on the MLS in the counties Riverstone builds in, lowest price first. Updated daily on Sandra Watkins' RE/MAX Town & Country site.",
+     "items": [
+      {
+       "kicker": "Cherokee County",
+       "title": "Land in Cherokee",
+       "text": "Canton, Ball Ground, Waleska and Woodstock.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Cherokee&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5fv9ym&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Bartow County",
+       "title": "Land in Bartow",
+       "text": "Cartersville, Adairsville, White and Euharlee.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Bartow&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5dv2v0&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Gordon County",
+       "title": "Land in Gordon",
+       "text": "Calhoun, Fairmount, Plainville and Resaca.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Gordon&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5sk955&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Whitfield County",
+       "title": "Land in Whitfield",
+       "text": "Dalton, Tunnel Hill, Rocky Face and Varnell.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Whitfield&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5w480v&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Cobb County",
+       "title": "Land in Cobb",
+       "text": "Marietta, Kennesaw, Acworth and Powder Springs.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Cobb&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5c56v5&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      }
+     ],
+     "note": "Found one you like? Call or text Sandra at 770-324-3680 before you buy. She'll make sure it's a good fit for the home you want to build.",
+     "min": 200
+    },
+    {
+     "type": "steps",
      "label": "How it works",
      "title": "From the home you love to your keys",
      "items": [
@@ -463,7 +513,8 @@
        "href": "/videos.html",
        "go": "Watch"
       }
-     ]
+     ],
+     "alt": true
     },
     {
      "type": "contact",
