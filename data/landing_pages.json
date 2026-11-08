@@ -9,7 +9,7 @@
    "/build-on-your-land.html"
   ],
   [
-   "Your lot or ours",
+   "Your land or ours",
    "/build.html"
   ],
   [
@@ -37,7 +37,7 @@
   {
    "path": "/build-on-your-land.html",
    "title": "Build on Your Land in North Georgia | Riverstone Homes",
-   "description": "Already own a lot? Riverstone Homes builds custom homes on your land in Cherokee, Bartow, Gordon, Cobb and Pickens counties. Locally owned since 1997. Call 706-514-6637.",
+   "description": "Already own a lot? Riverstone Homes builds custom homes on your land in Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties. Locally owned since 1997. Call 706-514-6637.",
    "og_image": "/images/exterior-sage-craftsman.jpg",
    "schema": {
     "@context": "https://schema.org",
@@ -54,6 +54,7 @@
      "Cherokee County, GA",
      "Bartow County, GA",
      "Gordon County, GA",
+     "Whitfield County, GA",
      "Cobb County, GA",
      "Pickens County, GA"
     ]
@@ -217,7 +218,7 @@
       ],
       [
        "Where do you build?",
-       "Throughout North Metro Atlanta and North Georgia, including Cherokee, Bartow, Gordon, Cobb and Pickens counties. If you're not sure your lot is in our area, call us at <a href=\"tel:+17065146637\">706-514-6637</a>."
+       "Throughout North Metro Atlanta and North Georgia, including Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties. If you're not sure your lot is in our area, call us at <a href=\"tel:+17065146637\">706-514-6637</a>."
       ],
       [
        "What comes standard?",
@@ -244,13 +245,13 @@
   },
   {
    "path": "/build.html",
-   "title": "Your Lot or Ours | Build a New Home with Riverstone Homes",
-   "description": "Saw a Riverstone home you love? Build it on your land or ours. Riverstone Homes builds custom homes across North Georgia, and Sandra Watkins of RE/MAX Town & Country helps you find the perfect lot. Call 706-514-6637.",
+   "title": "Your Land or Ours | Build a New Home with Riverstone Homes",
+   "description": "Saw a Riverstone home you love? Build it on your land or ours. Riverstone Homes builds custom homes across North Georgia, and Sandra Watkins of RE/MAX Town & Country helps you find the perfect piece of land. Call 706-514-6637.",
    "og_image": "/images/build/walton-plan.jpg",
    "schema": {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Build a new Riverstone home on your lot or ours",
+    "name": "Build a new Riverstone home on your land or ours",
     "serviceType": "Custom home construction",
     "provider": {
      "@type": "HomeAndConstructionBusiness",
@@ -263,7 +264,8 @@
      "Bartow County, GA",
      "Gordon County, GA",
      "Whitfield County, GA",
-     "Cobb County, GA"
+     "Cobb County, GA",
+     "Pickens County, GA"
     ]
    },
    "blocks": [
@@ -272,7 +274,7 @@
      "image": "/images/build/walton-plan.jpg",
      "alt": "White board and batten Riverstone home with a covered front porch and stone accents",
      "label": "Build with Riverstone",
-     "title": "Your lot or ours.",
+     "title": "Your land or ours.",
      "lede": "Saw one of our home tours and commented BUILD? You're in the right place. Pick a home you love or bring your own plan, and we'll help you find the perfect spot to build it.",
      "buttons": [
       {
@@ -288,19 +290,19 @@
     {
      "type": "cards",
      "label": "Where to start",
-     "title": "Your lot or ours. Our plan or yours.",
+     "title": "Your land or ours. Our plan or yours.",
      "text": "Wherever you're starting from, one local team takes it from here.",
      "items": [
       {
-       "kicker": "Your lot",
+       "kicker": "Your land",
        "title": "I already have land",
-       "text": "We build on your lot and handle the permits, site prep and construction.",
+       "text": "We build on your land and handle the permits, site prep and construction.",
        "href": "/build-on-your-land.html",
        "go": "Build on your land"
       },
       {
-       "kicker": "Our lot",
-       "title": "I need a lot or land",
+       "kicker": "Find land",
+       "title": "I need land",
        "text": "Search lots and land for sale in the counties we build in, then call or text Sandra Watkins of RE/MAX Town & Country to go see them.",
        "href": "#land",
        "go": "Search land"
@@ -308,7 +310,7 @@
       {
        "kicker": "Your plan",
        "title": "I have my own plan",
-       "text": "Bring your own floor plan or sketch. We'll price it, fit it to your lot and build it.",
+       "text": "Bring your own floor plan or sketch. We'll price it, fit it to your land and build it.",
        "href": "#contact",
        "go": "Tell us about it"
       },
@@ -397,7 +399,7 @@
      "label": "Need a place to build?",
      "title": "Let's find your perfect spot.",
      "paras": [
-      "Riverstone partners with Sandra Watkins of RE/MAX Town &amp; Country, who specializes in lots, land and new construction across Cherokee, Bartow, Gordon, Whitfield and Cobb counties, the counties where Riverstone builds.",
+      "Riverstone partners with Sandra Watkins of RE/MAX Town &amp; Country, who specializes in lots, land and new construction across Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties, the counties where Riverstone builds.",
       "Start with the live land search below, then call or text Sandra when something catches your eye. She'll walk the land with you, check that it's ready to build on and match it to the home you want and your budget."
      ],
      "buttons": [
@@ -459,10 +461,55 @@
        "text": "Marietta, Kennesaw, Acworth and Powder Springs.",
        "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Cobb&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5c56v5&sortby=listings.price+ASC&rtype=map",
        "go": "See listings"
+      },
+      {
+       "kicker": "Pickens County",
+       "title": "Land in Pickens",
+       "text": "Jasper, Talking Rock, Marble Hill and Tate.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Pickens&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5ujfjc&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
       }
      ],
-     "note": "Found one you like? Call or text Sandra at 770-324-3680 before you buy. She'll make sure it's a good fit for the home you want to build.",
-     "min": 200
+     "note": "Each search opens on Sandra's RE/MAX Town & Country site in a new tab. Found one you like? Keep reading.",
+     "min": 340
+    },
+    {
+     "type": "checks",
+     "id": "homework",
+     "label": "Found land you like?",
+     "title": "We'll be your boots on the ground.",
+     "text": "Send us the listing before you make an offer. Sandra and the Riverstone team start digging into what it takes to build there, so you know what you're getting into before you spend a dime.",
+     "items": [
+      [
+       "Plats and surveys",
+       "Recorded plats, existing surveys, property lines and easements."
+      ],
+      [
+       "Water",
+       "Is county or city water at the road, or will you need a well?"
+      ],
+      [
+       "Sewer or septic",
+       "Is sewer available, or will it need septic and a soil test?"
+      ],
+      [
+       "Zoning and restrictions",
+       "Zoning, setbacks, HOA covenants and any minimum home size."
+      ],
+      [
+       "Power and access",
+       "How far power has to run, road frontage and where the driveway goes."
+      ],
+      [
+       "Anything that slows a build",
+       "Slope, rock, flood zones and what site prep could cost."
+      ]
+     ],
+     "button": {
+      "text": "Call or text Sandra, 770-324-3680",
+      "href": "tel:+17703243680"
+     },
+     "min": 300
     },
     {
      "type": "steps",
@@ -485,7 +532,8 @@
        "Build and move in",
        "Our project manager runs the job site and walks the finished home with you."
       ]
-     ]
+     ],
+     "alt": true
     },
     {
      "type": "cards",
@@ -513,8 +561,7 @@
        "href": "/videos.html",
        "go": "Watch"
       }
-     ],
-     "alt": true
+     ]
     },
     {
      "type": "contact",
@@ -723,6 +770,7 @@
      "Cherokee County, GA",
      "Bartow County, GA",
      "Gordon County, GA",
+     "Whitfield County, GA",
      "Cobb County, GA",
      "Pickens County, GA"
     ]
@@ -833,7 +881,7 @@
       ],
       [
        "Where do you build?",
-       "Throughout North Metro Atlanta and North Georgia, including Cherokee, Bartow, Gordon, Cobb and Pickens counties."
+       "Throughout North Metro Atlanta and North Georgia, including Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties."
       ],
       [
        "Where do I start?",

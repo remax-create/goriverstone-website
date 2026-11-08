@@ -54,7 +54,8 @@ def block(b, page):
     if t == 'checks':
         items = ''.join(f'<li><b>{E(s[0])}</b>' + (f'<span>{E(s[1])}</span>' if len(s) > 1 and s[1] else '') + '</li>' for s in b['items'])
         foot = f'<p style="margin-top:2rem">{btn(b["button"], "btn dark")}</p>' if b.get('button') else ''
-        return f'<section class="{cls}"{sid}><div class="wrap">{head}<ul class="checks">{items}</ul>{foot}</div></section>'
+        grid = f' style="grid-template-columns:repeat(auto-fit,minmax(min(100%,{int(b["min"])}px),1fr))"' if b.get('min') else ''
+        return f'<section class="{cls}"{sid}><div class="wrap">{head}<ul class="checks"{grid}>{items}</ul>{foot}</div></section>'
     if t == 'two':
         paras = ''.join(f'<p>{p}</p>' for p in b['paras'])  # paras may hold simple inline links
         acts = ''.join(btn(x, 'btn dark') if i == 0 else btn(x, 'btn line') for i, x in enumerate(b.get('buttons', [])))
