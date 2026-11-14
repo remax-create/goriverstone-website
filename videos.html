@@ -150,6 +150,7 @@ h1, h2, h3 { font-family: var(--f-display); font-weight: 400; line-height: 1.1; 
   <section class="vsec" id="shorts"><div class="wrap">
     <div class="vsec-head"><span class="label">Quick tips</span><p>Short videos from the job site and the office, a minute or less.</p></div>
     <ul class="shorts">
+      <li class="vcard" id="short-families"><button class="vmedia short" data-mp4="media/why-families-choose-riverstone.mp4" data-poster="images/vid-families.jpg" aria-label="Play: Why families choose Riverstone"><img src="images/vid-families.jpg" alt="" loading="lazy" width="480" height="854"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button><p>Why families choose Riverstone</p></li>
       <li class="vcard" id="short-kitchen"><button class="vmedia short" data-yt="rtcNeWPrvn0" aria-label="Play: New home walkthrough, the kitchen"><img src="https://i.ytimg.com/vi/rtcNeWPrvn0/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button><p>New home walkthrough: the kitchen</p></li>
       <li class="vcard" id="short-rrYDSGgULfk"><button class="vmedia short" data-yt="rrYDSGgULfk" aria-label="Play: Where Locals Eat in Calhoun GA | Dub&#x27;s High on the Hog"><img src="https://i.ytimg.com/vi/rrYDSGgULfk/oar2.jpg" alt="" loading="lazy" width="480" height="360"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button><p>Where Locals Eat in Calhoun GA | Dub&#x27;s High on the Hog</p></li>
       <li class="vcard" id="short-EUJ0QbbYXPc"><button class="vmedia short" data-yt="EUJ0QbbYXPc" aria-label="Play: What Makes Riverstone Homes Different?"><img src="https://i.ytimg.com/vi/EUJ0QbbYXPc/oar2.jpg" alt="" loading="lazy" width="480" height="360"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button><p>What Makes Riverstone Homes Different?</p></li>
@@ -173,6 +174,15 @@ h1, h2, h3 { font-family: var(--f-display); font-weight: 400; line-height: 1.1; 
 <script>
 (function () {
   function play(btn, start) {
+    var mp4 = btn.getAttribute('data-mp4');
+    if (mp4) {
+      var v = document.createElement('video');
+      v.src = mp4; v.poster = btn.getAttribute('data-poster') || ''; v.controls = true; v.autoplay = true; v.playsInline = true; v.preload = 'auto';
+      v.setAttribute('aria-label', btn.getAttribute('aria-label') || 'Riverstone Homes video');
+      v.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000';
+      var w = document.createElement('div'); w.className = btn.className; w.appendChild(v);
+      btn.replaceWith(w); return;
+    }
     var id = btn.getAttribute('data-yt'); if (!id) return;
     var f = document.createElement('iframe');
     f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1' + (start ? '&start=' + start : '');
