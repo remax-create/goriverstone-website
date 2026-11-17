@@ -107,8 +107,9 @@ def block(b, page):
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="faq">{qs}</div></div></section>'
     if t == 'contact':
         opts = ''.join(f'<option{" selected" if o == b["topic"] else ""}>{E(o)}</option>' for o in TOPICS)
-        return f'''<section class="contact" id="contact"><div class="wrap">
-  <div class="copy"><span class="label">{E(b.get("label","Free build consultation"))}</span><h2>{E(b["title"])}</h2><p>{E(b["text"])}</p>
+        call = '<p class="call-line">Rather talk? <a href="tel:+17703243680">Call Sandra at 770-324-3680</a></p>' if b.get('compact') else ''
+        return f'''<section class="contact{" start" if b.get("compact") else ""}" id="contact"><div class="wrap">
+  <div class="copy"><span class="label">{E(b.get("label","Free build consultation"))}</span><h2>{E(b["title"])}</h2><p>{E(b["text"])}</p>{call}
     <dl class="reach"><div><dt>Call Riverstone</dt><dd><a href="tel:+17065146637">706-514-6637</a></dd></div><div><dt>Email</dt><dd>info@goriverstone.com</dd></div><div><dt>New Home Guide, Sandra Watkins</dt><dd><a href="tel:+17703243680">770-324-3680</a></dd></div></dl></div>
   <form class="inquiry" id="inquiry" name="contact" method="POST" data-netlify="true" netlify-honeypot="company-website">
     <input type="hidden" name="form-name" value="contact">
@@ -135,6 +136,8 @@ SCRIPT = '''<script>
       form.reset(); status.textContent = 'Thank you. We received your message and will be in touch soon.';
     } catch (err) { status.textContent = 'Something went wrong sending your message. Please call 706-514-6637 or email info@goriverstone.com.'; }
   });
+  var t = new URLSearchParams(location.search).get('topic'), sel = document.getElementById('f-topic');
+  if (t && sel && [].some.call(sel.options, function (o) { return o.value === t; })) sel.value = t;
   var lb = document.getElementById('lb');
   if (lb) {
     document.addEventListener('click', function (e) {
@@ -181,7 +184,7 @@ def page_html(p):
 <body>
 <header class="site-header"><div class="wrap">
   <a class="brand" href="/" aria-label="Riverstone Homes home"><img src="/images/logo.png" alt="Riverstone Homes" width="799" height="238"></a>
-  <nav class="head-links" aria-label="Main"><a href="/">Home</a><a href="/build.html">Build on your land</a><a href="/downloads.html">Downloads</a><a class="cta" href="#contact">Start Your Build</a></nav>
+  <nav class="head-links" aria-label="Main"><a href="/">Home</a><a href="/build.html">Build on your land</a><a href="/downloads.html">Downloads</a><a class="cta" href="{E(p.get("cta_href", "/start.html"))}">{E(p.get("cta_text", "Start Your Build"))}</a></nav>
 </div></header>
 <main>
 {blocks}

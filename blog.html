@@ -127,6 +127,10 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
 .share-end > span { color: var(--ink); }
 .post-item { display: grid; gap: 1.1rem; }
 .post-item + .post-item { border-top: 1px solid var(--line); padding-top: clamp(2.5rem, 5vw, 3.5rem); }
+.share .acts { display: inline-flex; flex-wrap: wrap; gap: .6rem; margin-left: .4rem; }
+.share .act { width: auto; height: 42px; border-radius: 999px; padding: 0 1.15rem; display: inline-flex; align-items: center; font: 600 .78rem/1 var(--f-body); letter-spacing: .1em; text-transform: uppercase; }
+.share .act.go { background: var(--forest); border-color: var(--forest); color: var(--on-dark); }
+@media (max-width: 560px) { .share .acts { margin-left: 0; width: 100%; } .share .act { flex: 1; justify-content: center; } }
 .share-card { justify-content: flex-end; }
 @media (max-width: 760px) { .share-card { justify-content: flex-start; } }
 
@@ -136,6 +140,9 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
 .cta-band h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); max-width: 22ch; }
 .cta-band p { color: var(--on-dark-2); margin: .6rem 0 0; }
 .btn { display: inline-flex; align-items: center; gap: .8rem; padding: 1rem 1.5rem; font: 600 .85rem/1 var(--f-body); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; background: var(--on-dark); color: #18211e; border: 1px solid var(--on-dark); }
+.btn.line { background: transparent; color: var(--on-dark); }
+.btn.line:hover { background: var(--on-dark); color: #18211e; }
+.band-acts { display: flex; flex-wrap: wrap; gap: .8rem; }
 .btn:hover { background: var(--brass-hi); border-color: var(--brass-hi); }
 .back { display: inline-flex; gap: .5rem; align-items: center; font: 600 .78rem/1 var(--f-body); letter-spacing: .14em; text-transform: uppercase; text-decoration: none; color: var(--brass); }
 .back:hover { color: var(--ink); }
@@ -156,7 +163,7 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
       <a class="home" href="index.html">Home</a>
       <a href="#" id="all-posts-link">Blog</a>
       <a href="videos.html">Videos</a>
-      <a class="cta" href="index.html#contact">Start Your Build</a>
+      <a class="cta" href="start.html?topic=A%20building%20consultation">Start Your Build</a>
     </nav>
   </div>
 </header>
@@ -169,8 +176,8 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
 
 <section class="cta-band">
   <div class="wrap">
-    <div><h2>Thinking about building? Let's talk it through.</h2><p>Call 706-514-6637 or email info@goriverstone.com</p></div>
-    <a class="btn" href="index.html#contact">Start your build</a>
+    <div><h2>Thinking about building? Let's talk it through.</h2><p>Free building consultation, on your land or ours. Or call Sandra at 770-324-3680.</p></div>
+    <div class="band-acts"><a class="btn" href="start.html?topic=A%20building%20consultation">Start your build</a><a class="btn line" href="tel:+17703243680">Call us 770-324-3680</a></div>
   </div>
 </section>
 <footer class="site-footer">
@@ -199,6 +206,7 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
     link: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1"/></svg>',
     share: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12v8h14v-8"/></svg>'
   };
+  const START = "start.html?topic=A%20building%20consultation";
   const shareUrl = p => SITE + "/share/" + p.slug + ".html";
   function shareBar(p, cls) {
     const u = encodeURIComponent(shareUrl(p)), t = encodeURIComponent(p.title), img = encodeURIComponent(SITE + "/" + p.photo);
@@ -211,7 +219,8 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
       <a href="https://pinterest.com/pin/create/button/?url=${u}&media=${img}&description=${t}" target="_blank" rel="noopener" aria-label="Save to Pinterest">${IC.pin}</a>
       <a href="${mail}" aria-label="Share by email">${IC.mail}</a>
       <button type="button" data-copy aria-label="Copy link">${IC.link}</button>
-      <span class="copied" role="status"></span></div>`;
+      <span class="copied" role="status"></span>
+      <span class="acts"><a class="act go" href="${START}">Start your build</a><a class="act" href="tel:+17703243680">Call us</a></span></div>`;
   }
   view.addEventListener("click", async e => {
     const bar = e.target.closest(".share[data-slug]"); if (!bar) return;

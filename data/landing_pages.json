@@ -772,6 +772,44 @@
      "placeholder": "Where's your land, how big a shop do you need, and how many bedrooms?"
     }
    ]
+  },
+  {
+   "path": "/start.html",
+   "title": "Start Your Build | Riverstone Homes, North Georgia",
+   "description": "Tell us what you want to build and where. Riverstone Homes builds on your land or ours in Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties. Free building consultation.",
+   "og_image": "/images/build/walton-plan.jpg",
+   "cta_href": "tel:+17703243680",
+   "cta_text": "Call us",
+   "blocks": [
+    {
+     "type": "contact",
+     "compact": true,
+     "label": "Free building consultation",
+     "title": "Let's talk about your build.",
+     "text": "Tell us a little about what you want to build and where. We'll reach out to set up your free building consultation. No pressure, no pitch.",
+     "topic": "A building consultation",
+     "placeholder": "What you'd like to build, your area or county, and when you'd like to start"
+    },
+    {
+     "type": "steps",
+     "title": "What happens next",
+     "label": "Simple and local",
+     "items": [
+      [
+       "We call you",
+       "Sandra, your New Home Guide, reaches out to hear what you have in mind."
+      ],
+      [
+       "Building consultation",
+       "We talk through your land, budget, plan ideas and timeline before you commit to anything."
+      ],
+      [
+       "Your plan and price",
+       "Pick one of our plans or bring your own, and we fit it to your land and budget."
+      ]
+     ]
+    }
+   ]
   }
  ]
 }

@@ -42,3 +42,9 @@
   to = "/build.html"
   status = 301
   force = true
+
+# Short link for Start your build buttons
+[[redirects]]
+  from = "/start"
+  to = "/start.html"
+  status = 301

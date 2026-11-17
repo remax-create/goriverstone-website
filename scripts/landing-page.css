@@ -183,3 +183,10 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.1re
 .team p { color: var(--ink-2); margin: .2rem 0 .4rem; }
 .team .go { font: 600 .78rem/1.4 var(--f-body); letter-spacing: .14em; text-transform: uppercase; color: var(--brass); text-decoration: none; }
 .team .go:hover { color: var(--ink); }
+
+/* /start: form-first page */
+.contact.start .wrap { padding-block: clamp(2rem, 5vw, 4.5rem); }
+.contact.start h1, .contact.start h2 { font-size: clamp(2rem, 4.4vw, 3.2rem); }
+.contact .call-line { font-weight: 500; }
+.contact .call-line a { color: var(--brass-hi); white-space: nowrap; }
+@media (max-width: 860px) { .contact.start .wrap { gap: 1.5rem; } .contact.start .reach { display: none; } }
