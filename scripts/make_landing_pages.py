@@ -114,6 +114,7 @@ def block(b, page):
   <form class="inquiry" id="inquiry" name="contact" method="POST" data-netlify="true" netlify-honeypot="company-website">
     <input type="hidden" name="form-name" value="contact">
     <p class="hp"><label for="company-website">Leave this empty</label><input id="company-website" name="company-website" tabindex="-1" autocomplete="off"></p>
+    <input type="hidden" name="lead-source"><input type="hidden" name="first-page"><input type="hidden" name="referrer">
     <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
     <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
     <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
@@ -133,7 +134,7 @@ SCRIPT = '''<script>
     try {
       var res = await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() });
       if (!res.ok) throw new Error(res.status);
-      form.reset(); status.textContent = 'Thank you. We received your message and will be in touch soon.';
+      form.reset(); status.textContent = 'Thank you. We received your message.'; location.href = '/thanks.html';
     } catch (err) { status.textContent = 'Something went wrong sending your message. Please call 706-514-6637 or email info@goriverstone.com.'; }
   });
   var t = new URLSearchParams(location.search).get('topic'), sel = document.getElementById('f-topic');
@@ -150,6 +151,13 @@ SCRIPT = '''<script>
 </script>'''
 
 
+def site_attrs(p):
+    """Phone bar settings for js/site.js: hide it on form-only pages, preselect the page's topic."""
+    if p.get('nobar'): return ' data-nobar'
+    topic = next((b.get('topic') for b in p['blocks'] if b['type'] == 'contact'), None)
+    return f' data-topic="{E(topic)}"' if topic else ''
+
+
 def page_html(p):
     url = SITE + p['path']
     blocks = ''.join(block(b, p) for b in p['blocks'])
@@ -164,6 +172,7 @@ def page_html(p):
 <title>{E(p["title"])}</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="{E(p["description"])}">
+{'<meta name="robots" content="noindex, follow">' if p.get("noindex") else ''}
 <link rel="canonical" href="{url}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{E(p["title"])}">
@@ -193,6 +202,7 @@ def page_html(p):
 {lb}
 {SCRIPT}
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="/js/site.js" defer{site_attrs(p)}></script>
 </body>
 </html>
 '''

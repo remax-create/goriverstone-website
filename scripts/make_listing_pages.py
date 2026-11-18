@@ -88,7 +88,7 @@ for l in data:
         btns.append(f'<a class="btn" href="{e(l["listingUrl"])}" target="_blank" rel="noopener">See the full listing <svg><use href="#arrow"/></svg></a>')
     if l.get("tourUrl"):
         btns.append(f'<a class="btn line" href="{e(l["tourUrl"])}" target="_blank" rel="noopener">3D walkthrough</a>')
-    btns.append(f'<a class="btn line" href="../index.html?topic={topic}#contact">{e(l.get("cta") or "Schedule a showing")}</a>')
+    btns.append(f'<a class="btn line" href="../start.html?topic={topic}">{e(l.get("cta") or "Schedule a showing")}</a>')
     maps = "https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(f'{l["address"]}, {l["city"]}')
     og_img = f'{SITE}/{photos[0]["src"]}' if photos else f'{SITE}/images/hero-house.jpg'
     share_u = urllib.parse.quote(f'{SITE}/homes/{l["slug"]}.html', safe="")
@@ -192,6 +192,7 @@ for l in data:
     }});
   }}
 </script>
+<script src="/js/site.js" defer data-topic="{e(l.get("topic") or l["address"])}"></script>
 </body>
 </html>
 '''

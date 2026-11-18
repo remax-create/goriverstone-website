@@ -6,6 +6,7 @@
 <title>Build on Your Land or Ours | Riverstone Homes, North Georgia</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Build a new Riverstone home on your land or ours in Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties. Pick one of our plans or bring your own. Locally owned since 1997. Call 706-514-6637.">
+
 <link rel="canonical" href="https://goriverstone.com/build.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Build on Your Land or Ours | Riverstone Homes, North Georgia">
@@ -227,6 +228,7 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.1re
   <form class="inquiry" id="inquiry" name="contact" method="POST" data-netlify="true" netlify-honeypot="company-website">
     <input type="hidden" name="form-name" value="contact">
     <p class="hp"><label for="company-website">Leave this empty</label><input id="company-website" name="company-website" tabindex="-1" autocomplete="off"></p>
+    <input type="hidden" name="lead-source"><input type="hidden" name="first-page"><input type="hidden" name="referrer">
     <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
     <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
     <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
@@ -246,7 +248,7 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.1re
     try {
       var res = await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() });
       if (!res.ok) throw new Error(res.status);
-      form.reset(); status.textContent = 'Thank you. We received your message and will be in touch soon.';
+      form.reset(); status.textContent = 'Thank you. We received your message.'; location.href = '/thanks.html';
     } catch (err) { status.textContent = 'Something went wrong sending your message. Please call 706-514-6637 or email info@goriverstone.com.'; }
   });
   var t = new URLSearchParams(location.search).get('topic'), sel = document.getElementById('f-topic');
@@ -262,5 +264,6 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.1re
 })();
 </script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="/js/site.js" defer data-topic="Building a home I saw in a video"></script>
 </body>
 </html>

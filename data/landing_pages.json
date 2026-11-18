@@ -809,6 +809,93 @@
       ]
      ]
     }
+   ],
+   "nobar": true
+  },
+  {
+   "path": "/thanks.html",
+   "title": "Thank You | Riverstone Homes",
+   "description": "Thanks for reaching out to Riverstone Homes. Here is what happens next with your free building consultation.",
+   "og_image": "/images/hero-house.jpg",
+   "noindex": true,
+   "nobar": true,
+   "cta_href": "tel:+17703243680",
+   "cta_text": "Call us",
+   "blocks": [
+    {
+     "type": "two",
+     "label": "Message received",
+     "title": "Thank you. We've got your note.",
+     "paras": [
+      "Your message is on its way to our team. Sandra Watkins, our New Home Guide, will reach out soon to hear what you have in mind and set up your free building consultation.",
+      "Can't wait? Call Sandra at <a href=\"tel:+17703243680\">770-324-3680</a> or the Riverstone office at <a href=\"tel:+17065146637\">706-514-6637</a>."
+     ],
+     "buttons": [
+      {
+       "text": "Call Sandra",
+       "href": "tel:+17703243680"
+      },
+      {
+       "text": "Back to home",
+       "href": "/"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "alt": true,
+     "label": "What happens next",
+     "title": "Here's how it works from here",
+     "items": [
+      [
+       "We call you",
+       "Sandra reaches out to hear what you want to build, where, and when you'd like to start."
+      ],
+      [
+       "Building consultation",
+       "We talk through your land, budget, plan ideas and timeline before you commit to anything."
+      ],
+      [
+       "Your plan and price",
+       "Pick one of our plans or bring your own, and we fit it to your land and budget."
+      ]
+     ]
+    },
+    {
+     "type": "cards",
+     "label": "While you wait",
+     "title": "Get a head start",
+     "items": [
+      {
+       "kicker": "Free PDF",
+       "title": "Building checklist",
+       "text": "Print it, check it off, and bring it to your consultation.",
+       "href": "/riverstone-building-checklist.pdf",
+       "go": "Download"
+      },
+      {
+       "kicker": "Watch",
+       "title": "Riverstone videos",
+       "text": "Building advice from Jamey, a new home walkthrough and home tours.",
+       "href": "/videos.html",
+       "go": "Watch"
+      },
+      {
+       "kicker": "Read",
+       "title": "The blog",
+       "text": "Costs, land tips, rates and what's new in Cherokee County and North Georgia.",
+       "href": "/blog.html",
+       "go": "Read"
+      },
+      {
+       "kicker": "Downloads",
+       "title": "Features and price list",
+       "text": "Standard features, options pricing and the Hemlock Falls floor plan.",
+       "href": "/downloads.html",
+       "go": "See downloads"
+      }
+     ]
+    }
    ]
   }
  ]

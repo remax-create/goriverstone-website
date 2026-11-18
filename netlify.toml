@@ -48,3 +48,14 @@
   from = "/start"
   to = "/start.html"
   status = 301
+
+# Thank-you page after the contact form (kept out of Google)
+[[redirects]]
+  from = "/thanks"
+  to = "/thanks.html"
+  status = 301
+
+[[headers]]
+  for = "/thanks.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, follow"
