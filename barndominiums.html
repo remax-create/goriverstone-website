@@ -223,6 +223,15 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.1re
 .quote figcaption::before { content: ""; position: absolute; top: 0; left: 50%; width: 40px; height: 2px; margin-left: -20px; background: var(--brass); }
 .quote figcaption b { font-weight: 600; font-size: 1.05rem; }
 .quote figcaption span { font: 600 .74rem/1.3 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
+
+/* YouTube embeds (videos block) */
+.ytrow { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
+.yt { margin: 0; flex: 1 1 520px; max-width: 760px; display: grid; gap: .6rem; }
+.yt.short { flex: 0 1 340px; max-width: 340px; }
+.yt .frame { position: relative; aspect-ratio: 16 / 9; background: var(--forest); border: 1px solid var(--line); overflow: hidden; }
+.yt.short .frame { aspect-ratio: 9 / 16; }
+.yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.yt figcaption { font: 600 .95rem/1.4 var(--f-body); text-align: center; }
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Barndominium construction", "serviceType": "Barndominium construction", "provider": {"@type": "HomeAndConstructionBusiness", "name": "Riverstone Homes", "url": "https://goriverstone.com/", "telephone": "+1-706-514-6637"}, "areaServed": ["Cherokee County, GA", "Bartow County, GA", "Gordon County, GA", "Whitfield County, GA", "Cobb County, GA", "Pickens County, GA"]}</script>
 <!-- Metricool -->

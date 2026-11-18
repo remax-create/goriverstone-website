@@ -2,7 +2,7 @@
 """Build Riverstone landing pages from data/landing_pages.json.
 
 Each page is a list of blocks (hero, steps, checks, two, cards, specs, gallery,
-plans, faq, quotes, contact). Shared styles live in scripts/landing-page.css and are
+plans, faq, quotes, videos, contact). Shared styles live in scripts/landing-page.css and are
 inlined into every page. Paths are root-relative ("/images/...") so pages can
 live in sub-folders such as /plans/.
 
@@ -82,6 +82,11 @@ def block(b, page):
             for q in b['items'])
         note = f'<p class="fine" style="margin-top:1.2rem">{b["note"]}</p>' if b.get('note') else ''  # note may hold a simple inline link
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="quotes">{cards}</div>{note}</div></section>'
+    if t == 'videos':
+        items = ''.join(
+            f'<figure class="yt{" short" if v.get("short") else ""}"><div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/{E(v["id"])}?rel=0" title="{E(v["title"])}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div><figcaption>{E(v["title"])}</figcaption></figure>'
+            for v in b['items'])
+        return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="ytrow">{items}</div></div></section>'
     if t == 'team':
         cards = ''.join(
             f'<article class="tm"><img src="{E(m["img"])}" alt="{E(m["name"])}, {E(m["role"])}" loading="lazy" width="800" height="1000">'

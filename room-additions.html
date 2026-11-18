@@ -223,6 +223,15 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.1re
 .quote figcaption::before { content: ""; position: absolute; top: 0; left: 50%; width: 40px; height: 2px; margin-left: -20px; background: var(--brass); }
 .quote figcaption b { font-weight: 600; font-size: 1.05rem; }
 .quote figcaption span { font: 600 .74rem/1.3 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
+
+/* YouTube embeds (videos block) */
+.ytrow { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
+.yt { margin: 0; flex: 1 1 520px; max-width: 760px; display: grid; gap: .6rem; }
+.yt.short { flex: 0 1 340px; max-width: 340px; }
+.yt .frame { position: relative; aspect-ratio: 16 / 9; background: var(--forest); border: 1px solid var(--line); overflow: hidden; }
+.yt.short .frame { aspect-ratio: 9 / 16; }
+.yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.yt figcaption { font: 600 .95rem/1.4 var(--f-body); text-align: center; }
 </style>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Service", "name": "Room additions and screened porches", "serviceType": "Home addition construction", "provider": {"@type": "HomeAndConstructionBusiness", "name": "Riverstone Homes", "url": "https://goriverstone.com/", "telephone": "+1-706-514-6637"}, "areaServed": ["Cherokee County, GA", "Bartow County, GA", "Gordon County, GA", "Whitfield County, GA", "Cobb County, GA", "Pickens County, GA"]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need a permit for a room addition in Cherokee County?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A room addition or screened porch that adds to your home's footprint needs a building permit and inspections, and setback rules decide where it can go on your lot. We pull the permits and handle the inspections as part of the job."}}, {"@type": "Question", "name": "How long does a room addition take?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the size, the foundation, the weather and inspection timing. A screened porch is usually quicker than a heated addition with plumbing. We'll give you a realistic range in writing before we start, and keep you updated as we go."}}, {"@type": "Question", "name": "Can a screened porch be turned into a heated room later?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes, if it's planned for from the start. Foundation, framing, roof pitch and window openings all matter, so tell us at the first visit if a four-season room might be in your future."}}, {"@type": "Question", "name": "Will the addition match my house?", "acceptedAnswer": {"@type": "Answer", "text": "That's the goal. We match rooflines, brick, siding and trim as closely as the materials allow, so the addition looks like it was always there."}}]}]</script>
 <!-- Metricool -->

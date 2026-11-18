@@ -2014,6 +2014,21 @@
        }
       }
      ]
+    },
+    {
+     "@context": "https://schema.org",
+     "@type": "VideoObject",
+     "name": "Pool Pavilion Before and After | Backyard Makeover in North Georgia",
+     "description": "A muddy North Georgia backyard turns into a shaded pool pavilion. The pool went in first, then Riverstone Homes framed and roofed the pavilion off the back of the house.",
+     "thumbnailUrl": "https://i.ytimg.com/vi/-Xj7zmoUWaQ/hqdefault.jpg",
+     "uploadDate": "2026-11-18",
+     "duration": "PT31S",
+     "embedUrl": "https://www.youtube.com/embed/-Xj7zmoUWaQ",
+     "contentUrl": "https://www.youtube.com/shorts/-Xj7zmoUWaQ",
+     "publisher": {
+      "@type": "Organization",
+      "name": "Riverstone Homes"
+     }
     }
    ],
    "blocks": [
@@ -2046,6 +2061,24 @@
      ],
      "image": "/images/projects/pool-pavilion-under-pavilion.jpg",
      "alt": "Under a pool pavilion with paver floor, wood posts and the pool beyond"
+    },
+    {
+     "type": "videos",
+     "id": "watch",
+     "label": "Watch",
+     "title": "Mud pit to pool nights in 30 seconds",
+     "items": [
+      {
+       "id": "-Xj7zmoUWaQ",
+       "short": true,
+       "title": "Pool Pavilion Before and After"
+      },
+      {
+       "id": "WVys1M1UgEE",
+       "short": true,
+       "title": "We Built a 40x40 Three-Car Garage"
+      }
+     ]
     },
     {
      "type": "gallery",
