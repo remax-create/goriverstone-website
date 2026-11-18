@@ -13,6 +13,14 @@
    "/plans/hemlock-falls.html"
   ],
   [
+   "Custom homes",
+   "/custom-homes.html"
+  ],
+  [
+   "Find land",
+   "/find-land.html"
+  ],
+  [
    "Barndominiums",
    "/barndominiums.html"
   ],
@@ -770,6 +778,666 @@
      "text": "Tell us about your land and how you want to use the space. We'll set up a time to talk it through.",
      "topic": "A barndominium",
      "placeholder": "Where's your land, how big a shop do you need, and how many bedrooms?"
+    }
+   ]
+  },
+  {
+   "path": "/custom-homes.html",
+   "title": "Custom Home Builder North Georgia | Riverstone Homes",
+   "description": "Riverstone Homes is a custom home builder in North Georgia since 1997. Our plan or yours, on your land or ours, in Cherokee, Bartow, Gordon and nearby counties.",
+   "og_image": "/images/build/hemlock-falls-twilight.jpg",
+   "schema": [
+    {
+     "@context": "https://schema.org",
+     "@type": "Service",
+     "name": "Custom home building in North Georgia",
+     "serviceType": "Custom home construction",
+     "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Riverstone Homes",
+      "url": "https://goriverstone.com/",
+      "telephone": "+1-706-514-6637"
+     },
+     "areaServed": [
+      "Cherokee County, GA",
+      "Bartow County, GA",
+      "Gordon County, GA",
+      "Whitfield County, GA",
+      "Cobb County, GA",
+      "Pickens County, GA"
+     ]
+    },
+    {
+     "@context": "https://schema.org",
+     "@type": "FAQPage",
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "What does a custom home builder in North Georgia do?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A custom builder designs and builds a home around your lot, your plan and your budget instead of selling you a finished spec house. At Riverstone that means one team handles the plan, selections, permits, site prep, construction and the final walk-through."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Can I bring my own house plan?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Bring your own plan, start from one of ours, or bring a sketch and we'll connect you with someone who can turn your ideas into a set of plans. Then we price it, fit it to your land and build it."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Do you build custom homes on land I already own?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We build on our clients' land across Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties. Send us the address first and we'll look at water, sewer or septic, slope and access before you plan around a number. See building on your land."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "How much does it cost to build a custom home in North Georgia?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the size, the plan, your finishes and especially your land, since clearing, driveway, utilities and foundation type can swing the total. Our standard features and options price list show what's included, and a building consultation gets you real numbers for your lot. For the bigger picture, read what's changed in the cost to build in North Georgia."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Where do you build?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Throughout North Metro Atlanta and North Georgia: Canton, Woodstock, Ball Ground, Waleska, Cartersville, Adairsville, Calhoun, Dalton, Jasper and the communities around them."
+       }
+      }
+     ]
+    }
+   ],
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/build/hemlock-falls-twilight.jpg",
+     "alt": "Riverstone custom home in North Georgia at sunset, white board and batten with a front porch and wooded lot",
+     "label": "Custom homes",
+     "title": "A custom home builder for North Georgia.",
+     "lede": "Your plan or ours, on your land or ours. One local team has been building custom homes across North Georgia since 1997, and we'll take yours from the first sketch to the keys.",
+     "buttons": [
+      {
+       "text": "Start my custom home",
+       "href": "#contact"
+      },
+      {
+       "text": "See homes we've built",
+       "href": "#gallery"
+      }
+     ]
+    },
+    {
+     "type": "two",
+     "label": "Why build custom",
+     "title": "Built around your land and how you live.",
+     "paras": [
+      "A spec home makes you live with someone else's choices. A custom home starts with yours: the lot, the layout, how many bedrooms you really need, where the coffee goes in the morning, and how big the porch should be for a Georgia summer.",
+      "As a custom home builder in North Georgia, we know the ground you're building on. Red clay, sloped lots, wells and septic, and six different counties' permit offices all have their quirks, and after building here since 1997 we've learned them so you don't have to.",
+      "You'll work with the same three people the whole way: Jamey Cagle, who founded Riverstone and still walks lots, John O'Donnell, our project manager with more than 30 years on job sites, and Sandra Watkins, your New Home Guide."
+     ],
+     "buttons": [
+      {
+       "text": "Meet the team",
+       "href": "/team.html"
+      },
+      {
+       "text": "Watch what makes us different",
+       "href": "/videos.html#diff"
+      }
+     ],
+     "image": "/images/build/catwalk.jpg",
+     "alt": "Upstairs catwalk in a Riverstone custom home with stained wood railings and iron balusters"
+    },
+    {
+     "type": "checks",
+     "alt": true,
+     "label": "Make it yours",
+     "title": "What you can customize",
+     "text": "Start from a proven Riverstone plan or bring your own, then shape it around your lot and your life. Earlier changes are always easier and cheaper, so we sort these out before we break ground.",
+     "min": 300,
+     "items": [
+      [
+       "The floor plan",
+       "Move walls, add a bedroom, open the kitchen or add a bonus room."
+      ],
+      [
+       "Basement or slab",
+       "Full basement, daylight basement or slab, depending on your lot."
+      ],
+      [
+       "Porches and outdoor living",
+       "Front porches, screened porches, decks and patios."
+      ],
+      [
+       "Kitchens and baths",
+       "Cabinets, counters, islands, tile and fixtures."
+      ],
+      [
+       "Exterior look",
+       "Board and batten, stone, farmhouse or craftsman details and colors."
+      ],
+      [
+       "Garage and storage",
+       "Two or three bays, a side entry, or a detached shop."
+      ]
+     ],
+     "button": {
+      "text": "Download standard features",
+      "href": "/downloads/riverstone-standard-features.pdf",
+      "download": true
+     },
+     "button2": {
+      "text": "Options price list",
+      "href": "/downloads/riverstone-options-price-list.pdf",
+      "download": true
+     }
+    },
+    {
+     "type": "gallery",
+     "id": "gallery",
+     "label": "Homes we've built",
+     "title": "A few Riverstone custom homes",
+     "text": "Every photo is a home Riverstone built. Tap a photo to see it bigger.",
+     "items": [
+      {
+       "src": "/images/build/hemlock-falls.jpg",
+       "alt": "The Hemlock Falls, gray board and batten with white gables and a covered front porch",
+       "caption": "The Hemlock Falls"
+      },
+      {
+       "src": "/images/exterior-sage-craftsman.jpg",
+       "alt": "Sage green craftsman custom home with a stone base and wood front porch in North Georgia",
+       "caption": "Sage craftsman"
+      },
+      {
+       "src": "/images/build/brick-kitchen.jpg",
+       "alt": "White shaker kitchen with a brick accent wall, black granite island and glass pendants",
+       "caption": "Brick accent kitchen"
+      },
+      {
+       "src": "/images/build/coffered-dining.jpg",
+       "alt": "Dining room with a coffered ceiling and wainscoting",
+       "caption": "Coffered dining"
+      },
+      {
+       "src": "/images/build/two-story-farmhouse.jpg",
+       "alt": "Two-story white farmhouse with a covered front porch",
+       "caption": "Two-story farmhouse"
+      },
+      {
+       "src": "/images/build/waterbury-cottage-kitchen.jpg",
+       "alt": "Kitchen with a blue island and white cabinets",
+       "caption": "Waterbury Cottage kitchen"
+      },
+      {
+       "src": "/images/build/screened-porch-2.jpg",
+       "alt": "Screened back porch with a ceiling fan",
+       "caption": "Screened porch"
+      }
+     ],
+     "note": "Photos show homes Riverstone has built and may include options."
+    },
+    {
+     "type": "steps",
+     "alt": true,
+     "label": "How it works",
+     "title": "How a custom build works with Riverstone",
+     "items": [
+      [
+       "Building consultation",
+       "Talk through your land, budget, plan ideas and timeline before you commit to anything."
+      ],
+      [
+       "Plan, price and selections",
+       "Pick a Riverstone plan or bring yours. We fit it to your lot and price it, site work included, and Sandra walks you through every finish."
+      ],
+      [
+       "Permits and site prep",
+       "We pull the permits, handle any HOA approval and get the land ready."
+      ],
+      [
+       "Construction",
+       "John runs the job site from foundation to final finish and keeps you updated."
+      ],
+      [
+       "Walk-through and closing",
+       "We walk the home with you, finish the punch list and hand you the keys."
+      ]
+     ]
+    },
+    {
+     "type": "cards",
+     "label": "Keep reading",
+     "title": "Plan ahead",
+     "items": [
+      {
+       "kicker": "Your land",
+       "title": "Build on your land",
+       "text": "Already have a lot? See how we check it out and build on it.",
+       "href": "/build.html",
+       "go": "Build on your land"
+      },
+      {
+       "kicker": "No land yet",
+       "title": "Find land to build on",
+       "text": "Search lots and acreage for sale in the counties we build in.",
+       "href": "/find-land.html",
+       "go": "Find land"
+      },
+      {
+       "kicker": "Floor plan",
+       "title": "The Hemlock Falls",
+       "text": "One-level living with a vaulted family room and an optional second floor.",
+       "href": "/plans/hemlock-falls.html",
+       "go": "See the plan"
+      },
+      {
+       "kicker": "Blog",
+       "title": "Cost to build in North Georgia",
+       "text": "What's changed in building costs this fall, and where the money goes.",
+       "href": "/blog.html#cost-to-build-a-house-in-north-georgia",
+       "go": "Read the post"
+      },
+      {
+       "kicker": "Blog",
+       "title": "Why winter is underrated",
+       "text": "The best time to plan a build in Georgia might be right now.",
+       "href": "/blog.html#best-time-to-build-a-house-in-georgia",
+       "go": "Read the post"
+      },
+      {
+       "kicker": "Barn-style living",
+       "title": "Barndominiums",
+       "text": "Living space and a shop under one roof, built for North Georgia land.",
+       "href": "/barndominiums.html",
+       "go": "See barndominiums"
+      }
+     ]
+    },
+    {
+     "type": "faq",
+     "alt": true,
+     "label": "Questions",
+     "title": "Custom home questions",
+     "items": [
+      [
+       "What does a custom home builder in North Georgia do?",
+       "A custom builder designs and builds a home around your lot, your plan and your budget instead of selling you a finished spec house. At Riverstone that means one team handles the plan, selections, permits, site prep, construction and the final walk-through."
+      ],
+      [
+       "Can I bring my own house plan?",
+       "Yes. Bring your own plan, start from one of ours, or bring a sketch and we'll connect you with someone who can turn your ideas into a set of plans. Then we price it, fit it to your land and build it."
+      ],
+      [
+       "Do you build custom homes on land I already own?",
+       "Yes. We build on our clients' land across Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties. Send us the address first and we'll look at water, sewer or septic, slope and access before you plan around a number. See <a href=\"/build.html\">building on your land</a>."
+      ],
+      [
+       "How much does it cost to build a custom home in North Georgia?",
+       "It depends on the size, the plan, your finishes and especially your land, since clearing, driveway, utilities and foundation type can swing the total. Our <a href=\"/downloads/riverstone-standard-features.pdf\">standard features</a> and <a href=\"/downloads/riverstone-options-price-list.pdf\">options price list</a> show what's included, and a building consultation gets you real numbers for your lot. For the bigger picture, read <a href=\"/blog.html#cost-to-build-a-house-in-north-georgia\">what's changed in the cost to build in North Georgia</a>."
+      ],
+      [
+       "Where do you build?",
+       "Throughout North Metro Atlanta and North Georgia: Canton, Woodstock, Ball Ground, Waleska, Cartersville, Adairsville, Calhoun, Dalton, Jasper and the communities around them."
+      ]
+     ]
+    },
+    {
+     "type": "contact",
+     "title": "Let's talk about your custom home.",
+     "text": "Tell us about your land, your plan ideas and your timeline. We'll set up a building consultation, with no pressure and no obligation.",
+     "topic": "A custom home or plan",
+     "placeholder": "Do you have land yet? A plan in mind? How many bedrooms, and when would you like to move in?"
+    }
+   ]
+  },
+  {
+   "path": "/find-land.html",
+   "title": "Land for Sale to Build On in Cherokee County | Riverstone",
+   "description": "Find land for sale to build on in Cherokee County and North Georgia. Search lots by county, then let Riverstone and Sandra Watkins price your home on it first.",
+   "og_image": "/images/vid-calhoun.jpg",
+   "schema": [
+    {
+     "@context": "https://schema.org",
+     "@type": "Service",
+     "name": "Help finding land to build a new home",
+     "serviceType": "Land search and new home construction",
+     "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Riverstone Homes",
+      "url": "https://goriverstone.com/",
+      "telephone": "+1-706-514-6637"
+     },
+     "areaServed": [
+      "Cherokee County, GA",
+      "Bartow County, GA",
+      "Gordon County, GA",
+      "Whitfield County, GA",
+      "Cobb County, GA",
+      "Pickens County, GA"
+     ]
+    },
+    {
+     "@context": "https://schema.org",
+     "@type": "FAQPage",
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "Where can I find land for sale to build on in Cherokee County?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the county searches on this page. They show every lot and land listing on the MLS in Cherokee and the other counties Riverstone builds in, updated daily. When one looks good, call or text Sandra Watkins at 770-324-3680 to go see it."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Can you tell me what it will cost to build on a lot before I buy it?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and you should ask before you sign. We walk the property, look at water, sewer or septic, slope, clearing and the driveway, then price a home on that lot so you know the total, land plus house."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Do I need a real estate agent to buy land?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You don't have to have one, but it helps. Sandra is a land and new construction specialist with RE/MAX Town &amp; Country, and she works hand in hand with Riverstone, so the land search and the build plan stay on the same page."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "What should I check before buying land in Cherokee County?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zoning, setbacks and any HOA rules, whether water and sewer are at the road or you'll need a well and septic, slope and soil, flood zones, access and how much clearing it needs. Our post on buying land in Cherokee County GA walks through each one."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Do you only build in Cherokee County?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We build throughout North Georgia and North Metro Atlanta, including Bartow, Gordon, Whitfield, Cobb and Pickens counties."
+       }
+      }
+     ]
+    }
+   ],
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/vid-calhoun.jpg",
+     "alt": "Jamey Cagle of Riverstone Homes walking a wooded lot for sale in North Georgia",
+     "label": "Find land",
+     "title": "Find land to build on in Cherokee County.",
+     "lede": "Search lots and acreage for sale across Cherokee County and North Georgia, then let us walk it with you and price your home on it before you buy. No guessing, no surprises.",
+     "buttons": [
+      {
+       "text": "Search land for sale",
+       "href": "#land"
+      },
+      {
+       "text": "Help me find land",
+       "href": "#contact"
+      }
+     ]
+    },
+    {
+     "type": "cards",
+     "id": "land",
+     "alt": false,
+     "label": "Search land for sale",
+     "title": "Find your spot, county by county",
+     "text": "Every lot and land listing for sale on the MLS in the counties Riverstone builds in, lowest price first. Updated daily on Sandra Watkins' RE/MAX Town & Country site.",
+     "items": [
+      {
+       "kicker": "Cherokee County",
+       "title": "Land in Cherokee",
+       "text": "Canton, Ball Ground, Waleska and Woodstock.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Cherokee&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5fv9ym&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Bartow County",
+       "title": "Land in Bartow",
+       "text": "Cartersville, Adairsville, White and Euharlee.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Bartow&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5dv2v0&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Gordon County",
+       "title": "Land in Gordon",
+       "text": "Calhoun, Fairmount, Plainville and Resaca.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Gordon&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5sk955&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Whitfield County",
+       "title": "Land in Whitfield",
+       "text": "Dalton, Tunnel Hill, Rocky Face and Varnell.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Whitfield&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5w480v&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Cobb County",
+       "title": "Land in Cobb",
+       "text": "Marietta, Kennesaw, Acworth and Powder Springs.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Cobb&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5c56v5&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Pickens County",
+       "title": "Land in Pickens",
+       "text": "Jasper, Talking Rock, Marble Hill and Tate.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Pickens&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5ujfjc&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      }
+     ],
+     "note": "Each search opens on Sandra's RE/MAX Town & Country site in a new tab. Found one you like? Keep reading.",
+     "min": 340
+    },
+    {
+     "type": "two",
+     "alt": "Site plan drawing with an engineer's scale used to plan a new home on a lot",
+     "label": "Land plus a builder",
+     "title": "Know what it costs to build before you buy.",
+     "paras": [
+      "A pretty lot can hide an expensive surprise: a long driveway, a well and septic you didn't plan for, or a slope that needs a basement. That's why we look at the land with you before you sign anything.",
+      "Sandra Watkins, Riverstone's New Home Guide with RE/MAX Town &amp; Country, specializes in lots, land and new construction. She and Jamey Cagle, who founded Riverstone in 1997, will walk the property with you, see what it takes to build there, and price a home on it, so the number you plan on is the land plus the house.",
+      "Found a lot on your own, or already under contract? Send it over anyway. We're happy to take a look."
+     ],
+     "buttons": [
+      {
+       "text": "Call or text Sandra, 770-324-3680",
+       "href": "tel:+17703243680"
+      },
+      {
+       "text": "Download the building checklist",
+       "href": "/riverstone-building-checklist.pdf",
+       "download": true
+      }
+     ],
+     "image": "/images/site-plan.jpg"
+    },
+    {
+     "type": "checks",
+     "label": "Before you buy",
+     "title": "What we check on every piece of land",
+     "text": "These are the things that change what it costs to build. We look at all of them with you before you buy.",
+     "min": 300,
+     "items": [
+      [
+       "Zoning and restrictions",
+       "Zoning, setbacks, HOA covenants and minimum home size."
+      ],
+      [
+       "Water",
+       "County or city water at the road, or a well."
+      ],
+      [
+       "Sewer or septic",
+       "Sewer tap, or septic and a soil test."
+      ],
+      [
+       "Slope and soil",
+       "Slab or basement, grading and drainage."
+      ],
+      [
+       "Flood zone",
+       "Any part of the lot in a flood zone or near a creek buffer."
+      ],
+      [
+       "Access and driveway",
+       "Road frontage, driveway length and permits."
+      ],
+      [
+       "Power and internet",
+       "How far service has to run to the house site."
+      ],
+      [
+       "Clearing",
+       "Trees, brush and what site prep will cost."
+      ]
+     ]
+    },
+    {
+     "type": "steps",
+     "alt": true,
+     "label": "How it works",
+     "title": "From empty lot to your new home",
+     "items": [
+      [
+       "Search",
+       "Use the county searches above, or tell us what you want and we'll watch for it."
+      ],
+      [
+       "Walk it together",
+       "Sandra and the builder walk the property with you."
+      ],
+      [
+       "Price the whole thing",
+       "We price your home on that lot, site work included, before you buy."
+      ],
+      [
+       "Buy the land",
+       "Sandra handles the land purchase with you from offer to closing."
+      ],
+      [
+       "Build",
+       "Riverstone builds your home and walks it with you before closing."
+      ]
+     ]
+    },
+    {
+     "type": "team",
+     "id": "team",
+     "label": "Meet your team",
+     "title": "Three people who see you through, start to finish",
+     "text": "No call centers and no handoffs. You'll know exactly who to call.",
+     "items": [
+      {
+       "img": "/images/team-jamey.jpg",
+       "role": "President & Founder",
+       "name": "Jamey Cagle",
+       "text": "Founded Riverstone in 1997 and is still the guy walking lots and meeting families.",
+       "href": "/team.html#jamey"
+      },
+      {
+       "img": "/images/team-john.jpg",
+       "role": "Project Manager",
+       "name": "John O'Donnell",
+       "text": "Runs every job site, from the foundation to the final walk-through, with 30+ years of building experience.",
+       "href": "/team.html#john"
+      },
+      {
+       "img": "/images/team-sandra.jpg",
+       "role": "New Home Guide",
+       "name": "Sandra Watkins",
+       "sub": "RE/MAX Town & Country",
+       "text": "With 28 years in new homes, Sandra has walked hundreds of buyers from concept to closing. She's your point of contact from land to keys, with you from your first ideas through every selection and all the details in between.",
+       "href": "tel:+17703243680",
+       "go": "Call or text 770-324-3680"
+      }
+     ],
+     "alt": false
+    },
+    {
+     "type": "cards",
+     "alt": true,
+     "label": "Keep reading",
+     "title": "More for land shoppers",
+     "items": [
+      {
+       "kicker": "Blog",
+       "title": "Buying land in Cherokee County GA",
+       "text": "Seven things to check before you sign.",
+       "href": "/blog.html#buying-land-in-cherokee-county-ga",
+       "go": "Read the post"
+      },
+      {
+       "kicker": "Blog",
+       "title": "Moving to Cherokee County",
+       "text": "Local changes to know if you're moving here.",
+       "href": "/blog.html#moving-to-cherokee-county-ga",
+       "go": "Read the post"
+      },
+      {
+       "kicker": "Already have land",
+       "title": "Build on your land",
+       "text": "See how we build on the lot you already own.",
+       "href": "/build.html",
+       "go": "Build on your land"
+      },
+      {
+       "kicker": "Custom homes",
+       "title": "Custom homes",
+       "text": "Our plan or yours, fit to your lot.",
+       "href": "/custom-homes.html",
+       "go": "See custom homes"
+      }
+     ]
+    },
+    {
+     "type": "faq",
+     "label": "Questions",
+     "title": "Land buying questions",
+     "items": [
+      [
+       "Where can I find land for sale to build on in Cherokee County?",
+       "Use the county searches on this page. They show every lot and land listing on the MLS in Cherokee and the other counties Riverstone builds in, updated daily. When one looks good, call or text Sandra Watkins at <a href=\"tel:+17703243680\">770-324-3680</a> to go see it."
+      ],
+      [
+       "Can you tell me what it will cost to build on a lot before I buy it?",
+       "Yes, and you should ask before you sign. We walk the property, look at water, sewer or septic, slope, clearing and the driveway, then price a home on that lot so you know the total, land plus house."
+      ],
+      [
+       "Do I need a real estate agent to buy land?",
+       "You don't have to have one, but it helps. Sandra is a land and new construction specialist with RE/MAX Town &amp; Country, and she works hand in hand with Riverstone, so the land search and the build plan stay on the same page."
+      ],
+      [
+       "What should I check before buying land in Cherokee County?",
+       "Zoning, setbacks and any HOA rules, whether water and sewer are at the road or you'll need a well and septic, slope and soil, flood zones, access and how much clearing it needs. Our post on <a href=\"/blog.html#buying-land-in-cherokee-county-ga\">buying land in Cherokee County GA</a> walks through each one."
+      ],
+      [
+       "Do you only build in Cherokee County?",
+       "No. We build throughout North Georgia and North Metro Atlanta, including Bartow, Gordon, Whitfield, Cobb and Pickens counties."
+      ]
+     ]
+    },
+    {
+     "type": "contact",
+     "title": "Tell us what you're looking for.",
+     "text": "Wooded and private? Close to town? A few acres for a shop? Tell us the county, size and budget, and Sandra will help you find it.",
+     "topic": "Finding land to build on",
+     "placeholder": "Which county or town, how many acres, and your budget for land and the home?"
     }
    ]
   },
