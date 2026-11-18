@@ -33,6 +33,10 @@
    "/videos.html"
   ],
   [
+   "Testimonials",
+   "/testimonials.html"
+  ],
+  [
    "Team",
    "/team.html"
   ]
@@ -1563,6 +1567,104 @@
        "go": "See downloads"
       }
      ]
+    }
+   ]
+  },
+  {
+   "path": "/testimonials.html",
+   "title": "Riverstone Homes Reviews and Testimonials | Canton GA",
+   "description": "What homeowners across Cherokee County and North Georgia say about building and remodeling with Riverstone Homes, a family builder since 1997.",
+   "og_image": "/images/hero-house.jpg",
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/hero-house.jpg",
+     "alt": "Riverstone-built craftsman home in North Georgia with sage board and batten siding, stone base and wood front porch",
+     "label": "Homeowner stories",
+     "title": "In their words",
+     "lede": "Families across Cherokee County and North Georgia on what it was like to build and remodel with Riverstone Homes.",
+     "buttons": [
+      {
+       "text": "Start your build",
+       "href": "/start.html?topic=A%20building%20consultation"
+      },
+      {
+       "text": "Call us",
+       "href": "tel:+17703243680"
+      }
+     ]
+    },
+    {
+     "type": "quotes",
+     "label": "Reviews",
+     "title": "What our homeowners say",
+     "items": [
+      {
+       "text": "Highly recommend Riverstone Homes & Remodeling. We are still very happy with the custom home Jamey and his team built for us in 2005.",
+       "name": "Mia Green",
+       "sub": "Custom home · Google review"
+      },
+      {
+       "text": "My wife and I spoke with 3 different contractors before Riverstone. Each gave a quote but were not true to any commitment as to time and actual quote. When we received Riverstone’s quote and we were given a time for work to start… IT STARTED! I felt work was done in a timely fashion and professionally done.",
+       "name": "Mr. Bruce Lawson",
+       "sub": "Canton, GA"
+      },
+      {
+       "text": "The team was always professional, very prompt, and left the house in good condition. I am highly likely to recommend Riverstone Homes to a friend or family member.",
+       "name": "Dr. Don Johnson",
+       "sub": "Retired State Farm Owner/Agent"
+      },
+      {
+       "text": "Exceeded my expectations from start to finish! … Don’t hesitate in choosing Riverstone. You won’t be disappointed.",
+       "name": "E. Hunter",
+       "sub": "Google review"
+      }
+     ],
+     "note": "Built or remodeled with Riverstone? We would love to hear from you. <a href=\"/start.html?topic=Something%20else\">Send us a note</a>."
+    },
+    {
+     "type": "cards",
+     "alt": true,
+     "label": "See the work",
+     "title": "Get to know Riverstone",
+     "items": [
+      {
+       "kicker": "Watch",
+       "title": "Riverstone videos",
+       "text": "Home tours, a new home walkthrough and building advice from Jamey.",
+       "href": "/videos.html",
+       "go": "Watch"
+      },
+      {
+       "kicker": "Build",
+       "title": "Build on your land",
+       "text": "How we build on your lot, from permits and site prep to the final walk-through.",
+       "href": "/build.html",
+       "go": "Learn more"
+      },
+      {
+       "kicker": "Custom",
+       "title": "Custom homes",
+       "text": "Start from one of our proven plans or bring your own.",
+       "href": "/custom-homes.html",
+       "go": "Learn more"
+      },
+      {
+       "kicker": "Team",
+       "title": "Meet the team",
+       "text": "Jamey Cagle has been building in North Georgia since 1997.",
+       "href": "/team.html",
+       "go": "Meet us"
+      }
+     ]
+    },
+    {
+     "type": "contact",
+     "compact": true,
+     "topic": "A building consultation",
+     "title": "Ready to write your own story?",
+     "text": "Tell us what you would like to build and where. We will reach out to set up a free building consultation.",
+     "placeholder": "Your land, your plan ideas, your timeline..."
     }
    ]
   }

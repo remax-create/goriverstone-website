@@ -2,7 +2,7 @@
 """Build Riverstone landing pages from data/landing_pages.json.
 
 Each page is a list of blocks (hero, steps, checks, two, cards, specs, gallery,
-plans, faq, contact). Shared styles live in scripts/landing-page.css and are
+plans, faq, quotes, contact). Shared styles live in scripts/landing-page.css and are
 inlined into every page. Paths are root-relative ("/images/...") so pages can
 live in sub-folders such as /plans/.
 
@@ -73,6 +73,15 @@ def block(b, page):
         note = f'<p class="fine" style="margin-top:1.2rem">{E(b["note"])}</p>' if b.get('note') else ''
         grid = f' style="grid-template-columns:repeat(auto-fit,minmax(min(100%,{int(b["min"])}px),1fr))"' if b.get('min') else ''
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="cards"{grid}>{cards}</div>{note}</div></section>'
+    if t == 'quotes':
+        star = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 20.9l1.6-7L2 9.2l7.1-.6z"/></svg>'
+        cards = ''.join(
+            f'<figure class="quote"><div class="stars" role="img" aria-label="{int(q.get("stars", 5))} out of 5 stars">{star * int(q.get("stars", 5))}</div>'
+            f'<blockquote><p>{E(q["text"])}</p></blockquote>'
+            f'<figcaption><b>{E(q["name"])}</b>' + (f'<span>{E(q["sub"])}</span>' if q.get('sub') else '') + '</figcaption></figure>'
+            for q in b['items'])
+        note = f'<p class="fine" style="margin-top:1.2rem">{b["note"]}</p>' if b.get('note') else ''  # note may hold a simple inline link
+        return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="quotes">{cards}</div>{note}</div></section>'
     if t == 'team':
         cards = ''.join(
             f'<article class="tm"><img src="{E(m["img"])}" alt="{E(m["name"])}, {E(m["role"])}" loading="lazy" width="800" height="1000">'
