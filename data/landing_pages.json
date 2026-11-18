@@ -25,6 +25,14 @@
    "/barndominiums.html"
   ],
   [
+   "Room additions",
+   "/room-additions.html"
+  ],
+  [
+   "Garages & pole barns",
+   "/garages-pole-barns.html"
+  ],
+  [
    "Downloads",
    "/downloads.html"
   ],
@@ -1624,6 +1632,27 @@
     },
     {
      "type": "cards",
+     "label": "Homeowner stories",
+     "title": "See the work, start to finish",
+     "items": [
+      {
+       "kicker": "Before and after",
+       "title": "A screened porch, from grass to best room in the house",
+       "text": "Block foundation to painted floor, built in 2020.",
+       "href": "/room-additions.html#porch-story",
+       "go": "See the porch"
+      },
+      {
+       "kicker": "Before and after",
+       "title": "A pool pavilion, from mud pit to pool nights",
+       "text": "Framed and roofed off the back of the house in 2021.",
+       "href": "/garages-pole-barns.html#pavilion-story",
+       "go": "See the pavilion"
+      }
+     ]
+    },
+    {
+     "type": "cards",
      "alt": true,
      "label": "See the work",
      "title": "Get to know Riverstone",
@@ -1665,6 +1694,480 @@
      "title": "Ready to write your own story?",
      "text": "Tell us what you would like to build and where. We will reach out to set up a free building consultation.",
      "placeholder": "Your land, your plan ideas, your timeline..."
+    }
+   ]
+  },
+  {
+   "path": "/room-additions.html",
+   "title": "Room Additions & Screened Porches Canton GA | Riverstone Homes",
+   "description": "Room additions and screened porches in Canton and Cherokee County, GA. See a Riverstone screened porch go from a patch of grass to the best room in the house.",
+   "og_image": "/images/projects/screened-porch-finished.jpg",
+   "schema": [
+    {
+     "@context": "https://schema.org",
+     "@type": "Service",
+     "name": "Room additions and screened porches",
+     "serviceType": "Home addition construction",
+     "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Riverstone Homes",
+      "url": "https://goriverstone.com/",
+      "telephone": "+1-706-514-6637"
+     },
+     "areaServed": [
+      "Cherokee County, GA",
+      "Bartow County, GA",
+      "Gordon County, GA",
+      "Whitfield County, GA",
+      "Cobb County, GA",
+      "Pickens County, GA"
+     ]
+    },
+    {
+     "@context": "https://schema.org",
+     "@type": "FAQPage",
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "Do I need a permit for a room addition in Cherokee County?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A room addition or screened porch that adds to your home's footprint needs a building permit and inspections, and setback rules decide where it can go on your lot. We pull the permits and handle the inspections as part of the job."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "How long does a room addition take?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the size, the foundation, the weather and inspection timing. A screened porch is usually quicker than a heated addition with plumbing. We'll give you a realistic range in writing before we start, and keep you updated as we go."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Can a screened porch be turned into a heated room later?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often, yes, if it's planned for from the start. Foundation, framing, roof pitch and window openings all matter, so tell us at the first visit if a four-season room might be in your future."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Will the addition match my house?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That's the goal. We match rooflines, brick, siding and trim as closely as the materials allow, so the addition looks like it was always there."
+       }
+      }
+     ]
+    }
+   ],
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/projects/screened-porch-finished.jpg",
+     "alt": "Finished screened porch addition with a white tongue and groove ceiling, ceiling fan and blue outdoor furniture",
+     "label": "Room additions",
+     "title": "More room, without moving.",
+     "lede": "Room additions and screened porches in Canton, Cherokee County and North Georgia, built by a local builder since 1997.",
+     "buttons": [
+      {
+       "text": "Start your addition",
+       "href": "/start.html?topic=A%20room%20addition"
+      },
+      {
+       "text": "Call us",
+       "href": "tel:+17703243680"
+      }
+     ]
+    },
+    {
+     "type": "two",
+     "label": "Why add on",
+     "title": "Love your lot. Need more room.",
+     "paras": [
+      "Sometimes the house is right, the neighborhood is right, and you just need one more room. A room addition contractor in Canton GA who knows Cherokee County permits, red clay and sloped lots can get you that room without the hassle of moving.",
+      "We build screened porches, sunrooms and room additions that tie into your roofline and match your brick, siding and trim, so it looks like it was always there.",
+      "One team handles it start to finish: Jamey Cagle, who founded Riverstone in 1997, and John O'Donnell, our project manager with more than 30 years on job sites."
+     ],
+     "buttons": [
+      {
+       "text": "Meet the team",
+       "href": "/team.html"
+      }
+     ],
+     "image": "/images/projects/screened-porch-painted-floor.jpg",
+     "alt": "Screened porch addition with a painted gray and white patterned concrete floor and board and batten walls"
+    },
+    {
+     "type": "gallery",
+     "id": "porch-story",
+     "label": "Project story",
+     "title": "A screened porch, from grass to best room in the house",
+     "text": "Our New Home Guide Sandra Watkins hired Riverstone to add this screened porch to her brick ranch in 2020. Tap a photo to see it bigger.",
+     "items": [
+      {
+       "src": "/images/projects/screened-porch-before-grass.jpg",
+       "alt": "Brick ranch side yard with just grass before the screened porch addition",
+       "caption": "Before: just grass"
+      },
+      {
+       "src": "/images/projects/screened-porch-block-foundation.jpg",
+       "alt": "Concrete block foundation going in for a screened porch addition",
+       "caption": "Block foundation"
+      },
+      {
+       "src": "/images/projects/screened-porch-brick-steps.jpg",
+       "alt": "Brick steps and filled foundation for the porch slab",
+       "caption": "Brick steps, then fill"
+      },
+      {
+       "src": "/images/projects/screened-porch-slab.jpg",
+       "alt": "Fresh concrete slab poured for the screened porch",
+       "caption": "Slab poured"
+      },
+      {
+       "src": "/images/projects/screened-porch-framing.jpg",
+       "alt": "Framed screened porch with exposed rafters and a vaulted roof",
+       "caption": "Framing and rafters"
+      },
+      {
+       "src": "/images/projects/screened-porch-ceiling.jpg",
+       "alt": "Tongue and groove pine ceiling going up on a screened porch",
+       "caption": "Tongue and groove ceiling"
+      },
+      {
+       "src": "/images/projects/screened-porch-painted.jpg",
+       "alt": "Screened porch painted white with board and batten walls",
+       "caption": "Paint makes it bright"
+      },
+      {
+       "src": "/images/projects/screened-porch-painted-floor.jpg",
+       "alt": "Painted patterned concrete floor on a screened porch",
+       "caption": "That painted floor"
+      },
+      {
+       "src": "/images/projects/screened-porch-furnished.jpg",
+       "alt": "Screened porch with blue outdoor sofas and pillows",
+       "caption": "Furniture in"
+      },
+      {
+       "src": "/images/projects/screened-porch-view.jpg",
+       "alt": "View from a screened porch out to a magnolia tree and green yard",
+       "caption": "The view from her favorite seat"
+      },
+      {
+       "src": "/images/projects/screened-porch-finished.jpg",
+       "alt": "Finished screened porch with a ceiling fan and vaulted white ceiling",
+       "caption": "Best room in the house"
+      }
+     ],
+     "note": "Built by Riverstone Homes in 2020."
+    },
+    {
+     "type": "checks",
+     "alt": true,
+     "label": "What we add",
+     "title": "Room additions we build",
+     "items": [
+      [
+       "Screened porches",
+       "Vaulted ceilings, board and batten, ceiling fans"
+      ],
+      [
+       "Sunrooms and four-season rooms",
+       "Windows on three sides, heated and cooled"
+      ],
+      [
+       "Family room additions",
+       "More room where everyone gathers"
+      ],
+      [
+       "Bedroom and bath additions",
+       "Including a primary suite"
+      ],
+      [
+       "Covered porches",
+       "Front or back, tied into the roofline"
+      ],
+      [
+       "Basement finishes",
+       "Turn the space you have into living space"
+      ]
+     ]
+    },
+    {
+     "type": "steps",
+     "label": "How it works",
+     "title": "How a room addition works with Riverstone",
+     "items": [
+      [
+       "Walk the house",
+       "We look at your lot, setbacks, roofline and how you'll use the new room."
+      ],
+      [
+       "Plan and price",
+       "We plan the addition to match your home and price it line by line."
+      ],
+      [
+       "Permits and build",
+       "We pull permits, build it and handle inspections."
+      ],
+      [
+       "Walk-through",
+       "We walk it with you and finish the punch list before we call it done."
+      ]
+     ]
+    },
+    {
+     "type": "faq",
+     "label": "Questions",
+     "title": "Room addition questions",
+     "items": [
+      [
+       "Do I need a permit for a room addition in Cherokee County?",
+       "Yes. A room addition or screened porch that adds to your home's footprint needs a building permit and inspections, and setback rules decide where it can go on your lot. We pull the permits and handle the inspections as part of the job."
+      ],
+      [
+       "How long does a room addition take?",
+       "It depends on the size, the foundation, the weather and inspection timing. A screened porch is usually quicker than a heated addition with plumbing. We'll give you a realistic range in writing before we start, and keep you updated as we go."
+      ],
+      [
+       "Can a screened porch be turned into a heated room later?",
+       "Often, yes, if it's planned for from the start. Foundation, framing, roof pitch and window openings all matter, so tell us at the first visit if a four-season room might be in your future."
+      ],
+      [
+       "Will the addition match my house?",
+       "That's the goal. We match rooflines, brick, siding and trim as closely as the materials allow, so the addition looks like it was always there."
+      ]
+     ]
+    },
+    {
+     "type": "contact",
+     "topic": "A room addition",
+     "title": "Let's talk about your addition.",
+     "text": "Tell us about your house and the room you need. We'll set up a time to come take a look.",
+     "placeholder": "Your address, what you'd like to add, your timeline..."
+    }
+   ]
+  },
+  {
+   "path": "/garages-pole-barns.html",
+   "title": "Garages, Pole Barns & Pool Pavilions North Georgia | Riverstone",
+   "description": "Pole barn and garage builder in North Georgia. Detached garages, pole barns, pool pavilions and covered patios, plus a pool pavilion before and after.",
+   "og_image": "/images/projects/pool-pavilion-pool-night.jpg",
+   "schema": [
+    {
+     "@context": "https://schema.org",
+     "@type": "Service",
+     "name": "Garages, pole barns and pool pavilions",
+     "serviceType": "Garage, pole barn and pavilion construction",
+     "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Riverstone Homes",
+      "url": "https://goriverstone.com/",
+      "telephone": "+1-706-514-6637"
+     },
+     "areaServed": [
+      "Cherokee County, GA",
+      "Bartow County, GA",
+      "Gordon County, GA",
+      "Whitfield County, GA",
+      "Cobb County, GA",
+      "Pickens County, GA"
+     ]
+    },
+    {
+     "@context": "https://schema.org",
+     "@type": "FAQPage",
+     "mainEntity": [
+      {
+       "@type": "Question",
+       "name": "Do you build pool pavilions and covered patios?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We build pool pavilions, covered patios and other open-sided structures, attached to the house or freestanding. We frame and roof them and can coordinate pavers, lighting and electrical."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Do I need a permit for a pole barn or detached garage?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In most cases, yes. Cherokee County treats detached garages, shops and barns as accessory structures with their own setback rules, and other counties and cities have their own. We check your parcel and pull the permits."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "Can you build a garage or pole barn on land I already own?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We build on our clients' land across Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties. Send us the address and we'll look at access, slope and where the building can sit."
+       }
+      },
+      {
+       "@type": "Question",
+       "name": "What affects the cost of a garage or pole barn?",
+       "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Size, height, doors, slab or gravel floor, electrical, insulation and site work like grading and driveway all move the price. We'll walk the site and price it line by line before you commit."
+       }
+      }
+     ]
+    }
+   ],
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/projects/pool-pavilion-pool-night.jpg",
+     "alt": "Pool pavilion at night with string lights, outdoor furniture and a lit pool in North Georgia",
+     "label": "Garages, pole barns & pavilions",
+     "title": "Room for the truck. Shade for the pool.",
+     "lede": "Detached garages, pole barns, pool pavilions and covered patios across Cherokee County and North Georgia.",
+     "buttons": [
+      {
+       "text": "Start your project",
+       "href": "/start.html?topic=A%20garage%20or%20pole%20barn"
+      },
+      {
+       "text": "Call us",
+       "href": "tel:+17703243680"
+      }
+     ]
+    },
+    {
+     "type": "two",
+     "label": "Built to work",
+     "title": "A pole barn and garage builder that knows North Georgia.",
+     "paras": [
+      "Whether it's a two-bay garage, a shop for the tractor and the boat, a pole barn for hay, or shade by the pool, the building has to fit your land and how you'll use it.",
+      "We look at the slope, the access, the setbacks and the doors and ceiling height you actually need before we price anything. Then we pull the permits and build it.",
+      "Want the garage to match the house? We'll match the roof pitch, siding and trim."
+     ],
+     "image": "/images/projects/pool-pavilion-under-pavilion.jpg",
+     "alt": "Under a pool pavilion with paver floor, wood posts and the pool beyond"
+    },
+    {
+     "type": "gallery",
+     "id": "pavilion-story",
+     "label": "Project story",
+     "title": "A pool pavilion, from mud pit to pool nights",
+     "text": "Our New Home Guide Sandra Watkins had a brand new pool and zero shade. The pool came first, then Riverstone framed and roofed this pavilion off the back of the house in 2021. Tap a photo to see it bigger.",
+     "items": [
+      {
+       "src": "/images/projects/pool-pavilion-before-mud.jpg",
+       "alt": "Backyard with red clay and a new pool shell before the pavilion",
+       "caption": "Before: a mud pit"
+      },
+      {
+       "src": "/images/projects/pool-pavilion-pool-shell.jpg",
+       "alt": "Pool shell being finished beside the house",
+       "caption": "The pool goes in first"
+      },
+      {
+       "src": "/images/projects/pool-pavilion-pool-no-shade.jpg",
+       "alt": "Finished pool with a rock waterfall and no shade",
+       "caption": "Pretty, but zero shade"
+      },
+      {
+       "src": "/images/projects/pool-pavilion-framing.jpg",
+       "alt": "Pavilion framing going up off the back of the house",
+       "caption": "Riverstone frames the pavilion"
+      },
+      {
+       "src": "/images/projects/pool-pavilion-roof-on.jpg",
+       "alt": "Pavilion with the roof on and red trim",
+       "caption": "Roof on"
+      },
+      {
+       "src": "/images/projects/pool-pavilion-finished.jpg",
+       "alt": "Finished pool pavilion with red trim beside the pool",
+       "caption": "Done"
+      },
+      {
+       "src": "/images/projects/pool-pavilion-under-pavilion.jpg",
+       "alt": "Paver floor under the pool pavilion looking out to the pool",
+       "caption": "Shade by the pool"
+      },
+      {
+       "src": "/images/projects/pool-pavilion-string-lights.jpg",
+       "alt": "String lights along the pavilion rafters",
+       "caption": "String lights"
+      },
+      {
+       "src": "/images/projects/pool-pavilion-pool-view.jpg",
+       "alt": "View from under the pavilion to the pool with blue lounge chairs",
+       "caption": "Favorite room, not inside"
+      },
+      {
+       "src": "/images/projects/pool-pavilion-pool-night.jpg",
+       "alt": "Pool pavilion at night with string lights glowing",
+       "caption": "Pool nights"
+      }
+     ],
+     "note": "Pavilion framed and roofed by Riverstone Homes in 2021."
+    },
+    {
+     "type": "checks",
+     "alt": true,
+     "label": "What we build",
+     "title": "Garages, barns and outdoor structures",
+     "items": [
+      [
+       "Detached garages",
+       "One, two or three bays"
+      ],
+      [
+       "Pole barns",
+       "Hay, equipment, horses or storage"
+      ],
+      [
+       "Workshops",
+       "Room for the tools and the projects"
+      ],
+      [
+       "Pool pavilions",
+       "Shade, string lights and a place to land"
+      ],
+      [
+       "Covered patios",
+       "Attached to the house or freestanding"
+      ],
+      [
+       "Garage build-outs",
+       "Finish the garage you already have"
+      ]
+     ]
+    },
+    {
+     "type": "faq",
+     "label": "Questions",
+     "title": "Garage, pole barn and pavilion questions",
+     "items": [
+      [
+       "Do you build pool pavilions and covered patios?",
+       "Yes. We build pool pavilions, covered patios and other open-sided structures, attached to the house or freestanding. We frame and roof them and can coordinate pavers, lighting and electrical."
+      ],
+      [
+       "Do I need a permit for a pole barn or detached garage?",
+       "In most cases, yes. Cherokee County treats detached garages, shops and barns as accessory structures with their own setback rules, and other counties and cities have their own. We check your parcel and pull the permits."
+      ],
+      [
+       "Can you build a garage or pole barn on land I already own?",
+       "Yes. We build on our clients' land across Cherokee, Bartow, Gordon, Whitfield, Cobb and Pickens counties. Send us the address and we'll look at access, slope and where the building can sit."
+      ],
+      [
+       "What affects the cost of a garage or pole barn?",
+       "Size, height, doors, slab or gravel floor, electrical, insulation and site work like grading and driveway all move the price. We'll walk the site and price it line by line before you commit."
+      ]
+     ]
+    },
+    {
+     "type": "contact",
+     "topic": "A garage or pole barn",
+     "title": "Let's talk about your building.",
+     "text": "Tell us what you want to build and where. We'll set up a time to walk the site.",
+     "placeholder": "Your address, what you'd like to build, size, timeline..."
     }
    ]
   }
