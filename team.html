@@ -149,6 +149,16 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
 </style>
 <!-- Metricool -->
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"c912cd182a3a69c45b610171e4c84dee"})});</script>
+<style>
+.jvid { margin: 1.5rem 0 0; max-width: 240px; }
+.jvid-btn { position: relative; display: block; width: 100%; aspect-ratio: 9 / 16; padding: 0; border: 0; background: #111; cursor: pointer; overflow: hidden; }
+.jvid-btn img { width: 100%; height: 100%; object-fit: cover; }
+.jvid-btn iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.jvid-play { position: absolute; top: 50%; left: 50%; translate: -50% -50%; width: 56px; height: 56px; border-radius: 50%; background: rgba(0,0,0,.6); display: grid; place-items: center; transition: background .2s; }
+.jvid-btn:hover .jvid-play { background: var(--brass); }
+.jvid-play svg { width: 26px; height: 26px; fill: #fff; }
+.jvid figcaption { margin-top: .5rem; font-size: .9rem; }
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -180,6 +190,10 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
         <p>Jamey Cagle got his start in building while he was still in high school in Canton, and he never looked back. In 1997 he founded Riverstone Homes with a simple idea: build every home the way you'd build your own.</p>
         <p>Nearly 30 years later, Riverstone is still locally owned, and Jamey is still the guy walking lots, meeting families and checking the details. He's built through every kind of market, including the 2007 housing crash, and that experience taught him how to build homes that last. His team builds everything from new and custom homes to barndominiums, room additions, basement finishes and homes on clients' own land.</p>
         <p>Jamey is a local business owner through and through. Along with Riverstone Homes, he owns <a href="https://www.tacklebarnoutdoors.com/" target="_blank" rel="noopener" style="color: var(--brass); text-underline-offset: 3px">Tackle Barn Outdoors</a>, the bait and tackle shop in Adairsville, and Riverstone Graphics. When he's not on a job site, there's a good chance he's somewhere with a fishing rod in his hand.</p>
+        <figure class="jvid">
+          <button class="jvid-btn" data-yt="lXbZATSxWvM" aria-label="Play: Meet Jamey, Riverstone's founder"><img src="https://i.ytimg.com/vi/lXbZATSxWvM/oar2.jpg" alt="" loading="lazy" width="480" height="854"><span class="jvid-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
+          <figcaption>Meet Jamey, Riverstone's founder</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -218,6 +232,7 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
   <div class="wrap"><span>© <span id="year">2026</span> Riverstone Homes, Inc. · North Metro Atlanta, Georgia</span><a href="index.html">goriverstone.com</a></div>
 </footer>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script>document.querySelectorAll(".jvid-btn").forEach(function(b){b.addEventListener("click",function(){if(b.querySelector("iframe"))return;var f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/"+b.dataset.yt+"?autoplay=1&rel=0&playsinline=1";f.title=b.getAttribute("aria-label");f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.allowFullscreen=true;b.appendChild(f);});});</script>
 <script src="/js/site.js" defer></script>
 </body>
 </html>
