@@ -250,7 +250,7 @@ figure.hero-ph figcaption { color: var(--ink-2); font-size: .85rem; padding-top:
       </div></section>
       <div class="wrap posts">${posts.map(p => `
         <article class="post-item">
-          <a class="post-card" href="#${esc(p.slug)}">
+          <a class="post-card" href="share/${esc(p.slug)}.html">
             <div class="ph"><img src="${esc(p.photo)}" alt="${esc(p.photoAlt)}" loading="lazy" width="1600" height="1067"></div>
             <div class="txt">
               <div class="meta"><span class="cat">${esc(p.category)}</span><span>${fmtDate(p.date)}</span><span>${esc(p.readMins)} min read</span></div>

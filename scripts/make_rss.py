@@ -18,7 +18,7 @@ def rfc822(d):
 
 items = []
 for p in posts:
-    link = f"{SITE}/blog.html#{p['slug']}"
+    link = f"{SITE}/share/{p['slug']}.html"
     img = f"{SITE}/{p['photo'].lstrip('/')}" if p.get("photo") else ""
     size = os.path.getsize(p["photo"].lstrip("/")) if img and os.path.exists(p["photo"].lstrip("/")) else 0
     items.append(f"""  <item>
