@@ -87,7 +87,14 @@ export async function handle(req, store, drafts = draftsFrom(bundled)) {
     const share = url.searchParams.get("share") || (url.pathname.startsWith("/share/") ? url.pathname.slice(7) : "");
     if (share) {
       const slug = share.replace(/\.html$/, "").replace(/^.*\//, "");
-      const p = approvedPosts(await load(store, drafts)).find(x => x.slug === slug);
+      let p = approvedPosts(await load(store, drafts)).find(x => x.slug === slug);
+      if (!p) {
+        // Published posts live in the static posts.json; serve their share page too.
+        try {
+          const pub = await fetch(`${SITE}/posts.json`, { headers: { "cache-control": "no-cache" } }).then(r => r.json());
+          p = (pub.posts || []).find(x => x.slug === slug && x.status === "published");
+        } catch { /* fall through to 404 */ }
+      }
       if (!p) return new Response("Not found", { status: 404, headers: { "content-type": "text/plain" } });
       return new Response(sharePage(p), { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=60" } });
     }
