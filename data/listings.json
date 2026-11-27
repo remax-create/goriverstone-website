@@ -1,33 +1,6 @@
 {
  "listings": [
   {
-   "slug": "121-cypress-court",
-   "incentive": "$5,000 Builder Incentive",
-   "status": "For sale",
-   "statusKind": "now",
-   "address": "121 Cypress Court",
-   "city": "Canton, GA 30115",
-   "type": "Townhome",
-   "mls": "FMLS #7838520",
-   "price": "$299,900",
-   "beds": "2 + loft",
-   "baths": "2",
-   "sqft": "1,155",
-   "acres": "",
-   "photos": [
-    {"src": "images/cypress-121-front.jpg", "alt": "121 Cypress Court at dusk: two-story end-unit townhome with stone front, shutters and one-car garage"},
-    {"src": "images/cypress-121-living.jpg", "alt": "Living room with stacked stone wood-burning fireplace and new flooring"},
-    {"src": "images/cypress-121-dining.jpg", "alt": "Open dining area and kitchen with new flooring and fresh paint"}
-   ],
-   "summary": "Freshly updated end-unit townhome near I-575 with a big upstairs loft.",
-   "description": "Freshly updated with new paint inside and out, new carpet upstairs, new main-level flooring and a new range. A large upstairs loft works as an office, media room or third bedroom. Wood-burning fireplace, one-car garage and a level lot near I-575 and the planned Holly Springs Town Center.",
-   "features": ["New paint inside and out", "New carpet upstairs and new main-level flooring", "New range", "Large upstairs loft for an office, media room or third bedroom", "Stacked stone wood-burning fireplace", "One-car garage", "Level lot near I-575"],
-   "offer": "<b>Seller offers up to $5,000</b> toward closing costs, prepaids or a rate buy-down with an acceptable offer.",
-   "listingUrl": "https://sandra-watkins.remax.com/property/168-7838520-121-cypress-court-canton-GA-30115",
-   "tourUrl": "https://www.zillow.com/view-imx/0773669d-fc33-43a4-a982-ef08b79be1ee?initialViewType=pano",
-   "topic": "121 Cypress Court"
-  },
-  {
    "slug": "104-bob-white-drive",
    "incentive": "Owner Financing Available",
    "status": "For sale · New construction",

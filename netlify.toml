@@ -59,3 +59,16 @@
   for = "/thanks.html"
   [headers.values]
     X-Robots-Tag = "noindex, follow"
+
+# 121 Cypress Court leased (Nov 2026): send old links to the homes for sale
+[[redirects]]
+  from = "/homes/121-cypress-court.html"
+  to = "/#homes"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/homes/121-cypress-court"
+  to = "/#homes"
+  status = 301
+  force = true
