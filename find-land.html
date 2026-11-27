@@ -232,6 +232,38 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.1re
 .yt.short .frame { aspect-ratio: 9 / 16; }
 .yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .yt figcaption { font: 600 .95rem/1.4 var(--f-body); text-align: center; }
+
+/* Floor plan tabs */
+.ftabs { background: #fff; border: 1px solid var(--line); }
+.ftabs .tablist { display: flex; flex-wrap: wrap; border-bottom: 1px solid #d9d7cf; background: #f4f3ef; }
+.ftabs [role=tab] { flex: 1 1 auto; min-height: 48px; padding: .9rem 1.2rem; border: 0; border-right: 1px solid #d9d7cf; background: transparent; color: #505a55; font: 600 .76rem/1.2 var(--f-body); letter-spacing: .14em; text-transform: uppercase; cursor: pointer; }
+.ftabs [role=tab]:last-child { border-right: 0; }
+.ftabs [role=tab][aria-selected=true] { background: #1b2823; color: #f2f0ea; }
+.ftabs [role=tab]:not([aria-selected=true]):hover { background: #eae8e2; color: #18211e; }
+.fpanel { padding: clamp(.75rem, 2vw, 1.5rem); }
+.fpanel button.zoom { padding: 0; border: 0; background: none; cursor: zoom-in; display: block; width: 100%; }
+.fpanel img { width: 100%; height: auto; }
+.fpanel .fine { color: #505a55; margin-top: .75rem; }
+
+/* Plan cards (hub) */
+.pcards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 1.5rem; }
+.pcard { display: grid; grid-template-rows: auto 1fr; background: var(--card); border: 1px solid var(--line); text-decoration: none; min-width: 0; transition: border-color .3s var(--ease); }
+.pcard:hover { border-color: var(--brass); }
+.pcard .ph { overflow: hidden; background: var(--page-2); }
+.pcard .ph img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .8s var(--ease); }
+.pcard:hover .ph img { transform: scale(1.04); }
+.pcard .tx { display: grid; gap: .6rem; align-content: start; padding: 1.4rem 1.5rem 1.6rem; }
+.pcard .k { font: 600 .7rem/1 var(--f-body); letter-spacing: .18em; text-transform: uppercase; color: var(--brass); }
+.pcard h3 { font-size: 1.7rem; }
+.pcard .facts { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+.pcard .facts li { font: 600 .74rem/1 var(--f-body); letter-spacing: .06em; padding: .45rem .6rem; border: 1px solid var(--line); color: var(--ink); }
+.pcard p { color: var(--ink-2); font-size: .97rem; }
+.pcard .go { font: 600 .74rem/1 var(--f-body); letter-spacing: .14em; text-transform: uppercase; color: var(--brass); padding-top: .2rem; }
+.price-note { font: 600 .78rem/1.4 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--brass); }
+@media (max-width: 640px) {
+  .gallery:has(> button:nth-child(5)) { grid-template-columns: 1fr 1fr; gap: .5rem; }
+  .gallery:has(> button:nth-child(5)) .cap { font-size: .7rem; padding: .3rem .5rem; }
+}
 </style>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Service", "name": "Help finding land to build a new home", "serviceType": "Land search and new home construction", "provider": {"@type": "HomeAndConstructionBusiness", "name": "Riverstone Homes", "url": "https://goriverstone.com/", "telephone": "+1-706-514-6637"}, "areaServed": ["Cherokee County, GA", "Bartow County, GA", "Gordon County, GA", "Whitfield County, GA", "Cobb County, GA", "Pickens County, GA"]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where can I find land for sale to build on in Cherokee County?", "acceptedAnswer": {"@type": "Answer", "text": "Use the county searches on this page. They show every lot and land listing on the MLS in Cherokee and the other counties Riverstone builds in, updated daily. When one looks good, call or text Sandra Watkins at 770-324-3680 to go see it."}}, {"@type": "Question", "name": "Can you tell me what it will cost to build on a lot before I buy it?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and you should ask before you sign. We walk the property, look at water, sewer or septic, slope, clearing and the driveway, then price a home on that lot so you know the total, land plus house."}}, {"@type": "Question", "name": "Do I need a real estate agent to buy land?", "acceptedAnswer": {"@type": "Answer", "text": "You don't have to have one, but it helps. Sandra is a land and new construction specialist with RE/MAX Town &amp; Country, and she works hand in hand with Riverstone, so the land search and the build plan stay on the same page."}}, {"@type": "Question", "name": "What should I check before buying land in Cherokee County?", "acceptedAnswer": {"@type": "Answer", "text": "Zoning, setbacks and any HOA rules, whether water and sewer are at the road or you'll need a well and septic, slope and soil, flood zones, access and how much clearing it needs. Our post on buying land in Cherokee County GA walks through each one."}}, {"@type": "Question", "name": "Do you only build in Cherokee County?", "acceptedAnswer": {"@type": "Answer", "text": "No. We build throughout North Georgia and North Metro Atlanta, including Bartow, Gordon, Whitfield, Cobb and Pickens counties."}}]}]</script>
 <!-- Metricool -->
@@ -253,13 +285,13 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.1re
     <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
     <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
     <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
-    <div class="field full"><label for="f-topic">I'm interested in</label><select id="f-topic" name="topic"><option>Building on my land</option><option selected>Finding land to build on</option><option>Building a home I saw in a video</option><option>Building my own plan</option><option>The Hemlock Falls plan</option><option>104 Bob White Drive</option><option>Riverstone Commons townhomes</option><option>A custom home or plan</option><option>A barndominium</option><option>A room addition</option><option>A basement finish</option><option>A garage or pole barn</option><option>A building consultation</option><option>Something else</option></select></div>
+    <div class="field full"><label for="f-topic">I'm interested in</label><select id="f-topic" name="topic"><option>Building on my land</option><option selected>Finding land to build on</option><option>Building a home I saw in a video</option><option>Building my own plan</option><option>The Hemlock Falls plan</option><option>The Walton plan</option><option>The Azalea Park plan</option><option>The Waterbury Cottage plan</option><option>The Nesbit Ferry plan</option><option>The Maplewood plan</option><option>The Willow plan</option><option>One of your home plans</option><option>121 Cypress Court</option><option>104 Bob White Drive</option><option>Riverstone Commons townhomes</option><option>A custom home or plan</option><option>A barndominium</option><option>A room addition</option><option>A basement finish</option><option>A garage or pole barn</option><option>A building consultation</option><option>Something else</option></select></div>
     <div class="field full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Which county or town, how many acres, and your budget for land and the home?"></textarea></div>
     <div class="field full"><button class="btn" type="submit">Send message <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button></div>
     <p class="form-status" id="form-status" role="status"></p>
   </form></div></section>
 </main>
-<footer class="site-footer"><div class="wrap"><span>&copy; <span id="year">2026</span> Riverstone Homes, Inc. &middot; 6446 Joe Frank Harris Pkwy, Adairsville, GA 30103 &middot; 706-514-6637</span><nav aria-label="Footer"><a href="/">Home</a><a href="/build.html">Build on your land or ours</a><a href="/plans/hemlock-falls.html">Hemlock Falls plan</a><a href="/custom-homes.html">Custom homes</a><a href="/find-land.html">Find land</a><a href="/barndominiums.html">Barndominiums</a><a href="/room-additions.html">Room additions</a><a href="/garages-pole-barns.html">Garages &amp; pole barns</a><a href="/downloads.html">Downloads</a><a href="/videos.html">Videos</a><a href="/testimonials.html">Testimonials</a><a href="/team.html">Team</a></nav></div></footer>
+<footer class="site-footer"><div class="wrap"><span>&copy; <span id="year">2026</span> Riverstone Homes, Inc. &middot; 6446 Joe Frank Harris Pkwy, Adairsville, GA 30103 &middot; 706-514-6637</span><nav aria-label="Footer"><a href="/">Home</a><a href="/build.html">Build on your land or ours</a><a href="/home-plans.html">Home plans</a><a href="/custom-homes.html">Custom homes</a><a href="/find-land.html">Find land</a><a href="/barndominiums.html">Barndominiums</a><a href="/room-additions.html">Room additions</a><a href="/garages-pole-barns.html">Garages &amp; pole barns</a><a href="/downloads.html">Downloads</a><a href="/videos.html">Videos</a><a href="/testimonials.html">Testimonials</a><a href="/team.html">Team</a></nav></div></footer>
 
 <script>
 (function () {
@@ -274,6 +306,20 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.1re
   });
   var t = new URLSearchParams(location.search).get('topic'), sel = document.getElementById('f-topic');
   if (t && sel && [].some.call(sel.options, function (o) { return o.value === t; })) sel.value = t;
+  [].forEach.call(document.querySelectorAll('[data-tabs]'), function (box) {
+    var tabs = [].slice.call(box.querySelectorAll('[role=tab]'));
+    function pick(t, focus) {
+      tabs.forEach(function (x) { var on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute('aria-controls')).hidden = !on; });
+      if (focus) t.focus();
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { pick(t); });
+      t.addEventListener('keydown', function (e) {
+        var j = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : null;
+        if (j === null) return; e.preventDefault(); pick(tabs[(j + tabs.length) % tabs.length], true);
+      });
+    });
+  });
   var lb = document.getElementById('lb');
   if (lb) {
     document.addEventListener('click', function (e) {

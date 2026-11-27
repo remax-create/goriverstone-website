@@ -9,8 +9,8 @@
    "/build.html"
   ],
   [
-   "Hemlock Falls plan",
-   "/plans/hemlock-falls.html"
+   "Home plans",
+   "/home-plans.html"
   ],
   [
    "Custom homes",
@@ -644,6 +644,1692 @@
      "placeholder": "Where would you build it, and would you like the optional second floor?"
     }
    ]
+  },
+  {
+   "path": "/home-plans.html",
+   "title": "Home Plans | Photos & Floor Plans | Riverstone Homes",
+   "description": "Browse Riverstone Homes floor plans with real photos of homes we have built: the Walton, Azalea Park, Waterbury Cottage, Nesbit Ferry, Maplewood, Willow and Hemlock Falls. Build one on your land or ours.",
+   "og_image": "/images/plans/waterbury-cottage/waterbury-cottage-01.jpg",
+   "schema": {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Riverstone Homes home plans",
+    "url": "https://goriverstone.com/home-plans.html",
+    "hasPart": [
+     {
+      "@type": "WebPage",
+      "name": "The Walton",
+      "url": "https://goriverstone.com/plans/walton.html"
+     },
+     {
+      "@type": "WebPage",
+      "name": "Azalea Park",
+      "url": "https://goriverstone.com/plans/azalea-park.html"
+     },
+     {
+      "@type": "WebPage",
+      "name": "Waterbury Cottage",
+      "url": "https://goriverstone.com/plans/waterbury-cottage.html"
+     },
+     {
+      "@type": "WebPage",
+      "name": "Nesbit Ferry",
+      "url": "https://goriverstone.com/plans/nesbit-ferry.html"
+     },
+     {
+      "@type": "WebPage",
+      "name": "The Maplewood",
+      "url": "https://goriverstone.com/plans/maplewood.html"
+     },
+     {
+      "@type": "WebPage",
+      "name": "The Willow",
+      "url": "https://goriverstone.com/plans/willow.html"
+     },
+     {
+      "@type": "WebPage",
+      "name": "Hemlock Falls",
+      "url": "https://goriverstone.com/plans/hemlock-falls.html"
+     }
+    ]
+   },
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/plans/waterbury-cottage/waterbury-cottage-01.jpg",
+     "alt": "Waterbury Cottage built by Riverstone Homes",
+     "label": "Home plans",
+     "title": "Find the plan that fits your family",
+     "lede": "Every plan here is one we have actually built, so the photos are real Riverstone homes. Pick a favorite, make it yours, and build it on your land or ours.",
+     "buttons": [
+      {
+       "text": "Browse the plans",
+       "href": "#plans"
+      },
+      {
+       "text": "Talk to us about a plan",
+       "href": "#contact"
+      }
+     ]
+    },
+    {
+     "type": "plancards",
+     "id": "plans",
+     "label": "Our plans",
+     "title": "Real homes, real photos",
+     "text": "Tap any plan to see the photo gallery, color floor plans and video tours.",
+     "items": [
+      {
+       "href": "/plans/walton.html",
+       "img": "/images/plans/walton/walton-card.jpg",
+       "alt": "The Walton built by Riverstone Homes",
+       "kicker": "One level, basement option",
+       "title": "The Walton",
+       "facts": [
+        "2,068 sq ft",
+        "4 bed",
+        "2 bath",
+        "Basement option"
+       ],
+       "text": "One-level living with an open kitchen, stone fireplace and an optional full basement."
+      },
+      {
+       "href": "/plans/azalea-park.html",
+       "img": "/images/plans/azalea-park/azalea-park-card.jpg",
+       "alt": "Azalea Park built by Riverstone Homes",
+       "kicker": "Primary on main, full basement",
+       "title": "Azalea Park",
+       "facts": [
+        "2,182 sq ft",
+        "4 bed",
+        "2.5 bath",
+        "Full basement"
+       ],
+       "text": "Primary suite on the main, vaulted family room and a full unfinished basement."
+      },
+      {
+       "href": "/plans/waterbury-cottage.html",
+       "img": "/images/plans/waterbury-cottage/waterbury-cottage-card.jpg",
+       "alt": "Waterbury Cottage built by Riverstone Homes",
+       "kicker": "Farmhouse with a basement",
+       "title": "Waterbury Cottage",
+       "facts": [
+        "2,376 sq ft",
+        "4 bed",
+        "3.5 bath",
+        "Basement"
+       ],
+       "text": "Modern farmhouse with a vaulted family room, coffered dining room and a covered back deck."
+      },
+      {
+       "href": "/plans/nesbit-ferry.html",
+       "img": "/images/plans/nesbit-ferry/nesbit-ferry-card.jpg",
+       "alt": "Nesbit Ferry built by Riverstone Homes",
+       "kicker": "Primary on main, upstairs office",
+       "title": "Nesbit Ferry",
+       "facts": [
+        "4 bed",
+        "3 bath",
+        "Office",
+        "Mudroom"
+       ],
+       "text": "Primary suite on the main, a mudroom with a bench and an upstairs office and fourth bedroom."
+      },
+      {
+       "href": "/plans/maplewood.html",
+       "img": "/images/plans/maplewood/maplewood-card.jpg",
+       "alt": "The Maplewood built by Riverstone Homes",
+       "kicker": "One level, screened porch",
+       "title": "The Maplewood",
+       "facts": [
+        "2,400 sq ft",
+        "3 bed",
+        "2.5 bath",
+        "Optional bonus"
+       ],
+       "text": "One-level living with coffered ceilings, a screened porch and an optional upstairs bedroom and bonus room."
+      },
+      {
+       "href": "/plans/willow.html",
+       "img": "/images/plans/willow/willow-card.jpg",
+       "alt": "The Willow built by Riverstone Homes",
+       "kicker": "Primary on main, bonus room",
+       "title": "The Willow",
+       "facts": [
+        "1,952 sq ft main",
+        "3 bed + bonus",
+        "2.5 bath",
+        "Basement"
+       ],
+       "text": "Craftsman cottage with a main-floor primary suite, a great room and a big upstairs bonus room."
+      },
+      {
+       "href": "/plans/hemlock-falls.html",
+       "img": "/images/plans/hemlock-falls/hemlock-falls-front.jpg",
+       "alt": "Hemlock Falls built by Riverstone Homes",
+       "kicker": "One level, room to grow",
+       "title": "Hemlock Falls",
+       "facts": [
+        "2,187 sq ft",
+        "3 to 4 bed",
+        "2 to 3 bath",
+        "Optional upstairs"
+       ],
+       "text": "One-level living with a vaulted family room, a flex room and an optional second floor."
+      }
+     ],
+     "note": "Pricing depends on your lot, options and finishes, so every plan is call for pricing: 706-514-6637."
+    },
+    {
+     "type": "steps",
+     "alt": true,
+     "label": "How it works",
+     "title": "From favorite plan to front door",
+     "items": [
+      [
+       "Pick a plan",
+       "Start with one of ours. We can adjust bedrooms, add a basement or bonus room, and choose your finishes."
+      ],
+      [
+       "Pick a lot",
+       "Build on land you already own, or we will help you find the right lot."
+      ],
+      [
+       "Get real pricing",
+       "We price your plan on your lot with your options, so there are no surprises."
+      ],
+      [
+       "Build and move in",
+       "We keep you updated every step of the way, right up to the keys."
+      ]
+     ]
+    },
+    {
+     "type": "contact",
+     "label": "Free build consultation",
+     "title": "Have a favorite plan?",
+     "text": "Tell us which plan you love and where you'd like to build. We'll talk through options and get you real pricing.",
+     "topic": "One of your home plans",
+     "placeholder": "Which plan do you like, and where would you build it?"
+    }
+   ]
+  },
+  {
+   "path": "/plans/walton.html",
+   "title": "Walton Home Plan | 2,068 Sq Ft | Riverstone Homes",
+   "description": "The Walton plan by Riverstone Homes: 2,068 sq ft on one level, 4 bedrooms (or 3 with bigger closets), 2 baths and an optional full basement. See photos, floor plans and a video tour.",
+   "og_image": "/images/plans/walton/walton-01.jpg",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "name": "The Walton home plan",
+      "url": "https://goriverstone.com/plans/walton.html",
+      "description": "The Walton plan by Riverstone Homes: 2,068 sq ft on one level, 4 bedrooms (or 3 with bigger closets), 2 baths and an optional full basement. See photos, floor plans and a video tour.",
+      "primaryImageOfPage": "https://goriverstone.com/images/plans/walton/walton-01.jpg",
+      "publisher": {
+       "@type": "HomeAndConstructionBusiness",
+       "name": "Riverstone Homes",
+       "telephone": "+1-706-514-6637",
+       "url": "https://goriverstone.com/"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://goriverstone.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Home plans",
+        "item": "https://goriverstone.com/home-plans.html"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "The Walton",
+        "item": "https://goriverstone.com/plans/walton.html"
+       }
+      ]
+     }
+    ]
+   },
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/plans/walton/walton-01.jpg",
+     "alt": "The Walton plan built by Riverstone Homes",
+     "label": "Riverstone home plan",
+     "title": "The Walton",
+     "lede": "Everything on one level, a big open kitchen and family room, covered porches front and back, and a full basement if you want room to grow.",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "See the floor plan",
+       "href": "#floor-plan"
+      }
+     ]
+    },
+    {
+     "type": "specs",
+     "items": [
+      [
+       "2,068",
+       "Sq ft"
+      ],
+      [
+       "4 or 3",
+       "Bedrooms"
+      ],
+      [
+       "2",
+       "Baths"
+      ],
+      [
+       "1",
+       "Story"
+      ],
+      [
+       "Optional",
+       "Full basement"
+      ]
+     ],
+     "note": "Pricing depends on your lot, options and finishes. Call for pricing: 706-514-6637."
+    },
+    {
+     "type": "two",
+     "label": "About the plan",
+     "title": "Why families love the Walton",
+     "paras": [
+      "The Walton is the plan people walk into and say \"this just works.\" The kitchen, dining and family room all open to each other, so whoever is cooking is still part of the conversation.",
+      "You can build it with four bedrooms, or turn it into a three bedroom with a roomier hall bath and two walk-in closets. Add the full basement and you have room for a rec room, a gym or future bedrooms down the road."
+     ],
+     "image": "/images/plans/walton/walton-05.jpg",
+     "alt": "The Walton by Riverstone Homes: open kitchen",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "All home plans",
+       "href": "/home-plans.html"
+      }
+     ]
+    },
+    {
+     "type": "gallery",
+     "alt": true,
+     "id": "photos",
+     "label": "Photos",
+     "title": "Built by Riverstone",
+     "items": [
+      {
+       "src": "/images/plans/walton/walton-01.jpg",
+       "thumb": "/images/plans/walton/walton-01-sm.jpg",
+       "alt": "The Walton by Riverstone Homes: front of the home",
+       "caption": "Front of the Walton"
+      },
+      {
+       "src": "/images/plans/walton/walton-02.jpg",
+       "thumb": "/images/plans/walton/walton-02-sm.jpg",
+       "alt": "The Walton by Riverstone Homes: covered front porch",
+       "caption": "Covered front porch"
+      },
+      {
+       "src": "/images/plans/walton/walton-03.jpg",
+       "thumb": "/images/plans/walton/walton-03-sm.jpg",
+       "alt": "The Walton by Riverstone Homes: dining room",
+       "caption": "Dining room"
+      },
+      {
+       "src": "/images/plans/walton/walton-04.jpg",
+       "thumb": "/images/plans/walton/walton-04-sm.jpg",
+       "alt": "The Walton by Riverstone Homes: family room with stone fireplace",
+       "caption": "Family room with stone fireplace"
+      },
+      {
+       "src": "/images/plans/walton/walton-05.jpg",
+       "thumb": "/images/plans/walton/walton-05-sm.jpg",
+       "alt": "The Walton by Riverstone Homes: open kitchen",
+       "caption": "Open kitchen"
+      },
+      {
+       "src": "/images/plans/walton/walton-07.jpg",
+       "thumb": "/images/plans/walton/walton-07-sm.jpg",
+       "alt": "The Walton by Riverstone Homes: primary bedroom",
+       "caption": "Primary bedroom"
+      },
+      {
+       "src": "/images/plans/walton/walton-08.jpg",
+       "thumb": "/images/plans/walton/walton-08-sm.jpg",
+       "alt": "The Walton by Riverstone Homes: primary bath",
+       "caption": "Primary bath"
+      },
+      {
+       "src": "/images/plans/walton/walton-10.jpg",
+       "thumb": "/images/plans/walton/walton-10-sm.jpg",
+       "alt": "The Walton by Riverstone Homes: covered back porch",
+       "caption": "Covered back porch"
+      },
+      {
+       "src": "/images/plans/walton/walton-11.jpg",
+       "thumb": "/images/plans/walton/walton-11-sm.jpg",
+       "alt": "The Walton by Riverstone Homes: back of the home",
+       "caption": "Back of the home"
+      }
+     ],
+     "note": "Photos show homes Riverstone has built on this plan, so finishes, colors and exteriors vary from home to home."
+    },
+    {
+     "type": "floortabs",
+     "id": "floor-plan",
+     "label": "Floor plan",
+     "title": "Inside the Walton",
+     "text": "Tap a floor to switch views, and tap the plan to see it larger.",
+     "floors": [
+      {
+       "img": "/images/plans/walton/walton-floor-main-4br.jpg",
+       "label": "Main floor · 4 bed",
+       "cap": "The Walton · Main floor · 4 bed",
+       "w": 2000,
+       "h": 1420,
+       "alt": "The Walton main floor · 4 bed color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/walton/walton-floor-main-3br.jpg",
+       "label": "Main floor · 3 bed",
+       "cap": "The Walton · Main floor · 3 bed",
+       "w": 2000,
+       "h": 1420,
+       "alt": "The Walton main floor · 3 bed color floor plan",
+       "note": "The 3 bedroom version turns the middle bedroom into a bigger bath and two walk-in closets."
+      },
+      {
+       "img": "/images/plans/walton/walton-floor-basement.jpg",
+       "label": "Basement",
+       "cap": "The Walton · Basement",
+       "w": 2000,
+       "h": 1035,
+       "alt": "The Walton basement color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/walton/walton-floor-all-4br.jpg",
+       "label": "All floors",
+       "cap": "The Walton · All floors",
+       "w": 2000,
+       "h": 1462,
+       "alt": "The Walton all floors color floor plan",
+       "note": "Shown with the 4 bedroom main floor and the optional basement."
+      }
+     ],
+     "note": "Artist's rendering. Standard finishes shown; options and layouts can be customized. Call the builder for dimensions.",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "Call for pricing",
+       "href": "tel:+17065146637"
+      }
+     ]
+    },
+    {
+     "type": "videos",
+     "alt": true,
+     "label": "Video tour",
+     "title": "Walk through the Walton",
+     "items": [
+      {
+       "id": "Q5dTsaPwL_8",
+       "title": "The Walton Plan by Riverstone Homes",
+       "short": true
+      },
+      {
+       "id": "xUZCaBaF8c8",
+       "title": "The Walton Plan with a full basement",
+       "short": true
+      }
+     ]
+    },
+    {
+     "type": "contact",
+     "label": "Build this plan",
+     "title": "Love the Walton?",
+     "text": "Tell us where you'd like to build it and when. We'll walk through the plan, your lot and the options you want, and get you real pricing.",
+     "topic": "The Walton plan",
+     "placeholder": "Where would you build it? Three or four bedrooms, and do you want the basement?"
+    }
+   ],
+   "cta_href": "#contact",
+   "cta_text": "Build this plan"
+  },
+  {
+   "path": "/plans/azalea-park.html",
+   "title": "Azalea Park Home Plan | 2,182 Sq Ft | Riverstone Homes",
+   "description": "The Azalea Park plan by Riverstone Homes: 2,182 sq ft, 4 bedrooms, 2.5 baths, primary suite on the main floor and a full unfinished basement. See photos and color floor plans.",
+   "og_image": "/images/plans/azalea-park/azalea-park-01.jpg",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "name": "Azalea Park home plan",
+      "url": "https://goriverstone.com/plans/azalea-park.html",
+      "description": "The Azalea Park plan by Riverstone Homes: 2,182 sq ft, 4 bedrooms, 2.5 baths, primary suite on the main floor and a full unfinished basement. See photos and color floor plans.",
+      "primaryImageOfPage": "https://goriverstone.com/images/plans/azalea-park/azalea-park-01.jpg",
+      "publisher": {
+       "@type": "HomeAndConstructionBusiness",
+       "name": "Riverstone Homes",
+       "telephone": "+1-706-514-6637",
+       "url": "https://goriverstone.com/"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://goriverstone.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Home plans",
+        "item": "https://goriverstone.com/home-plans.html"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Azalea Park",
+        "item": "https://goriverstone.com/plans/azalea-park.html"
+       }
+      ]
+     }
+    ]
+   },
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/plans/azalea-park/azalea-park-01.jpg",
+     "alt": "Azalea Park plan built by Riverstone Homes",
+     "label": "Riverstone home plan",
+     "title": "Azalea Park",
+     "lede": "A primary suite on the main floor, a vaulted family room, bedrooms upstairs for everyone else and a full basement underneath.",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "See the floor plan",
+       "href": "#floor-plan"
+      }
+     ]
+    },
+    {
+     "type": "specs",
+     "items": [
+      [
+       "2,182",
+       "Sq ft"
+      ],
+      [
+       "4",
+       "Bedrooms"
+      ],
+      [
+       "2.5",
+       "Baths"
+      ],
+      [
+       "1.5",
+       "Story"
+      ],
+      [
+       "Full",
+       "Basement"
+      ]
+     ],
+     "note": "Pricing depends on your lot, options and finishes. Call for pricing: 706-514-6637."
+    },
+    {
+     "type": "two",
+     "label": "About the plan",
+     "title": "Why families love Azalea Park",
+     "paras": [
+      "Azalea Park gives you the best of both: your primary suite stays on the main floor, and the other bedrooms get their own space upstairs.",
+      "The vaulted family room with a stone fireplace opens to the kitchen and dining room, and the full unfinished basement is a blank canvas for whatever your family needs next."
+     ],
+     "image": "/images/plans/azalea-park/azalea-park-03.jpg",
+     "alt": "Azalea Park by Riverstone Homes: vaulted family room",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "All home plans",
+       "href": "/home-plans.html"
+      }
+     ]
+    },
+    {
+     "type": "gallery",
+     "alt": true,
+     "id": "photos",
+     "label": "Photos",
+     "title": "Built by Riverstone",
+     "items": [
+      {
+       "src": "/images/plans/azalea-park/azalea-park-01.jpg",
+       "thumb": "/images/plans/azalea-park/azalea-park-01-sm.jpg",
+       "alt": "Azalea Park by Riverstone Homes: front of the home",
+       "caption": "Front of the Azalea Park"
+      },
+      {
+       "src": "/images/plans/azalea-park/azalea-park-02.jpg",
+       "thumb": "/images/plans/azalea-park/azalea-park-02-sm.jpg",
+       "alt": "Azalea Park by Riverstone Homes: back porch and yard",
+       "caption": "Back porch and yard"
+      },
+      {
+       "src": "/images/plans/azalea-park/azalea-park-03.jpg",
+       "thumb": "/images/plans/azalea-park/azalea-park-03-sm.jpg",
+       "alt": "Azalea Park by Riverstone Homes: vaulted family room",
+       "caption": "Vaulted family room"
+      },
+      {
+       "src": "/images/plans/azalea-park/azalea-park-04.jpg",
+       "thumb": "/images/plans/azalea-park/azalea-park-04-sm.jpg",
+       "alt": "Azalea Park by Riverstone Homes: kitchen",
+       "caption": "Kitchen"
+      },
+      {
+       "src": "/images/plans/azalea-park/azalea-park-05.jpg",
+       "thumb": "/images/plans/azalea-park/azalea-park-05-sm.jpg",
+       "alt": "Azalea Park by Riverstone Homes: dining room",
+       "caption": "Dining room"
+      },
+      {
+       "src": "/images/plans/azalea-park/azalea-park-06.jpg",
+       "thumb": "/images/plans/azalea-park/azalea-park-06-sm.jpg",
+       "alt": "Azalea Park by Riverstone Homes: foyer and stairs",
+       "caption": "Foyer and stairs"
+      },
+      {
+       "src": "/images/plans/azalea-park/azalea-park-07.jpg",
+       "thumb": "/images/plans/azalea-park/azalea-park-07-sm.jpg",
+       "alt": "Azalea Park by Riverstone Homes: primary bedroom",
+       "caption": "Primary bedroom"
+      },
+      {
+       "src": "/images/plans/azalea-park/azalea-park-08.jpg",
+       "thumb": "/images/plans/azalea-park/azalea-park-08-sm.jpg",
+       "alt": "Azalea Park by Riverstone Homes: primary bath",
+       "caption": "Primary bath"
+      },
+      {
+       "src": "/images/plans/azalea-park/azalea-park-10.jpg",
+       "thumb": "/images/plans/azalea-park/azalea-park-10-sm.jpg",
+       "alt": "Azalea Park by Riverstone Homes: upstairs bedroom",
+       "caption": "Upstairs bedroom"
+      }
+     ],
+     "note": "Photos show homes Riverstone has built on this plan, so finishes, colors and exteriors vary from home to home."
+    },
+    {
+     "type": "floortabs",
+     "id": "floor-plan",
+     "label": "Floor plan",
+     "title": "Inside Azalea Park",
+     "text": "Tap a floor to switch views, and tap the plan to see it larger.",
+     "floors": [
+      {
+       "img": "/images/plans/azalea-park/azalea-park-floor-main.jpg",
+       "label": "Main floor",
+       "cap": "Azalea Park · Main floor",
+       "w": 2000,
+       "h": 1322,
+       "alt": "Azalea Park main floor color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/azalea-park/azalea-park-floor-upstairs.jpg",
+       "label": "Upstairs",
+       "cap": "Azalea Park · Upstairs",
+       "w": 2000,
+       "h": 930,
+       "alt": "Azalea Park upstairs color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/azalea-park/azalea-park-floor-basement.jpg",
+       "label": "Basement",
+       "cap": "Azalea Park · Basement",
+       "w": 2000,
+       "h": 876,
+       "alt": "Azalea Park basement color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/azalea-park/azalea-park-floor-all.jpg",
+       "label": "All floors",
+       "cap": "Azalea Park · All floors",
+       "w": 1840,
+       "h": 2000,
+       "alt": "Azalea Park all floors color floor plan",
+       "note": ""
+      }
+     ],
+     "note": "Artist's rendering. Standard finishes shown; options and layouts can be customized. Call the builder for dimensions.",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "Call for pricing",
+       "href": "tel:+17065146637"
+      }
+     ]
+    },
+    {
+     "type": "contact",
+     "label": "Build this plan",
+     "title": "Love Azalea Park?",
+     "text": "Tell us where you'd like to build it and when. We'll walk through the plan, your lot and the options you want, and get you real pricing.",
+     "topic": "The Azalea Park plan",
+     "placeholder": "Where would you build it, and how would you use the basement?"
+    }
+   ],
+   "cta_href": "#contact",
+   "cta_text": "Build this plan"
+  },
+  {
+   "path": "/plans/waterbury-cottage.html",
+   "title": "Waterbury Cottage Home Plan | 2,376 Sq Ft | Riverstone Homes",
+   "description": "The Waterbury Cottage plan by Riverstone Homes: 2,376 sq ft, 4 bedrooms, 3.5 baths, vaulted family room and a basement. See photos, color floor plans and a video tour.",
+   "og_image": "/images/plans/waterbury-cottage/waterbury-cottage-01.jpg",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "name": "Waterbury Cottage home plan",
+      "url": "https://goriverstone.com/plans/waterbury-cottage.html",
+      "description": "The Waterbury Cottage plan by Riverstone Homes: 2,376 sq ft, 4 bedrooms, 3.5 baths, vaulted family room and a basement. See photos, color floor plans and a video tour.",
+      "primaryImageOfPage": "https://goriverstone.com/images/plans/waterbury-cottage/waterbury-cottage-01.jpg",
+      "publisher": {
+       "@type": "HomeAndConstructionBusiness",
+       "name": "Riverstone Homes",
+       "telephone": "+1-706-514-6637",
+       "url": "https://goriverstone.com/"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://goriverstone.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Home plans",
+        "item": "https://goriverstone.com/home-plans.html"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Waterbury Cottage",
+        "item": "https://goriverstone.com/plans/waterbury-cottage.html"
+       }
+      ]
+     }
+    ]
+   },
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/plans/waterbury-cottage/waterbury-cottage-01.jpg",
+     "alt": "Waterbury Cottage plan built by Riverstone Homes",
+     "label": "Riverstone home plan",
+     "title": "Waterbury Cottage",
+     "lede": "Modern farmhouse curb appeal, a vaulted family room with a stone fireplace and a big covered deck off the back.",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "See the floor plan",
+       "href": "#floor-plan"
+      }
+     ]
+    },
+    {
+     "type": "specs",
+     "items": [
+      [
+       "2,376",
+       "Sq ft"
+      ],
+      [
+       "4",
+       "Bedrooms"
+      ],
+      [
+       "3.5",
+       "Baths"
+      ],
+      [
+       "1.5",
+       "Story"
+      ],
+      [
+       "Full",
+       "Basement"
+      ]
+     ],
+     "note": "Pricing depends on your lot, options and finishes. Call for pricing: 706-514-6637."
+    },
+    {
+     "type": "two",
+     "label": "About the plan",
+     "title": "Why families love Waterbury Cottage",
+     "paras": [
+      "The Waterbury Cottage is a showstopper from the street, with its white board and batten, black windows and wide front porch.",
+      "Inside, the vaulted family room flows right into the kitchen with its oversized island. The coffered dining room is ready for holidays, and the covered deck off the back is where you will spend your evenings."
+     ],
+     "image": "/images/plans/waterbury-cottage/waterbury-cottage-06.jpg",
+     "alt": "Waterbury Cottage by Riverstone Homes: kitchen",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "All home plans",
+       "href": "/home-plans.html"
+      }
+     ]
+    },
+    {
+     "type": "gallery",
+     "alt": true,
+     "id": "photos",
+     "label": "Photos",
+     "title": "Built by Riverstone",
+     "items": [
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-01.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-01-sm.jpg",
+       "alt": "Waterbury Cottage by Riverstone Homes: front of the home cottage",
+       "caption": "Front of the Waterbury Cottage"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-02.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-02-sm.jpg",
+       "alt": "Waterbury Cottage by Riverstone Homes: side-entry view",
+       "caption": "Side-entry view"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-03.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-03-sm.jpg",
+       "alt": "Waterbury Cottage by Riverstone Homes: back porch and deck",
+       "caption": "Back porch and deck"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-04.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-04-sm.jpg",
+       "alt": "Waterbury Cottage by Riverstone Homes: vaulted family room",
+       "caption": "Vaulted family room"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-05.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-05-sm.jpg",
+       "alt": "Waterbury Cottage by Riverstone Homes: open living and kitchen",
+       "caption": "Open living and kitchen"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-06.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-06-sm.jpg",
+       "alt": "Waterbury Cottage by Riverstone Homes: kitchen",
+       "caption": "Kitchen"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-07.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-07-sm.jpg",
+       "alt": "Waterbury Cottage by Riverstone Homes: dining room",
+       "caption": "Dining room"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-09.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-09-sm.jpg",
+       "alt": "Waterbury Cottage by Riverstone Homes: primary bath",
+       "caption": "Primary bath"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-10.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-10-sm.jpg",
+       "alt": "Waterbury Cottage by Riverstone Homes: back of the home",
+       "caption": "Back of the home"
+      }
+     ],
+     "note": "Photos show homes Riverstone has built on this plan, so finishes, colors and exteriors vary from home to home."
+    },
+    {
+     "type": "floortabs",
+     "id": "floor-plan",
+     "label": "Floor plan",
+     "title": "Inside Waterbury Cottage",
+     "text": "Tap a floor to switch views, and tap the plan to see it larger.",
+     "floors": [
+      {
+       "img": "/images/plans/waterbury-cottage/waterbury-cottage-floor-main.jpg",
+       "label": "Main floor",
+       "cap": "Waterbury Cottage · Main floor",
+       "w": 2000,
+       "h": 1385,
+       "alt": "Waterbury Cottage main floor color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/waterbury-cottage/waterbury-cottage-floor-upstairs.jpg",
+       "label": "Upstairs",
+       "cap": "Waterbury Cottage · Upstairs",
+       "w": 2000,
+       "h": 995,
+       "alt": "Waterbury Cottage upstairs color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/waterbury-cottage/waterbury-cottage-floor-basement.jpg",
+       "label": "Basement",
+       "cap": "Waterbury Cottage · Basement",
+       "w": 2000,
+       "h": 947,
+       "alt": "Waterbury Cottage basement color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/waterbury-cottage/waterbury-cottage-floor-all.jpg",
+       "label": "All floors",
+       "cap": "Waterbury Cottage · All floors",
+       "w": 1830,
+       "h": 2000,
+       "alt": "Waterbury Cottage all floors color floor plan",
+       "note": ""
+      }
+     ],
+     "note": "Artist's rendering. Standard finishes shown; options and layouts can be customized. Call the builder for dimensions.",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "Call for pricing",
+       "href": "tel:+17065146637"
+      }
+     ]
+    },
+    {
+     "type": "videos",
+     "alt": true,
+     "label": "Video tour",
+     "title": "Walk through Waterbury Cottage",
+     "items": [
+      {
+       "id": "rrYAgxLtWBw",
+       "title": "The Waterbury Cottage",
+       "short": true
+      }
+     ]
+    },
+    {
+     "type": "contact",
+     "label": "Build this plan",
+     "title": "Love Waterbury Cottage?",
+     "text": "Tell us where you'd like to build it and when. We'll walk through the plan, your lot and the options you want, and get you real pricing.",
+     "topic": "The Waterbury Cottage plan",
+     "placeholder": "Where would you build it, and when are you hoping to move in?"
+    }
+   ],
+   "cta_href": "#contact",
+   "cta_text": "Build this plan"
+  },
+  {
+   "path": "/plans/nesbit-ferry.html",
+   "title": "Nesbit Ferry Home Plan | Riverstone Homes",
+   "description": "The Nesbit Ferry plan by Riverstone Homes: 4 bedrooms plus an office, 3 baths, primary suite on the main floor, mudroom and covered front and back porches. See photos and color floor plans.",
+   "og_image": "/images/plans/nesbit-ferry/nesbit-ferry-01.jpg",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "name": "Nesbit Ferry home plan",
+      "url": "https://goriverstone.com/plans/nesbit-ferry.html",
+      "description": "The Nesbit Ferry plan by Riverstone Homes: 4 bedrooms plus an office, 3 baths, primary suite on the main floor, mudroom and covered front and back porches. See photos and color floor plans.",
+      "primaryImageOfPage": "https://goriverstone.com/images/plans/nesbit-ferry/nesbit-ferry-01.jpg",
+      "publisher": {
+       "@type": "HomeAndConstructionBusiness",
+       "name": "Riverstone Homes",
+       "telephone": "+1-706-514-6637",
+       "url": "https://goriverstone.com/"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://goriverstone.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Home plans",
+        "item": "https://goriverstone.com/home-plans.html"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Nesbit Ferry",
+        "item": "https://goriverstone.com/plans/nesbit-ferry.html"
+       }
+      ]
+     }
+    ]
+   },
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/plans/nesbit-ferry/nesbit-ferry-01.jpg",
+     "alt": "Nesbit Ferry plan built by Riverstone Homes",
+     "label": "Riverstone home plan",
+     "title": "Nesbit Ferry",
+     "lede": "A primary suite on the main, a great room with a fireplace, a mudroom off the garage and an upstairs bedroom and office.",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "See the floor plan",
+       "href": "#floor-plan"
+      }
+     ]
+    },
+    {
+     "type": "specs",
+     "items": [
+      [
+       "4",
+       "Bedrooms"
+      ],
+      [
+       "3",
+       "Baths"
+      ],
+      [
+       "+ Office",
+       "Upstairs"
+      ],
+      [
+       "Mudroom",
+       "Off the garage"
+      ],
+      [
+       "2 car",
+       "Garage"
+      ]
+     ],
+     "note": "Pricing depends on your lot, options and finishes. Call for pricing: 706-514-6637."
+    },
+    {
+     "type": "two",
+     "label": "About the plan",
+     "title": "Why families love Nesbit Ferry",
+     "paras": [
+      "Nesbit Ferry was made for real life. Come in from the garage through a mudroom with a bench and laundry, past a walk-in pantry and straight into the kitchen.",
+      "The primary suite and two bedrooms are on the main floor. Upstairs you get a fourth bedroom, a full bath and an office, perfect for working from home or a teenager who wants their own space."
+     ],
+     "image": "/images/plans/nesbit-ferry/nesbit-ferry-06.jpg",
+     "alt": "Nesbit Ferry by Riverstone Homes: kitchen",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "All home plans",
+       "href": "/home-plans.html"
+      }
+     ]
+    },
+    {
+     "type": "gallery",
+     "alt": true,
+     "id": "photos",
+     "label": "Photos",
+     "title": "Built by Riverstone",
+     "items": [
+      {
+       "src": "/images/plans/nesbit-ferry/nesbit-ferry-01.jpg",
+       "thumb": "/images/plans/nesbit-ferry/nesbit-ferry-01-sm.jpg",
+       "alt": "Nesbit Ferry by Riverstone Homes: front of the home",
+       "caption": "Front of the Nesbit Ferry"
+      },
+      {
+       "src": "/images/plans/nesbit-ferry/nesbit-ferry-02.jpg",
+       "thumb": "/images/plans/nesbit-ferry/nesbit-ferry-02-sm.jpg",
+       "alt": "Nesbit Ferry by Riverstone Homes: front porch",
+       "caption": "Front porch"
+      },
+      {
+       "src": "/images/plans/nesbit-ferry/nesbit-ferry-03.jpg",
+       "thumb": "/images/plans/nesbit-ferry/nesbit-ferry-03-sm.jpg",
+       "alt": "Nesbit Ferry by Riverstone Homes: side-entry garage",
+       "caption": "Side-entry garage"
+      },
+      {
+       "src": "/images/plans/nesbit-ferry/nesbit-ferry-04.jpg",
+       "thumb": "/images/plans/nesbit-ferry/nesbit-ferry-04-sm.jpg",
+       "alt": "Nesbit Ferry by Riverstone Homes: foyer and dining",
+       "caption": "Foyer and dining"
+      },
+      {
+       "src": "/images/plans/nesbit-ferry/nesbit-ferry-05.jpg",
+       "thumb": "/images/plans/nesbit-ferry/nesbit-ferry-05-sm.jpg",
+       "alt": "Nesbit Ferry by Riverstone Homes: family room with stone fireplace",
+       "caption": "Family room with stone fireplace"
+      },
+      {
+       "src": "/images/plans/nesbit-ferry/nesbit-ferry-06.jpg",
+       "thumb": "/images/plans/nesbit-ferry/nesbit-ferry-06-sm.jpg",
+       "alt": "Nesbit Ferry by Riverstone Homes: kitchen",
+       "caption": "Kitchen"
+      },
+      {
+       "src": "/images/plans/nesbit-ferry/nesbit-ferry-08.jpg",
+       "thumb": "/images/plans/nesbit-ferry/nesbit-ferry-08-sm.jpg",
+       "alt": "Nesbit Ferry by Riverstone Homes: breakfast area",
+       "caption": "Breakfast area"
+      },
+      {
+       "src": "/images/plans/nesbit-ferry/nesbit-ferry-09.jpg",
+       "thumb": "/images/plans/nesbit-ferry/nesbit-ferry-09-sm.jpg",
+       "alt": "Nesbit Ferry by Riverstone Homes: primary bath",
+       "caption": "Primary bath"
+      },
+      {
+       "src": "/images/plans/nesbit-ferry/nesbit-ferry-10.jpg",
+       "thumb": "/images/plans/nesbit-ferry/nesbit-ferry-10-sm.jpg",
+       "alt": "Nesbit Ferry by Riverstone Homes: covered back porch",
+       "caption": "Covered back porch"
+      }
+     ],
+     "note": "Photos show homes Riverstone has built on this plan, so finishes, colors and exteriors vary from home to home."
+    },
+    {
+     "type": "floortabs",
+     "id": "floor-plan",
+     "label": "Floor plan",
+     "title": "Inside Nesbit Ferry",
+     "text": "Tap a floor to switch views, and tap the plan to see it larger.",
+     "floors": [
+      {
+       "img": "/images/plans/nesbit-ferry/nesbit-ferry-floor-main.jpg",
+       "label": "Main floor",
+       "cap": "Nesbit Ferry · Main floor",
+       "w": 2000,
+       "h": 1633,
+       "alt": "Nesbit Ferry main floor color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/nesbit-ferry/nesbit-ferry-floor-upstairs.jpg",
+       "label": "Upstairs",
+       "cap": "Nesbit Ferry · Upstairs",
+       "w": 2000,
+       "h": 1285,
+       "alt": "Nesbit Ferry upstairs color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/nesbit-ferry/nesbit-ferry-floor-all.jpg",
+       "label": "All floors",
+       "cap": "Nesbit Ferry · All floors",
+       "w": 2000,
+       "h": 1696,
+       "alt": "Nesbit Ferry all floors color floor plan",
+       "note": ""
+      }
+     ],
+     "note": "Artist's rendering. Standard finishes shown; options and layouts can be customized. Call the builder for dimensions.",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "Call for pricing",
+       "href": "tel:+17065146637"
+      }
+     ]
+    },
+    {
+     "type": "contact",
+     "label": "Build this plan",
+     "title": "Love Nesbit Ferry?",
+     "text": "Tell us where you'd like to build it and when. We'll walk through the plan, your lot and the options you want, and get you real pricing.",
+     "topic": "The Nesbit Ferry plan",
+     "placeholder": "Where would you build it, and how would you use the upstairs office?"
+    }
+   ],
+   "cta_href": "#contact",
+   "cta_text": "Build this plan"
+  },
+  {
+   "path": "/plans/maplewood.html",
+   "title": "Maplewood Home Plan | 2,400 Sq Ft | Riverstone Homes",
+   "description": "The Maplewood plan by Riverstone Homes: 2,400 sq ft on the main floor, 3 bedrooms, 2.5 baths, screened porch and an optional upstairs bedroom 4 and bonus room. See photos and color floor plans.",
+   "og_image": "/images/plans/maplewood/maplewood-01.jpg",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "name": "The Maplewood home plan",
+      "url": "https://goriverstone.com/plans/maplewood.html",
+      "description": "The Maplewood plan by Riverstone Homes: 2,400 sq ft on the main floor, 3 bedrooms, 2.5 baths, screened porch and an optional upstairs bedroom 4 and bonus room. See photos and color floor plans.",
+      "primaryImageOfPage": "https://goriverstone.com/images/plans/maplewood/maplewood-01.jpg",
+      "publisher": {
+       "@type": "HomeAndConstructionBusiness",
+       "name": "Riverstone Homes",
+       "telephone": "+1-706-514-6637",
+       "url": "https://goriverstone.com/"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://goriverstone.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Home plans",
+        "item": "https://goriverstone.com/home-plans.html"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "The Maplewood",
+        "item": "https://goriverstone.com/plans/maplewood.html"
+       }
+      ]
+     }
+    ]
+   },
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/plans/maplewood/maplewood-01.jpg",
+     "alt": "The Maplewood plan built by Riverstone Homes",
+     "label": "Riverstone home plan",
+     "title": "The Maplewood",
+     "lede": "Coffered ceilings, a stone fireplace, a kitchen built for a crowd and a screened porch, all on one level, with room to finish upstairs.",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "See the floor plan",
+       "href": "#floor-plan"
+      }
+     ]
+    },
+    {
+     "type": "specs",
+     "items": [
+      [
+       "2,400",
+       "Main floor sq ft"
+      ],
+      [
+       "3",
+       "Bedrooms"
+      ],
+      [
+       "2.5",
+       "Baths"
+      ],
+      [
+       "Optional",
+       "Bedroom 4 and bonus"
+      ],
+      [
+       "Screened",
+       "Back porch"
+      ]
+     ],
+     "note": "Pricing depends on your lot, options and finishes. Call for pricing: 706-514-6637."
+    },
+    {
+     "type": "two",
+     "label": "About the plan",
+     "title": "Why families love the Maplewood",
+     "paras": [
+      "The Maplewood is one-level living with a little extra wow: coffered ceilings in the foyer and dining room, a stone fireplace in the family room and a kitchen island big enough for the whole family.",
+      "The screened porch is the spot for morning coffee. Need more room? Finish the optional upstairs for a fourth bedroom and a bonus room."
+     ],
+     "image": "/images/plans/maplewood/maplewood-07.jpg",
+     "alt": "The Maplewood by Riverstone Homes: kitchen",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "All home plans",
+       "href": "/home-plans.html"
+      }
+     ]
+    },
+    {
+     "type": "gallery",
+     "alt": true,
+     "id": "photos",
+     "label": "Photos",
+     "title": "Built by Riverstone",
+     "items": [
+      {
+       "src": "/images/plans/maplewood/maplewood-01.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-01-sm.jpg",
+       "alt": "The Maplewood by Riverstone Homes: front of the home",
+       "caption": "Front of the Maplewood"
+      },
+      {
+       "src": "/images/plans/maplewood/maplewood-03.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-03-sm.jpg",
+       "alt": "The Maplewood by Riverstone Homes: back with screened porch",
+       "caption": "Back with screened porch"
+      },
+      {
+       "src": "/images/plans/maplewood/maplewood-04.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-04-sm.jpg",
+       "alt": "The Maplewood by Riverstone Homes: foyer",
+       "caption": "Foyer"
+      },
+      {
+       "src": "/images/plans/maplewood/maplewood-05.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-05-sm.jpg",
+       "alt": "The Maplewood by Riverstone Homes: dining room",
+       "caption": "Dining room"
+      },
+      {
+       "src": "/images/plans/maplewood/maplewood-06.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-06-sm.jpg",
+       "alt": "The Maplewood by Riverstone Homes: family room with stone fireplace",
+       "caption": "Family room with stone fireplace"
+      },
+      {
+       "src": "/images/plans/maplewood/maplewood-07.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-07-sm.jpg",
+       "alt": "The Maplewood by Riverstone Homes: kitchen",
+       "caption": "Kitchen"
+      },
+      {
+       "src": "/images/plans/maplewood/maplewood-08.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-08-sm.jpg",
+       "alt": "The Maplewood by Riverstone Homes: primary bedroom",
+       "caption": "Primary bedroom"
+      },
+      {
+       "src": "/images/plans/maplewood/maplewood-09.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-09-sm.jpg",
+       "alt": "The Maplewood by Riverstone Homes: primary shower",
+       "caption": "Primary shower"
+      },
+      {
+       "src": "/images/plans/maplewood/maplewood-10.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-10-sm.jpg",
+       "alt": "The Maplewood by Riverstone Homes: screened porch",
+       "caption": "Screened porch"
+      }
+     ],
+     "note": "Photos show homes Riverstone has built on this plan, so finishes, colors and exteriors vary from home to home."
+    },
+    {
+     "type": "floortabs",
+     "id": "floor-plan",
+     "label": "Floor plan",
+     "title": "Inside the Maplewood",
+     "text": "Tap a floor to switch views, and tap the plan to see it larger.",
+     "floors": [
+      {
+       "img": "/images/plans/maplewood/maplewood-floor-main.jpg",
+       "label": "Main floor",
+       "cap": "The Maplewood · Main floor",
+       "w": 2000,
+       "h": 1697,
+       "alt": "The Maplewood main floor color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/maplewood/maplewood-floor-upstairs.jpg",
+       "label": "Optional upstairs",
+       "cap": "The Maplewood · Optional upstairs",
+       "w": 2000,
+       "h": 1264,
+       "alt": "The Maplewood optional upstairs color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/maplewood/maplewood-floor-all.jpg",
+       "label": "All floors",
+       "cap": "The Maplewood · All floors",
+       "w": 2000,
+       "h": 1829,
+       "alt": "The Maplewood all floors color floor plan",
+       "note": ""
+      }
+     ],
+     "note": "Artist's rendering. Standard finishes shown; options and layouts can be customized. Call the builder for dimensions.",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "Call for pricing",
+       "href": "tel:+17065146637"
+      }
+     ]
+    },
+    {
+     "type": "contact",
+     "label": "Build this plan",
+     "title": "Love the Maplewood?",
+     "text": "Tell us where you'd like to build it and when. We'll walk through the plan, your lot and the options you want, and get you real pricing.",
+     "topic": "The Maplewood plan",
+     "placeholder": "Where would you build it, and do you want the optional upstairs?"
+    }
+   ],
+   "cta_href": "#contact",
+   "cta_text": "Build this plan"
+  },
+  {
+   "path": "/plans/willow.html",
+   "title": "Willow Home Plan | 1,952 Sq Ft | Riverstone Homes",
+   "description": "The Willow plan by Riverstone Homes: 1,952 sq ft main floor, primary suite on the main, 3 bedrooms plus a bonus room, 2.5 baths and a basement. See photos and color floor plans.",
+   "og_image": "/images/plans/willow/willow-01.jpg",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "name": "The Willow home plan",
+      "url": "https://goriverstone.com/plans/willow.html",
+      "description": "The Willow plan by Riverstone Homes: 1,952 sq ft main floor, primary suite on the main, 3 bedrooms plus a bonus room, 2.5 baths and a basement. See photos and color floor plans.",
+      "primaryImageOfPage": "https://goriverstone.com/images/plans/willow/willow-01.jpg",
+      "publisher": {
+       "@type": "HomeAndConstructionBusiness",
+       "name": "Riverstone Homes",
+       "telephone": "+1-706-514-6637",
+       "url": "https://goriverstone.com/"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://goriverstone.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Home plans",
+        "item": "https://goriverstone.com/home-plans.html"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "The Willow",
+        "item": "https://goriverstone.com/plans/willow.html"
+       }
+      ]
+     }
+    ]
+   },
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/plans/willow/willow-01.jpg",
+     "alt": "The Willow plan built by Riverstone Homes",
+     "label": "Riverstone home plan",
+     "title": "The Willow",
+     "lede": "Craftsman charm with a primary suite on the main, a great room with a stone fireplace, a big bonus room upstairs and a basement.",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "See the floor plan",
+       "href": "#floor-plan"
+      }
+     ]
+    },
+    {
+     "type": "specs",
+     "items": [
+      [
+       "1,952",
+       "Main floor sq ft"
+      ],
+      [
+       "3 + Bonus",
+       "Bedrooms"
+      ],
+      [
+       "2.5",
+       "Baths"
+      ],
+      [
+       "1.5",
+       "Story"
+      ],
+      [
+       "Basement",
+       "Unfinished"
+      ]
+     ],
+     "note": "Pricing depends on your lot, options and finishes. Call for pricing: 706-514-6637."
+    },
+    {
+     "type": "two",
+     "label": "About the plan",
+     "title": "Why families love the Willow",
+     "paras": [
+      "The Willow has the craftsman curb appeal people slow down for: stacked gables, a deep front porch and a door with a little personality.",
+      "Your primary suite and the open great room, kitchen and dining room are all on the main floor. Upstairs, two more bedrooms share a bath and there is a big bonus room for movie nights, guests or a playroom."
+     ],
+     "image": "/images/plans/willow/willow-06.jpg",
+     "alt": "The Willow by Riverstone Homes: kitchen",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "All home plans",
+       "href": "/home-plans.html"
+      }
+     ]
+    },
+    {
+     "type": "gallery",
+     "alt": true,
+     "id": "photos",
+     "label": "Photos",
+     "title": "Built by Riverstone",
+     "items": [
+      {
+       "src": "/images/plans/willow/willow-01.jpg",
+       "thumb": "/images/plans/willow/willow-01-sm.jpg",
+       "alt": "The Willow by Riverstone Homes: front of the home",
+       "caption": "Front of the Willow"
+      },
+      {
+       "src": "/images/plans/willow/willow-02.jpg",
+       "thumb": "/images/plans/willow/willow-02-sm.jpg",
+       "alt": "The Willow by Riverstone Homes: covered front porch",
+       "caption": "Covered front porch"
+      },
+      {
+       "src": "/images/plans/willow/willow-04.jpg",
+       "thumb": "/images/plans/willow/willow-04-sm.jpg",
+       "alt": "The Willow by Riverstone Homes: foyer",
+       "caption": "Foyer"
+      },
+      {
+       "src": "/images/plans/willow/willow-06.jpg",
+       "thumb": "/images/plans/willow/willow-06-sm.jpg",
+       "alt": "The Willow by Riverstone Homes: kitchen",
+       "caption": "Kitchen"
+      },
+      {
+       "src": "/images/plans/willow/willow-07.jpg",
+       "thumb": "/images/plans/willow/willow-07-sm.jpg",
+       "alt": "The Willow by Riverstone Homes: great room with stone fireplace",
+       "caption": "Great room with stone fireplace"
+      },
+      {
+       "src": "/images/plans/willow/willow-08.jpg",
+       "thumb": "/images/plans/willow/willow-08-sm.jpg",
+       "alt": "The Willow by Riverstone Homes: primary bedroom",
+       "caption": "Primary bedroom"
+      },
+      {
+       "src": "/images/plans/willow/willow-09.jpg",
+       "thumb": "/images/plans/willow/willow-09-sm.jpg",
+       "alt": "The Willow by Riverstone Homes: primary bath",
+       "caption": "Primary bath"
+      },
+      {
+       "src": "/images/plans/willow/willow-10.jpg",
+       "thumb": "/images/plans/willow/willow-10-sm.jpg",
+       "alt": "The Willow by Riverstone Homes: back porch",
+       "caption": "Back porch"
+      },
+      {
+       "src": "/images/plans/willow/willow-11.jpg",
+       "thumb": "/images/plans/willow/willow-11-sm.jpg",
+       "alt": "The Willow by Riverstone Homes: back of the home",
+       "caption": "Back of the home"
+      }
+     ],
+     "note": "Photos show homes Riverstone has built on this plan, so finishes, colors and exteriors vary from home to home."
+    },
+    {
+     "type": "floortabs",
+     "id": "floor-plan",
+     "label": "Floor plan",
+     "title": "Inside the Willow",
+     "text": "Tap a floor to switch views, and tap the plan to see it larger.",
+     "floors": [
+      {
+       "img": "/images/plans/willow/willow-floor-main.jpg",
+       "label": "Main floor",
+       "cap": "The Willow · Main floor",
+       "w": 2000,
+       "h": 1489,
+       "alt": "The Willow main floor color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/willow/willow-floor-upstairs.jpg",
+       "label": "Upstairs",
+       "cap": "The Willow · Upstairs",
+       "w": 2000,
+       "h": 1928,
+       "alt": "The Willow upstairs color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/willow/willow-floor-basement.jpg",
+       "label": "Basement",
+       "cap": "The Willow · Basement",
+       "w": 2000,
+       "h": 1076,
+       "alt": "The Willow basement color floor plan",
+       "note": ""
+      },
+      {
+       "img": "/images/plans/willow/willow-floor-all.jpg",
+       "label": "All floors",
+       "cap": "The Willow · All floors",
+       "w": 1547,
+       "h": 2000,
+       "alt": "The Willow all floors color floor plan",
+       "note": ""
+      }
+     ],
+     "note": "Artist's rendering. Standard finishes shown; options and layouts can be customized. Call the builder for dimensions.",
+     "buttons": [
+      {
+       "text": "Build this plan",
+       "href": "#contact"
+      },
+      {
+       "text": "Call for pricing",
+       "href": "tel:+17065146637"
+      }
+     ]
+    },
+    {
+     "type": "contact",
+     "label": "Build this plan",
+     "title": "Love the Willow?",
+     "text": "Tell us where you'd like to build it and when. We'll walk through the plan, your lot and the options you want, and get you real pricing.",
+     "topic": "The Willow plan",
+     "placeholder": "Where would you build it, and how would you use the bonus room?"
+    }
+   ],
+   "cta_href": "#contact",
+   "cta_text": "Build this plan"
   },
   {
    "path": "/barndominiums.html",

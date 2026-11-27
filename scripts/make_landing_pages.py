@@ -16,7 +16,7 @@ DATA = json.load(open(os.path.join(ROOT, 'data', 'landing_pages.json')))
 SITE = 'https://goriverstone.com'
 E = lambda s: html.escape(s or '', quote=True)
 
-TOPICS = ["Building on my land", "Finding land to build on", "Building a home I saw in a video", "Building my own plan", "The Hemlock Falls plan", "121 Cypress Court",
+TOPICS = ["Building on my land", "Finding land to build on", "Building a home I saw in a video", "Building my own plan", "The Hemlock Falls plan", "The Walton plan", "The Azalea Park plan", "The Waterbury Cottage plan", "The Nesbit Ferry plan", "The Maplewood plan", "The Willow plan", "One of your home plans", "121 Cypress Court",
           "104 Bob White Drive", "Riverstone Commons townhomes", "A custom home or plan", "A barndominium",
           "A room addition", "A basement finish", "A garage or pole barn", "A building consultation", "Something else"]
 
@@ -101,7 +101,7 @@ def block(b, page):
     if t == 'gallery':
         items = ''.join(
             f'<button type="button" class="{"first" if i == 0 and len(b["items"]) >= 3 else ""}" data-full="{E(g["src"])}" data-cap="{E(g.get("caption",""))}" aria-label="View larger: {E(g.get("alt",""))}">'
-            f'<img src="{E(g["src"])}" alt="{E(g.get("alt",""))}" loading="lazy">' + (f'<span class="cap">{E(g["caption"])}</span>' if g.get('caption') else '') + '</button>'
+            f'<img src="{E(g.get("thumb") or g["src"])}" alt="{E(g.get("alt",""))}" loading="lazy">' + (f'<span class="cap">{E(g["caption"])}</span>' if g.get('caption') else '') + '</button>'
             for i, g in enumerate(b['items']))
         note = f'<p class="fine" style="margin-top:1rem">{E(b["note"])}</p>' if b.get('note') else ''
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="gallery">{items}</div>{note}</div></section>'
@@ -116,6 +116,25 @@ def block(b, page):
         if b.get('button'): side += f'<div>{btn(b["button"], "btn dark")}</div>'
         credit = f'<p class="fine" style="margin-top:1.5rem">{E(b["credit"])}</p>' if b.get('credit') else ''
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="plans">{fig(f1)}<div class="side">{side}</div></div>{credit}</div></section>'
+    if t == 'floortabs':
+        tabs = ''.join(f'<button type="button" role="tab" id="ft-{i}" aria-controls="fp-{i}" aria-selected="{"true" if i == 0 else "false"}"{"" if i == 0 else " tabindex=\"-1\""}>{E(f["label"])}</button>' for i, f in enumerate(b['floors']))
+        panels = ''.join(
+            f'<div class="fpanel" role="tabpanel" id="fp-{i}" aria-labelledby="ft-{i}"{"" if i == 0 else " hidden"}><button type="button" class="zoom" data-full="{E(f["img"])}" data-cap="{E(f.get("cap", f["label"]))}" aria-label="View larger: {E(f["alt"])}">'
+            f'<img src="{E(f["img"])}" alt="{E(f["alt"])}" loading="{"eager" if i == 0 else "lazy"}" width="{int(f["w"])}" height="{int(f["h"])}"></button>'
+            + (f'<p class="fine">{E(f["note"])}</p>' if f.get('note') else '') + '</div>'
+            for i, f in enumerate(b['floors']))
+        foot = f'<p class="fine" style="margin-top:1rem">{E(b["note"])}</p>' if b.get('note') else ''
+        acts = ''.join(btn(x, 'btn dark') if i == 0 else btn(x, 'btn line') for i, x in enumerate(b.get('buttons', [])))
+        acts = f'<div class="acts" style="display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.5rem">{acts}</div>' if acts else ''
+        return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="ftabs" data-tabs><div class="tablist" role="tablist" aria-label="Floor plan views">{tabs}</div>{panels}</div>{foot}{acts}</div></section>'
+    if t == 'plancards':
+        cards = ''.join(
+            f'<a class="pcard" href="{E(c["href"])}"><div class="ph"><img src="{E(c["img"])}" alt="{E(c["alt"])}" loading="{"eager" if i < 3 else "lazy"}" width="900" height="600"></div>'
+            f'<div class="tx"><span class="k">{E(c["kicker"])}</span><h3>{E(c["title"])}</h3><ul class="facts">' + ''.join(f'<li>{E(x)}</li>' for x in c['facts']) + '</ul>'
+            f'<p>{E(c["text"])}</p><span class="go">{E(c.get("go", "See the plan"))} &rarr;</span></div></a>'
+            for i, c in enumerate(b['items']))
+        note = f'<p class="fine" style="margin-top:1.2rem">{E(b["note"])}</p>' if b.get('note') else ''
+        return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="pcards">{cards}</div>{note}</div></section>'
     if t == 'faq':
         qs = ''.join(f'<details><summary>{E(q)}</summary><div class="a">{a}</div></details>' for q, a in b['items'])
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="faq">{qs}</div></div></section>'
@@ -153,6 +172,20 @@ SCRIPT = '''<script>
   });
   var t = new URLSearchParams(location.search).get('topic'), sel = document.getElementById('f-topic');
   if (t && sel && [].some.call(sel.options, function (o) { return o.value === t; })) sel.value = t;
+  [].forEach.call(document.querySelectorAll('[data-tabs]'), function (box) {
+    var tabs = [].slice.call(box.querySelectorAll('[role=tab]'));
+    function pick(t, focus) {
+      tabs.forEach(function (x) { var on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute('aria-controls')).hidden = !on; });
+      if (focus) t.focus();
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { pick(t); });
+      t.addEventListener('keydown', function (e) {
+        var j = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : null;
+        if (j === null) return; e.preventDefault(); pick(tabs[(j + tabs.length) % tabs.length], true);
+      });
+    });
+  });
   var lb = document.getElementById('lb');
   if (lb) {
     document.addEventListener('click', function (e) {
@@ -175,7 +208,7 @@ def site_attrs(p):
 def page_html(p):
     url = SITE + p['path']
     blocks = ''.join(block(b, p) for b in p['blocks'])
-    lb = '<dialog class="lb" id="lb" aria-label="Photo"><button class="x" type="button" aria-label="Close">&times;</button><img src="" alt=""><p></p></dialog>' if any(b['type'] in ('gallery', 'plans') for b in p['blocks']) else ''
+    lb = '<dialog class="lb" id="lb" aria-label="Photo"><button class="x" type="button" aria-label="Close">&times;</button><img src="" alt=""><p></p></dialog>' if any(b['type'] in ('gallery', 'plans', 'floortabs') for b in p['blocks']) else ''
     schema = json.dumps(p['schema']) if p.get('schema') else None
     nav = ''.join(f'<a href="{h}">{E(t)}</a>' for t, h in DATA['footer_nav'])
     return f'''<!doctype html>
