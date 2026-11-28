@@ -21,6 +21,22 @@
    "/find-land.html"
   ],
   [
+   "Cartersville",
+   "/areas/cartersville-ga.html"
+  ],
+  [
+   "Calhoun",
+   "/areas/calhoun-ga.html"
+  ],
+  [
+   "Canton",
+   "/areas/canton-ga.html"
+  ],
+  [
+   "Ball Ground",
+   "/areas/ball-ground-ga.html"
+  ],
+  [
    "Barndominiums",
    "/barndominiums.html"
   ],
@@ -775,7 +791,8 @@
         "2,270 sq ft",
         "4 bed",
         "3 bath",
-        "Office"
+        "Office",
+        "Full unfinished basement"
        ],
        "text": "Primary suite on the main, a mudroom with a bench and an upstairs office and fourth bedroom."
       },
@@ -789,7 +806,8 @@
         "2,400 sq ft",
         "3 to 4 bed",
         "2.5 to 3.5 bath",
-        "Optional bonus"
+        "Optional upstairs",
+        "Full unfinished basement"
        ],
        "text": "One-level living with coffered ceilings, a screened porch and an optional upstairs bedroom, bath and bonus room."
       },
@@ -1709,6 +1727,14 @@
       [
        "Mudroom",
        "Off the garage"
+      ],
+      [
+       "2 car",
+       "Garage"
+      ],
+      [
+       "Full unfinished basement or slab",
+       "Foundation"
       ]
      ],
      "note": "Pricing depends on your lot, options and finishes. Call for pricing: 706-514-6637."
@@ -1944,6 +1970,10 @@
       [
        "Screened",
        "Back porch"
+      ],
+      [
+       "Full unfinished basement or slab",
+       "Foundation"
       ]
      ],
      "note": "Pricing depends on your lot, options and finishes. Call for pricing: 706-514-6637."
@@ -2971,6 +3001,43 @@
      "min": 340
     },
     {
+     "type": "cards",
+     "id": "towns",
+     "alt": true,
+     "label": "Where we have built",
+     "title": "See the homes we built near you",
+     "items": [
+      {
+       "kicker": "Bartow County",
+       "title": "Cartersville",
+       "text": "The Walton, Azalea Park, Nesbit Ferry and Willow.",
+       "href": "/areas/cartersville-ga.html",
+       "go": "See Cartersville"
+      },
+      {
+       "kicker": "Gordon County",
+       "title": "Calhoun",
+       "text": "The Waterbury Cottage, Azalea Park and Walton.",
+       "href": "/areas/calhoun-ga.html",
+       "go": "See Calhoun"
+      },
+      {
+       "kicker": "Cherokee County",
+       "title": "Canton",
+       "text": "The Maplewood and the Willow.",
+       "href": "/areas/canton-ga.html",
+       "go": "See Canton"
+      },
+      {
+       "kicker": "Cherokee County",
+       "title": "Ball Ground",
+       "text": "A screened porch and a covered pool pavilion.",
+       "href": "/areas/ball-ground-ga.html",
+       "go": "See Ball Ground"
+      }
+     ]
+    },
+    {
      "type": "two",
      "alt": "Site plan drawing with an engineer's scale used to plan a new home on a lot",
      "label": "Land plus a builder",
@@ -3930,6 +3997,1066 @@
      "title": "Let's talk about your building.",
      "text": "Tell us what you want to build and where. We'll set up a time to walk the site.",
      "placeholder": "Your address, what you'd like to build, size, timeline..."
+    }
+   ]
+  },
+  {
+   "path": "/areas/cartersville-ga.html",
+   "title": "New Homes in Cartersville, GA | Riverstone Homes",
+   "description": "Riverstone Homes has built new homes in Cartersville and Bartow County, Georgia, including the Walton, Azalea Park, Nesbit Ferry and Willow plans. See the homes, the plans and land for sale.",
+   "og_image": "/images/plans/walton/walton-01.jpg",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "name": "New homes in Cartersville, GA",
+      "url": "https://goriverstone.com/areas/cartersville-ga.html",
+      "description": "Riverstone Homes has built new homes in Cartersville and Bartow County, Georgia, including the Walton, Azalea Park, Nesbit Ferry and Willow plans. See the homes, the plans and land for sale.",
+      "about": {
+       "@type": "City",
+       "name": "Cartersville, Georgia"
+      },
+      "publisher": {
+       "@type": "HomeAndConstructionBusiness",
+       "name": "Riverstone Homes",
+       "telephone": "+1-706-514-6637",
+       "url": "https://goriverstone.com/",
+       "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Bartow County, Georgia"
+       }
+      }
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Do you build in Cartersville and Bartow County?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. We built the homes in Griffin Manor in Cartersville and build across Bartow County, including Adairsville, White and Euharlee, on your land or a lot we help you find."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "I don't have land yet. Can you help in Bartow County?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Search <a href=\"https://sandra-watkins.remax.com/index.php?advanced=1&display=Bartow&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5dv2v0&sortby=listings.price+ASC&rtype=map\" target=\"_blank\" rel=\"noopener\">land for sale in Bartow County</a>, updated daily, then call or text Sandra Watkins, our New Home Guide with RE/MAX Town &amp; Country, at <a href=\"tel:+17703243680\">770-324-3680</a>. She and the builder will walk the land with you and price a home on it before you buy."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do I have to build one of your plans?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Pick one of <a href=\"/home-plans.html\">our home plans</a>, change it to fit, or bring your own plan. Every plan can be built on a slab or a basement, depending on your property."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How much does it cost to build?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "It depends on your lot, your plan, slab or basement, and your finishes, so we price every home on its own lot. Call <a href=\"tel:+17065146637\">706-514-6637</a> or send us a note below and we will walk you through real numbers."
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/plans/walton/walton-01.jpg",
+     "alt": "The Walton plan built by Riverstone Homes in Cartersville, Georgia",
+     "label": "New homes · Bartow County",
+     "title": "New homes in Cartersville, GA",
+     "lede": "We've built a whole neighborhood of new homes in Cartersville. Build one of those same plans on your land or ours.",
+     "buttons": [
+      {
+       "text": "Start your build",
+       "href": "#contact"
+      },
+      {
+       "text": "Land in Bartow",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Bartow&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5dv2v0&sortby=listings.price+ASC&rtype=map"
+      }
+     ]
+    },
+    {
+     "type": "two",
+     "label": "Building in Cartersville",
+     "title": "A local builder with homes all over Cartersville",
+     "paras": [
+      "Cartersville is home turf for Riverstone. Our founder Jamey Cagle is just up the road in Adairsville, and we built homes all through the Griffin Manor neighborhood here in Bartow County.",
+      "Families there picked the Walton, Azalea Park, Nesbit Ferry and Willow plans, then made each one their own with their finishes. Every one of those plans is ready to build again, on your land or a lot we help you find.",
+      "Cartersville puts you on I-75 with Lake Allatoona and Red Top Mountain State Park close by, and room to spread out across Bartow County."
+     ],
+     "image": "/images/plans/azalea-park/azalea-park-04.jpg",
+     "alt": "Kitchen in an Azalea Park home Riverstone built in Cartersville",
+     "buttons": [
+      {
+       "text": "See all home plans",
+       "href": "/home-plans.html"
+      },
+      {
+       "text": "Build on your land",
+       "href": "/build.html"
+      }
+     ]
+    },
+    {
+     "type": "plancards",
+     "alt": true,
+     "id": "plans",
+     "label": "Built in Cartersville",
+     "title": "Plans we've built in Cartersville",
+     "text": "Tap a plan for the full photo gallery and color floor plans.",
+     "items": [
+      {
+       "href": "/plans/walton.html",
+       "img": "/images/plans/walton/walton-card.jpg",
+       "alt": "The Walton built by Riverstone Homes",
+       "kicker": "One level",
+       "title": "The Walton",
+       "facts": [
+        "2,068 sq ft",
+        "4 bed",
+        "2 bath"
+       ],
+       "text": "Everything on one level with an open kitchen and family room."
+      },
+      {
+       "href": "/plans/azalea-park.html",
+       "img": "/images/plans/azalea-park/azalea-park-card.jpg",
+       "alt": "Azalea Park built by Riverstone Homes",
+       "kicker": "Primary on main",
+       "title": "Azalea Park",
+       "facts": [
+        "2,182 sq ft",
+        "4 bed",
+        "2.5 bath"
+       ],
+       "text": "Primary suite on the main and a vaulted family room."
+      },
+      {
+       "href": "/plans/nesbit-ferry.html",
+       "img": "/images/areas/cartersville-nesbit-ferry-card.jpg",
+       "alt": "Nesbit Ferry built by Riverstone in Cartersville",
+       "kicker": "Primary on main",
+       "title": "Nesbit Ferry",
+       "facts": [
+        "2,270 sq ft",
+        "4 bed",
+        "3 bath"
+       ],
+       "text": "A mudroom off the garage and an upstairs office and fourth bedroom."
+      },
+      {
+       "href": "/plans/willow.html",
+       "img": "/images/areas/cartersville-willow-card.jpg",
+       "alt": "The Willow built by Riverstone in Cartersville",
+       "kicker": "Primary on main",
+       "title": "The Willow",
+       "facts": [
+        "1,952 sq ft main",
+        "3 bed + bonus",
+        "2.5 bath"
+       ],
+       "text": "Craftsman charm with a big upstairs bonus room."
+      }
+     ],
+     "note": "Every plan can be built on a slab or a basement, depending on your property. Call for pricing: 706-514-6637."
+    },
+    {
+     "type": "gallery",
+     "id": "photos",
+     "label": "Photos",
+     "title": "Riverstone homes in Cartersville",
+     "items": [
+      {
+       "src": "/images/plans/walton/walton-01.jpg",
+       "thumb": "/images/plans/walton/walton-01-sm.jpg",
+       "alt": "Front of a Walton home Riverstone built in Cartersville",
+       "caption": "The Walton"
+      },
+      {
+       "src": "/images/areas/cartersville-nesbit-ferry.jpg",
+       "thumb": "/images/areas/cartersville-nesbit-ferry-sm.jpg",
+       "alt": "Nesbit Ferry home at twilight built by Riverstone in Cartersville",
+       "caption": "Nesbit Ferry"
+      },
+      {
+       "src": "/images/areas/cartersville-willow.jpg",
+       "thumb": "/images/areas/cartersville-willow-sm.jpg",
+       "alt": "Willow craftsman home built by Riverstone in Cartersville",
+       "caption": "The Willow"
+      },
+      {
+       "src": "/images/plans/azalea-park/azalea-park-01.jpg",
+       "thumb": "/images/plans/azalea-park/azalea-park-01-sm.jpg",
+       "alt": "Front of an Azalea Park home Riverstone built in Cartersville",
+       "caption": "Azalea Park"
+      },
+      {
+       "src": "/images/plans/walton/walton-04.jpg",
+       "thumb": "/images/plans/walton/walton-04-sm.jpg",
+       "alt": "Family room with a stone fireplace in a Walton home in Cartersville",
+       "caption": "Walton family room"
+      },
+      {
+       "src": "/images/plans/azalea-park/azalea-park-03.jpg",
+       "thumb": "/images/plans/azalea-park/azalea-park-03-sm.jpg",
+       "alt": "Vaulted family room in an Azalea Park home in Cartersville",
+       "caption": "Azalea Park family room"
+      },
+      {
+       "src": "/images/plans/walton/walton-05.jpg",
+       "thumb": "/images/plans/walton/walton-05-sm.jpg",
+       "alt": "Open kitchen in a Walton home in Cartersville",
+       "caption": "Walton kitchen"
+      },
+      {
+       "src": "/images/plans/walton/walton-10.jpg",
+       "thumb": "/images/plans/walton/walton-10-sm.jpg",
+       "alt": "Covered back porch on a Walton home in Cartersville",
+       "caption": "Covered back porch"
+      },
+      {
+       "src": "/images/plans/azalea-park/azalea-park-07.jpg",
+       "thumb": "/images/plans/azalea-park/azalea-park-07-sm.jpg",
+       "alt": "Primary bedroom in an Azalea Park home in Cartersville",
+       "caption": "Azalea Park primary bedroom"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "alt": true,
+     "label": "How it works",
+     "title": "Your land or ours, start to finish",
+     "items": [
+      [
+       "Talk it through",
+       "A free building consultation about your land, plan ideas, budget and timeline."
+      ],
+      [
+       "Pick a plan and a lot",
+       "Start with one of our plans or bring your own. Build on your land, or we help you find some."
+      ],
+      [
+       "Get real pricing",
+       "We price your home on your lot, site work included, before you commit."
+      ],
+      [
+       "Build and move in",
+       "One local team handles permits, construction and the final walk-through, and keeps you updated the whole way."
+      ]
+     ]
+    },
+    {
+     "type": "cards",
+     "label": "Next steps",
+     "title": "Ready to build in Bartow County?",
+     "items": [
+      {
+       "kicker": "Need land",
+       "title": "Land for sale in Bartow",
+       "text": "Every lot and land listing on the MLS, lowest price first, updated daily.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Bartow&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5dv2v0&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Have land",
+       "title": "Build on your land",
+       "text": "How we check out your land and build on it.",
+       "href": "/build.html",
+       "go": "How it works"
+      },
+      {
+       "kicker": "Plans",
+       "title": "All home plans",
+       "text": "Real photos and color floor plans for every plan we build.",
+       "href": "/home-plans.html",
+       "go": "See the plans"
+      }
+     ]
+    },
+    {
+     "type": "faq",
+     "alt": true,
+     "label": "Questions",
+     "title": "Building in Cartersville: common questions",
+     "items": [
+      [
+       "Do you build in Cartersville and Bartow County?",
+       "Yes. We built the homes in Griffin Manor in Cartersville and build across Bartow County, including Adairsville, White and Euharlee, on your land or a lot we help you find."
+      ],
+      [
+       "I don't have land yet. Can you help in Bartow County?",
+       "Yes. Search <a href=\"https://sandra-watkins.remax.com/index.php?advanced=1&display=Bartow&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5dv2v0&sortby=listings.price+ASC&rtype=map\" target=\"_blank\" rel=\"noopener\">land for sale in Bartow County</a>, updated daily, then call or text Sandra Watkins, our New Home Guide with RE/MAX Town &amp; Country, at <a href=\"tel:+17703243680\">770-324-3680</a>. She and the builder will walk the land with you and price a home on it before you buy."
+      ],
+      [
+       "Do I have to build one of your plans?",
+       "No. Pick one of <a href=\"/home-plans.html\">our home plans</a>, change it to fit, or bring your own plan. Every plan can be built on a slab or a basement, depending on your property."
+      ],
+      [
+       "How much does it cost to build?",
+       "It depends on your lot, your plan, slab or basement, and your finishes, so we price every home on its own lot. Call <a href=\"tel:+17065146637\">706-514-6637</a> or send us a note below and we will walk you through real numbers."
+      ]
+     ]
+    },
+    {
+     "type": "contact",
+     "label": "Free build consultation",
+     "title": "Let's build in Cartersville.",
+     "text": "Tell us what you'd like to build and where. We'll set up a time to talk it through.",
+     "topic": "Building on my land",
+     "county": "Bartow",
+     "placeholder": "Do you have land yet? Which plan do you like?"
+    }
+   ]
+  },
+  {
+   "path": "/areas/calhoun-ga.html",
+   "title": "New Homes in Calhoun, GA | Riverstone Homes",
+   "description": "Riverstone Homes has built new homes in Calhoun and Gordon County, Georgia, including the Waterbury Cottage, Azalea Park and Walton plans in Quail Run. See the homes, the plans and land for sale.",
+   "og_image": "/images/bobwhite-104-front.jpg",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "name": "New homes in Calhoun, GA",
+      "url": "https://goriverstone.com/areas/calhoun-ga.html",
+      "description": "Riverstone Homes has built new homes in Calhoun and Gordon County, Georgia, including the Waterbury Cottage, Azalea Park and Walton plans in Quail Run. See the homes, the plans and land for sale.",
+      "about": {
+       "@type": "City",
+       "name": "Calhoun, Georgia"
+      },
+      "publisher": {
+       "@type": "HomeAndConstructionBusiness",
+       "name": "Riverstone Homes",
+       "telephone": "+1-706-514-6637",
+       "url": "https://goriverstone.com/",
+       "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Gordon County, Georgia"
+       }
+      }
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Do you build in Calhoun and Gordon County?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. We built the new homes in Quail Run in Calhoun and build across Gordon County, including Fairmount, Plainville and Resaca, on your land or a lot we help you find."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "I don't have land yet. Can you help in Gordon County?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Search <a href=\"https://sandra-watkins.remax.com/index.php?advanced=1&display=Gordon&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5sk955&sortby=listings.price+ASC&rtype=map\" target=\"_blank\" rel=\"noopener\">land for sale in Gordon County</a>, updated daily, then call or text Sandra Watkins, our New Home Guide with RE/MAX Town &amp; Country, at <a href=\"tel:+17703243680\">770-324-3680</a>. She and the builder will walk the land with you and price a home on it before you buy."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do I have to build one of your plans?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Pick one of <a href=\"/home-plans.html\">our home plans</a>, change it to fit, or bring your own plan. Every plan can be built on a slab or a basement, depending on your property."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How much does it cost to build?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "It depends on your lot, your plan, slab or basement, and your finishes, so we price every home on its own lot. Call <a href=\"tel:+17065146637\">706-514-6637</a> or send us a note below and we will walk you through real numbers."
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/bobwhite-104-front.jpg",
+     "alt": "Waterbury Cottage built by Riverstone Homes in Calhoun, Georgia",
+     "label": "New homes · Gordon County",
+     "title": "New homes in Calhoun, GA",
+     "lede": "Modern farmhouse homes with real curb appeal, built by a local North Georgia builder. Build one in Calhoun on your land or ours.",
+     "buttons": [
+      {
+       "text": "Start your build",
+       "href": "#contact"
+      },
+      {
+       "text": "Land in Gordon",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Gordon&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5sk955&sortby=listings.price+ASC&rtype=map"
+      }
+     ]
+    },
+    {
+     "type": "two",
+     "label": "Building in Calhoun",
+     "title": "A local builder with homes all over Calhoun",
+     "paras": [
+      "Riverstone built the new homes in Quail Run in Calhoun, with the Waterbury Cottage, Azalea Park and Walton plans side by side on the same street.",
+      "Calhoun is the Gordon County seat, right on I-75 between Atlanta and Chattanooga, and it still has the small-town feel and the land that bring people north.",
+      "Our founder Jamey Cagle is just down the road in Adairsville, so building in Gordon County is close to home for us too."
+     ],
+     "image": "/images/plans/waterbury-cottage/waterbury-cottage-06.jpg",
+     "alt": "Kitchen in a Waterbury Cottage Riverstone built in Calhoun",
+     "buttons": [
+      {
+       "text": "See all home plans",
+       "href": "/home-plans.html"
+      },
+      {
+       "text": "Build on your land",
+       "href": "/build.html"
+      }
+     ]
+    },
+    {
+     "type": "plancards",
+     "alt": true,
+     "id": "plans",
+     "label": "Built in Calhoun",
+     "title": "Plans we've built in Calhoun",
+     "text": "Tap a plan for the full photo gallery and color floor plans.",
+     "items": [
+      {
+       "href": "/plans/waterbury-cottage.html",
+       "img": "/images/plans/waterbury-cottage/waterbury-cottage-card.jpg",
+       "alt": "Waterbury Cottage built by Riverstone Homes",
+       "kicker": "Modern farmhouse",
+       "title": "Waterbury Cottage",
+       "facts": [
+        "2,376 sq ft",
+        "4 bed",
+        "3.5 bath"
+       ],
+       "text": "A vaulted family room and a covered back deck."
+      },
+      {
+       "href": "/plans/azalea-park.html",
+       "img": "/images/plans/azalea-park/azalea-park-card.jpg",
+       "alt": "Azalea Park built by Riverstone Homes",
+       "kicker": "Primary on main",
+       "title": "Azalea Park",
+       "facts": [
+        "2,182 sq ft",
+        "4 bed",
+        "2.5 bath"
+       ],
+       "text": "Primary suite on the main and a vaulted family room."
+      },
+      {
+       "href": "/plans/walton.html",
+       "img": "/images/plans/walton/walton-card.jpg",
+       "alt": "The Walton built by Riverstone Homes",
+       "kicker": "One level",
+       "title": "The Walton",
+       "facts": [
+        "2,068 sq ft",
+        "4 bed",
+        "2 bath"
+       ],
+       "text": "Everything on one level with an open kitchen and family room."
+      }
+     ],
+     "note": "Azalea Park and Walton card photos show the same plans built in other towns. Every plan can be built on a slab or a basement, depending on your property. Call for pricing: 706-514-6637."
+    },
+    {
+     "type": "gallery",
+     "id": "photos",
+     "label": "Photos",
+     "title": "Riverstone homes in Calhoun",
+     "items": [
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-01.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-01-sm.jpg",
+       "alt": "Front of a Waterbury Cottage Riverstone built in Calhoun",
+       "caption": "Waterbury Cottage"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-03.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-03-sm.jpg",
+       "alt": "Back of a Waterbury Cottage with a covered deck in Calhoun",
+       "caption": "Back porch and deck"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-04.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-04-sm.jpg",
+       "alt": "Vaulted family room with a stone fireplace in Calhoun",
+       "caption": "Vaulted family room"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-05.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-05-sm.jpg",
+       "alt": "Open family room and kitchen in a Calhoun Waterbury Cottage",
+       "caption": "Open living and kitchen"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-06.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-06-sm.jpg",
+       "alt": "White kitchen with a big island in a Calhoun Waterbury Cottage",
+       "caption": "Kitchen"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-07.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-07-sm.jpg",
+       "alt": "Coffered dining room in a Calhoun Waterbury Cottage",
+       "caption": "Dining room"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-09.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-09-sm.jpg",
+       "alt": "Primary bath in a Calhoun Waterbury Cottage",
+       "caption": "Primary bath"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-02.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-02-sm.jpg",
+       "alt": "Side of a Waterbury Cottage in Calhoun",
+       "caption": "Side view"
+      },
+      {
+       "src": "/images/plans/waterbury-cottage/waterbury-cottage-10.jpg",
+       "thumb": "/images/plans/waterbury-cottage/waterbury-cottage-10-sm.jpg",
+       "alt": "Back of a Waterbury Cottage in Calhoun",
+       "caption": "Back of the home"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "alt": true,
+     "label": "How it works",
+     "title": "Your land or ours, start to finish",
+     "items": [
+      [
+       "Talk it through",
+       "A free building consultation about your land, plan ideas, budget and timeline."
+      ],
+      [
+       "Pick a plan and a lot",
+       "Start with one of our plans or bring your own. Build on your land, or we help you find some."
+      ],
+      [
+       "Get real pricing",
+       "We price your home on your lot, site work included, before you commit."
+      ],
+      [
+       "Build and move in",
+       "One local team handles permits, construction and the final walk-through, and keeps you updated the whole way."
+      ]
+     ]
+    },
+    {
+     "type": "cards",
+     "label": "Next steps",
+     "title": "Ready to build in Gordon County?",
+     "items": [
+      {
+       "kicker": "Need land",
+       "title": "Land for sale in Gordon",
+       "text": "Every lot and land listing on the MLS, lowest price first, updated daily.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Gordon&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5sk955&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Have land",
+       "title": "Build on your land",
+       "text": "How we check out your land and build on it.",
+       "href": "/build.html",
+       "go": "How it works"
+      },
+      {
+       "kicker": "Plans",
+       "title": "All home plans",
+       "text": "Real photos and color floor plans for every plan we build.",
+       "href": "/home-plans.html",
+       "go": "See the plans"
+      }
+     ]
+    },
+    {
+     "type": "faq",
+     "alt": true,
+     "label": "Questions",
+     "title": "Building in Calhoun: common questions",
+     "items": [
+      [
+       "Do you build in Calhoun and Gordon County?",
+       "Yes. We built the new homes in Quail Run in Calhoun and build across Gordon County, including Fairmount, Plainville and Resaca, on your land or a lot we help you find."
+      ],
+      [
+       "I don't have land yet. Can you help in Gordon County?",
+       "Yes. Search <a href=\"https://sandra-watkins.remax.com/index.php?advanced=1&display=Gordon&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5sk955&sortby=listings.price+ASC&rtype=map\" target=\"_blank\" rel=\"noopener\">land for sale in Gordon County</a>, updated daily, then call or text Sandra Watkins, our New Home Guide with RE/MAX Town &amp; Country, at <a href=\"tel:+17703243680\">770-324-3680</a>. She and the builder will walk the land with you and price a home on it before you buy."
+      ],
+      [
+       "Do I have to build one of your plans?",
+       "No. Pick one of <a href=\"/home-plans.html\">our home plans</a>, change it to fit, or bring your own plan. Every plan can be built on a slab or a basement, depending on your property."
+      ],
+      [
+       "How much does it cost to build?",
+       "It depends on your lot, your plan, slab or basement, and your finishes, so we price every home on its own lot. Call <a href=\"tel:+17065146637\">706-514-6637</a> or send us a note below and we will walk you through real numbers."
+      ]
+     ]
+    },
+    {
+     "type": "contact",
+     "label": "Free build consultation",
+     "title": "Let's build in Calhoun.",
+     "text": "Tell us what you'd like to build and where. We'll set up a time to talk it through.",
+     "topic": "Building on my land",
+     "county": "Gordon",
+     "placeholder": "Do you have land yet? Which plan do you like?"
+    }
+   ]
+  },
+  {
+   "path": "/areas/canton-ga.html",
+   "title": "New Homes in Canton, GA | Riverstone Homes",
+   "description": "Riverstone Homes has built new homes in Canton and Cherokee County, Georgia, including the Maplewood and Willow plans at Carson Farms and along Mount Carmel. See the homes, the plans and land for sale.",
+   "og_image": "/images/plans/maplewood/maplewood-01.jpg",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "name": "New homes in Canton, GA",
+      "url": "https://goriverstone.com/areas/canton-ga.html",
+      "description": "Riverstone Homes has built new homes in Canton and Cherokee County, Georgia, including the Maplewood and Willow plans at Carson Farms and along Mount Carmel. See the homes, the plans and land for sale.",
+      "about": {
+       "@type": "City",
+       "name": "Canton, Georgia"
+      },
+      "publisher": {
+       "@type": "HomeAndConstructionBusiness",
+       "name": "Riverstone Homes",
+       "telephone": "+1-706-514-6637",
+       "url": "https://goriverstone.com/",
+       "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Cherokee County, Georgia"
+       }
+      }
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Do you build in Canton and Cherokee County?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. We built homes at Carson Farms and along Mount Carmel in Canton and build across Cherokee County, including Ball Ground, Waleska and Woodstock, on your land or a lot we help you find."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "I don't have land yet. Can you help in Cherokee County?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Search <a href=\"https://sandra-watkins.remax.com/index.php?advanced=1&display=Cherokee&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5fv9ym&sortby=listings.price+ASC&rtype=map\" target=\"_blank\" rel=\"noopener\">land for sale in Cherokee County</a>, updated daily, then call or text Sandra Watkins, our New Home Guide with RE/MAX Town &amp; Country, at <a href=\"tel:+17703243680\">770-324-3680</a>. She and the builder will walk the land with you and price a home on it before you buy."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do I have to build one of your plans?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Pick one of <a href=\"/home-plans.html\">our home plans</a>, change it to fit, or bring your own plan. Every plan can be built on a slab or a basement, depending on your property."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How much does it cost to build?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "It depends on your lot, your plan, slab or basement, and your finishes, so we price every home on its own lot. Call <a href=\"tel:+17065146637\">706-514-6637</a> or send us a note below and we will walk you through real numbers."
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/plans/maplewood/maplewood-01.jpg",
+     "alt": "The Maplewood built by Riverstone Homes in Canton, Georgia",
+     "label": "New homes · Cherokee County",
+     "title": "New homes in Canton, GA",
+     "lede": "Craftsman homes with coffered ceilings, stone fireplaces and screened porches, built in Canton. Build yours on your land or ours.",
+     "buttons": [
+      {
+       "text": "Start your build",
+       "href": "#contact"
+      },
+      {
+       "text": "Land in Cherokee",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Cherokee&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5fv9ym&sortby=listings.price+ASC&rtype=map"
+      }
+     ]
+    },
+    {
+     "type": "two",
+     "label": "Building in Canton",
+     "title": "A local builder with homes all over Canton",
+     "paras": [
+      "Riverstone built homes at Carson Farms and along Mount Carmel in Canton, including the Maplewood and the Willow.",
+      "Canton is the Cherokee County seat, on the Etowah River with I-575 close by, and Cherokee still has pockets of land with room to breathe.",
+      "Riverstone has been building since 1997, and both of these plans are ready to build again on your land or a lot we help you find."
+     ],
+     "image": "/images/plans/maplewood/maplewood-07.jpg",
+     "alt": "Kitchen in a Maplewood home Riverstone built in Canton",
+     "buttons": [
+      {
+       "text": "See all home plans",
+       "href": "/home-plans.html"
+      },
+      {
+       "text": "Build on your land",
+       "href": "/build.html"
+      }
+     ]
+    },
+    {
+     "type": "plancards",
+     "alt": true,
+     "id": "plans",
+     "label": "Built in Canton",
+     "title": "Plans we've built in Canton",
+     "text": "Tap a plan for the full photo gallery and color floor plans.",
+     "items": [
+      {
+       "href": "/plans/maplewood.html",
+       "img": "/images/plans/maplewood/maplewood-card.jpg",
+       "alt": "The Maplewood built by Riverstone Homes",
+       "kicker": "One level",
+       "title": "The Maplewood",
+       "facts": [
+        "2,400 sq ft",
+        "3 to 4 bed",
+        "2.5 to 3.5 bath"
+       ],
+       "text": "Coffered ceilings and a screened back porch."
+      },
+      {
+       "href": "/plans/willow.html",
+       "img": "/images/plans/willow/willow-card.jpg",
+       "alt": "The Willow built by Riverstone Homes",
+       "kicker": "Primary on main",
+       "title": "The Willow",
+       "facts": [
+        "1,952 sq ft main",
+        "3 bed + bonus",
+        "2.5 bath"
+       ],
+       "text": "Craftsman charm with a big upstairs bonus room."
+      }
+     ],
+     "note": "Every plan can be built on a slab or a basement, depending on your property. Call for pricing: 706-514-6637."
+    },
+    {
+     "type": "gallery",
+     "id": "photos",
+     "label": "Photos",
+     "title": "Riverstone homes in Canton",
+     "items": [
+      {
+       "src": "/images/plans/maplewood/maplewood-01.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-01-sm.jpg",
+       "alt": "Front of a Maplewood home Riverstone built in Canton",
+       "caption": "The Maplewood"
+      },
+      {
+       "src": "/images/plans/willow/willow-01.jpg",
+       "thumb": "/images/plans/willow/willow-01-sm.jpg",
+       "alt": "Front of a Willow home Riverstone built in Canton",
+       "caption": "The Willow"
+      },
+      {
+       "src": "/images/plans/maplewood/maplewood-03.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-03-sm.jpg",
+       "alt": "Back of a Maplewood home with a screened porch in Canton",
+       "caption": "Maplewood back with screened porch"
+      },
+      {
+       "src": "/images/plans/maplewood/maplewood-06.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-06-sm.jpg",
+       "alt": "Family room with a stone fireplace in a Canton Maplewood",
+       "caption": "Maplewood family room"
+      },
+      {
+       "src": "/images/plans/maplewood/maplewood-07.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-07-sm.jpg",
+       "alt": "Kitchen in a Canton Maplewood",
+       "caption": "Maplewood kitchen"
+      },
+      {
+       "src": "/images/plans/willow/willow-02.jpg",
+       "thumb": "/images/plans/willow/willow-02-sm.jpg",
+       "alt": "Covered front porch on a Canton Willow",
+       "caption": "Willow front porch"
+      },
+      {
+       "src": "/images/plans/willow/willow-06.jpg",
+       "thumb": "/images/plans/willow/willow-06-sm.jpg",
+       "alt": "Kitchen in a Canton Willow",
+       "caption": "Willow kitchen"
+      },
+      {
+       "src": "/images/plans/willow/willow-07.jpg",
+       "thumb": "/images/plans/willow/willow-07-sm.jpg",
+       "alt": "Great room with a stone fireplace in a Canton Willow",
+       "caption": "Willow great room"
+      },
+      {
+       "src": "/images/plans/maplewood/maplewood-10.jpg",
+       "thumb": "/images/plans/maplewood/maplewood-10-sm.jpg",
+       "alt": "Screened porch on a Canton Maplewood",
+       "caption": "Screened porch"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "alt": true,
+     "label": "How it works",
+     "title": "Your land or ours, start to finish",
+     "items": [
+      [
+       "Talk it through",
+       "A free building consultation about your land, plan ideas, budget and timeline."
+      ],
+      [
+       "Pick a plan and a lot",
+       "Start with one of our plans or bring your own. Build on your land, or we help you find some."
+      ],
+      [
+       "Get real pricing",
+       "We price your home on your lot, site work included, before you commit."
+      ],
+      [
+       "Build and move in",
+       "One local team handles permits, construction and the final walk-through, and keeps you updated the whole way."
+      ]
+     ]
+    },
+    {
+     "type": "cards",
+     "label": "Next steps",
+     "title": "Ready to build in Cherokee County?",
+     "items": [
+      {
+       "kicker": "Need land",
+       "title": "Land for sale in Cherokee",
+       "text": "Every lot and land listing on the MLS, lowest price first, updated daily.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Cherokee&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5fv9ym&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Have land",
+       "title": "Build on your land",
+       "text": "How we check out your land and build on it.",
+       "href": "/build.html",
+       "go": "How it works"
+      },
+      {
+       "kicker": "Plans",
+       "title": "All home plans",
+       "text": "Real photos and color floor plans for every plan we build.",
+       "href": "/home-plans.html",
+       "go": "See the plans"
+      }
+     ]
+    },
+    {
+     "type": "faq",
+     "alt": true,
+     "label": "Questions",
+     "title": "Building in Canton: common questions",
+     "items": [
+      [
+       "Do you build in Canton and Cherokee County?",
+       "Yes. We built homes at Carson Farms and along Mount Carmel in Canton and build across Cherokee County, including Ball Ground, Waleska and Woodstock, on your land or a lot we help you find."
+      ],
+      [
+       "I don't have land yet. Can you help in Cherokee County?",
+       "Yes. Search <a href=\"https://sandra-watkins.remax.com/index.php?advanced=1&display=Cherokee&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5fv9ym&sortby=listings.price+ASC&rtype=map\" target=\"_blank\" rel=\"noopener\">land for sale in Cherokee County</a>, updated daily, then call or text Sandra Watkins, our New Home Guide with RE/MAX Town &amp; Country, at <a href=\"tel:+17703243680\">770-324-3680</a>. She and the builder will walk the land with you and price a home on it before you buy."
+      ],
+      [
+       "Do I have to build one of your plans?",
+       "No. Pick one of <a href=\"/home-plans.html\">our home plans</a>, change it to fit, or bring your own plan. Every plan can be built on a slab or a basement, depending on your property."
+      ],
+      [
+       "How much does it cost to build?",
+       "It depends on your lot, your plan, slab or basement, and your finishes, so we price every home on its own lot. Call <a href=\"tel:+17065146637\">706-514-6637</a> or send us a note below and we will walk you through real numbers."
+      ]
+     ]
+    },
+    {
+     "type": "contact",
+     "label": "Free build consultation",
+     "title": "Let's build in Canton.",
+     "text": "Tell us what you'd like to build and where. We'll set up a time to talk it through.",
+     "topic": "Building on my land",
+     "county": "Cherokee",
+     "placeholder": "Do you have land yet? Which plan do you like?"
+    }
+   ]
+  },
+  {
+   "path": "/areas/ball-ground-ga.html",
+   "title": "Screened Porches & Pool Pavilions in Ball Ground, GA | Riverstone Homes",
+   "description": "Riverstone Homes built a screened porch addition and a large covered pool pavilion in Ball Ground, Georgia. See the projects, and talk to us about building in Ball Ground and Cherokee County.",
+   "og_image": "/images/projects/pool-pavilion-pool-night.jpg",
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/projects/pool-pavilion-pool-night.jpg",
+     "alt": "Covered pool pavilion with string lights Riverstone built in Ball Ground, Georgia",
+     "label": "Ball Ground · Cherokee County",
+     "title": "Outdoor living in Ball Ground, GA",
+     "lede": "A screened porch and a huge covered patio over the pool, both built by Riverstone in Ball Ground.",
+     "buttons": [
+      {
+       "text": "Start your project",
+       "href": "#contact"
+      },
+      {
+       "text": "Land in Cherokee",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Cherokee&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5fv9ym&sortby=listings.price+ASC&rtype=map"
+      }
+     ]
+    },
+    {
+     "type": "two",
+     "label": "Built in Ball Ground",
+     "title": "Two projects at one Ball Ground home",
+     "paras": [
+      "Our New Home Guide Sandra Watkins lives in Ball Ground, and Riverstone built both of these at her house.",
+      "First came a screened porch, built from the block foundation up onto her brick ranch. Then, once the pool was in, Riverstone framed and roofed a big covered patio off the back of the house so the pool finally had shade.",
+      "Building a porch, pavilion, addition or a whole new home in Ball Ground or anywhere in Cherokee County? One local team handles it start to finish."
+     ],
+     "image": "/images/projects/screened-porch-furnished.jpg",
+     "alt": "Furnished screened porch addition Riverstone built in Ball Ground",
+     "buttons": [
+      {
+       "text": "See the porch story",
+       "href": "/room-additions.html"
+      },
+      {
+       "text": "See the pavilion story",
+       "href": "/garages-pole-barns.html"
+      }
+     ]
+    },
+    {
+     "type": "gallery",
+     "alt": true,
+     "id": "photos",
+     "label": "Photos",
+     "title": "The porch and the pool pavilion",
+     "items": [
+      {
+       "src": "/images/projects/pool-pavilion-pool-view.jpg",
+       "alt": "Pool view from under the pavilion",
+       "caption": "Pool view"
+      },
+      {
+       "src": "/images/projects/pool-pavilion-string-lights.jpg",
+       "alt": "Pool pavilion with string lights in Ball Ground",
+       "caption": "Covered patio over the pool"
+      },
+      {
+       "src": "/images/projects/screened-porch-finished.jpg",
+       "alt": "Finished screened porch in Ball Ground",
+       "caption": "Screened porch"
+      },
+      {
+       "src": "/images/projects/pool-pavilion-under-pavilion.jpg",
+       "alt": "Under the pool pavilion in Ball Ground",
+       "caption": "Under the pavilion"
+      },
+      {
+       "src": "/images/projects/screened-porch-ceiling.jpg",
+       "alt": "Screened porch ceiling with fan",
+       "caption": "Porch ceiling"
+      }
+     ]
+    },
+    {
+     "type": "videos",
+     "id": "watch",
+     "label": "Watch",
+     "title": "Watch them come together",
+     "items": [
+      {
+       "mp4": "/images/projects/screened-porch-before-after.mp4",
+       "poster": "/images/projects/screened-porch-video-poster.jpg",
+       "short": true,
+       "title": "Screened Porch Before and After"
+      },
+      {
+       "id": "-Xj7zmoUWaQ",
+       "short": true,
+       "title": "Pool Pavilion Before and After"
+      }
+     ]
+    },
+    {
+     "type": "cards",
+     "alt": true,
+     "label": "Next steps",
+     "title": "Building in Ball Ground?",
+     "items": [
+      {
+       "kicker": "Need land",
+       "title": "Land for sale in Cherokee",
+       "text": "Every lot and land listing on the MLS, lowest price first, updated daily.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Cherokee&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5fv9ym&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "New home",
+       "title": "All home plans",
+       "text": "Real photos and color floor plans for every plan we build.",
+       "href": "/home-plans.html",
+       "go": "See the plans"
+      },
+      {
+       "kicker": "Nearby",
+       "title": "New homes in Canton",
+       "text": "See the homes we built just down the road in Canton.",
+       "href": "/areas/canton-ga.html",
+       "go": "See Canton"
+      }
+     ]
+    },
+    {
+     "type": "contact",
+     "label": "Free build consultation",
+     "title": "Let's build in Ball Ground.",
+     "text": "Tell us what you'd like to build. We'll set up a time to come take a look.",
+     "topic": "A building consultation",
+     "county": "Cherokee",
+     "placeholder": "A porch, pavilion, addition or a new home?"
     }
    ]
   }

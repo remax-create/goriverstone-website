@@ -143,7 +143,7 @@ def block(b, page):
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="faq">{qs}</div></div></section>'
     if t == 'contact':
         opts = ''.join(f'<option{" selected" if o == b["topic"] else ""}>{E(o)}</option>' for o in TOPICS)
-        copts = '<option value="" selected>Choose a county</option>' + ''.join(f'<option>{E(c)}</option>' for c in COUNTIES)
+        copts = f'<option value=""{"" if b.get("county") else " selected"}>Choose a county</option>' + ''.join(f'<option{" selected" if c == b.get("county") else ""}>{E(c)}</option>' for c in COUNTIES)
         call = '<p class="call-line">Rather talk? <a href="tel:+17703243680">Call Sandra at 770-324-3680</a></p>' if b.get('compact') else ''
         return f'''<section class="contact{" start" if b.get("compact") else ""}" id="contact"><div class="wrap">
   <div class="copy"><span class="label">{E(b.get("label","Free build consultation"))}</span><h2>{E(b["title"])}</h2><p>{E(b["text"])}</p>{call}
