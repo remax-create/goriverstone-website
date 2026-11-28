@@ -180,7 +180,8 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.1re
 .field label { font: 600 .68rem/1 var(--f-body); letter-spacing: .18em; text-transform: uppercase; color: var(--on-dark-2); }
 .field input, .field select, .field textarea { width: 100%; font: 400 1rem/1.4 var(--f-body); color: var(--on-dark); background: transparent; border: 0; border-bottom: 1px solid var(--on-dark-line); padding: .55rem 0; border-radius: 0; }
 .field select option { color: #18211e; }
-.field textarea { min-height: 7rem; resize: vertical; }
+.field textarea { min-height: 4rem; resize: vertical; }
+.field .opt { text-transform: none; letter-spacing: 0; font-weight: 400; opacity: .8; }
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-bottom-color: var(--brass-hi); }
 .hp { position: absolute; left: -9999px; }
 .form-status { grid-column: 1 / -1; color: var(--brass-hi); margin: 0; }
@@ -233,7 +234,7 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.1re
 .yt.short { flex: 0 1 340px; max-width: 340px; }
 .yt .frame { position: relative; aspect-ratio: 16 / 9; background: var(--forest); border: 1px solid var(--line); overflow: hidden; }
 .yt.short .frame { aspect-ratio: 9 / 16; }
-.yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.yt iframe, .yt video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
 .yt figcaption { font: 600 .95rem/1.4 var(--f-body); text-align: center; }
 
 /* Floor plan tabs */
@@ -286,10 +287,11 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 1.1re
     <p class="hp"><label for="company-website">Leave this empty</label><input id="company-website" name="company-website" tabindex="-1" autocomplete="off"></p>
     <input type="hidden" name="lead-source"><input type="hidden" name="first-page"><input type="hidden" name="referrer">
     <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
-    <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
-    <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
-    <div class="field full"><label for="f-topic">I'm interested in</label><select id="f-topic" name="topic"><option>Building on my land</option><option>Finding land to build on</option><option>Building a home I saw in a video</option><option>Building my own plan</option><option>The Hemlock Falls plan</option><option>The Walton plan</option><option>The Azalea Park plan</option><option>The Waterbury Cottage plan</option><option>The Nesbit Ferry plan</option><option>The Maplewood plan</option><option>The Willow plan</option><option>One of your home plans</option><option>121 Cypress Court</option><option>104 Bob White Drive</option><option>Riverstone Commons townhomes</option><option>A custom home or plan</option><option selected>A barndominium</option><option>A room addition</option><option>A basement finish</option><option>A garage or pole barn</option><option>A building consultation</option><option>Something else</option></select></div>
-    <div class="field full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Where&#x27;s your land, how big a shop do you need, and how many bedrooms?"></textarea></div>
+    <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+    <div class="field full"><label for="f-topic">What do you want to build?</label><select id="f-topic" name="topic"><option>Building on my land</option><option>Finding land to build on</option><option>Building a home I saw in a video</option><option>Building my own plan</option><option>The Hemlock Falls plan</option><option>The Walton plan</option><option>The Azalea Park plan</option><option>The Waterbury Cottage plan</option><option>The Nesbit Ferry plan</option><option>The Maplewood plan</option><option>The Willow plan</option><option>One of your home plans</option><option>121 Cypress Court</option><option>104 Bob White Drive</option><option>Riverstone Commons townhomes</option><option>A custom home or plan</option><option selected>A barndominium</option><option>A room addition</option><option>A basement finish</option><option>A garage or pole barn</option><option>A building consultation</option><option>Something else</option></select></div>
+    <div class="field"><label for="f-county">County</label><select id="f-county" name="county"><option value="" selected>Choose a county</option><option>Cherokee</option><option>Bartow</option><option>Gordon</option><option>Cobb</option><option>Pickens</option><option>Floyd</option><option>Paulding</option><option>Forsyth</option><option>Other or not sure</option></select></div>
+    <div class="field"><label for="f-email">Email <span class="opt">(optional)</span></label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+    <div class="field full"><label for="f-msg">Anything else? <span class="opt">(optional)</span></label><textarea id="f-msg" name="message" rows="2" placeholder="Where&#x27;s your land, how big a shop do you need, and how many bedrooms?"></textarea></div>
     <div class="field full"><button class="btn" type="submit">Send message <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button></div>
     <p class="form-status" id="form-status" role="status"></p>
   </form></div></section>

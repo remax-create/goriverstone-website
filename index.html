@@ -409,7 +409,7 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
 .field input, .field select, .field textarea { font: inherit; font-size: 1.05rem; color: var(--on-dark); background: transparent; border: 0; border-bottom: 1px solid rgba(242,240,234,.35); padding: 0.6rem 0; width: 100%; border-radius: 0; transition: border-color .3s; }
 .field select option { color: #18211e; }
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-bottom-color: var(--brass-hi); }
-.field textarea { min-height: 110px; resize: vertical; }
+.field textarea { min-height: 64px; resize: vertical; }
 .field ::placeholder { color: rgba(242,240,234,.4); }
 .form-status { grid-column: 1 / -1; color: var(--brass-hi) !important; }
 .form-status:empty { display: none; }
@@ -455,6 +455,7 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
 .plan-row .path-body { position: static; background: var(--forest); padding: 1.6rem 1.75rem 1.9rem; }
 .plan-row .kicker { color: var(--brass-hi); }
 .nav a { white-space: nowrap; }
+.field .opt { text-transform: none; letter-spacing: 0; font-weight: 400; opacity: .8; }
 @media (max-width: 1360px) { .nav { gap: 1.35rem; } }
 .dark-btn { background: var(--forest); color: var(--on-dark); border-color: var(--forest); }
 .dark-btn:hover { background: var(--brass); border-color: var(--brass); color: #fff; }
@@ -844,12 +845,21 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
         <p class="hp"><label for="company-website">Leave this empty</label><input id="company-website" name="company-website" tabindex="-1" autocomplete="off"></p>
         <input type="hidden" name="lead-source"><input type="hidden" name="first-page"><input type="hidden" name="referrer">
         <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
-        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
-        <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
-        <div class="field full"><label for="f-topic">I'm interested in</label>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="field full"><label for="f-topic">What do you want to build?</label>
           <select id="f-topic" name="topic">
             <option>Building on my land</option>
             <option>Finding land to build on</option>
+            <option>Building a home I saw in a video</option>
+            <option>Building my own plan</option>
+            <option>The Hemlock Falls plan</option>
+            <option>The Walton plan</option>
+            <option>The Azalea Park plan</option>
+            <option>The Waterbury Cottage plan</option>
+            <option>The Nesbit Ferry plan</option>
+            <option>The Maplewood plan</option>
+            <option>The Willow plan</option>
+            <option>One of your home plans</option>
             <option>104 Bob White Drive</option>
             <option>Riverstone Commons townhomes</option>
             <option>A custom home or plan</option>
@@ -861,7 +871,22 @@ form.inquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 1.25re
             <option>Something else</option>
           </select>
         </div>
-        <div class="field full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Where's your lot, which plan do you like, and when would you like to start?"></textarea></div>
+        <div class="field"><label for="f-county">County</label>
+          <select id="f-county" name="county">
+            <option value="" selected>Choose a county</option>
+            <option>Cherokee</option>
+            <option>Bartow</option>
+            <option>Gordon</option>
+            <option>Cobb</option>
+            <option>Pickens</option>
+            <option>Floyd</option>
+            <option>Paulding</option>
+            <option>Forsyth</option>
+            <option>Other or not sure</option>
+          </select>
+        </div>
+        <div class="field"><label for="f-email">Email <span class="opt">(optional)</span></label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+        <div class="field full"><label for="f-msg">Anything else? <span class="opt">(optional)</span></label><textarea id="f-msg" name="message" rows="2" placeholder="Where's your lot, which plan do you like, and when would you like to start?"></textarea></div>
         <div class="field full"><button class="btn" type="submit">Send message <svg><use href="#arrow"/></svg></button></div>
         <p class="form-status" id="form-status" role="status"></p>
       </form>

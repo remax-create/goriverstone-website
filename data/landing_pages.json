@@ -772,11 +772,10 @@
        "kicker": "Primary on main, upstairs office",
        "title": "Nesbit Ferry",
        "facts": [
+        "2,270 sq ft",
         "4 bed",
         "3 bath",
-        "Office",
-        "Mudroom",
-        "Full unfinished basement"
+        "Office"
        ],
        "text": "Primary suite on the main, a mudroom with a bench and an upstairs office and fourth bedroom."
       },
@@ -788,12 +787,11 @@
        "title": "The Maplewood",
        "facts": [
         "2,400 sq ft",
-        "3 bed",
-        "2.5 bath",
-        "Optional bonus",
-        "Full unfinished basement"
+        "3 to 4 bed",
+        "2.5 to 3.5 bath",
+        "Optional bonus"
        ],
-       "text": "One-level living with coffered ceilings, a screened porch and an optional upstairs bedroom and bonus room."
+       "text": "One-level living with coffered ceilings, a screened porch and an optional upstairs bedroom, bath and bonus room."
       },
       {
        "href": "/plans/willow.html",
@@ -1626,8 +1624,8 @@
   },
   {
    "path": "/plans/nesbit-ferry.html",
-   "title": "Nesbit Ferry Home Plan | Riverstone Homes",
-   "description": "The Nesbit Ferry plan by Riverstone Homes: 4 bedrooms plus an office, 3 baths, primary suite on the main floor, mudroom and covered front and back porches. See photos and color floor plans.",
+   "title": "Nesbit Ferry Home Plan | 2,270 Sq Ft | Riverstone Homes",
+   "description": "The Nesbit Ferry plan by Riverstone Homes: 2,270 sq ft, 4 bedrooms plus an office, 3 baths, primary suite on the main floor, mudroom and covered front and back porches. See photos and color floor plans.",
    "og_image": "/images/plans/nesbit-ferry/nesbit-ferry-01.jpg",
    "schema": {
     "@context": "https://schema.org",
@@ -1636,7 +1634,7 @@
       "@type": "WebPage",
       "name": "Nesbit Ferry home plan",
       "url": "https://goriverstone.com/plans/nesbit-ferry.html",
-      "description": "The Nesbit Ferry plan by Riverstone Homes: 4 bedrooms plus an office, 3 baths, primary suite on the main floor, mudroom and covered front and back porches. See photos and color floor plans.",
+      "description": "The Nesbit Ferry plan by Riverstone Homes: 2,270 sq ft, 4 bedrooms plus an office, 3 baths, primary suite on the main floor, mudroom and covered front and back porches. See photos and color floor plans.",
       "primaryImageOfPage": "https://goriverstone.com/images/plans/nesbit-ferry/nesbit-ferry-01.jpg",
       "publisher": {
        "@type": "HomeAndConstructionBusiness",
@@ -1693,6 +1691,10 @@
      "type": "specs",
      "items": [
       [
+       "2,270",
+       "Sq ft"
+      ],
+      [
        "4",
        "Bedrooms"
       ],
@@ -1707,14 +1709,6 @@
       [
        "Mudroom",
        "Off the garage"
-      ],
-      [
-       "2 car",
-       "Garage"
-      ],
-      [
-       "Full unfinished basement or slab",
-       "Foundation"
       ]
      ],
      "note": "Pricing depends on your lot, options and finishes. Call for pricing: 706-514-6637."
@@ -1866,7 +1860,7 @@
   {
    "path": "/plans/maplewood.html",
    "title": "Maplewood Home Plan | 2,400 Sq Ft | Riverstone Homes",
-   "description": "The Maplewood plan by Riverstone Homes: 2,400 sq ft on the main floor, 3 bedrooms, 2.5 baths, screened porch and an optional upstairs bedroom 4 and bonus room. See photos and color floor plans.",
+   "description": "The Maplewood plan by Riverstone Homes: 2,400 sq ft on the main floor, 3 bedrooms, 2.5 baths, screened porch and an optional upstairs bedroom 4, bath and bonus room. See photos and color floor plans.",
    "og_image": "/images/plans/maplewood/maplewood-01.jpg",
    "schema": {
     "@context": "https://schema.org",
@@ -1875,7 +1869,7 @@
       "@type": "WebPage",
       "name": "The Maplewood home plan",
       "url": "https://goriverstone.com/plans/maplewood.html",
-      "description": "The Maplewood plan by Riverstone Homes: 2,400 sq ft on the main floor, 3 bedrooms, 2.5 baths, screened porch and an optional upstairs bedroom 4 and bonus room. See photos and color floor plans.",
+      "description": "The Maplewood plan by Riverstone Homes: 2,400 sq ft on the main floor, 3 bedrooms, 2.5 baths, screened porch and an optional upstairs bedroom 4, bath and bonus room. See photos and color floor plans.",
       "primaryImageOfPage": "https://goriverstone.com/images/plans/maplewood/maplewood-01.jpg",
       "publisher": {
        "@type": "HomeAndConstructionBusiness",
@@ -1936,24 +1930,20 @@
        "Main floor sq ft"
       ],
       [
-       "3",
+       "3 or 4",
        "Bedrooms"
       ],
       [
-       "2.5",
+       "2.5 or 3.5",
        "Baths"
       ],
       [
        "Optional",
-       "Bedroom 4 and bonus"
+       "Bedroom 4, bath and bonus"
       ],
       [
        "Screened",
        "Back porch"
-      ],
-      [
-       "Full unfinished basement or slab",
-       "Foundation"
       ]
      ],
      "note": "Pricing depends on your lot, options and finishes. Call for pricing: 706-514-6637."
@@ -1964,7 +1954,7 @@
      "title": "Why families love the Maplewood",
      "paras": [
       "The Maplewood is one-level living with a little extra wow: coffered ceilings in the foyer and dining room, a stone fireplace in the family room and a kitchen island big enough for the whole family.",
-      "The screened porch is the spot for morning coffee. Need more room? Finish the optional upstairs for a fourth bedroom and a bonus room."
+      "The screened porch is the spot for morning coffee. Need more room? Finish the optional upstairs for a fourth bedroom, a full bath and a bonus room."
      ],
      "image": "/images/plans/maplewood/maplewood-07.jpg",
      "alt": "The Maplewood by Riverstone Homes: kitchen",
@@ -2066,7 +2056,7 @@
        "w": 2000,
        "h": 1264,
        "alt": "The Maplewood optional upstairs color floor plan",
-       "note": ""
+       "note": "Finish the optional upstairs for bedroom 4, a full bath and a bonus room."
       },
       {
        "img": "/images/plans/maplewood/maplewood-floor-all.jpg",
@@ -2696,6 +2686,29 @@
       }
      ],
      "note": "Photos show homes Riverstone has built and may include options."
+    },
+    {
+     "type": "videos",
+     "id": "watch",
+     "label": "Watch",
+     "title": "Meet the builder and tour a Riverstone home",
+     "items": [
+      {
+       "id": "EUJ0QbbYXPc",
+       "short": true,
+       "title": "What Makes Riverstone Homes Different?"
+      },
+      {
+       "id": "M0k1aioWvYQ",
+       "short": true,
+       "title": "Why families choose Riverstone"
+      },
+      {
+       "id": "XuLnh_ezMyM",
+       "short": true,
+       "title": "Tour a new Riverstone home"
+      }
+     ]
     },
     {
      "type": "steps",
@@ -3564,6 +3577,21 @@
       }
      ],
      "note": "Built by Riverstone Homes in 2020."
+    },
+    {
+     "type": "videos",
+     "alt": true,
+     "id": "watch",
+     "label": "Watch",
+     "title": "Watch the screened porch come together",
+     "items": [
+      {
+       "mp4": "/images/projects/screened-porch-before-after.mp4",
+       "poster": "/images/projects/screened-porch-video-poster.jpg",
+       "short": true,
+       "title": "Screened Porch Before and After"
+      }
+     ]
     },
     {
      "type": "checks",

@@ -16,9 +16,11 @@ DATA = json.load(open(os.path.join(ROOT, 'data', 'landing_pages.json')))
 SITE = 'https://goriverstone.com'
 E = lambda s: html.escape(s or '', quote=True)
 
-TOPICS = ["Building on my land", "Finding land to build on", "Building a home I saw in a video", "Building my own plan", "The Hemlock Falls plan", "The Walton plan", "The Azalea Park plan", "The Waterbury Cottage plan", "The Nesbit Ferry plan", "The Maplewood plan", "The Willow plan", "One of your home plans", "121 Cypress Court",
+TOPICS = ["Building on my land", "Finding land to build on", "Building a home I saw in a video", "Building my own plan", "The Hemlock Falls plan", "The Walton plan", "The Azalea Park plan", "The Waterbury Cottage plan", "The Nesbit Ferry plan", "The Maplewood plan", "The Willow plan", "One of your home plans",
           "104 Bob White Drive", "Riverstone Commons townhomes", "A custom home or plan", "A barndominium",
           "A room addition", "A basement finish", "A garage or pole barn", "A building consultation", "Something else"]
+
+COUNTIES = ['Cherokee', 'Bartow', 'Gordon', 'Cobb', 'Pickens', 'Floyd', 'Paulding', 'Forsyth', 'Other or not sure']
 
 ARROW = '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg>'
 DL = '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v9M4 7.5 8 11.5l4-4M2.5 14h11"/></svg>'
@@ -83,7 +85,8 @@ def block(b, page):
         note = f'<p class="fine" style="margin-top:1.2rem">{b["note"]}</p>' if b.get('note') else ''  # note may hold a simple inline link
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="quotes">{cards}</div>{note}</div></section>'
     if t == 'videos':
-        items = ''.join(
+        vid = lambda v: (f'<figure class="yt{" short" if v.get("short") else ""}"><div class="frame"><video controls playsinline preload="none" poster="{E(v["poster"])}" title="{E(v["title"])}"><source src="{E(v["mp4"])}" type="video/mp4"></video></div><figcaption>{E(v["title"])}</figcaption></figure>')
+        items = ''.join(vid(v) if v.get('mp4') else
             f'<figure class="yt{" short" if v.get("short") else ""}"><div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/{E(v["id"])}?rel=0" title="{E(v["title"])}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div><figcaption>{E(v["title"])}</figcaption></figure>'
             for v in b['items'])
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="ytrow">{items}</div></div></section>'
@@ -140,6 +143,7 @@ def block(b, page):
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="faq">{qs}</div></div></section>'
     if t == 'contact':
         opts = ''.join(f'<option{" selected" if o == b["topic"] else ""}>{E(o)}</option>' for o in TOPICS)
+        copts = '<option value="" selected>Choose a county</option>' + ''.join(f'<option>{E(c)}</option>' for c in COUNTIES)
         call = '<p class="call-line">Rather talk? <a href="tel:+17703243680">Call Sandra at 770-324-3680</a></p>' if b.get('compact') else ''
         return f'''<section class="contact{" start" if b.get("compact") else ""}" id="contact"><div class="wrap">
   <div class="copy"><span class="label">{E(b.get("label","Free build consultation"))}</span><h2>{E(b["title"])}</h2><p>{E(b["text"])}</p>{call}
@@ -149,10 +153,11 @@ def block(b, page):
     <p class="hp"><label for="company-website">Leave this empty</label><input id="company-website" name="company-website" tabindex="-1" autocomplete="off"></p>
     <input type="hidden" name="lead-source"><input type="hidden" name="first-page"><input type="hidden" name="referrer">
     <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
-    <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
-    <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
-    <div class="field full"><label for="f-topic">I'm interested in</label><select id="f-topic" name="topic">{opts}</select></div>
-    <div class="field full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="{E(b.get("placeholder",""))}"></textarea></div>
+    <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+    <div class="field full"><label for="f-topic">What do you want to build?</label><select id="f-topic" name="topic">{opts}</select></div>
+    <div class="field"><label for="f-county">County</label><select id="f-county" name="county">{copts}</select></div>
+    <div class="field"><label for="f-email">Email <span class="opt">(optional)</span></label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+    <div class="field full"><label for="f-msg">Anything else? <span class="opt">(optional)</span></label><textarea id="f-msg" name="message" rows="2" placeholder="{E(b.get("placeholder",""))}"></textarea></div>
     <div class="field full"><button class="btn" type="submit">Send message {ARROW}</button></div>
     <p class="form-status" id="form-status" role="status"></p>
   </form></div></section>'''
