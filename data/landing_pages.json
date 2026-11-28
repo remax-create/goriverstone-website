@@ -37,6 +37,10 @@
    "/areas/ball-ground-ga.html"
   ],
   [
+   "Jasper",
+   "/areas/jasper-ga.html"
+  ],
+  [
    "Barndominiums",
    "/barndominiums.html"
   ],
@@ -3029,6 +3033,13 @@
        "go": "See Canton"
       },
       {
+       "kicker": "Pickens County",
+       "title": "Jasper",
+       "text": "Hemlock Falls, Huntington Ridge, Nesbit Ferry and Stoneleigh Cottage.",
+       "href": "/areas/jasper-ga.html",
+       "go": "See Jasper"
+      },
+      {
        "kicker": "Cherokee County",
        "title": "Ball Ground",
        "text": "A screened porch and a covered pool pavilion.",
@@ -4917,6 +4928,314 @@
      "text": "Tell us what you'd like to build and where. We'll set up a time to talk it through.",
      "topic": "Building on my land",
      "county": "Cherokee",
+     "placeholder": "Do you have land yet? Which plan do you like?"
+    }
+   ]
+  },
+  {
+   "path": "/areas/jasper-ga.html",
+   "title": "New Homes in Jasper, GA | Riverstone Homes",
+   "description": "Riverstone Homes has built new homes in Jasper and Pickens County, Georgia, including the Hemlock Falls, Huntington Ridge, Nesbit Ferry and Stoneleigh Cottage plans at Dogwood Trace. See the homes, the plans and land for sale.",
+   "og_image": "/images/areas/jasper-hf-front.jpg",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "name": "New homes in Jasper, GA",
+      "url": "https://goriverstone.com/areas/jasper-ga.html",
+      "description": "Riverstone Homes has built new homes in Jasper and Pickens County, Georgia, including the Hemlock Falls, Huntington Ridge, Nesbit Ferry and Stoneleigh Cottage plans at Dogwood Trace. See the homes, the plans and land for sale.",
+      "about": {
+       "@type": "City",
+       "name": "Jasper, Georgia"
+      },
+      "publisher": {
+       "@type": "HomeAndConstructionBusiness",
+       "name": "Riverstone Homes",
+       "telephone": "+1-706-514-6637",
+       "url": "https://goriverstone.com/",
+       "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Pickens County, Georgia"
+       }
+      }
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Do you build in Jasper and Pickens County?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. We built the homes at Dogwood Trace in Jasper and build across Pickens County, on your land or a lot we help you find."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "I don't have land yet. Can you help in Pickens County?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Search <a href=\"https://sandra-watkins.remax.com/index.php?advanced=1&display=Pickens&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5ujfjc&sortby=listings.price+ASC&rtype=map\" target=\"_blank\" rel=\"noopener\">land for sale in Pickens County</a>, updated daily, then call or text Sandra Watkins, our New Home Guide with RE/MAX Town &amp; Country, at <a href=\"tel:+17703243680\">770-324-3680</a>. She and the builder will walk the land with you and price a home on it before you buy."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do I have to build one of your plans?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Pick one of <a href=\"/home-plans.html\">our home plans</a>, change it to fit, or bring your own plan. Every plan can be built on a slab or a basement, depending on your property."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How much does it cost to build?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "It depends on your lot, your plan, slab or basement, and your finishes, so we price every home on its own lot. Call <a href=\"tel:+17065146637\">706-514-6637</a> or send us a note below and we will walk you through real numbers."
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "blocks": [
+    {
+     "type": "hero",
+     "image": "/images/areas/jasper-hf-front.jpg",
+     "alt": "Hemlock Falls home built by Riverstone Homes in Jasper, Georgia",
+     "label": "New homes · Pickens County",
+     "title": "New homes in Jasper, GA",
+     "lede": "Craftsman and farmhouse homes in the foothills of the North Georgia mountains. Build yours in Jasper on your land or ours.",
+     "buttons": [
+      {
+       "text": "Start your build",
+       "href": "#contact"
+      },
+      {
+       "text": "Land in Pickens",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Pickens&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5ujfjc&sortby=listings.price+ASC&rtype=map"
+      }
+     ]
+    },
+    {
+     "type": "two",
+     "label": "Building in Jasper",
+     "title": "A local builder with homes all over Jasper",
+     "paras": [
+      "Riverstone built the homes at Dogwood Trace in Jasper, with families choosing the Hemlock Falls, Huntington Ridge, Nesbit Ferry and Stoneleigh Cottage plans.",
+      "Jasper is the Pickens County seat, right on Highway 515 in the foothills of the North Georgia mountains, with room to spread out and mountain views close by.",
+      "Every one of those plans is ready to build again, on your land or a lot we help you find in Pickens County."
+     ],
+     "image": "/images/areas/jasper-hf-kitchen.jpg",
+     "alt": "Kitchen in a Hemlock Falls home Riverstone built in Jasper",
+     "buttons": [
+      {
+       "text": "See all home plans",
+       "href": "/home-plans.html"
+      },
+      {
+       "text": "Build on your land",
+       "href": "/build.html"
+      }
+     ]
+    },
+    {
+     "type": "plancards",
+     "alt": true,
+     "id": "plans",
+     "label": "Built in Jasper",
+     "title": "Plans we've built in Jasper",
+     "text": "Tap a plan for the full photo gallery and color floor plans.",
+     "items": [
+      {
+       "href": "/plans/hemlock-falls.html",
+       "img": "/images/areas/jasper-hf-front-card.jpg",
+       "alt": "Hemlock Falls built by Riverstone Homes in Jasper",
+       "kicker": "One level, room to grow",
+       "title": "Hemlock Falls",
+       "facts": [
+        "2,187 sq ft",
+        "3 to 4 bed",
+        "2 to 3 bath"
+       ],
+       "text": "One-level living with a vaulted family room and an optional second floor."
+      },
+      {
+       "href": "#contact",
+       "img": "/images/areas/jasper-hr-front-card.jpg",
+       "alt": "Huntington Ridge built by Riverstone Homes in Jasper",
+       "kicker": "Two story craftsman",
+       "title": "Huntington Ridge",
+       "facts": [
+        "Coffered dining",
+        "Open kitchen",
+        "Covered back porch"
+       ],
+       "text": "A two-story craftsman with a coffered dining room and a big open kitchen.",
+       "go": "Ask about this plan"
+      },
+      {
+       "href": "/plans/nesbit-ferry.html",
+       "img": "/images/plans/nesbit-ferry/nesbit-ferry-card.jpg",
+       "alt": "Nesbit Ferry built by Riverstone Homes",
+       "kicker": "Primary on main",
+       "title": "Nesbit Ferry",
+       "facts": [
+        "2,270 sq ft",
+        "4 bed",
+        "3 bath"
+       ],
+       "text": "A mudroom off the garage and an upstairs office and fourth bedroom."
+      }
+     ],
+     "note": "The Nesbit Ferry card photo shows the same plan built in another town. Every plan can be built on a slab or a basement, depending on your property. Call for pricing: 706-514-6637."
+    },
+    {
+     "type": "gallery",
+     "id": "photos",
+     "label": "Photos",
+     "title": "Riverstone homes in Jasper",
+     "items": [
+      {
+       "src": "/images/areas/jasper-hf-front.jpg",
+       "thumb": "/images/areas/jasper-hf-front-sm.jpg",
+       "alt": "Front of a Hemlock Falls home Riverstone built in Jasper",
+       "caption": "Hemlock Falls"
+      },
+      {
+       "src": "/images/areas/jasper-hr-front.jpg",
+       "thumb": "/images/areas/jasper-hr-front-sm.jpg",
+       "alt": "Front of a Huntington Ridge home Riverstone built in Jasper",
+       "caption": "Huntington Ridge"
+      },
+      {
+       "src": "/images/areas/jasper-hf-family.jpg",
+       "thumb": "/images/areas/jasper-hf-family-sm.jpg",
+       "alt": "Vaulted family room with a stone fireplace in a Jasper Hemlock Falls",
+       "caption": "Hemlock Falls family room"
+      },
+      {
+       "src": "/images/areas/jasper-hf-kitchen.jpg",
+       "thumb": "/images/areas/jasper-hf-kitchen-sm.jpg",
+       "alt": "Kitchen in a Jasper Hemlock Falls",
+       "caption": "Hemlock Falls kitchen"
+      },
+      {
+       "src": "/images/areas/jasper-hr-foyer.jpg",
+       "thumb": "/images/areas/jasper-hr-foyer-sm.jpg",
+       "alt": "Foyer and coffered dining room in a Jasper Huntington Ridge",
+       "caption": "Huntington Ridge foyer"
+      },
+      {
+       "src": "/images/areas/jasper-hr-kitchen.jpg",
+       "thumb": "/images/areas/jasper-hr-kitchen-sm.jpg",
+       "alt": "Kitchen in a Jasper Huntington Ridge",
+       "caption": "Huntington Ridge kitchen"
+      },
+      {
+       "src": "/images/areas/jasper-hf-bath.jpg",
+       "thumb": "/images/areas/jasper-hf-bath-sm.jpg",
+       "alt": "Primary bath in a Jasper Hemlock Falls",
+       "caption": "Hemlock Falls primary bath"
+      },
+      {
+       "src": "/images/areas/jasper-hr-porch.jpg",
+       "thumb": "/images/areas/jasper-hr-porch-sm.jpg",
+       "alt": "Covered back porch on a Jasper Huntington Ridge",
+       "caption": "Huntington Ridge back porch"
+      },
+      {
+       "src": "/images/areas/jasper-hf-back.jpg",
+       "thumb": "/images/areas/jasper-hf-back-sm.jpg",
+       "alt": "Back of a Jasper Hemlock Falls with a covered porch",
+       "caption": "Hemlock Falls back"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "alt": true,
+     "label": "How it works",
+     "title": "Your land or ours, start to finish",
+     "items": [
+      [
+       "Talk it through",
+       "A free building consultation about your land, plan ideas, budget and timeline."
+      ],
+      [
+       "Pick a plan and a lot",
+       "Start with one of our plans or bring your own. Build on your land, or we help you find some."
+      ],
+      [
+       "Get real pricing",
+       "We price your home on your lot, site work included, before you commit."
+      ],
+      [
+       "Build and move in",
+       "One local team handles permits, construction and the final walk-through, and keeps you updated the whole way."
+      ]
+     ]
+    },
+    {
+     "type": "cards",
+     "label": "Next steps",
+     "title": "Ready to build in Pickens County?",
+     "items": [
+      {
+       "kicker": "Need land",
+       "title": "Land for sale in Pickens",
+       "text": "Every lot and land listing on the MLS, lowest price first, updated daily.",
+       "href": "https://sandra-watkins.remax.com/index.php?advanced=1&display=Pickens&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5ujfjc&sortby=listings.price+ASC&rtype=map",
+       "go": "See listings"
+      },
+      {
+       "kicker": "Have land",
+       "title": "Build on your land",
+       "text": "How we check out your land and build on it.",
+       "href": "/build.html",
+       "go": "How it works"
+      },
+      {
+       "kicker": "Plans",
+       "title": "All home plans",
+       "text": "Real photos and color floor plans for every plan we build.",
+       "href": "/home-plans.html",
+       "go": "See the plans"
+      }
+     ]
+    },
+    {
+     "type": "faq",
+     "alt": true,
+     "label": "Questions",
+     "title": "Building in Jasper: common questions",
+     "items": [
+      [
+       "Do you build in Jasper and Pickens County?",
+       "Yes. We built the homes at Dogwood Trace in Jasper and build across Pickens County, on your land or a lot we help you find."
+      ],
+      [
+       "I don't have land yet. Can you help in Pickens County?",
+       "Yes. Search <a href=\"https://sandra-watkins.remax.com/index.php?advanced=1&display=Pickens&min=0&max=100000000&beds=0&baths=0&types%5B%5D=5&types%5B%5D=18&statuses%5B%5D=0&statuses%5B%5D=57&pak=county%3Ag40_dn5ujfjc&sortby=listings.price+ASC&rtype=map\" target=\"_blank\" rel=\"noopener\">land for sale in Pickens County</a>, updated daily, then call or text Sandra Watkins, our New Home Guide with RE/MAX Town &amp; Country, at <a href=\"tel:+17703243680\">770-324-3680</a>. She and the builder will walk the land with you and price a home on it before you buy."
+      ],
+      [
+       "Do I have to build one of your plans?",
+       "No. Pick one of <a href=\"/home-plans.html\">our home plans</a>, change it to fit, or bring your own plan. Every plan can be built on a slab or a basement, depending on your property."
+      ],
+      [
+       "How much does it cost to build?",
+       "It depends on your lot, your plan, slab or basement, and your finishes, so we price every home on its own lot. Call <a href=\"tel:+17065146637\">706-514-6637</a> or send us a note below and we will walk you through real numbers."
+      ]
+     ]
+    },
+    {
+     "type": "contact",
+     "label": "Free build consultation",
+     "title": "Let's build in Jasper.",
+     "text": "Tell us what you'd like to build and where. We'll set up a time to talk it through.",
+     "topic": "Building on my land",
+     "county": "Pickens",
      "placeholder": "Do you have land yet? Which plan do you like?"
     }
    ]
