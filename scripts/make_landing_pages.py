@@ -95,7 +95,7 @@ def block(b, page):
             for m in b['items'])
         return f'<section class="{cls}"{sid}><div class="wrap">{head}<div class="team">{cards}</div></div></section>'
     if t == 'specs':
-        sp = ''.join(f'<div><b>{E(v)}</b><span>{E(l)}</span></div>' for v, l in b['items'])
+        sp = ''.join(f'<div{" class=\"long\"" if len(v) > 12 else ""}><b>{E(v)}</b><span>{E(l)}</span></div>' for v, l in b['items'])
         note = f'<p class="fine" style="margin-top:.8rem">{E(b["note"])}</p>' if b.get('note') else ''
         return f'<section class="sec" style="padding-block:clamp(2rem,4vw,3rem)"{sid}><div class="wrap"><div class="specs">{sp}</div>{note}</div></section>'
     if t == 'gallery':
