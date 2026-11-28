@@ -723,27 +723,27 @@
        "href": "/plans/walton.html",
        "img": "/images/plans/walton/walton-card.jpg",
        "alt": "The Walton built by Riverstone Homes",
-       "kicker": "One level, full basement",
+       "kicker": "One level, full unfinished basement",
        "title": "The Walton",
        "facts": [
         "2,068 sq ft",
         "4 bed",
         "2 bath",
-        "Full basement"
+        "Full unfinished basement"
        ],
-       "text": "One-level living with an open kitchen, stone fireplace and a full basement."
+       "text": "One-level living with an open kitchen, stone fireplace and a full unfinished basement."
       },
       {
        "href": "/plans/azalea-park.html",
        "img": "/images/plans/azalea-park/azalea-park-card.jpg",
        "alt": "Azalea Park built by Riverstone Homes",
-       "kicker": "Primary on main, full basement",
+       "kicker": "Primary on main, full unfinished basement",
        "title": "Azalea Park",
        "facts": [
         "2,182 sq ft",
         "4 bed",
         "2.5 bath",
-        "Full basement"
+        "Full unfinished basement"
        ],
        "text": "Primary suite on the main, vaulted family room and a full unfinished basement."
       },
@@ -751,13 +751,13 @@
        "href": "/plans/waterbury-cottage.html",
        "img": "/images/plans/waterbury-cottage/waterbury-cottage-card.jpg",
        "alt": "Waterbury Cottage built by Riverstone Homes",
-       "kicker": "Farmhouse, full basement",
+       "kicker": "Farmhouse, full unfinished basement",
        "title": "Waterbury Cottage",
        "facts": [
         "2,376 sq ft",
         "4 bed",
         "3.5 bath",
-        "Full basement"
+        "Full unfinished basement"
        ],
        "text": "Modern farmhouse with a vaulted family room, coffered dining room and a covered back deck."
       },
@@ -772,7 +772,7 @@
         "3 bath",
         "Office",
         "Mudroom",
-        "Full basement"
+        "Full unfinished basement"
        ],
        "text": "Primary suite on the main, a mudroom with a bench and an upstairs office and fourth bedroom."
       },
@@ -787,7 +787,7 @@
         "3 bed",
         "2.5 bath",
         "Optional bonus",
-        "Full basement"
+        "Full unfinished basement"
        ],
        "text": "One-level living with coffered ceilings, a screened porch and an optional upstairs bedroom and bonus room."
       },
@@ -801,7 +801,7 @@
         "1,952 sq ft main",
         "3 bed + bonus",
         "2.5 bath",
-        "Full basement"
+        "Full unfinished basement"
        ],
        "text": "Craftsman cottage with a main-floor primary suite, a great room and a big upstairs bonus room."
       },
@@ -816,7 +816,7 @@
         "3 to 4 bed",
         "2 to 3 bath",
         "Optional upstairs",
-        "Full basement"
+        "Full unfinished basement"
        ],
        "text": "One-level living with a vaulted family room, a flex room and an optional second floor."
       }
@@ -860,7 +860,7 @@
   {
    "path": "/plans/walton.html",
    "title": "Walton Home Plan | 2,068 Sq Ft | Riverstone Homes",
-   "description": "The Walton plan by Riverstone Homes: 2,068 sq ft on one level, 4 bedrooms (or 3 with bigger closets), 2 baths and a full basement. See photos, floor plans and a video tour.",
+   "description": "The Walton plan by Riverstone Homes: 2,068 sq ft on one level, 4 bedrooms (or 3 with bigger closets), 2 baths and a full unfinished basement. See photos, floor plans and a video tour.",
    "og_image": "/images/plans/walton/walton-01.jpg",
    "schema": {
     "@context": "https://schema.org",
@@ -869,7 +869,7 @@
       "@type": "WebPage",
       "name": "The Walton home plan",
       "url": "https://goriverstone.com/plans/walton.html",
-      "description": "The Walton plan by Riverstone Homes: 2,068 sq ft on one level, 4 bedrooms (or 3 with bigger closets), 2 baths and a full basement. See photos, floor plans and a video tour.",
+      "description": "The Walton plan by Riverstone Homes: 2,068 sq ft on one level, 4 bedrooms (or 3 with bigger closets), 2 baths and a full unfinished basement. See photos, floor plans and a video tour.",
       "primaryImageOfPage": "https://goriverstone.com/images/plans/walton/walton-01.jpg",
       "publisher": {
        "@type": "HomeAndConstructionBusiness",
@@ -910,7 +910,7 @@
      "alt": "The Walton plan built by Riverstone Homes",
      "label": "Riverstone home plan",
      "title": "The Walton",
-     "lede": "Everything on one level, a big open kitchen and family room, covered porches front and back, and a full basement for room to grow.",
+     "lede": "Everything on one level, a big open kitchen and family room, covered porches front and back, and a full unfinished basement for room to grow.",
      "buttons": [
       {
        "text": "Build this plan",
@@ -943,7 +943,7 @@
       ],
       [
        "Optional",
-       "Full basement"
+       "Full unfinished basement"
       ]
      ],
      "note": "Pricing depends on your lot, options and finishes. Call for pricing: 706-514-6637."
@@ -954,7 +954,7 @@
      "title": "Why families love the Walton",
      "paras": [
       "The Walton is the plan people walk into and say \"this just works.\" The kitchen, dining and family room all open to each other, so whoever is cooking is still part of the conversation.",
-      "You can build it with four bedrooms, or turn it into a three bedroom with a roomier hall bath and two walk-in closets. The full basement gives you room for a rec room, a gym or future bedrooms down the road."
+      "You can build it with four bedrooms, or turn it into a three bedroom with a roomier hall bath and two walk-in closets. The full unfinished basement gives you room for a rec room, a gym or future bedrooms down the road."
      ],
      "image": "/images/plans/walton/walton-05.jpg",
      "alt": "The Walton by Riverstone Homes: open kitchen",
@@ -1074,7 +1074,7 @@
        "w": 2000,
        "h": 1462,
        "alt": "The Walton all floors color floor plan",
-       "note": "Shown with the 4 bedroom main floor and the full basement."
+       "note": "Shown with the 4 bedroom main floor and the full unfinished basement."
       }
      ],
      "note": "Artist's rendering. Standard finishes shown; options and layouts can be customized. Call the builder for dimensions.",
@@ -1172,7 +1172,7 @@
      "alt": "Azalea Park plan built by Riverstone Homes",
      "label": "Riverstone home plan",
      "title": "Azalea Park",
-     "lede": "A primary suite on the main floor, a vaulted family room, bedrooms upstairs for everyone else and a full basement underneath.",
+     "lede": "A primary suite on the main floor, a vaulted family room, bedrooms upstairs for everyone else and a full unfinished basement underneath.",
      "buttons": [
       {
        "text": "Build this plan",
@@ -1366,7 +1366,7 @@
   {
    "path": "/plans/waterbury-cottage.html",
    "title": "Waterbury Cottage Home Plan | 2,376 Sq Ft | Riverstone Homes",
-   "description": "The Waterbury Cottage plan by Riverstone Homes: 2,376 sq ft, 4 bedrooms, 3.5 baths, vaulted family room and a full basement. See photos, color floor plans and a video tour.",
+   "description": "The Waterbury Cottage plan by Riverstone Homes: 2,376 sq ft, 4 bedrooms, 3.5 baths, vaulted family room and a full unfinished basement. See photos, color floor plans and a video tour.",
    "og_image": "/images/plans/waterbury-cottage/waterbury-cottage-01.jpg",
    "schema": {
     "@context": "https://schema.org",
@@ -1375,7 +1375,7 @@
       "@type": "WebPage",
       "name": "Waterbury Cottage home plan",
       "url": "https://goriverstone.com/plans/waterbury-cottage.html",
-      "description": "The Waterbury Cottage plan by Riverstone Homes: 2,376 sq ft, 4 bedrooms, 3.5 baths, vaulted family room and a full basement. See photos, color floor plans and a video tour.",
+      "description": "The Waterbury Cottage plan by Riverstone Homes: 2,376 sq ft, 4 bedrooms, 3.5 baths, vaulted family room and a full unfinished basement. See photos, color floor plans and a video tour.",
       "primaryImageOfPage": "https://goriverstone.com/images/plans/waterbury-cottage/waterbury-cottage-01.jpg",
       "publisher": {
        "@type": "HomeAndConstructionBusiness",
@@ -2093,7 +2093,7 @@
   {
    "path": "/plans/willow.html",
    "title": "Willow Home Plan | 1,952 Sq Ft | Riverstone Homes",
-   "description": "The Willow plan by Riverstone Homes: 1,952 sq ft main floor, primary suite on the main, 3 bedrooms plus a bonus room, 2.5 baths and a full basement. See photos and color floor plans.",
+   "description": "The Willow plan by Riverstone Homes: 1,952 sq ft main floor, primary suite on the main, 3 bedrooms plus a bonus room, 2.5 baths and a full unfinished basement. See photos and color floor plans.",
    "og_image": "/images/plans/willow/willow-01.jpg",
    "schema": {
     "@context": "https://schema.org",
@@ -2102,7 +2102,7 @@
       "@type": "WebPage",
       "name": "The Willow home plan",
       "url": "https://goriverstone.com/plans/willow.html",
-      "description": "The Willow plan by Riverstone Homes: 1,952 sq ft main floor, primary suite on the main, 3 bedrooms plus a bonus room, 2.5 baths and a full basement. See photos and color floor plans.",
+      "description": "The Willow plan by Riverstone Homes: 1,952 sq ft main floor, primary suite on the main, 3 bedrooms plus a bonus room, 2.5 baths and a full unfinished basement. See photos and color floor plans.",
       "primaryImageOfPage": "https://goriverstone.com/images/plans/willow/willow-01.jpg",
       "publisher": {
        "@type": "HomeAndConstructionBusiness",
@@ -2143,7 +2143,7 @@
      "alt": "The Willow plan built by Riverstone Homes",
      "label": "Riverstone home plan",
      "title": "The Willow",
-     "lede": "Craftsman charm with a primary suite on the main, a great room with a stone fireplace, a big bonus room upstairs and a full basement.",
+     "lede": "Craftsman charm with a primary suite on the main, a great room with a stone fireplace, a big bonus room upstairs and a full unfinished basement.",
      "buttons": [
       {
        "text": "Build this plan",
